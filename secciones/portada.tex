@@ -1,0 +1,26 @@
+% portada.tex - Portada personalizada Universidad Veracruzana
+\begin{titlepage}
+\centering
+\thispagestyle{empty}
+\vspace*{1cm}
+% Añade tu logo en figuras/logo_uv.png (se omite si no existe)
+\IfFileExists{figuras/logo_uv.png}{%
+	\includegraphics[width=3cm]{figuras/logo_uv.png}\par\vspace{1cm}
+}{%
+	\vspace{2.5cm}% espaciado alternativo si no hay logo
+}
+{\Large \facultad \par}
+\vspace{1cm}
+{\LARGE \textbf{UNIVERSIDAD VERACRUZANA}\par}
+\vspace{1.5cm}
+{\Huge\bfseries \titulo \par}
+\vspace{1.5cm}
+{\Large \autor\par}
+\vfill
+Trabajo de Tesina presentado para obtener el grado de\\[6pt]
+Licenciatura en Ingeniería Civil\par
+\vfill
+{\large Asesor: Nombre del Asesor\par}
+\vspace{1cm}
+{\large Veracruz, México\\ 2026\par}
+\end{titlepage}

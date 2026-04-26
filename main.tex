@@ -1,0 +1,86 @@
+% main.tex - Plantilla de tesina (Universidad Veracruzana)
+\documentclass[12pt,a4paper,oneside]{report}
+
+% Codificación y español
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+
+% Márgenes según instrucción
+\usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=3cm,right=2.5cm]{geometry}
+
+% Paquetes comunes
+\usepackage{graphicx}
+% Permite nombres de archivo de imágenes con varios puntos y espacios
+\usepackage{grffile}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+% Microtypografía: desactivar expansión si la distribución no tiene fuentes escalables
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage{hyperref}
+
+\hypersetup{
+  pdftitle={Título de la Tesina},
+  pdfauthor={Yamileth Pérez Jaramillo},
+  colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue
+}
+
+% Encabezados y pies
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\thepage}
+
+% Metadatos rápidos
+\newcommand{\titulo}{Título de la Tesina}
+\newcommand{\autor}{Yamileth Pérez Jaramillo}
+\newcommand{\facultad}{Facultad de Ingeniería Civil}
+
+\begin{document}
+
+% --- Portada y front matter ---
+\pagenumbering{roman}
+\input{secciones/portada}
+\cleardoublepage
+
+\input{secciones/dedicatoria}
+\cleardoublepage
+
+\input{secciones/agradecimientos}
+\cleardoublepage
+
+\input{secciones/resumen}
+\cleardoublepage
+
+\tableofcontents
+\listoftables
+\listoffigures
+\cleardoublepage
+
+% --- Contenido principal ---
+\pagenumbering{arabic}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+
+\input{capitulos/capitulo1}
+\input{capitulos/capitulo2}
+\input{capitulos/capitulo3}
+\input{capitulos/capitulo4}
+\input{capitulos/capitulo5}
+
+% --- Conclusiones y recomendaciones ---
+\input{secciones/conclusiones}
+
+% --- Anexos ---
+\appendix
+\input{anexos/anexo1}
+
+% --- Bibliografía (BibTeX) ---
+\bibliographystyle{unsrt}
+\bibliography{bibliografia/references}
+
+\end{document}

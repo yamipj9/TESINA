@@ -1,0 +1,1823 @@
+---PAGE 1 START---
+ 
+Este Apéndice trata sobre el diseño de placas base sujetas a carga axial y momentos flexionantes. 
+ 
+Está organizado como sigue: 
+ 
+B.1. 
+Diseño de placas base 
+B.2. 
+Resistencia al aplastamiento del concreto 
+B.3. 
+Resistencia en flexión de la placa base 
+B.4. 
+Resistencia en tensión del sistema de anclaje 
+B.5. 
+Resistencia en cortante del sistema de anclaje 
+B.6. 
+Interacción cortante y tensión en el sistema de anclaje 
+ 
+B.1 Diseño de placas base 
+ 
+En las placas base sujetas a compresión, cortante o flexión, o una combinación de esas acciones, se deben revisar los siguientes 
+modos de falla: 
+ 
+a) Aplastamiento del concreto que soporta la placa base 
+ 
+b) Fluencia de la placa base por flexión 
+ 
+c) Falla de la placa en cortante 
+ 
+d) Falla por una combinación de tensión y cortante del anclaje 
+ 
+B.1.1 En compresión axial (columnas de sección I o circular) 
+ 
+Cuando la placa base de una columna soporta solo compresión axial, sus dimensiones en planta deben ser suficientes para 
+transmitir esa fuerza al concreto, sin exceder su resistencia (estado límite de aplastamiento del concreto), y su grueso el 
+adecuado para evitar el estado límite de flujo plástico de la placa. 
+ 
+Para el diseño de una placa base sometida a carga axial de compresión (Figura B.1.1) se recomienda el procedimiento 
+siguiente: 
+ 
+1) Del análisis de la estructura se obtiene la carga axial de diseño en la base de la columna, Pu. 
+ 
+2) Se calcula el área requerida de la placa base, Apl req: 
+ 
+cuando A1 ≤ A2 < 4A1 
+ 
+ 
+cuando A2 ≥ 4A1 
+ 
+ 
+FR 
+factor de resistencia, igual a 0.60 
+A1 
+área de la placa base 
+A2 
+área del dado de apoyo de la placa 
+ 
+3) Cálculo de las dimensiones de la placa base. 
+ 
+ 
+ 
+(B.1.1) 
+
+
+
+
+2
+ 
+2
+1
+0.85
+1.7
+u
+u
+pl req
+R
+c
+R
+c
+P
+P
+A
+A
+F
+f
+F
+f
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  
+(B.1.2) 
+
+
+ 
+0.85
+u
+pl req
+R
+c
+P
+A
+F
+f
+
+
+ 
+  
+(B.1.3) 
+ 
+pl req
+N
+A
+
+
+
+---PAGE 1 END---
+
+---PAGE 2 START---
+ 
+ 
+ 
+ 
+ 
+ 
+B 
+ancho de la placa base 
+N 
+longitud de la placa base 
+bp 
+ancho del patín de la columna 
+d 
+peralte del perfil de la columna 
+ 
+4) Se determina el momento de diseño máximo, Mu, considerando una distribución uniforme de presiones: 
+ 
+ 
+ 
+ 
+ 
+l 
+longitud crítica de los volados de la placa base, igual al valor mayor de m, n o n’. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Para perfiles HSS rectangulares, m y n se suponen iguales a 0.95d y 0.95bp. En caso de emplear perfiles circulares se usará 
+0.80D, donde D es el diámetro exterior del perfil. 
+ 
+5) Grueso requerido de la placa base, tp : 
+ 
+ 
+FR 
+factor de resistencia, igual a 0.90 
+Fyp 
+esfuerzo de fluencia mínimo especificado del material de la placa. Mu se ha definido anteriormente 
+ 
+ 
+ 
+(a) Distribución de presiones supuesta 
+(b) Dimensiones y líneas de flexión 
+(c) Calculo del momento de diseño 
+ 
+Figura B.1.1 Parámetros para el diseño de una placa base en compresión axial 
+ 
+ 
+  
+(B.1.4) 
+
+
+0.50 0.95
+0.80
+p
+d
+b
+
+
+ 
+  
+(B.1.5) 
+ 
+pl req
+B
+A
+N
+
+ 
+  
+(B.1.6) 
+2
+2
+u
+pu
+l
+M
+f
+
+
+
+
+
+
+
+ 
+  
+(B.1.7) 
+pu
+u
+f
+P BN
+
+ 
+  
+(B.1.8) 
+
+
+0.50
+0.95
+m
+N
+d
+
+
+ 
+  
+(B.1.9) 
+
+
+0.50
+0.80
+p
+n
+B
+b
+
+
+ 
+  
+(B.1.10) 
+'
+0.25
+p
+n
+db
+
+ 
+  
+(B.1.11) 
+4
+u
+p
+R
+yp
+M
+t
+F F
+
+
+---PAGE 2 END---
+
+---PAGE 3 START---
+6) Determinación del tamaño y ubicación de las anclas. 
+ 
+Por resistencia, las anclas no son necesarias cuando solo hay compresión, pero por seguridad durante el montaje deben 
+colocarse, por lo menos, 4 anclas de 19 mm (3/4”), cerca de las esquinas de la placa, satisfaciendo las separaciones mínimas 
+al borde de la placa y del dado de concreto. 
+ 
+B.1.2 En tensión axial 
+ 
+Para el diseño de una placa base en tensión (Figura B.1.2) se recomienda el procedimiento siguiente: 
+ 
+1) Del análisis de la estructura se obtiene la fuerza axial máxima de tensión en la base de la columna, Tu . 
+ 
+2) Se determina el número de anclas, n , requerido para resistir la fuerza axial máxima de tensión: 
+ 
+ 
+ 
+Tu 
+fuerza axial máxima de tensión en la base de la columna 
+Ab 
+área del vástago de un ancla 
+FR 
+factor de resistencia, igual a 0.90 
+Fu 
+resistencia en tensión mínima especificada del material de las anclas 
+ 
+3) Se determinan las dimensiones en planta de la placa base, su grueso y la soldadura adecuada para transferir la fuerza de 
+tensión. 
+ 
+El grueso de la placa se determina como en la sección anterior. 
+ 
+La resistencia de la soldadura debe ser suficiente para trasmitir los esfuerzos generados por la fuerza axial máxima de tensión 
+en la base de la columna. 
+ 
+4) Se revisa la resistencia del concreto correspondiente a los diferentes modos de falla posibles (arrancamiento de las anclas, 
+desprendimiento del cono de concreto en tensión o separación al borde). 
+ 
+En caso de que la resistencia no sea adecuada se debe aumentar la longitud del anclaje y/o la separación entre anclas y la 
+distancia a los bordes. 
+ 
+ 
+ 
+ 
+(a) Fuerzas de tensión en las anclas 
+(b) Líneas de flexión supuestas 
+(c) Cálculo del momento de diseño 
+ 
+Figura B.1.2 Parámetros para el diseño de placas base en tensión 
+ 
+B.1.3 En cortante 
+ 
+Las placas base en cortante se diseñan de acuerdo con el procedimiento siguiente: 
+ 
+ 
+  
+(B.1.12) 
+
+
+0.75
+u
+R
+u
+b
+T
+n
+F
+F A
+
+
+---PAGE 3 END---
+
+---PAGE 4 START---
+ 
+1) Se determina el cortante máximo de diseño en la base de la columna, Vu . 
+ 
+2) Se selecciona el mecanismo de transferencia de la fuerza cortante de la columna a la cimentación (por fricción, por 
+aplastamiento de la placa base o por cortante directo en las anclas). 
+ 
+a) Por fricción entre la placa base y el mortero de relleno o la superficie de concreto (Figura B.1.13). La resistencia en cortante 
+es igual a: 
+ 
+ 
+ 
+El coeficiente de fricción, μ, se toma igual a 0.55 para acero sobre mortero de baja contracción (grout), y 0.70 para acero 
+sobre concreto; el factor de resistencia, FR, igual a 0.75; se considera la combinación de acciones de diseño que produce en la 
+columna la fuerza de compresión, Pu, más desfavorable. 
+ 
+Ac 
+área de la superficie de contacto entre la placa base y el mortero de relleno o la superficie de concreto 
+ 
+ 
+ 
+Figura B.1.3 Transmisión de cortante por fricción 
+ 
+b) Por aplastamiento de la placa base y parte de la columna, o de la llave o llaves de cortante, si las hay, en el concreto de la 
+cimentación. 
+ 
+Cuando hay empotramiento de la columna y la placa base (Figura B.1.4), la resistencia es igual a: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+FR  
+factor de resistencia, igual a 0.75 
+Aap  
+área de contacto lateral de la columna y la placa base contra el concreto 
+Ny  
+resistencia en tensión de las anclas en tensión, igual a n Ab Fy 
+Pu  
+carga axial de diseño, positiva para tensión y negativa para compresión 
+Kc= 1.6 
+ 
+ 
+ 
+Figura B.1.4 Transferencia de la fuerza cortante por aplastamiento en placa base y la columna metálica 
+ 
+  
+(B.1.13) 
+0.20
+'
+R
+n
+R
+u
+R
+c
+c
+F V
+F
+P
+F f
+A
+
+
+
+ 
+  
+(B.1.14) 
+v
+ap
+vc
+R
+R
+R
+
+
+ 
+  
+(B.1.15) 
+0.55
+ap
+c
+ap
+R
+f A
+
+
+ 
+  
+(B.1.16) 
+
+
+vc
+R
+c
+y
+u
+R
+F K
+N
+P
+
+
+
+---PAGE 4 END---
+
+---PAGE 5 START---
+ 
+Si se utiliza una o más llaves de cortante (Figura B.1.5) la resistencia lateral es igual a: 
+ 
+ 
+ 
+ 
+ 
+FR 
+factor de resistencia, igual a 0.60 
+Al  
+área de contacto entre la llave de cortante y el concreto de la cimentación 
+ 
+Las dimensiones de las llaves de cortante se determinan considerándolas en voladizo, con la fuerza producida por el 
+aplastamiento que se genera entre ellas y el concreto (Figura B.1.5). 
+ 
+ 
+ 
+Figura B.1.5 Transmisión de la fuerza por medio de una llave de cortante 
+ 
+Cuando la llave de cortante se encuentra cerca de un borde libre del concreto se debe hacer la revisión de la resistencia en 
+tensión del concreto, considerando el área proyectada lateralmente en un plano de 45 grados desde los bordes de la llave 
+menos el área de ésta. Se considera una resistencia del concreto igual a 
+
+0.33
+R
+c
+F
+f  en MPa y mm (
+
+1.06
+R
+c
+F
+f , en kg/cm² y 
+cm), con FR = 0.75. 
+ 
+ 
+ 
+ 
+Figura B.1.6 Resistencia a tensión del concreto 
+ 
+  
+(B.1.17) 
+v
+va
+vc
+R
+R
+R
+
+
+ 
+  
+(B.1.18) 
+
+
+1.3
+va
+R
+c
+l
+R
+F
+f A
+
+
+
+---PAGE 5 END---
+
+---PAGE 6 START---
+ 
+ 
+c) Cortante directo en las anclas. 
+ 
+Si se considera que la fuerza cortante se transmite a través de las anclas, se debe revisar la resistencia en cortante en 
+combinación con la tensión, la resistencia lateral del cono de concreto y el desprendimiento del concreto delante de las anclas. 
+ 
+3) Se determinan las dimensiones en planta de la placa base, su grueso y la soldadura necesaria para transferir la fuerza de 
+cortante. 
+ 
+B.1.4 Bajo momento flexionante y carga axial 
+ 
+Cuando la excentricidad generada por el momento flexionante y la carga axial es pequeña, solo se revisa el estado límite de 
+aplastamiento del concreto. Si la excentricidad es grande se debe revisar, además, la fuerza de tensión en las anclas (Figura 
+B.1.7). 
+ 
+Se considera que el momento es pequeño cuando la excentricidad e es igual o menor que ecrit , y solo se toma en cuenta la 
+resistencia en flexión de la placa. Si e es mayor ecrit , la resistencia en flexión de la placa no es suficiente, por lo que también 
+se considera la resistencia de las anclas en tensión. 
+ 
+Para el diseño de una placa base sometida a momento flexionante y carga axial se recomienda el siguiente procedimiento: 
+ 
+1) Se determinan el momento flexionante, Mu, la carga axial de diseño, Pu, en la base de la columna, y la excentricidad: 
+ 
+ 
+ 
+2) Se eligen las dimensiones de la placa base, N y B. 
+ 
+ 
+a) excentricidad pequeña 
+ 
+b) excentricidad grande 
+ 
+Figura B.1.7 Parámetros para el diseño de una placa base en flexocompresión 
+ 
+3) Se determina la excentricidad crítica, ecrit : 
+ 
+ 
+ 
+fpu 
+resistencia al aplastamiento del concreto, que se determina de acuerdo con la sección B.2. 
+ 
+Si e ≤ ecrit , el momento en la placa base es equilibrado por aplastamiento del concreto; en caso contrario, si e > ecrit , es 
+equilibrado por aplastamiento y tensión en las anclas. 
+ 
+4) Se calcula la longitud de aplastamiento del concreto, Y. Para ello, se considera una presión de aplastamiento uniforme 
+contra la placa: 
+ 
+  
+(B.1.19) 
+u
+u
+e
+M
+P
+
+ 
+  
+(B.1.20) 
+2
+2
+u
+crit
+pu
+P
+N
+e
+Bf
+
+
+
+---PAGE 6 END---
+
+---PAGE 7 START---
+ 
+a) cuando e ≤ ecrit : 
+ 
+ 
+cuando e > ecrit : 
+ 
+ 
+ 
+Para que haya una solución real se debe cumplir la condición: 
+ 
+ 
+ 
+De lo contrario se aumenta el tamaño de la placa. 
+ 
+5) Si e > ecrit , la fuerza de tensión en las anclas se calcula en la forma siguiente: 
+ 
+ 
+ 
+6) Se calcula el momento máximo de diseño, Mu . El momento de diseño en la placa base ocasionado por el aplastamiento se 
+determina como sigue, considerando una presión uniforme: 
+ 
+Para Y ≥ l 
+ 
+ 
+Para Y < l 
+ 
+ 
+En las expresiones anteriores, si e < ecrit, el esfuerzo de aplastamiento es fp = Pu/BY; cuando e ≥ ecrit , fp= fpu , y la longitud 
+crítica en el voladizo de la placa base, l, es igual al mayor de m o n, calculados como en el inciso B.1.1(4). 
+ 
+Si e > ecrit , el momento de diseño en la placa base ocasionado por tensión en las anclas es: 
+ 
+ 
+ 
+c 
+distancia desde el eje de las anclas hasta el eje medio del patín en tensión 
+ 
+7) Grueso de placa base: 
+ 
+ 
+ 
+Mu 
+mayor de los momentos de diseño por aplastamiento del concreto o por tensión en las anclas 
+ 
+ 
+  
+(B.1.21) 
+2
+Y
+N
+e
+
+
+ 
+  
+(B.1.22) 
+
+
+2
+2
+2
+2
+u
+pu
+P e
+f
+N
+N
+Y
+f
+f
+Bf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  
+(B.1.23) 
+
+
+2
+2
+2
+u
+pu
+P e
+f
+N
+f
+Bf
+
+
+
+
+
+
+
+
+
+ 
+  
+(B.1.24) 
+ua
+pu
+u
+T
+Bf Y
+P
+
+
+ 
+  
+(B.1.25) 
+2
+2
+u
+p
+l
+M
+f 
+
+
+
+
+
+
+ 
+  
+(B.1.26) 
+2
+u
+p
+Y
+M
+f Y l
+
+
+
+
+
+
+
+ 
+  
+(B.1.27) 
+u
+u
+T c
+M
+B
+
+ 
+  
+(B.1.28) 
+4
+u
+p
+R
+y
+M
+t
+F F
+
+
+---PAGE 7 END---
+
+---PAGE 8 START---
+ 
+8) Se determina el diámetro de las anclas, tomando como base la resistencia en tensión del acero. 
+ 
+B.2 Resistencia al aplastamiento del concreto 
+ 
+La resistencia al aplastamiento del concreto del pedestal es: 
+ 
+ 
+ 
+FR  
+factor de resistencia, igual a 0.65 
+fpu  
+resistencia al aplastamiento del concreto 
+A1  
+área de la placa base 
+ 
+La resistencia al aplastamiento del concreto se calcula considerando parte del confinamiento del pedestal, si existe, con la 
+expresión siguiente: 
+ 
+ 
+ 
+A2 
+área de la sección transversal del pedestal de concreto, A1 ≤ A2 ≤ 4A1 
+ 
+B.3 Resistencia en flexión de la placa base 
+ 
+El momento resistente por centímetro de ancho de la placa base (kg-cm/cm) es: 
+ 
+ 
+ 
+FR  
+factor de resistencia, igual a 0.90 
+tp  
+espesor de la placa base 
+Fyp  
+esfuerzo de fluencia mínimo especificado del acero de la placa base 
+ 
+Para el diseño de placas base, se recomiendan los aceros de la tabla B.3.1. 
+ 
+Tabla B.3.1 Aceros recomendados para placas base 
+ 
+Espesor (tp) 
+Acero disponible 
+ 
+tp  101.6 mm (4 pulg.) 
+ 
+ASTM A36 
+ASTM A572 Gr. 42 o 50 
+ASTM A588 Gr. 42 o 50 
+101.6 mm (4 pulg.) < tp ≤ 152.4 mm (6 pulg.) 
+ASTM A36 
+ASTM A572 Gr. 42 
+ASTM A588 Gr. 42 
+tp > 152.4 mm (6 pulg.) 
+ASTM A36 
+ASTM A588 
+ 
+B.4 Resistencia en tensión del sistema de anclaje 
+ 
+En las anclas en tensión se pueden presentar los modos de falla siguientes: 
+ 
+a) Ruptura por tensión 
+  
+(B.2.1) 
+1
+c
+R
+pu
+R
+F A f
+
+  
+(B.2.2) 
+2
+1
+0.85
+1.7
+pu
+c
+c
+A
+f
+f
+f
+A
+
+
+
+
+  
+(B.3.1) 
+2
+4
+R
+R p
+yp
+M
+F t F
+
+
+---PAGE 8 END---
+
+---PAGE 9 START---
+ 
+b) Extracción 
+ 
+c) Desprendimiento de cono de concreto en tensión 
+ 
+d) Desprendimiento de cono de concreto debido a la separación entre las anclas o distancia a los bordes 
+ 
+e) Agrietamiento del concreto 
+ 
+Para reducir la probabilidad de ocurrencia de estas fallas, se sugiere: 
+ 
+a) Las anclas deben tener una separación mínima, entre centros, de 6do. 
+ 
+b) La separación mínima al borde será de 6do, pero no menor que 100 mm. 
+ 
+c) Si se utiliza un recubrimiento menor que 0.4hef se debe hacer la revisión por desprendimiento o descantillado del cono de 
+concreto atribuible a la separación entre anclas y la distancia a los bordes. 
+ 
+do 
+diámetro nominal del ancla 
+hef  longitud de anclaje 
+ 
+En la tabla B.4.1 se dan valores recomendados para el diámetro de los agujeros en las placas base y en las arandelas, cuando 
+son necesarias, para que la holgura durante el montaje de la estructura sea adecuada. 
+ 
+Tabla B.4.1 Diámetros recomendados para agujeros de anclas en placas base y tamaños de arandelas 
+ 
+Diámetro de las anclas, mm 
+(pulg.) 
+Diámetro de los agujeros en 
+la placa, mm (pulg.) 
+Dimensión mínima de la 
+arandela, mm, (pulg.) 
+Espesor mínimo de la 
+arandela, mm (pulg.) 
+19 
+(3/4) 
+33 
+(1 5/16) 
+51 
+(2) 
+6 
+(1/4) 
+22 
+(7/8) 
+40 
+(1 9/16) 
+64 
+(2 1/2) 
+8 
+(5/16) 
+25 
+(1) 
+46 
+(1 13/16) 
+76 
+(3) 
+10 
+(3/8) 
+32 
+(1 1/4) 
+52 
+(2 1/16) 
+76 
+(3) 
+13 
+(1/2) 
+38 
+(1 1/2) 
+59 
+(2 5/16) 
+89 
+(3 1/2) 
+13 
+(1/2) 
+44 
+(1 3/4) 
+70 
+(2 3/4) 
+102 
+(4) 
+16 
+(5/8) 
+51 
+(2) 
+83 
+(3 1/4) 
+127 
+(5) 
+19 
+(3/4) 
+64 
+(2 1/2) 
+95 
+(3 3/4) 
+140 
+(5 1/2) 
+22 
+(7/8) 
+Notas: 
+1. Se aceptan arandelas circulares o cuadradas que tengan el tamaño especificado. 
+2. Se deben dar separaciones adecuadas, de acuerdo con el tamaño de arandela seleccionado. 
+3. En columnas en compresión axial el diseñador puede emplear agujeros de 27 mm (1 1/16 pulg.) para anclas de 19 mm (3/4 
+pulg.), y la placa base de espesor menor de 32 mm (1 1/4 pulg.). 
+ 
+B.4.1 Resistencia en tensión de las anclas 
+ 
+La resistencia de diseño de un ancla en tensión es igual: 
+ 
+ 
+ 
+FR 
+factor de resistencia, igual a 0.75 
+Ab 
+área nominal de la sección transversal de la parte del vástago no roscada 
+Ft 
+esfuerzo resistente nominal de tensión, 0.75Fu 
+Fu 
+esfuerzo de ruptura en tensión del ancla 
+ 
+B.4.2 Resistencia al desprendimiento del cono de concreto en tensión 
+ 
+  
+(B.4.1) 
+t
+R
+b
+t
+R
+F A F
+
+
+---PAGE 9 END---
+
+---PAGE 10 START---
+ 
+La resistencia de diseño del cono de concreto de anclaje en tensión (Figura B.4.1) se obtiene con una de las siguientes 
+expresiones: 
+ 
+a) Para un ancla 
+ 
+ 
+b) Para un grupo de anclas 
+ 
+ 
+ 
+La resistencia básica al arrancamiento del concreto de una sola ancla en tensión, embebida en concreto fisurado, Rb, no debe 
+exceder de: 
+ 
+ 
+ 
+Alternativamente, para barras con cabeza preinstaladas con 280 mm ≤ hef ≤ 635 mm, Rb no debe exceder de: 
+ 
+ 
+ 
+ 
+ 
+FR 
+factor de resistencia, igual a 0.70 
+AN 
+área proyectada de la superficie de falla del ancla o grupo de anclas, que se considera igual a la base de la figura 
+geométrica rectangular que resulta de proyectar la superficie de falla, de longitud 1.5hef a cada lado del eje del ancla 
+o de los extremos de una línea que pasa por una hilera de anclas adyacentes. AN no debe exceder de n ANo, donde n 
+es el número de anclas en el grupo 
+ANo 
+área proyectada de la superficie de falla de un ancla alejada de los bordes 
+ 
+= 9hef 2  
+hef  
+longitud de anclaje, en los casos donde hay tres o más bordes en que la separación máxima al borde cmax sea menor 
+que 1.5hef , se deberá usar, en todas las ecuaciones, una longitud de anclaje igual a cmax /1.5, en el cálculo de la 
+resistencia; la longitud de anclaje no debe ser mayor que 630 mm 
+kc 
+coeficiente para la resistencia básica al arrancamiento del concreto en tensión 
+ 
+= 10 para anclajes preinstalados 
+ 
+= 7 para anclajes pos-instalados 
+ψ1 
+factor que toma en cuenta la distancia al borde 
+min
+min
+min
+1.0
+si 
+1.5
+0.7
+0.3
+1.5
+si 
+1.5
+ef
+ef
+ef
+c
+h
+c
+h
+c
+h
+
+
+
+
+
+ 
+ψ2 
+1.25 para concreto no agrietado (ft < fcr). Si no se puede garantizar que el concreto no se agrietará bajo cargas de 
+servicio, se toma igual a 1.0 
+ψ3 
+factor para anclaje post instalado 
+min
+min
+min
+1.0
+si 
+1.5
+si 
+a
+a
+ef
+a
+a
+c
+c
+c
+c
+h
+c
+c
+c
+
+
+
+
+
+ 
+ψ4 
+factor que toma en cuenta la excentricidad de la fuerza de tensión respecto al grupo de anclas 
+ 
+  
+(B.4.2) 
+1
+2
+3
+N
+t
+R
+b
+No
+A
+R
+F
+R
+A
+
+
+
+
+
+
+
+ 
+  
+(B.4.3) 
+1
+2
+3
+4
+N
+t
+R
+b
+No
+A
+R
+F
+R
+A
+
+
+
+
+
+
+
+  
+(B.4.4) 
+
+
+1.5
+b
+c
+c
+ef
+R
+k
+f
+h
+
+
+ , en N y mm 
+(B.4.5) 
+
+
+5 3
+3.9
+b
+c
+ef
+R
+f
+h
+
+
+(
+ , en kg y cm) 
+
+
+5 3
+5.8
+b
+c
+ef
+R
+f
+h
+
+
+
+---PAGE 10 END---
+
+---PAGE 11 START---
+1
+1.0
+2
+1
+3
+N
+ef
+e
+h
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+excentricidad de la carga con respecto a las anclas en tensión 
+ca 
+distancia crítica, 4hef 
+cmin 
+distancia mínima al borde 
+cmax 
+distancia máxima al borde 
+ 
+ 
+ 
+Figura B.4.1 Cono de concreto resistente al desprendimiento para un ancla 
+ 
+B.4.3 Resistencia a extracción de las anclas 
+ 
+La resistencia de diseño de un ancla se calcula con las expresiones siguientes: 
+ 
+a) Para barras con gancho de anclaje (Figura B.4.2a): 
+ 
+ 
+ 
+b) Para barras con anclaje mecánico (Figura B.4.2b): 
+ 
+ 
+ 
+FR 
+factor de resistencia, igual a 0.70 
+Aap  
+área de aplastamiento del anclaje mecánico o tuerca 
+do 
+diámetro nominal del ancla 
+eh 
+longitud del gancho (3do ≤ eh ≤ 4.5do) 
+ψ5  
+1.4 para concreto no agrietado (ft < fcr); si no se puede garantizar que el concreto no se agrietará bajo cargas de 
+servicio, se toma igual a 1.0 
+ 
+Ne
+Tu
+h
+1.5hef
+1.5h
+1.5
+1.0
+3hef
+3hef
+Vista A-A
+A
+A
+ef
+ef
+ 
+  
+(B.4.6) 
+
+
+5 0.90
+t
+R
+c h
+o
+R
+F
+f e d
+
+
+
+ 
+  
+(B.4.7) 
+
+
+5
+8
+t
+R
+ap
+c
+R
+F
+A
+f
+
+
+
+
+---PAGE 11 END---
+
+---PAGE 12 START---
+ 
+ 
+ 
+Figura B.4.2 Tipos de anclas: (a) barra con gancho de anclaje (b) barras con anclaje mecánico 
+ 
+En la tabla B.4.2 se recomiendan las longitudes de anclaje y las distancias mínimas al borde para diferentes tipos de anclas. 
+ 
+Tabla B.4.2 Longitudes de anclaje y distancias mínimas al borde 
+ 
+Material de las anclas 
+Longitud mínima de anclaje 
+Distancia mínima al borde 
+A307, A36 
+(H-118, B-254) 
+12do 
+5do > 100 mm 
+A325, A449 
+(H-124) 
+17do 
+7do > 100 mm 
+ 
+B.4.4 Resistencia al desprendimiento lateral del borde de anclas con anclaje mecánico, en tensión 
+ 
+Cuando la distancia al borde de un ancla, c, es menor que 0.4hef , y la separación entre anclas de un grupo, so , es menor que 
+6c, se debe revisar la resistencia al desprendimiento lateral del borde (Figura B.4.3), con la expresión siguiente: 
+ 
+ 
+ 
+FR 
+factor de resistencia, igual a 0.70 
+c 
+distancia mínima al borde desde un ancla o un grupo de ellas 
+so 
+separación entre anclas en la dirección paralela a la fuerza (igual a cero cuando solo hay una) 
+Aap 
+área de aplastamiento del anclaje mecánico o tuerca 
+ 
+ 
+ 
+Figura B.4.3 Desprendimiento lateral del borde del concreto en anclas en tensión 
+ 
+  
+(B.4.8) 
+42
+1
+6
+o
+t
+R
+ap
+c
+s
+R
+F
+c A
+f
+c
+
+
+
+
+
+
+
+
+
+
+---PAGE 12 END---
+
+---PAGE 13 START---
+B.5 Resistencia en cortante del sistema de anclaje 
+ 
+Cuando las anclas están sometidas a cortante se pueden presentar los siguientes modos de falla: 
+ 
+a) Ruptura por cortante de las anclas 
+ 
+b) Desprendimiento lateral del cono de concreto cerca del borde 
+ 
+c) Desprendimiento del concreto delante de las anclas lejos del borde 
+ 
+B.5.1 Resistencia en cortante de las anclas 
+ 
+La resistencia de diseño en cortante del ancla se tomará igual a la resistencia de un tornillo en cortante, de acuerdo con la 
+siguiente ecuación: 
+ 
+ 
+ 
+FR 
+factor de resistencia, igual a 0.75 
+Ab 
+área nominal de la sección transversal del ancla 
+Fv 
+esfuerzo resistente nominal en cortante 
+ 
+El esfuerzo resistente nominal en cortante se calcula de la siguiente forma: 
+ 
+a) Parte roscada del ancla en el plano de corte: 
+ 
+ 
+ 
+b) Parte roscada del ancla fuera del plano de corte: 
+ 
+ 
+ 
+En la tabla B.5.1 se presentan los valores del esfuerzo resistente nominal en tensión y en cortante de los diferentes tipos de 
+anclas y diámetros máximos disponibles de acuerdo con el tipo de acero. 
+ 
+Tabla B.5.1 Acero para anclas 
+ 
+Acero ASTM(2) 
+Resistencia 
+MPa (kg/cm²) 
+Resistencia nominal 
+MPa (kg/cm²) 
+Diámetro 
+máximo 
+mm (pulg) 
+Tensión 
+Fu 
+Tensión (1) 
+Ft = 0.75Fu 
+Cortante (Tipo X) 
+(3) Fv = 0.50Fu 
+Cortante (Tipo N) 
+(4) Fv = 0.40 Fu 
+F1554 
+Gr. 36 
+400 
+(4080) 
+300 
+(3060) 
+200 
+(2040) 
+160 
+(1630) 
+102 (4) 
+Gr. 55 
+517 
+(5273) 
+388 
+(3955) 
+259 
+(2637) 
+207 
+(2109) 
+102 (4) 
+Gr. 105 
+862 
+(8788) 
+646 
+(6591) 
+431 
+(4394) 
+345 
+(3515) 
+76 (3) 
+A449 
+827 
+(8437) 
+621 
+(6328) 
+414 
+(4218) 
+331 
+(3375) 
+25 (1) 
+724 
+(7382) 
+543 
+(5537) 
+362 
+(3691) 
+290 
+(2953) 
+38 (1 1/2) 
+621 
+(6328) 
+465 
+(4746) 
+310 
+(3164) 
+248 
+(2531) 
+76 (3) 
+A36 
+400 
+(4080) 
+300 
+(3060) 
+200 
+(2040) 
+160 
+(1630) 
+102 (4) 
+A307 
+400 
+(4080) 
+300 
+(3060) 
+200 
+(2040) 
+160 
+(1630) 
+102 (4) 
+A354 Gr. BD 
+1034 
+(10546) 
+776 
+(7910) 
+517 
+(5273) 
+414 
+(4218) 
+64 (2 1/2) 
+965 
+(9843) 
+724 
+(7382) 
+483 
+(4921) 
+386 
+(3937) 
+102 (4) 
+  
+(B.5.1) 
+v
+R
+b
+v
+R
+F A F
+
+ 
+  
+(B.5.2) 
+0.4
+v
+u
+F
+F
+
+ 
+  
+(B.5.3) 
+0.5
+v
+u
+F
+F
+
+
+---PAGE 13 END---
+
+---PAGE 14 START---
+ 
+(1) Esfuerzo nominal sobre la parte no roscada para anclas con rosca (en base a los principales diámetros para anclas en rosca 
+laminadas). 
+(2) Especificación del material recomendado. 
+(3) Tipo X, cuando la rosca está excluida de los planos de corte 
+(4) Tipo N, cuando la rosca está incluida en los planos de corte 
+ 
+B.5.2 Resistencia lateral en cortante del cono de concreto 
+ 
+La resistencia de diseño lateral del cono de concreto de anclaje en cortante se puede obtener mediante la ecuación siguiente: 
+ 
+ 
+ 
+FR 
+factor de reducción de la resistencia, igual a 0.70 
+ψ6 
+factor que toma en cuenta la excentricidad 
+1
+1
+1.0
+2
+1
+3
+N
+e
+c
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ψ7 
+factor que toma en cuenta la distancia al borde perpendicular a la carga 
+2
+1
+0.7
+0.3
+1.5
+1.0
+c
+c
+
+
+
+ 
+ψ8 
+1.40 para concreto no agrietado (ft < fcr); si no se puede garantizar que el concreto no se agrietará bajo cargas de 
+servicio, se toma igual a 1.0 
+c1 
+distancia al borde en la dirección de la carga 
+c2 
+distancia al borde en la dirección perpendicular a la carga 
+do 
+diámetro nominal del ancla 
+Av 
+área del cono de concreto del ancla o grupo de anclas en cortante 
+Avo 
+área del cono completo de concreto para un ancla en cortante, igual a 
+2
+1
+4.5c  
+ 
+ 
+ 
+Figura B.5.1 Cono de concreto resistente al cortante para un ancla 
+ 
+B.5.3 Resistencia al desprendimiento del concreto delante de las anclas 
+  
+(B.5.4) 
+1.5
+6
+7
+8
+1
+2.8
+v
+v
+R
+o
+c
+vo
+A
+R
+F
+d
+f c
+A
+
+
+
+
+
+
+
+
+
+
+---PAGE 14 END---
+
+---PAGE 15 START---
+ 
+Las anclas sometidas a cortante también pueden fallar por un desprendimiento del concreto delante de ellas, debido a un efecto 
+de palanca que se produce cuando se encuentran lejos de los bordes. Para calcular la resistencia al desprendimiento del 
+concreto se utiliza la ecuación: 
+ 
+ 
+ 
+FR 
+factor de reducción de la resistencia, igual a 1.0 
+Rt 
+resistencia al desprendimiento por tensión del cono de concreto de un ancla o un grupo de anclas 
+kcp 
+coeficiente que es igual a 1.0 para hef menor o igual que 63.5 mm e igual a 2.0 para hef mayor que 63.5 mm 
+hef  
+longitud de anclaje 
+ 
+B.6 Interacción cortante y tensión en el sistema de anclaje 
+ 
+Cuando la cortante de diseño, Vu, es mayor que el 20 por ciento de la cortante resistente, Rv, y la tensión de diseño, Tu, actuando 
+en conjunto con la cortante, es mayor que el 20 por ciento de la tensión resistente del anclaje, Rt, se debe verificar la interacción 
+con la siguiente ecuación: 
+ 
+ 
+ 
+Tu 
+fuerza axial factorizada de diseño 
+Vu 
+fuerza cortante factorizada de diseño 
+Rt 
+la menor resistencia en tensión del anclaje 
+Rv 
+la menor resistencia en cortante del anclaje 
+ 
+APÉNDICE C. CONEXIONES DE PERFILES ESTRUCTURALES HUECOS (HSS) Y EN CAJÓN DE PAREDES 
+DE GRUESO UNIFORME 
+ 
+Este apéndice se aplica a conexiones de perfiles tubulares (HSS), circulares o rectangulares, con paredes de grueso uniforme. 
+ 
+Nota: También se designan OR (rectangulares) y OC (circulares). 
+ 
+Está compuesto por las secciones siguientes: 
+ 
+C.1. 
+Tipos de nudos o conexiones 
+C.2. 
+Conexiones con placas (fuerzas concentradas) 
+C.3. 
+Conexiones directas entre perfiles HSS en armaduras 
+C.4. 
+Conexiones que transmiten momentos entre perfiles HSS 
+C.5. 
+Soldadura de placas y elementas del alma con perfiles HSS rectangulares 
+ 
+C.1 Tipos de nudos o conexiones 
+ 
+Cuando las armaduras están formadas por perfiles HSS en cuerdas, como elemento principal, y diagonales, montantes o placas, 
+como elementos secundarios soldados directamente a las cuerdas, que son continuas a través de las conexiones, éstas se 
+clasifican, en función de la manera como se transfiere la carga, del modo siguiente: 
+ 
+a) Cuando la componente normal de la fuerza del elemento secundario, es equilibrado por cortante de viga en el elemento 
+HSS principal, la conexión se clasifica como T cuando la fuerza es perpendicular a la cuerda, y como Y si no lo es (Figura 
+C.1.1a). 
+ 
+b) Cuando la componente normal de la fuerza del elemento secundario es equilibrada esencialmente (dentro del 20 por ciento) 
+por fuerzas normales de otro elemento secundario en el mismo lado de la conexión, se clasifica como K (Figura C.1.1b). Una 
+conexión K con un elemento secundario perpendicular a la cuerda suele llamarse conexión N. 
+v
+R
+cp
+t
+R
+F k R
+
+ 
+(B.5.5) 
+  
+(B.6.1) 
+1.20
+u
+u
+t
+v
+T
+V
+R
+R
+
+
+
+---PAGE 15 END---
+
+---PAGE 16 START---
+ 
+ 
+c) Cuando la componente normal de la fuerza del elemento secundario se transmite a través de la cuerda y es equilibrada por 
+miembros del alma en el lado opuesto, se clasifica como a través (Figura C.1.1d). 
+ 
+d) Cuando la conexión tiene más de dos elementos secundarios o secundarios en más de un plano, se clasifica como general 
+o multiplanar. 
+ 
+Cuando los miembros del alma transmiten parte de su carga como conexiones K y parte como T, Y o a través, la capacidad 
+de la conexión se determina por interpolación en proporción a las resistencias disponibles de cada uno. 
+ 
+ 
+(a) Conexión tipo “Y” y “T” 
+ 
+(b) Conexión tipo “K” con abertura 
+ 
+ 
+(c) Conexión a través 
+ 
+Figura C.1.1 Tipos de nudos o conexiones en armaduras formadas por perfiles HSS. 
+ 
+Además de la clasificación anterior, se deben tener en cuenta los aspectos siguientes: 
+ 
+a) En conexiones con placas, estas se clasifican, de acuerdo con su posición (sección C.2) respecto a la cuerda, en: 
+ 
+1) Placas transversales. Cuando el eje longitudinal de la placa es perpendicular al del perfil HSS (Figura C.1.2a). 
+ 
+2) Placas longitudinales. Cuando el eje longitudinal de la placa es paralelo al del perfil HSS (Figura C.1.2b). 
+ 
+3) Placas longitudinales a través. Cuando la placa longitudinal atraviesa completamente la sección transversal del perfil HSS, 
+y se suelda por ambos lados (Figura C.1.2c). 
+ 
+4) Con placa en el extremo. Cuando la fuerza normal se aplica en el extremo del perfil HSS a través de una placa normal al 
+perfil (Figura C.1.2d). 
+ 
+b) En conexiones que transmiten momentos entre perfiles HSS solo se consideran: 
+ 
+1) Conexiones tipo T, o Y, con un solo elemento secundario perpendicular, o en diagonal, a la cuerda. 
+ 
+2) Conexiones a través, que tienen dos elementos secundarios, conectados a caras opuestas de la cuerda. 
+ 
+
+---PAGE 16 END---
+
