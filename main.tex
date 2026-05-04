@@ -53,12 +53,13 @@
 \input{secciones/agradecimientos}
 \cleardoublepage
 
-\input{secciones/resumen}
-\cleardoublepage
-
+% Índice y listas antes del resumen (reubicado por petición del autor)
 \tableofcontents
 \listoftables
 \listoffigures
+\cleardoublepage
+
+\input{secciones/resumen}
 \cleardoublepage
 
 % --- Contenido principal ---
@@ -78,8 +79,11 @@
 % --- Anexos ---
 \appendix
 \input{anexos/anexo1}
+\input{anexos/apendiceB}
 
 % --- Bibliografía (BibTeX) ---
+% Incluir todas las entradas del archivo .bib aunque no estén citadas
+\nocite{*}
 \bibliographystyle{unsrt}
 \bibliography{bibliografia/references}
 

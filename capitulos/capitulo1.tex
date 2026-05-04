@@ -1,32 +1,422 @@
 % capitulo1.tex
 \chapter{Introducción}
-\section{Antecedentes}
-El diseño de las placas base en estructuras de acero es un elemento crítico para la transferencia de cargas de la superestructura a la cimentación. Cambios en las disposiciones normativas y en los criterios de diseño (resistencia, ductilidad y verificación sísmica) pueden afectar dimensiones de placa, disposición y resistencia de pernos de anclaje, uso de rigidizadores y detalles constructivos.
 
-En esta tesina se realiza una comparativa entre la NTC 2017 y la NTC 2023 aplicada al diseño de placas base para estructuras de acero, evaluando diferencias en hipótesis de carga, factores de reducción, prescripciones para anclajes y criterios de verificación. A continuación se muestran dos figuras que ayudan a contextualizar el problema y su origen sísmico.
+\section{Antecedentes: Evolución Histórica, Normativa y Analítica en el Diseño de Placas Base (NTC-DCEA 2017 vs. NTC-DCEA 2023)}
+
+\subsection{Introducción al Comportamiento de las Conexiones Columna-Cimentación}
+
+En el vasto dominio de la ingeniería estructural y la sismorresistencia, el diseño de las
+conexiones entre la superestructura de acero y la subestructura de cimentación de concreto
+reforzado constituye uno de los nodos analíticos más críticos y complejos. Las placas base y
+los sistemas de anclaje fungen como la interfaz fundamental encargada de transferir las
+elevadas fuerzas axiales, los esfuerzos cortantes basales y los momentos flexionantes generados
+en las columnas hacia los pedestales, zapatas o losas de cimentación. Esta transferencia debe
+garantizar que las cargas se distribuyan adecuadamente sobre la superficie de contacto, sin que
+los esfuerzos transmitidos al concreto superen su capacidad portante (AISC, 2022b).
+
+Históricamente, en la práctica del diseño estructural en México, gran parte del análisis se
+ejecutaba bajo suposiciones matemáticas idealizadas, considerando a las placas de acero como
+elementos infinitamente rígidos y a las bases como comportamientos perfectos o articulaciones
+puras. Sin embargo, la acumulación de evidencia analítica y experimental ha demostrado que la
+rigidez de estas conexiones es intermedia, lo que influye en la distribución real de fuerzas entre
+la columna y su cimentación (Gobierno de la Ciudad de México, 2017).
+
+La evolución del marco normativo en la Ciudad de México ha estado fuertemente condicionada por
+la actividad sísmica del territorio nacional. Este condicionamiento ha impulsado un cambio de
+paradigma profundo en el diseño de las estructuras de acero. La publicación de las Normas
+Técnicas Complementarias para el Diseño y Construcción de Estructuras de Acero en su versión 2023
+representa un avance significativo en el rigor analítico exigido para el dimensionamiento de
+placas base (Gobierno de la Ciudad de México, 2023).
+
+Este avance reglamentario surge también como una respuesta técnica ante las lecciones derivadas
+del sismo del 19 de septiembre de 2017, evento que evidenció múltiples vulnerabilidades en
+conexiones estructurales (Instituto de Ingeniería de la UNAM \& SSN, 2017; SMIE, 2017).
+
+El propósito de la presente investigación es documentar la transición metodológica entre las
+NTC-DCEA 2017 y las NTC-DCEA 2023 en el diseño de placas base, abordando la problemática
+estructural documentada y la evolución hacia enfoques analíticos más avanzados (Gobierno de la
+Ciudad de México, 2017, 2023).
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.4\textwidth]{\detokenize{figuras/001_Vista en corte de una conexión columna-cimentación columna de acero, placa base, pernos de anclaje, grout y pedestal de concreto..png}}
-  \caption{Vista en corte de una conexión columna-cimentación columna de acero, placa base, pernos de anclaje, grout y pedestal de concreto.}
+  \includegraphics[width=0.5\textwidth]{\detokenize{figuras/001_Vista en corte de una conexión columna-cimentación columna de acero, placa base, pernos de anclaje, grout y pedestal de concreto..png}}
+  \caption{Vista en corte de una conexión columna-cimentación: columna de acero, placa base, pernos de anclaje, grout y pedestal de concreto.}
   \label{fig:baseplate}
 \end{figure}
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.4\textwidth]{\detokenize{figuras/002_Mapa de la República Mexicana señalando el epicentro del sismo del 19-S 2017 y la Ciudad de México..png}}
+  \includegraphics[width=0.6\textwidth]{\detokenize{figuras/002_Mapa de la República Mexicana señalando el epicentro del sismo del 19-S 2017 y la Ciudad de México..png}}
   \caption{Mapa de la República Mexicana señalando el epicentro del sismo del 19-S 2017 y la Ciudad de México.}
   \label{fig:map2017}
 \end{figure}
 
-Las Figuras~\ref{fig:baseplate} y~\ref{fig:map2017} ilustran, respectivamente, el detalle constructivo objeto de estudio (placa base y pernos de anclaje) y el evento sísmico que motivó revisiones normativas posteriores que pueden influir en criterios de diseño.
-\section{Objetivos}
-\subsection{Objetivo general}
-Enunciar el objetivo general.
-\subsection{Objetivos específicos}
+Las Figuras~\ref{fig:baseplate} y~\ref{fig:map2017} ilustran, respectivamente, el detalle
+constructivo objeto de estudio (placa base y pernos de anclaje) y el evento sísmico que
+motivó revisiones normativas posteriores.
+
+\section{El Sismo del 19 de Septiembre de 2017 y la Evidencia Forense Estructural}
+
+El 19 de septiembre de 2017 el centro de México fue sacudido por un sismo de magnitud momento
+Mw 7.1, cuyo epicentro y cercanía con la capital se detallan en la Figura~\ref{fig:map2017}.
+La corta distancia epicentral generó intensidades sísmicas elevadas en diversas zonas urbanas. Los
+suelo blandos de las zonas lacustres amplificaron el movimiento, incrementando las aceleraciones
+registradas y el nivel de daño en diversas edificaciones (Instituto de Ingeniería de la UNAM \& SSN, 2017).
+
+\subsection{Demanda sísmica y efectos de sitio}
+
+La combinación de corta distancia epicentral y efectos locales en suelos blandos incrementó
+la demanda sobre las conexiones columna-cimentación, exponiendo fallas en presunciones de
+rigidez y en la capacidad de los anclajes.
+
+\subsection{Patrones de falla estructural}
+
+Las evaluaciones post-sismo identificaron diversos mecanismos de falla en conexiones estructurales:
 \begin{itemize}
-  \item Objetivo específico 1.
-  \item Objetivo específico 2.
+  \item Fluencia excesiva en placas base, asociada a simplificaciones en el modelo de presión de contacto (AISC, 2022b).
+  \item Arrancamiento de anclajes, provocado por fallas de cono de concreto (ACI, 2019).
+  \item Deficiencias en transferencia de cortante basal cuando el sistema dependía únicamente de los pernos de anclaje (Gobierno de la Ciudad de México, 2017).
 \end{itemize}
+
+\section{Paradigma de diseño en las NTC-DCEA 2017}
+
+Las NTC-DCEA 2017 trataban el diseño de placas base de manera limitada dentro de un apéndice
+complementario de la norma (Gobierno de la Ciudad de México, 2017).
+
+\subsection{Distribución lineal de presiones}
+
+El método clásico asumía que la placa base era rígida y que las presiones en el concreto podían
+modelarse mediante una distribución lineal de esfuerzos dependiendo de la excentricidad de la
+carga axial, comportamiento que se esquematiza en la Figura~\ref{fig:diagram-pressure}.
+
+\begin{figure}[H]
+  \centering
+  \textbf{aquí va la imagen 3}
+  \caption{Diagrama de distribución lineal de presiones en placa base (esquema).}
+  \label{fig:diagram-pressure}
+\end{figure}
+
+Sin embargo, investigaciones posteriores demostraron que la flexibilidad real de la placa puede
+generar redistribuciones importantes de esfuerzos, incrementando la demanda en los anclajes
+mediante un fenómeno conocido como efecto de palanca o prying action.
+
+\section{Limitaciones del enfoque clásico y evolución hacia criterios más rigurosos}
+
+El modelo de placa rígida no contemplaba que la flexibilidad real de la placa puede generar
+deformaciones locales que incrementan la fuerza demandada a los pernos de anclaje, por encima de
+lo que el equilibrio estático directo indica. Este fenómeno, conocido como efecto de palanca o
+prying action, fue identificado como uno de los factores que contribuyó a fallas en anclajes durante
+el sismo de 2017 y constituyó un fundamento técnico para la actualización normativa (AISC, 2022b).
+
+\begin{figure}[H]
+  \centering
+  \textbf{aquí va la imagen 4}
+  \caption{Esquema del efecto de palanca (prying action).}
+  \label{fig:prying}
+\end{figure}
+
+\subsection{Cálculo del espesor de placa por el método del voladizo}
+
+Para determinar el espesor requerido de la placa base, las NTC-DCEA 2023 emplean el método
+del voladizo con líneas de fluencia. Este procedimiento identifica las regiones críticas de la
+placa —aquellas con mayor momento flector bajo la presión de contacto del concreto— y calcula
+el espesor mínimo para que el acero no alcance la fluencia por flexión.
+
+\section{Cambios normativos en las NTC-DCEA 2023}
+
+Las disposiciones actualizadas incorporan principios de diseño por capacidad sísmica alineados
+con los estándares internacionales AISC. Este enfoque establece que la conexión en la base debe
+ser capaz de resistir las fuerzas generadas cuando la columna alcanza su resistencia máxima
+real, y no únicamente las demandas de las combinaciones de carga de servicio. De este modo se
+busca garantizar que, ante un sismo severo, la falla ocurra en los elementos diseñados para
+disipar energía y no en la conexión con la cimentación (AISC, 2022a; Gobierno de la Ciudad de México, 2023).
+
+\section{Estados límite de falla en anclajes}
+
+La correcta identificación del estado límite que gobierna el diseño es fundamental. Factores
+como la distancia del anclaje al borde del pedestal, la profundidad de empotramiento y el
+espaciamiento entre pernos determinan cuál de los siguientes modos resulta crítico. Todos estos
+estados límite están definidos en el ACI 318-19 (ACI, 2019):
+
+\begin{itemize}
+  \item Aplastamiento del concreto: la presión de contacto bajo el perno supera la resistencia del concreto confinado.
+  \item Ruptura por cono de concreto (breakout): el anclaje arranca un cono de concreto alrededor de su eje longitudinal.
+  \item Extracción del anclaje (pull-out): falla de adherencia entre el perno y el concreto sin formación de cono.
+  \item Estallido lateral (side-face blowout): falla del recubrimiento lateral del concreto en anclajes de cabeza con poco recubrimiento.
+  \item Falla por pryout: deslizamiento lateral del anclaje bajo carga cortante.
+\end{itemize}
+
+\begin{figure}[H]
+  \centering
+  \textbf{aquí va la imagen 5}
+  \caption{Fallo por extracción / cono de concreto (esquema).}
+  \label{fig:failures}
+\end{figure}
+
+\chapter{Planteamiento y Objetivos de la Investigación}
+
+\section{Planteamiento del problema}
+
+Históricamente, en México, gran parte del diseño de placas base para columnas de acero se
+fundamentó en suposiciones de rigidez infinita, un enfoque que omitía interacciones complejas
+como el efecto de palanca (prying action) y las flexibilidades inherentes de los componentes
+bajo cargas severas. Los sismos recientes, en particular el del 19 de septiembre de 2017,
+evidenciaron vulnerabilidades críticas en estas conexiones, tales como fluencia prematura en
+placas y falla de anclajes. Como respuesta técnica, se publicaron las NTC-DCEA 2023, que
+incorporan metodologías más rigurosas que incluyen criterios explícitos de falla basados en el
+ACI 318 para el diseño de anclajes y el cálculo del espesor de la placa mediante el método del
+voladizo. Esto ha generado una brecha de conocimiento en la práctica estructural actual:
+la necesidad imperativa de cuantificar de qué forma impacta esta transición tanto técnica 
+como económicamente, y los cambios precisos que la nueva normatividad impone sobre las 
+dimensiones geométricas, uso de materiales y comprobaciones requeridas respecto al marco 
+convencional anterior (NTC-DCEA 2017).
+
 \section{Justificación}
-Justificación de la investigación y su aporte a la ingeniería civil.
+
+La correcta comprensión y aplicación de las herramientas normativas vigentes es un pilar
+fundamental en la ingeniería sismorresistente para salvaguardar la vida humana y la integridad
+de las infraestructuras. Actualizarse en la evolución entre las NTC-DCEA 2017 y las NTC-DCEA
+2023 no solo garantiza el cumplimiento legislativo, sino que optimiza el diseño en términos de
+seguridad estructural y eficiencia de materiales. Documentar comparativamente las fluctuaciones
+en el cálculo (variaciones de espesor, áreas de acero requeridas, especificaciones de los
+anclajes) aportará un recurso referencial y pragmático para ingenieros calculistas e
+investigadores. Proporcionará certidumbre acerca de si las nuevas disposiciones resultan más
+conservadoras en todos los escenarios de carga, o si en algunos casos el mayor número de
+verificaciones de seguridad conduce a optimizar el uso de materiales respecto al enfoque lineal
+clásico anterior.
+
+\section{Objetivos General y Específicos}
+
+\subsection{Objetivo General}
+
+Realizar un análisis comparativo en la metodología y dimensionamiento del diseño de placas
+base para conexiones columna-cimentación en estructuras de acero, contrastando los criterios
+establecidos en las NTC-DCEA 2017 frente a los preceptos actualizados de las NTC-DCEA 2023,
+para evaluar su impacto técnico, geométrico y material ante escenarios de solicitación
+estructural.
+
+\subsection{Objetivos Específicos}
+
+\begin{enumerate}
+  \item Identificar y sistematizar las diferencias en los criterios de diseño (distribución de
+    presiones de contacto, cálculo del espesor de la placa, revisión de estados límite en
+    anclajes y criterios de resistencia sísmica) entre ambas NTC.
+  \item Definir escenarios comparativos (casos de estudio) evaluando combinaciones que dominen
+    en compresión pura, flexo-compresión moderada y severa, y demandas elevadas de cortante.
+  \item Dimensionar, bajo los mismos parámetros de carga, la configuración de la placa base
+    (área en planta y espesor requerido) y caracterizar los sistemas de anclaje de acuerdo con
+    cada normatividad.
+  \item Calcular numéricamente las variaciones porcentuales en el peso de materiales y las
+    diferencias en las dimensiones principales de los accesorios bajo ambos esquemas,
+    determinando grados de optimización o conservadurismo.
+\end{enumerate}
+
+\section{Hipótesis de Investigación}
+
+Las NTC-DCEA 2023, al incorporar criterios explícitos para la verificación de múltiples estados
+límite en anclajes y el cálculo del espesor de placa mediante el método del voladizo, producirán
+dimensionamientos más conservadores que las NTC-DCEA 2017 en los escenarios con momento
+flexionante significativo y cortante dominante. En el caso de compresión pura, donde el método
+clásico ya considera adecuadamente la distribución de presiones de contacto, se espera que las
+diferencias en el dimensionamiento sean menores y que la normativa actualizada no implique
+necesariamente un incremento en el uso de materiales respecto al enfoque anterior.
+
+% Fin de la introducción provista por el autor
+
+\chapter{Marco Teórico y Referencial}
+
+\section{Conceptos Fundamentales de Estructuras de Acero}
+
+Las estructuras de acero basan su eficiencia en la alta resistencia del material frente a
+solicitaciones de tensión, compresión y flexión. Las propiedades mecánicas que gobiernan el
+comportamiento de los elementos de acero estructural son el módulo de elasticidad
+($E=2{,}000{,}000\ \mathrm{kg}/\mathrm{cm}^2$), el esfuerzo de fluencia ($F_y$), que
+delimita la transición entre el comportamiento elástico y la deformación plástica, y el
+esfuerzo de ruptura ($F_u$), que representa la resistencia máxima a tensión. Para el acero
+ASTM A36, empleado comúnmente en placas base, $F_y=2{,}530\ \mathrm{kg}/\mathrm{cm}^2$ y
+$F_u=4{,}080\ \mathrm{kg}/\mathrm{cm}^2$. La transición de los esfuerzos desde la
+superestructura de acero hacia la subestructura de concreto requiere elementos de transferencia
+especializados para evitar concentraciones de esfuerzos que superen la capacidad portante de los
+materiales involucrados.
+
+\section{Placas Base para Columnas}
+
+La placa base es el elemento estructural de conexión cuya función principal es recibir las
+cargas axiales ($P_u$), fuerzas cortantes ($V_u$) y momentos flexionantes ($M_u$) de la columna
+de acero y distribuirlos sobre una superficie mayor en el pedestal o zapata de concreto. Esto
+garantiza que el esfuerzo de compresión transferido no exceda la resistencia a la compresión del
+concreto ($f'_c$).
+
+\subsection{Componentes de la Conexión}
+
+\begin{itemize}
+  \item \textbf{Placa de acero:} Elemento plano soldado a la base de la columna. Su espesor se
+    diseña para resistir la flexión producida por las presiones de contacto del concreto.
+  \item \textbf{Anclas (Pernos de anclaje):} Elementos circulares de acero embebidos en el
+    concreto, encargados de resistir las fuerzas de tensión (generadas por momentos flexionantes o
+    levantamiento) y, en algunos casos, las fuerzas cortantes.
+  \item \textbf{Mortero de nivelación (Grout):} Capa de material de alta resistencia colocada entre
+    la placa base y el concreto para garantizar una superficie de contacto uniforme y la correcta
+    transmisión de cargas.
+  \item \textbf{Pedestal o bloque de concreto:} Elemento que recibe las cargas de la placa y las
+    transmite al terreno o a la zapata.
+\end{itemize}
+
+\begin{figure}[H]
+  \centering
+  \textbf{aquí va la imagen 6}
+  \caption{Despiece isométrico de la conexión: columna W, placa base, pernos de anclaje con tuerca y arandela, capa de grout y pedestal de concreto.}
+  \label{fig:despiece}
+\end{figure}
+
+\section{Modos de Falla en Placas Base}
+
+El diseño debe garantizar que la conexión tenga la resistencia suficiente para evitar los siguientes
+estados límite:
+
+\begin{enumerate}
+  \item \textbf{Aplastamiento del concreto o grout:} Ocurre cuando la presión de contacto bajo el
+    perno supera la resistencia a la compresión confinada del pedestal.
+  \item \textbf{Fluencia por flexión en la placa base:} Se presenta cuando el espesor de la placa
+    es insuficiente, causando que el acero alcance su esfuerzo de fluencia ($F_y$) y se deforme
+    plásticamente.
+  \item \textbf{Falla en las anclas:} Puede darse por fluencia del acero en tensión, fractura del
+    acero, arrancamiento del cono de concreto (pull-out) o falla por cortante.
+  \item \textbf{Falla por deslizamiento:} Cuando la fuerza cortante supera la fricción entre la
+    placa y el grout, y la capacidad a cortante de las anclas.
+\end{enumerate}
+
+\section{Evolución del Marco Normativo: NTC 2017 vs. NTC 2023}
+
+El diseño de estructuras de acero en la Ciudad de México y zonas de influencia se rige por las
+Normas Técnicas Complementarias (NTC). La revisión entre distintas versiones es fundamental para
+identificar actualizaciones en los factores de resistencia y metodologías de cálculo,
+frecuentemente alineadas con estándares internacionales como el AISC (American Institute of
+Steel Construction).
+
+\begin{itemize}
+  \item \textbf{NTC-DCEA 2017:} Establecieron lineamientos específicos para el diseño de placas
+    base, combinando criterios de resistencia de materiales y comportamiento no lineal simplificado
+    para el cálculo de esfuerzos bajo compresión y momentos.
+  \item \textbf{NTC-DCEA 2023:} La actualización más reciente introduce modificaciones en los
+    factores de carga y resistencia, refinamientos en la interacción de tensión y cortante para las
+    anclas, y actualizaciones en los criterios de distribución de presiones rectangulares
+    equivalentes de concreto. El análisis riguroso de estas modificaciones es el eje central para
+    evaluar su impacto directo en el dimensionamiento geométrico y la viabilidad económica de las
+    conexiones.
+\end{itemize}
+
+% Fin del contenido transcrito desde las imágenes (capítulo 3)
+
+\chapter{Metodología}
+
+\section{Enfoque y Tipo de Investigación}
+
+La presente investigación tiene un enfoque cuantitativo y analítico-comparativo. Se basa en
+el cálculo numérico riguroso y la contrastación de resultados geométricos y mecánicos obtenidos
+al aplicar dos marcos normativos distintos sobre un mismo conjunto de solicitaciones estructurales.
+
+\section{Definición de Casos de Estudio}
+
+Para garantizar una comparativa exhaustiva, se establecerán distintos escenarios de solicitación
+reacciones en la base de la columna) que representen las condiciones más comunes y críticas en
+estructuras de acero, mismas que se resumen de forma visual en la Tabla~\ref{tab:casos}:
+
+\begin{enumerate}
+  \item Caso 1: Carga axial de compresión pura. (Columna articulada en la base, dominada por compresión $P_u$).
+  \item Caso 2: Carga axial y momento flexionante moderado. (Excentricidad pequeña $e=M_u/P_u$, donde toda la placa permanece en compresión).
+  \item Caso 3: Carga axial y momento flexionante severo. (Excentricidad grande, generando tensiones en las anclas y requiriendo análisis de flexo-compresión).
+  \item Caso 4: Cortante dominante. (Evaluación de la transferencia de fuerza cortante $V_u$ mediante fricción, aplastamiento de anclas o necesidad de llaves de cortante).
+\end{enumerate}
+
+\begin{table}[H]
+  \centering
+  \caption{Casos de estudio.}
+  \label{tab:casos}
+  \begin{tabular}{p{0.32\textwidth}p{0.32\textwidth}p{0.32\textwidth}}
+    \multicolumn{1}{c}{\textbf{Placa base sometida a carga axial.}} & \multicolumn{1}{c}{\textbf{Placa base sometida a carga axial y momento.}} & \multicolumn{1}{c}{\textbf{Placa base bajo carga axial y fuerza cortante.}} \\
+    \multicolumn{1}{c}{\fbox{aquí va la imagen 7}} & \multicolumn{1}{c}{\fbox{aquí va la imagen 8}} & \multicolumn{1}{c}{\fbox{aquí va la imagen 9}} \\
+  \end{tabular}
+\end{table}
+
+\section{Procedimiento Analítico}
+
+El desarrollo de la tesina seguirá una secuencia estructurada para cada caso de estudio:
+
+\begin{enumerate}
+  \item \textbf{Definición de Parámetros de Diseño:} Establecimiento de perfiles de acero estándar (ej. W14x90), resistencia del concreto de la cimentación ($f'_c=250\ \mathrm{kg}/\mathrm{cm}^2$), esfuerzo de fluencia de la placa ($F_y=2530\ \mathrm{kg}/\mathrm{cm}^2$ para acero A36) y especificaciones de las anclas.
+  \item \textbf{Diseño según NTC 2017:}
+    \begin{itemize}
+      \item Cálculo del área requerida de la placa base ($A_{req}$).
+      \item Determinación de las presiones de contacto y cálculo del espesor mínimo ($t_p$) por flexión en voladizo (líneas de fluencia).
+      \item Revisión de anclas por tensión, cortante y su interacción.
+    \end{itemize}
+  \item \textbf{Diseño según NTC 2023:}
+    \begin{itemize}
+      \item Aplicación de las nuevas disposiciones, factores de carga y resistencia establecidos en las NTC-DCEA 2023.
+      \item Recálculo riguroso de $A_{req}$, $t_p$ y dimensionamiento de anclajes bajo los criterios de falla actualizados.
+    \end{itemize}
+  \item \textbf{Tabulación de Resultados:} Creación de bases de datos comparativas que muestren las diferencias en:
+    \begin{itemize}
+      \item Dimensiones en planta de la placa ($B\times N$).
+      \item Espesor requerido de la placa ($t_p$).
+      \item Diámetro, cantidad y longitud de anclaje.
+      \item Peso total de la conexión (kg de acero utilizado).
+    \end{itemize}
+\end{enumerate}
+
+\section{Análisis e Interpretación de Resultados}
+
+Se calcularán los porcentajes de variación geométrica y de peso de material entre ambas normas.
+Se evaluará cuál de las dos normativas resulta más conservadora y cuál optimiza mejor los
+materiales, justificando técnicamente el porqué de estas diferencias con base en los cambios
+teóricos de las fórmulas normativas.
+
+\section{Herramientas y Recursos}
+
+\begin{itemize}
+  \item \textbf{Hojas de Cálculo:} Programación de rutinas en Microsoft Excel y Mathcad para la automatización y comprobación paralela de las ecuaciones de diseño de ambas normativas.
+  \item \textbf{Software de Diseño (Opcional):} De manera complementaria, podrá emplearse el software de diseño de conexiones \emph{RAM Connection} para verificar resultados puntuales; sin embargo, la validez central del trabajo recaerá en el cálculo analítico desarrollado en las hojas de cálculo.
+  \item \textbf{Acervo Normativo:} Gacetas oficiales correspondientes a las NTC 2017 y NTC 2023 aplicables al diseño de estructuras de acero y cimentaciones.
+\end{itemize}
+
+Este cronograma detalla la planificación semanal para el desarrollo de la tesina “Comparativa en
+el diseño de placas base entre las NTC 2017 y las NTC 2023 para el diseño de estructuras de
+acero”, abarcando desde el 23 de febrero de 2026 hasta el 29 de mayo de 2026 (14 semanas de
+trabajo).
+
+\section{Diagrama de Gantt Simplificado}
+
+La Figura~\ref{fig:gantt1} y la Figura~\ref{fig:gantt2} presentan un diagrama de Gantt
+simplificado que resume la planificación semanal del proyecto en 14 semanas. El diagrama
+organiza las actividades en cuatro fases principales y facilita la visualización temporal de las
+duraciones y solapamientos entre tareas.
+
+Las fases resumidas son:
+\begin{itemize}
+  \item \textbf{Fase 1 — Planteamiento y Teoría:} Recopilación normativa (NTC 2017/2023), redacción de antecedentes y definición del problema, y desarrollo del marco teórico.
+  \item \textbf{Fase 2 — Metodología y Cálculo:} Definición de los casos de estudio, programación de hojas de cálculo y ejecución de diseños según NTC 2017 y NTC 2023.
+  \item \textbf{Fase 3 — Análisis Comparativo:} Tabulación de geometrías y pesos, análisis de variaciones y optimización de resultados.
+  \item \textbf{Fase 4 — Integración y Cierre:} Redacción de resultados y conclusiones, revisión de borrador con asesor, correcciones finales y edición de formato/entrega.
+\end{itemize}
+
+\begin{figure}[H]
+  \centering
+  \fbox{aquí va la imagen 10}
+  \caption{Diagrama de Gantt simplificado — parte 1 (semanas S1–S8).}
+  \label{fig:gantt1}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \fbox{aquí va la imagen 11}
+  \caption{Diagrama de Gantt simplificado — parte 2 (semanas S9–S14).}
+  \label{fig:gantt2}
+\end{figure}
+
+Este cronograma es indicativo y servirá como guía para la programación semanal y la
+coordinación con el asesor; las tareas marcadas en el Gantt se refieren a las actividades listadas
+en las fases anteriores.
+
+% Fin del Capítulo 4 (Metodología)
+
