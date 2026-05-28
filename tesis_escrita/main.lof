@@ -1,16 +1,13 @@
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Vista en corte de una conexión columna-cimentación: columna de acero, placa base, pernos de anclaje, grout y pedestal de concreto.}}{2}{figure.caption.6}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Mapa de la República Mexicana señalando el epicentro del sismo del 19-S 2017 y la Ciudad de México.}}{2}{figure.caption.7}%
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Diagrama de distribución lineal de presiones en placa base (esquema).}}{3}{figure.caption.8}%
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Esquema del efecto de palanca (prying action).}}{4}{figure.caption.9}%
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Fallo por extracción / cono de concreto (esquema).}}{5}{figure.caption.10}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Despiece isométrico de la conexión: columna W, placa base, pernos de anclaje con tuerca y arandela, capa de grout y pedestal de concreto.}}{9}{figure.caption.11}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Diagrama de Gantt simplificado — parte 1 (semanas S1–S8).}}{12}{figure.caption.13}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagrama de Gantt simplificado — parte 2 (semanas S9–S14).}}{12}{figure.caption.14}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Vista en corte transversal de los componentes de la conexión columna-cimentación: columna de acero, placa base, pernos de anclaje, mortero de nivelación (grout) y pedestal de concreto \cite {GarciaPalencia_2008}.}}{1}{figure.caption.6}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Ubicación geográfica del epicentro del sismo intraplaca del 19 de septiembre de 2017 ($M_w~7.1$), ilustrando su cercanía con la Ciudad de México y las principales zonas urbanas afectadas \cite {SSN_Puebla_2017}.}}{2}{figure.caption.7}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Escenarios de solicitación estructural estudiados: (1)~compresión axial pura, (2)~flexocompresión de pequeña excentricidad, (3)~flexocompresión con gran excentricidad —caso de activación de anclas en tensión— y (4)~cortante dominante \cite {Mahmoud_2021}.}}{5}{figure.caption.8}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Mecanismo de falla por extracción directa (\textit {pull-out}): pérdida de adherencia sin formación de cono de concreto \cite {INDEX_nodate}.}}{8}{figure.caption.12}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Mecanismo de falla por arrancamiento de cono de concreto (\textit {breakout}): modo frágil predominante en sismos severos \cite {INDEX_nodate}.}}{8}{figure.caption.12}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Distribución de presiones de contacto bajo la hipótesis de placa rígida, paradigma del diseño bajo NTC-DCEA 2017 \cite {Hilti_nodate}.}}{9}{figure.caption.13}%
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Efecto de palanca (\textit {prying action}) en placa base flexible: la flexibilidad real incrementa la demanda en los pernos por encima de la solución estática directa \cite {Hilti_nodate}.}}{9}{figure.caption.13}%
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Despiece isométrico de la conexión columna-placa base: columna IR, placa de acero, pernos de anclaje con tuerca y arandela de alta resistencia, capa de grout y pedestal de concreto reforzado con estribos \cite {Shi_2025}.}}{11}{figure.caption.14}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
