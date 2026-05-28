@@ -222,6 +222,7 @@ El notebook está dividido en **11 celdas** que siguen el procedimiento del Cap�
 | 11 | Código | Resumen completo de todos los resultados |
 
 ---
+<<<<<<< HEAD
 
 ## Configuración del entorno — Guía para Yamileth (Windows + VS Code)
 
@@ -333,3 +334,5 @@ pdflatex -interaction=nonstopmode main.tex
 ```
 
 Nota: coloque el logo de la Universidad en `figuras/logo_uv.png` si lo desea.
+=======
+>>>>>>> bbc217a (Actualizacion de README y descipcion de figuras en csv)
