@@ -1,38 +1,29 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {chapter}{Agradecimientos}{\es@scroman {ii}}{chapter*.1}%
-\contentsline {chapter}{Resumen}{\es@scroman {vii}}{chapter*.5}%
-\contentsline {chapter}{\numberline {1}Introducción y Justificación}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Planteamiento del Problema}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Justificación}{3}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Objetivos de la Investigación}{4}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Objetivo General}{4}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Objetivos Específicos}{4}{subsection.1.3.2}%
-\contentsline {section}{\numberline {1.4}Hipótesis de Investigación}{5}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Antecedentes y Estado del Arte}{6}{section.1.5}%
-\contentsline {subsection}{\numberline {1.5.1}Contexto Geotectónico y Marco Normativo en México}{6}{subsection.1.5.1}%
-\contentsline {subsection}{\numberline {1.5.2}El Sismo del 19 de Septiembre de 2017 y la Evidencia Forense Estructural}{6}{subsection.1.5.2}%
-\contentsline {subsection}{\numberline {1.5.3}Mecanismos de Transferencia de Fuerzas y Modos de Falla Típicos}{7}{subsection.1.5.3}%
-\contentsline {subsection}{\numberline {1.5.4}Deficiencias del Apéndice B de las NTC-DCEA 2017}{9}{subsection.1.5.4}%
-\contentsline {subsection}{\numberline {1.5.5}Las NTC-DCEA 2023 como Respuesta Técnica}{10}{subsection.1.5.5}%
-\contentsline {subsection}{\numberline {1.5.6}Brecha de Investigación}{11}{subsection.1.5.6}%
-\contentsline {chapter}{\numberline {2}Marco Teórico}{12}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Conceptos fundamentales}{12}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Normas y códigos aplicables}{12}{section.2.2}%
-\contentsline {chapter}{\numberline {3}Estado del Arte}{13}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Revisión bibliográfica}{13}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Comparación de métodos}{13}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Metodología}{14}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Diseño de la investigación}{14}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Trabajo de campo}{14}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Procesos de laboratorio}{14}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Modelado y análisis}{14}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Software y normas}{14}{subsection.4.2.1}%
-\contentsline {section}{\numberline {4.3}Validación y verificación}{14}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Análisis y Resultados}{15}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Procesamiento de los datos}{15}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Resultados}{15}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Discusión}{15}{section.5.3}%
-\contentsline {chapter}{Conclusiones y Recomendaciones}{16}{chapter*.15}%
-\contentsline {chapter}{\numberline {A}Anexo A: Instrumentos y Datos}{17}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Formularios y datos brutos}{17}{section.Alph1.1}%
-\contentsline {chapter}{\numberline {B}Apéndice B: Diseño de placas base}{18}{appendix.Alph2}%
+\contentsline {chapter}{Resumen}{\es@scroman {vi}}{chapter*.5}%
+\contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Contexto y Motivación}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Justificación del Estudio}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Organización del Documento}{2}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Planteamiento y Objetivos de la Investigación}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Planteamiento del Problema}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Objetivo General}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Objetivos Específicos}{6}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Hipótesis}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Formulación de las Hipótesis de Investigación}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Hipótesis 1: Espesor de la Placa Base}{7}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Hipótesis 2: Resistencia al Cono de Concreto}{7}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Hipótesis 3: Distancia Mínima al Borde}{7}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Marco Teórico y Referencial}{9}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Contexto Geotectónico y Marco Normativo en México}{9}{section.4.1}%
+\contentsline {section}{\numberline {4.2}El Sismo del 19 de Septiembre de 2017 y la Evidencia Forense Estructural}{10}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Mecanismos de Transferencia de Fuerzas y Modos de Falla Típicos}{11}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Deficiencias del Apéndice B de las NTC-DCEA 2017}{12}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Las NTC-DCEA 2023 como Respuesta Técnica}{13}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Brecha de Investigación}{15}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Metodología}{16}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Descripción del Enfoque Metodológico}{16}{section.5.1}%
+\contentsline {chapter}{Conclusiones y Recomendaciones}{17}{chapter*.15}%
+\contentsline {chapter}{\numberline {A}Anexo A: Instrumentos y Datos}{18}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Formularios y datos brutos}{18}{section.Alph1.1}%
+\contentsline {chapter}{\numberline {B}Apéndice B: Diseño de placas base}{19}{appendix.Alph2}%

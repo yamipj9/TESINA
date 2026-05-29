@@ -250,6 +250,11 @@ INPUT ./capitulos/capitulo1.tex
 INPUT ./capitulos/capitulo1.tex
 INPUT capitulos/capitulo1.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1728.tfm
+INPUT ./capitulos/capitulo2.tex
+INPUT ./capitulos/capitulo2.tex
+INPUT ./capitulos/capitulo2.tex
+INPUT ./capitulos/capitulo2.tex
+INPUT capitulos/capitulo2.tex
 INPUT ./figuras/001_Vista en corte de una conexión columna-cimentación columna de acero, placa base, pernos de anclaje, grout y pedestal de concreto..png
 INPUT ./figuras/001_Vista en corte de una conexión columna-cimentación columna de acero, placa base, pernos de anclaje, grout y pedestal de concreto..png
 INPUT ./figuras/001_Vista en corte de una conexión columna-cimentación columna de acero, placa base, pernos de anclaje, grout y pedestal de concreto..png
@@ -260,12 +265,22 @@ INPUT ./figuras/002_Mapa de la República Mexicana señalando el epicentro del s
 INPUT ./figuras/002_Mapa de la República Mexicana señalando el epicentro del sismo del 19-S 2017 y la Ciudad de México..png
 INPUT ./figuras/002_Mapa de la República Mexicana señalando el epicentro del sismo del 19-S 2017 y la Ciudad de México..png
 INPUT ./figuras/002_Mapa de la República Mexicana señalando el epicentro del sismo del 19-S 2017 y la Ciudad de México..png
+INPUT ./figuras/009_Casos de estudio..png
+INPUT ./figuras/009_Casos de estudio..png
+INPUT ./figuras/009_Casos de estudio..png
+INPUT ./figuras/009_Casos de estudio..png
+INPUT ./figuras/009_Casos de estudio..png
+INPUT ./capitulos/capitulo3.tex
+INPUT ./capitulos/capitulo3.tex
+INPUT ./capitulos/capitulo3.tex
+INPUT ./capitulos/capitulo3.tex
+INPUT capitulos/capitulo3.tex
+INPUT ./capitulos/capitulo4.tex
+INPUT ./capitulos/capitulo4.tex
+INPUT ./capitulos/capitulo4.tex
+INPUT ./capitulos/capitulo4.tex
+INPUT capitulos/capitulo4.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm
-INPUT ./figuras/009_Casos de estudio..png
-INPUT ./figuras/009_Casos de estudio..png
-INPUT ./figuras/009_Casos de estudio..png
-INPUT ./figuras/009_Casos de estudio..png
-INPUT ./figuras/009_Casos de estudio..png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbi1200.tfm
 INPUT ./figuras/006_Planta de placa base con perfil W al centro..png
 INPUT ./figuras/006_Planta de placa base con perfil W al centro..png
@@ -292,21 +307,6 @@ INPUT ./figuras/008_Despiece isométrico de la conexión; columna W, placa base,
 INPUT ./figuras/008_Despiece isométrico de la conexión; columna W, placa base, pernos de anclaje con tuerca y arandela, capa de grout y pedestal de concreto..png
 INPUT ./figuras/008_Despiece isométrico de la conexión; columna W, placa base, pernos de anclaje con tuerca y arandela, capa de grout y pedestal de concreto..png
 INPUT ./figuras/008_Despiece isométrico de la conexión; columna W, placa base, pernos de anclaje con tuerca y arandela, capa de grout y pedestal de concreto..png
-INPUT ./capitulos/capitulo2.tex
-INPUT ./capitulos/capitulo2.tex
-INPUT ./capitulos/capitulo2.tex
-INPUT ./capitulos/capitulo2.tex
-INPUT capitulos/capitulo2.tex
-INPUT ./capitulos/capitulo3.tex
-INPUT ./capitulos/capitulo3.tex
-INPUT ./capitulos/capitulo3.tex
-INPUT ./capitulos/capitulo3.tex
-INPUT capitulos/capitulo3.tex
-INPUT ./capitulos/capitulo4.tex
-INPUT ./capitulos/capitulo4.tex
-INPUT ./capitulos/capitulo4.tex
-INPUT ./capitulos/capitulo4.tex
-INPUT capitulos/capitulo4.tex
 INPUT ./capitulos/capitulo5.tex
 INPUT ./capitulos/capitulo5.tex
 INPUT ./capitulos/capitulo5.tex

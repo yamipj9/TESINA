@@ -1,6 +1,51 @@
 % capitulo3.tex
-\chapter{Estado del Arte}
-\section{Revisión bibliográfica}
-Resumen de trabajos previos y tendencias actuales.
-\section{Comparación de métodos}
-Tabla comparativa de técnicas y ventajas/desventajas.
+\chapter{Hipótesis}
+
+% ============================================================
+% SECCIÓN 3.1 — FORMULACIÓN DE LAS HIPÓTESIS
+% ============================================================
+\section{Formulación de las Hipótesis de Investigación}
+
+Las hipótesis que guían el presente trabajo se formulan en función de los cambios normativos
+específicos identificados entre la NTC-DCEA 2017 y la NTC-DCEA 2023. Cada hipótesis es verificable
+mediante los algoritmos paramétricos implementados y los cuatro barridos de cálculo ejecutados con
+el perfil IR~305$\times$74.5 como caso semilla.
+
+% ============================================================
+% SECCIÓN 3.2 — HIPÓTESIS 1
+% ============================================================
+\section{Hipótesis 1: Espesor de la Placa Base}
+
+Los cambios introducidos por la NTC-DCEA 2023 en el diseño de placas base bajo flexocompresión
+con gran excentricidad no producen variaciones significativas en el espesor requerido $t_{req}$
+de la placa, dado que ambas normas emplean el mismo modelo mecánico del bloque equivalente de
+compresión de Whitney para determinar la profundidad del bloque $Y$, la fuerza de tensión
+$T_{ua}$ en los pernos de anclaje y, en consecuencia, el momento flector de diseño de la placa.
+Las diferencias en $t_{req}$, si existen, se esperan únicamente bajo muy alta excentricidad,
+donde la NTC-2023 exige verificar el mayor momento entre el lado de tensión y el lado de
+compresión, lo que puede añadir hasta 2~mm al espesor calculado respecto a la norma anterior.
+
+% ============================================================
+% SECCIÓN 3.3 — HIPÓTESIS 2
+% ============================================================
+\section{Hipótesis 2: Resistencia al Cono de Concreto}
+
+La incorporación de los factores de confinamiento $R_{et}$ y $R_{ev}$ por refuerzo transversal
+del dado en la NTC-DCEA 2023 produce un incremento sustancial en la resistencia nominal al
+arrancamiento del cono de concreto respecto a la metodología de la NTC-DCEA 2017. Este
+incremento es función creciente de la profundidad de empotramiento $h_{ef}$ y de la densidad
+del refuerzo transversal ---cuantificada por el número de estribos interceptados por el plano
+del cono hipotético, $N_{est} = \lfloor h_{ef}/s_{est} \rfloor$--- y representa una reducción
+del conservadurismo excesivo del diseño anterior sin comprometer los márgenes de seguridad
+reglamentarios.
+
+% ============================================================
+% SECCIÓN 3.4 — HIPÓTESIS 3
+% ============================================================
+\section{Hipótesis 3: Distancia Mínima al Borde}
+
+El incremento del 16.7\,\% en la distancia mínima al borde libre requerida por la NTC-DCEA 2023
+para anclas de alta resistencia ($6\,d_o \to 7\,d_o$) tiene implicaciones directas y
+cuantificables en las dimensiones mínimas en planta del dado de concreto, constituyendo la
+modificación con mayor impacto geométrico sobre la subestructura para diámetros de ancla
+superiores a $3/4"$.

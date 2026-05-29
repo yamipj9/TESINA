@@ -1,6 +1,135 @@
 % capitulo2.tex
-\chapter{Marco Teórico}
-\section{Conceptos fundamentales}
-Desarrollo de definiciones y teorías relevantes.
-\section{Normas y códigos aplicables}
-Descripción de normas técnicas (ej.: ACI, NTC, AASHTO) y su aplicación.
+\chapter{Planteamiento y Objetivos de la Investigación}
+
+% ============================================================
+% SECCIÓN 2.1 — PLANTEAMIENTO DEL PROBLEMA
+% ============================================================
+\section{Planteamiento del Problema}
+
+En el ámbito de la ingeniería estructural y la sismorresistencia, la conexión entre la
+superestructura metálica y la cimentación de concreto reforzado representa el eslabón más crítico
+de la cadena resistente de un edificio de acero. Las \textit{placas base} y sus sistemas de
+anclaje fungen como la interfaz fundamental encargada de transferir las fuerzas axiales $P_u$,
+los esfuerzos cortantes basales $V_u$ y los momentos flexionantes $M_u$ generados en las columnas
+hacia los pedestales y zapatas de concreto \cite{FisherKloiber_2006}. La integridad de esta
+conexión es determinante para la respuesta global de la estructura ante eventos sísmicos severos,
+ya que su falla ---particularmente cuando ocurre de manera frágil y repentina--- puede precipitar
+mecanismos de colapso que comprometan la seguridad humana y la funcionalidad de la edificación
+\cite{AISC_341_2022}.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.55\textwidth]{\detokenize{figuras/001_Vista en corte de una conexión columna-cimentación columna de acero, placa base, pernos de anclaje, grout y pedestal de concreto..png}}
+  \caption{Vista en corte transversal de los componentes de la conexión columna-cimentación:
+    columna de acero, placa base, pernos de anclaje, mortero de nivelación (grout) y pedestal de
+    concreto \cite{GarciaPalencia_2008}.}
+  \label{fig:corte_conexion}
+\end{figure}
+
+La República Mexicana se asienta sobre la convergencia de cinco placas tectónicas mayores
+---Norteamérica, Caribe, Cocos, Rivera y Pacífico---, lo que la convierte en uno de los países con
+mayor amenaza sísmica del planeta. La Ciudad de México concentra además una condición agravante:
+sus zonas lacustres están constituidas por arcillas altamente compresibles que amplifican
+dinámicamente el movimiento del suelo, incrementando las aceleraciones espectrales de forma
+sustancial respecto a sitios de roca firme \cite{UNAM_SSN_2017}. Esta particularidad geológica
+eleva la demanda sobre todos los componentes estructurales, y de manera especialmente crítica
+sobre las conexiones columna-cimentación, que son las primeras en acusar las solicitaciones de
+mayor amplitud.
+
+Durante décadas, el diseño de placas base en México se realizó bajo filosofías simplificadas que
+modelaban la placa como un elemento rígido con distribución lineal de presiones de contacto sobre
+el concreto \cite{GCDMX_NTC_DCEA_2017}. Este enfoque omitía dos fenómenos fundamentales: la
+flexibilidad real de la placa ---que puede incrementar la demanda en los pernos de anclaje mediante
+el efecto de palanca conocido como \textit{prying action}--- y la naturaleza frágil del mecanismo
+de falla por arrancamiento de cono de concreto (\textit{concrete breakout}), que puede precipitar
+el colapso de la conexión sin advertencia previa \cite{FisherKloiber_2006}.
+
+El 19 de septiembre de 2017, el sismo de magnitud momento $M_w~7.1$ con epicentro en la región
+Puebla-Morelos demostró con crudeza las insuficiencias del paradigma normativo vigente. La
+Figura~\ref{fig:mapa_sismo2017} ilustra la proximidad del evento con la capital. Las inspecciones
+forenses documentadas por la Sociedad Mexicana de Ingeniería Estructural (\textsc{SMIE})
+identificaron, de manera reiterada, fallas en conexiones columna-base de estructuras de acero
+diseñadas conforme a las disposiciones entonces vigentes \cite{SMIE_2017}. El modo de falla
+predominante fue el arrancamiento frágil del cono de concreto en los pernos de anclaje, que
+colapsó antes de que la columna metálica pudiera fluir dúctilmente para disipar la energía
+sísmica \cite{UNAM_SSN_2017}.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.62\textwidth]{\detokenize{figuras/002_Mapa de la República Mexicana señalando el epicentro del sismo del 19-S 2017 y la Ciudad de México..png}}
+  \caption{Ubicación geográfica del epicentro del sismo intraplaca del 19 de septiembre de 2017
+    ($M_w~7.1$), ilustrando su cercanía con la Ciudad de México y las principales zonas urbanas
+    afectadas \cite{SSN_Puebla_2017}.}
+  \label{fig:mapa_sismo2017}
+\end{figure}
+
+La revisión normativa que derivó en las Normas Técnicas Complementarias para el Diseño y
+Construcción de Estructuras de Acero 2023 (NTC-DCEA 2023) introdujo cambios sustanciales: la
+metodología de diseño de placas base fue promovida del Apéndice~B de la edición 2017 al Capítulo
+13 formal de la norma actualizada. Se incorporaron dos nuevos factores de confinamiento por
+refuerzo transversal del dado de concreto: el factor $R_{et}$ para resistencia al cono de tensión
+y el factor $R_{ev}$ para resistencia al cono por cortante \cite{GCDMX_NTC_DCEA_2023}. Además, la
+distancia mínima del perno al borde libre del pedestal fue modificada de $6\,d_o$ a $7\,d_o$
+para aceros de alta resistencia A325/A449.
+
+Estos cambios plantean una brecha de conocimiento técnico de relevancia inmediata para la práctica
+estructural en México: se desconoce de qué forma y en qué magnitud la transición entre ambas
+normas modifica cuantitativamente los parámetros de diseño del sistema
+placa~base-anclaje-dado de concreto. En particular, resulta imperativo cuantificar si el espesor
+requerido de la placa $t_{req}$ es sensible a los cambios normativos, y en qué medida los factores
+$R_{et}$ y $R_{ev}$ modifican la resistencia al cono de concreto respecto a la metodología
+anterior. La presente tesina aborda esta brecha mediante un análisis paramétrico sistemático y
+comparativo.
+
+% ============================================================
+% SECCIÓN 2.2 — OBJETIVO GENERAL
+% ============================================================
+\section{Objetivo General}
+
+Realizar un análisis comparativo cuantitativo del diseño de placas base para columnas de acero
+bajo la metodología de las NTC-DCEA 2017 y las NTC-DCEA 2023, evaluando el impacto técnico de
+los cambios normativos en los parámetros de diseño del sistema placa base-anclaje-dado de concreto
+bajo un régimen de flexocompresión con gran excentricidad, mediante la implementación de
+algoritmos paramétricos en Python.
+
+% ============================================================
+% SECCIÓN 2.3 — OBJETIVOS ESPECÍFICOS
+% ============================================================
+\section{Objetivos Específicos}
+
+\begin{enumerate}
+  \item Implementar computacionalmente los algoritmos de diseño de placas base conforme a la
+    NTC-DCEA 2017 y la NTC-DCEA 2023, aplicados al caso de flexocompresión con gran excentricidad
+    ($e > e_{crit}$), verificando los estados límite de la placa base, los pernos de anclaje y
+    el sistema de anclaje al cono de concreto, con el perfil IR~305$\times$74.5 (A992,
+    $F_y = 3{,}515\ \mathrm{kg/cm^2}$) como perfil de referencia y una placa base de
+    50$\times$50~cm.
+
+  \item Evaluar mediante un barrido paramétrico el efecto del factor de confinamiento por estribos
+    en tensión $R_{et}$ en función de la profundidad de empotramiento efectivo $h_{ef}$ y la
+    densidad del refuerzo transversal del dado (diámetro y espaciado de estribos), determinando la
+    eficiencia de aprovechamiento $\eta = T_{ua}/R_t$ para ambas normas.
+
+  \item Cuantificar el impacto geométrico del cambio en el requisito de distancia mínima al borde
+    libre del pedestal ---de $6\,d_o \geq 100\ \mathrm{mm}$ (NTC-DCEA 2017) a
+    $7\,d_o \geq 100\ \mathrm{mm}$ para aceros A325/A449 (NTC-DCEA 2023)--- sobre las dimensiones
+    mínimas del dado de concreto, en función del diámetro nominal del ancla $d_o$.
+
+  \item Determinar si los cambios normativos de la NTC-DCEA 2023 producen variaciones en el
+    espesor requerido de la placa base $t_{req}$ cuando el momento último $M_u$ varía en el rango
+    de 0 a $14\ \mathrm{ton{\cdot}m}$, identificando el umbral de excentricidad a partir del cual
+    se observan diferencias cuantificables entre ambas normas.
+\end{enumerate}
+
+La Figura~\ref{fig:casos_estudio} sintetiza los cuatro escenarios de solicitación que definen el
+espacio de carga abarcado por los algoritmos de diseño implementados.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{\detokenize{figuras/009_Casos de estudio..png}}
+  \caption{Escenarios de solicitación estructural estudiados: (1)~compresión axial pura,
+    (2)~flexocompresión de pequeña excentricidad, (3)~flexocompresión con gran excentricidad
+    ---caso de activación de anclas en tensión--- y (4)~cortante dominante
+    \cite{Mahmoud_2021}.}
+  \label{fig:casos_estudio}
+\end{figure}
