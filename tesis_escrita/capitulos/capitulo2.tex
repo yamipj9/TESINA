@@ -1,21 +1,15 @@
 % capitulo2.tex
-\chapter{Planteamiento y Objetivos de la Investigación}
+\chapter{Marco Teórico}
 
 % ============================================================
-% SECCIÓN 2.1 — PLANTEAMIENTO DEL PROBLEMA
+% SECCIÓN 2.1 — EL SISTEMA PLACA BASE-ANCLAJE-DADO DE CONCRETO
 % ============================================================
-\section{Planteamiento del Problema}
+\section{El sistema placa base-anclaje-dado de concreto}
 
-En el ámbito de la ingeniería estructural y la sismorresistencia, la conexión entre la
-superestructura metálica y la cimentación de concreto reforzado representa el eslabón más crítico
-de la cadena resistente de un edificio de acero. Las \textit{placas base} y sus sistemas de
-anclaje fungen como la interfaz fundamental encargada de transferir las fuerzas axiales $P_u$,
-los esfuerzos cortantes basales $V_u$ y los momentos flexionantes $M_u$ generados en las columnas
-hacia los pedestales y zapatas de concreto \cite{FisherKloiber_2006}. La integridad de esta
-conexión es determinante para la respuesta global de la estructura ante eventos sísmicos severos,
-ya que su falla ---particularmente cuando ocurre de manera frágil y repentina--- puede precipitar
-mecanismos de colapso que comprometan la seguridad humana y la funcionalidad de la edificación
-\cite{AISC_341_2022}.
+La conexión columna-cimentación en estructuras de acero está integrada por cuatro componentes
+que trabajan de forma conjunta: la \textbf{placa base de acero}, los \textbf{pernos de anclaje},
+el \textbf{mortero de nivelación} (\textit{grout}) y el \textbf{dado o pedestal de concreto}.
+La Figura~\ref{fig:corte_conexion} muestra la disposición de estos elementos en corte transversal.
 
 \begin{figure}[H]
   \centering
@@ -26,110 +20,275 @@ mecanismos de colapso que comprometan la seguridad humana y la funcionalidad de 
   \label{fig:corte_conexion}
 \end{figure}
 
-La República Mexicana se asienta sobre la convergencia de cinco placas tectónicas mayores
----Norteamérica, Caribe, Cocos, Rivera y Pacífico---, lo que la convierte en uno de los países con
-mayor amenaza sísmica del planeta. La Ciudad de México concentra además una condición agravante:
-sus zonas lacustres están constituidas por arcillas altamente compresibles que amplifican
-dinámicamente el movimiento del suelo, incrementando las aceleraciones espectrales de forma
-sustancial respecto a sitios de roca firme \cite{UNAM_SSN_2017}. Esta particularidad geológica
-eleva la demanda sobre todos los componentes estructurales, y de manera especialmente crítica
-sobre las conexiones columna-cimentación, que son las primeras en acusar las solicitaciones de
-mayor amplitud.
+La \textbf{placa base} es una plancha de acero estructural que distribuye la carga concentrada
+del perfil metálico sobre la superficie del pedestal, reduciendo la presión de contacto a un nivel
+que el concreto pueda resistir sin aplastarse. Sus dimensiones en planta ($N \times B$) y su
+espesor $t_p$ se determinan en función de las solicitaciones últimas de diseño.
 
-Durante décadas, el diseño de placas base en México se realizó bajo filosofías simplificadas que
-modelaban la placa como un elemento rígido con distribución lineal de presiones de contacto sobre
-el concreto \cite{GCDMX_NTC_DCEA_2017}. Este enfoque omitía dos fenómenos fundamentales: la
-flexibilidad real de la placa ---que puede incrementar la demanda en los pernos de anclaje mediante
-el efecto de palanca conocido como \textit{prying action}--- y la naturaleza frágil del mecanismo
-de falla por arrancamiento de cono de concreto (\textit{concrete breakout}), que puede precipitar
-el colapso de la conexión sin advertencia previa \cite{FisherKloiber_2006}.
+Los \textbf{pernos de anclaje} son barras roscadas de acero embebidas en el pedestal durante la
+colada del concreto, cuya función es transmitir al dado las fuerzas de tensión generadas cuando el
+momento flector produce el levantamiento parcial de la placa. Los grados de acero más utilizados
+en la práctica mexicana son A307, A36, A325 y A449, cada uno con diferentes características de
+resistencia y ductilidad.
 
-El 19 de septiembre de 2017, el sismo de magnitud momento $M_w~7.1$ con epicentro en la región
-Puebla-Morelos demostró con crudeza las insuficiencias del paradigma normativo vigente. La
-Figura~\ref{fig:mapa_sismo2017} ilustra la proximidad del evento con la capital. Las inspecciones
-forenses documentadas por la Sociedad Mexicana de Ingeniería Estructural (\textsc{SMIE})
-identificaron, de manera reiterada, fallas en conexiones columna-base de estructuras de acero
-diseñadas conforme a las disposiciones entonces vigentes \cite{SMIE_2017}. El modo de falla
-predominante fue el arrancamiento frágil del cono de concreto en los pernos de anclaje, que
-colapsó antes de que la columna metálica pudiera fluir dúctilmente para disipar la energía
-sísmica \cite{UNAM_SSN_2017}.
+El \textbf{mortero de nivelación} es una capa de relleno de alta resistencia colocada entre la
+placa y la superficie del pedestal, cuya función es asegurar un apoyo uniforme y permitir el
+ajuste de nivel durante el montaje de la columna.
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.62\textwidth]{\detokenize{figuras/002_Mapa de la República Mexicana señalando el epicentro del sismo del 19-S 2017 y la Ciudad de México..png}}
-  \caption{Ubicación geográfica del epicentro del sismo intraplaca del 19 de septiembre de 2017
-    ($M_w~7.1$), ilustrando su cercanía con la Ciudad de México y las principales zonas urbanas
-    afectadas \cite{SSN_Puebla_2017}.}
-  \label{fig:mapa_sismo2017}
-\end{figure}
-
-La revisión normativa que derivó en las Normas Técnicas Complementarias para el Diseño y
-Construcción de Estructuras de Acero 2023 (NTC-DCEA 2023) introdujo cambios sustanciales: la
-metodología de diseño de placas base fue promovida del Apéndice~B de la edición 2017 al Capítulo
-13 formal de la norma actualizada. Se incorporaron dos nuevos factores de confinamiento por
-refuerzo transversal del dado de concreto: el factor $R_{et}$ para resistencia al cono de tensión
-y el factor $R_{ev}$ para resistencia al cono por cortante \cite{GCDMX_NTC_DCEA_2023}. Además, la
-distancia mínima del perno al borde libre del pedestal fue modificada de $6\,d_o$ a $7\,d_o$
-para aceros de alta resistencia A325/A449.
-
-Estos cambios plantean una brecha de conocimiento técnico de relevancia inmediata para la práctica
-estructural en México: se desconoce de qué forma y en qué magnitud la transición entre ambas
-normas modifica cuantitativamente los parámetros de diseño del sistema
-placa~base-anclaje-dado de concreto. En particular, resulta imperativo cuantificar si el espesor
-requerido de la placa $t_{req}$ es sensible a los cambios normativos, y en qué medida los factores
-$R_{et}$ y $R_{ev}$ modifican la resistencia al cono de concreto respecto a la metodología
-anterior. La presente tesina aborda esta brecha mediante un análisis paramétrico sistemático y
-comparativo.
+El \textbf{dado de concreto} (pedestal) recibe las cargas de la placa y las conduce hacia la
+zapata de cimentación. Sus dimensiones en planta, su altura y el espaciado del refuerzo
+transversal (estribos) determinan la resistencia disponible ante los mecanismos de falla locales
+descritos en la sección siguiente.
 
 % ============================================================
-% SECCIÓN 2.2 — OBJETIVO GENERAL
+% SECCIÓN 2.2 — MECANISMOS DE TRANSFERENCIA DE FUERZAS
 % ============================================================
-\section{Objetivo General}
+\section{Mecanismos de transferencia de fuerzas}
 
-Realizar un análisis comparativo cuantitativo del diseño de placas base para columnas de acero
-bajo la metodología de las NTC-DCEA 2017 y las NTC-DCEA 2023, evaluando el impacto técnico de
-los cambios normativos en los parámetros de diseño del sistema placa base-anclaje-dado de concreto
-bajo un régimen de flexocompresión con gran excentricidad, mediante la implementación de
-algoritmos paramétricos en Python.
+La columna transmite a la conexión tres solicitaciones que actúan simultáneamente bajo carga
+sísmica: la fuerza axial $P_u$, el cortante basal $V_u$ y el momento flector $M_u$. Cada una
+sigue una ruta de transferencia diferente hacia el pedestal:
+
+\begin{itemize}
+  \item \textbf{Compresión ($P_u$)}: se transfiere por presión de contacto entre la placa y el
+    concreto. El modelo analítico idealiza esta presión como un bloque de intensidad uniforme
+    $f_{pd}$ (presión de diseño por aplastamiento) distribuida sobre una longitud de bloque $Y$.
+  \item \textbf{Momento flector ($M_u$)}: genera un par de fuerzas entre la zona comprimida
+    (bloque de presiones) y los pernos del lado en tracción. La relación $e = M_u/P_u$ define la
+    excentricidad de la carga y determina el régimen de trabajo de la conexión.
+  \item \textbf{Cortante ($V_u$)}: se resiste principalmente por la fricción entre la placa y el
+    mortero de nivelación. Cuando el cortante es significativo se verifica también la resistencia
+    al desgarramiento lateral del cono de concreto hacia el borde libre del pedestal.
+\end{itemize}
 
 % ============================================================
-% SECCIÓN 2.3 — OBJETIVOS ESPECÍFICOS
+% SECCIÓN 2.3 — MODOS DE FALLA
 % ============================================================
-\section{Objetivos Específicos}
+\section{Modos de falla}
 
-\begin{enumerate}
-  \item Implementar computacionalmente los algoritmos de diseño de placas base conforme a la
-    NTC-DCEA 2017 y la NTC-DCEA 2023, aplicados al caso de flexocompresión con gran excentricidad
-    ($e > e_{crit}$), verificando los estados límite de la placa base, los pernos de anclaje y
-    el sistema de anclaje al cono de concreto, con el perfil IR~305$\times$74.5 (A992,
-    $F_y = 3{,}515\ \mathrm{kg/cm^2}$) como perfil de referencia y una placa base de
-    50$\times$50~cm.
+El diseño de la conexión columna-placa base verifica la resistencia ante los siguientes estados
+límite, cuya ocurrencia depende de la magnitud relativa de $P_u$, $M_u$ y $V_u$:
 
-  \item Evaluar mediante un barrido paramétrico el efecto del factor de confinamiento por estribos
-    en tensión $R_{et}$ en función de la profundidad de empotramiento efectivo $h_{ef}$ y la
-    densidad del refuerzo transversal del dado (diámetro y espaciado de estribos), determinando la
-    eficiencia de aprovechamiento $\eta = T_{ua}/R_t$ para ambas normas.
+\textbf{(1) Aplastamiento del concreto.} La presión de contacto bajo la placa supera la
+resistencia de diseño del pedestal. Se controla mediante las dimensiones en planta de la placa y
+la resistencia especificada $f'_c$ del concreto.
 
-  \item Cuantificar el impacto geométrico del cambio en el requisito de distancia mínima al borde
-    libre del pedestal ---de $6\,d_o \geq 100\ \mathrm{mm}$ (NTC-DCEA 2017) a
-    $7\,d_o \geq 100\ \mathrm{mm}$ para aceros A325/A449 (NTC-DCEA 2023)--- sobre las dimensiones
-    mínimas del dado de concreto, en función del diámetro nominal del ancla $d_o$.
+\textbf{(2) Fluencia de la placa de acero.} El voladizo de la placa, sometido a la presión del
+concreto o a la tracción de los pernos, puede ceder por flexión si el espesor $t_p$ es
+insuficiente. Este estado límite determina el espesor mínimo requerido $t_{req}$.
 
-  \item Determinar si los cambios normativos de la NTC-DCEA 2023 producen variaciones en el
-    espesor requerido de la placa base $t_{req}$ cuando el momento último $M_u$ varía en el rango
-    de 0 a $14\ \mathrm{ton{\cdot}m}$, identificando el umbral de excentricidad a partir del cual
-    se observan diferencias cuantificables entre ambas normas.
-\end{enumerate}
+\textbf{(3) Arrancamiento del cono de concreto en tensión} (\textit{concrete breakout in
+tension}). Bajo la fuerza de tensión $T_{ua}$ en los pernos, el concreto falla por el
+desprendimiento de un cono troncocónico cuyo vértice se localiza a la profundidad de empotramiento
+$h_{ef}$. Este mecanismo produjo las fallas frágiles documentadas tras el sismo del
+19-S~2017 \cite{SMIE_2017}, y es el que más directamente modifican los factores $R_{et}$
+introducidos por la NTC-DCEA 2023.
 
-La Figura~\ref{fig:casos_estudio} sintetiza los cuatro escenarios de solicitación que definen el
-espacio de carga abarcado por los algoritmos de diseño implementados.
+\textbf{(4) Desgarramiento lateral por cortante} (\textit{concrete breakout in shear}). El
+cortante $V_u$ puede propagar una grieta diagonal hacia el borde libre del pedestal. La
+resistencia a este mecanismo depende de la distancia al borde libre $c_{min}$ y es incrementada
+por los estribos mediante el factor $R_{ev}$ de la NTC-DCEA 2023.
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.78\textwidth]{\detokenize{figuras/009_Casos de estudio..png}}
-  \caption{Escenarios de solicitación estructural estudiados: (1)~compresión axial pura,
-    (2)~flexocompresión de pequeña excentricidad, (3)~flexocompresión con gran excentricidad
-    ---caso de activación de anclas en tensión--- y (4)~cortante dominante
-    \cite{Mahmoud_2021}.}
-  \label{fig:casos_estudio}
-\end{figure}
+\textbf{(5) Efecto de palanca} (\textit{prying action}). La flexibilidad real de la placa genera
+un punto de apoyo en el borde del pedestal que amplifica la carga en los pernos por encima de la
+tensión de equilibrio estático. Las NTC lo modelan implícitamente a través del balance de momentos
+del bloque de compresión.
+
+% ============================================================
+% SECCIÓN 2.4 — MODELO DE DISEÑO ANALÍTICO
+% ============================================================
+\section{Modelo de diseño analítico}
+
+\subsection{Bloque equivalente de compresión de Whitney}
+
+El modelo de distribución de presiones que adoptan las NTC-DCEA en ambas versiones se basa en el
+bloque rectangular equivalente de esfuerzos de Whitney \cite{FisherKloiber_2006}. En lugar de
+suponer una distribución triangular bajo la placa ---como en el método simplificado clásico---,
+se asume una presión de contacto uniforme $f_{pd}$ actuando sobre una longitud de bloque $Y$,
+análoga al bloque de compresiones que ACI~318 y las NTC-RCDF emplean en el diseño a flexión del
+concreto reforzado. La presión de diseño $f_{pd}$ se obtiene de la resistencia de aplastamiento
+del concreto, afectada por el factor de reducción $F_R$ y por el efecto de confinamiento que
+ejerce el concreto circundante del pedestal:
+
+\begin{equation}
+  f_{pd} = F_R \cdot f_{pu} \qquad \text{donde} \quad
+  f_{pu} = \min\!\left(0.85\,f'_c\sqrt{\frac{A_2}{A_1}},\; 1.7\,f'_c\right)
+  \label{eq:fpd}
+\end{equation}
+
+\noindent siendo $A_1 = N \cdot B$ el área de la placa y $A_2$ el área del pedestal.
+
+\subsection{Excentricidad y régimen de trabajo}
+
+La excentricidad de la carga $e = M_u / P_u$ determina el régimen de trabajo de la placa. La
+excentricidad crítica $e_{crit}$ separa los dos casos de diseño:
+
+\begin{equation}
+  e_{crit} = \frac{N}{2} - \frac{P_u}{2\,B\,f_{pd}}
+  \label{eq:ecrit}
+\end{equation}
+
+Cuando $e \leq e_{crit}$ (pequeña excentricidad), la placa permanece completamente apoyada y los
+pernos no entran en tensión. Cuando $e > e_{crit}$ (gran excentricidad), la placa se levanta
+parcialmente del lado en tracción y los pernos del grupo de anclaje son solicitados. El bloque de
+compresión $Y$ y la tensión total $T_{ua}$ se calculan del equilibrio de fuerzas y momentos sobre
+la placa:
+
+\begin{equation}
+  Y = a - \sqrt{a^2 - \frac{2\,P_u\,(e + f_{anc})}{B\,f_{pd}}}
+  \label{eq:Y}
+\end{equation}
+
+\begin{equation}
+  T_{ua} = B\,f_{pd}\,Y - P_u
+  \label{eq:Tua}
+\end{equation}
+
+\noindent donde $a = f_{anc} + N/2$ y $f_{anc}$ es la distancia del eje del grupo de anclaje al
+centro de la placa.
+
+\subsection{Espesor mínimo requerido de la placa}
+
+El espesor mínimo de la placa $t_{req}$ se determina igualando el momento actuante en la sección
+crítica del voladizo $M_{u,placa}$ a la capacidad de fluencia:
+
+\begin{equation}
+  t_{req} = \sqrt{\frac{4\,M_{u,placa}}{F_R^{flex}\cdot F_y}}
+  \label{eq:treq}
+\end{equation}
+
+El momento actuante se toma como el mayor entre el generado por el bloque de compresión del lado
+comprimido y el inducido por la tracción de las anclas del lado en tensión. La NTC-DCEA 2023
+formaliza esta regla de forma explícita, aunque los resultados numéricos son equivalentes a los de
+la versión 2017 para la mayoría del dominio de carga.
+
+\subsection{Factores de resistencia}
+
+Los factores de reducción de resistencia son idénticos en ambas normas
+\cite{GCDMX_NTC_DCEA_2017, GCDMX_NTC_DCEA_2023}:
+
+\begin{equation}
+  F_R^{apl} = 0.65 \qquad \text{(aplastamiento del concreto)}
+\end{equation}
+
+\begin{equation}
+  F_R^{flex} = 0.90 \qquad \text{(fluencia de la placa de acero)}
+\end{equation}
+
+La invariabilidad de estos factores confirma que la calibración de confiabilidad estructural para
+estos estados límite no fue modificada en la revisión normativa de 2023.
+
+% ============================================================
+% SECCIÓN 2.5 — RESISTENCIA DEL CONO DE CONCRETO
+% ============================================================
+\section{Resistencia del cono de concreto}
+
+\subsection{Método CCD en tensión}
+
+La resistencia al arrancamiento del cono de concreto en tensión se calcula mediante el método de
+la Capacidad del Concreto (CCD), que relaciona la resistencia con el área proyectada de la
+superficie de falla cónica \cite{FisherKloiber_2006}. La resistencia básica de una ancla aislada
+colada en sitio es:
+
+\begin{equation}
+  R_b = k\,\sqrt{f'_c}\cdot h_{ef}^{1.5}
+  \label{eq:Rb}
+\end{equation}
+
+\noindent donde $k = 10$ para anclas coladas en sitio, $f'_c$ en kg/cm² y $h_{ef}$ en cm. La
+resistencia de diseño del grupo de anclas se corrige por el área proyectada:
+
+\begin{equation}
+  R_{t,2017} = F_R\cdot\psi\cdot\frac{A_N}{A_{N0}}\cdot R_b
+  \label{eq:Rt2017}
+\end{equation}
+
+\noindent donde $A_{N0} = 9\,h_{ef}^2$ es el área de referencia de una ancla aislada sin efecto
+de borde, $A_N$ es el área proyectada real del grupo considerando los bordes del pedestal, y
+$\psi$ agrupa los factores de modificación por excentricidad del grupo y por condición del
+concreto.
+
+\subsection{Factor de confinamiento en tensión \texorpdfstring{$R_{et}$}{R\_et} (NTC-DCEA 2023)}
+
+La modificación más relevante de la NTC-DCEA 2023 en el estado límite de tensión es la adición del
+factor $R_{et}$, que cuantifica la contribución de los estribos del dado que son interceptados por
+el plano de falla del cono. El número de estribos interceptados es
+$N_{est} = \lfloor h_{ef}/s_{est} \rfloor$, y la resistencia adicional que aportan es:
+
+\begin{equation}
+  R_{et} = N_{est}\cdot F_R\cdot\left(0.5\,A_e\,\sqrt{f'_c\cdot E_c}\right)
+  \label{eq:Ret}
+\end{equation}
+
+\noindent donde $A_e$ es el área de acero total del estribo (suma de piernas), $s_{est}$ es el
+espaciado del refuerzo transversal y $E_c = 14\,000\sqrt{f'_c}$ es el módulo de elasticidad del
+concreto según las NTC. La resistencia total en tensión de la NTC-2023 resulta:
+
+\begin{equation}
+  R_{t,2023} = R_{t,2017} + R_{et}
+  \label{eq:Rt2023}
+\end{equation}
+
+Los estribos actúan como refuerzo secundario que confina el núcleo del cono de falla: al ser
+cortados por el plano de ruptura, su capacidad a tensión retarda la apertura de la grieta e
+incrementa la resistencia y ductilidad de la conexión, favoreciendo el orden de plasticidad
+deseable en el diseño sismorresistente.
+
+\subsection{Resistencia en cortante y factor \texorpdfstring{$R_{ev}$}{R\_ev} (NTC-DCEA 2023)}
+
+La resistencia al desgarramiento lateral por cortante en la NTC-DCEA 2017 depende directamente de
+la resistencia en tensión, multiplicada por el factor $k_{cp}$ que caracteriza el tipo de ancla:
+
+\begin{equation}
+  R_{v,2017} = F_R\cdot k_{cp}\cdot R_{t,2017}
+  \label{eq:Rv2017}
+\end{equation}
+
+La NTC-DCEA 2023 reconoce además la contribución de los estribos ante el desgarramiento lateral,
+mediante el factor aditivo $R_{ev}$:
+
+\begin{equation}
+  R_{ev} = N_{ev}\cdot F_R\cdot A_e\cdot F_y
+  \label{eq:Rev}
+\end{equation}
+
+\begin{equation}
+  R_{v,2023} = F_R\cdot k_{cp}\cdot R_{t,2023} + R_{ev}
+  \label{eq:Rv2023}
+\end{equation}
+
+\noindent donde $N_{ev}$ es el número de estribos en el plano de falla lateral y $F_y$ es la
+fluencia del acero del refuerzo transversal.
+
+% ============================================================
+% SECCIÓN 2.6 — DISTANCIA MÍNIMA AL BORDE LIBRE
+% ============================================================
+\section{Distancia mínima al borde libre}
+
+La distancia mínima del perno al borde libre del pedestal $c_{min}$ garantiza que el cono de
+concreto tenga espacio suficiente para desarrollarse antes de encontrar un plano libre. Su
+incumplimiento reduce la resistencia disponible porque el área proyectada $A_N$ disminuye y puede
+activarse la falla por desgarramiento lateral a cargas inferiores a las calculadas sin efecto de
+borde.
+
+En la NTC-DCEA 2017, el criterio es uniforme para todos los grados de acero del perno:
+
+\begin{equation}
+  c_{min,2017} = \max\!\left(6\,d_o,\; 100\ \mathrm{mm}\right)
+  \label{eq:cmin2017}
+\end{equation}
+
+La NTC-DCEA 2023 diferencia el requisito según la resistencia del perno:
+
+\begin{equation}
+  c_{min,2023} = \begin{cases}
+    \max(6\,d_o,\ 100\ \mathrm{mm}) & \text{para A307 y A36} \\
+    \max(7\,d_o,\ 100\ \mathrm{mm}) & \text{para A325 y A449}
+  \end{cases}
+  \label{eq:cmin2023}
+\end{equation}
+
+El incremento de $6d_o$ a $7d_o$ para anclas de alta resistencia representa un aumento del
+16.7\,\% en el requisito de separación. En pedestales de dimensiones reducidas (50--60~cm de
+lado), esta modificación puede ser determinante para la viabilidad geométrica del arreglo de
+anclajes y las dimensiones del dado de concreto.

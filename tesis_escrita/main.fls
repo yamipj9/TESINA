@@ -63,6 +63,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
@@ -250,6 +252,11 @@ INPUT ./capitulos/capitulo1.tex
 INPUT ./capitulos/capitulo1.tex
 INPUT capitulos/capitulo1.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1728.tfm
+INPUT ./figuras/000_partes_placa_base.png
+INPUT ./figuras/000_partes_placa_base.png
+INPUT ./figuras/000_partes_placa_base.png
+INPUT ./figuras/000_partes_placa_base.png
+INPUT ./figuras/000_partes_placa_base.png
 INPUT ./capitulos/capitulo2.tex
 INPUT ./capitulos/capitulo2.tex
 INPUT ./capitulos/capitulo2.tex

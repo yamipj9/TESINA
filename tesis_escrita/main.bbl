@@ -1,10 +1,12 @@
 \begin{thebibliography}{10}
 
-\bibitem{GarciaPalencia_2008}
-Antonio Garc{\'\i}a-Palencia, Ali Saffar, and Luis Godoy.
-\newblock Curvas de fragilidad debidas a viento para edificaciones industriales
-  met\'alicas.
-\newblock {\em Revista Internacional de Desastres Naturales}, 2008.
+\bibitem{cisneros2026placabaseia}
+Francisco~Javier Cisneros~Ruiz.
+\newblock Ilustración técnica de conexión columna de acero--placa
+  base--pedestal de concreto.
+\newblock Ilustración digital generada con IA, 2026.
+\newblock Elaboración propia asistida por inteligencia artificial mediante
+  ChatGPT. Imagen generada a partir de una descripción técnica del autor.
 
 \bibitem{SSN_Puebla_2017}
 {Servicio Sismol{\'o}gico Nacional}.
@@ -12,13 +14,6 @@ Antonio Garc{\'\i}a-Palencia, Ali Saffar, and Luis Godoy.
   2017).
 \newblock Technical report, Universidad Nacional Aut{\'o}noma de M{\'e}xico,
   2017.
-
-\bibitem{Mahmoud_2021}
-K.~S. Mahmoud.
-\newblock Column base plate design guidelines.
-\newblock Scribd,
-  \url{https://es.scribd.com/document/616334346/5-2021-03-15-03-36-45-PM},
-  2021.
 
 \bibitem{INDEX_nodate}
 {INDEX Fix}.
@@ -40,12 +35,6 @@ Yuxiao Shi, Ke~Jiang, Mingda Wang, Yating Liang, and Ou~Zhao.
   connections with enlarged bolt holes infilled by high strength grout.
 \newblock {\em Engineering Structures}, 341:120839, 2025.
 
-\bibitem{UNAM_SSN_2017}
-{Instituto de Ingenier{\'i}a, UNAM and Servicio Sismol{\'o}gico Nacional}.
-\newblock Reporte especial: Sismo del 19 de septiembre de 2017.
-\newblock Technical report, Universidad Nacional Aut{\'o}noma de M{\'e}xico,
-  2017.
-
 \bibitem{FisherKloiber_2006}
 J.~M. Fisher and L.~A. Kloiber.
 \newblock {\em Design guide I: Base plate and anchor rod design}.
@@ -63,6 +52,18 @@ J.~M. Fisher and L.~A. Kloiber.
 \newblock Technical report, American Institute of Steel Construction, Chicago,
   IL, 2022.
 
+\bibitem{GarciaPalencia_2008}
+Antonio Garc{\'\i}a-Palencia, Ali Saffar, and Luis Godoy.
+\newblock Curvas de fragilidad debidas a viento para edificaciones industriales
+  met\'alicas.
+\newblock {\em Revista Internacional de Desastres Naturales}, 2008.
+
+\bibitem{UNAM_SSN_2017}
+{Instituto de Ingenier{\'i}a, UNAM and Servicio Sismol{\'o}gico Nacional}.
+\newblock Reporte especial: Sismo del 19 de septiembre de 2017.
+\newblock Technical report, Universidad Nacional Aut{\'o}noma de M{\'e}xico,
+  2017.
+
 \bibitem{GCDMX_NTC_DCEA_2017}
 {Gobierno de la Ciudad de M{\'e}xico}.
 \newblock Normas t{\'e}cnicas complementarias para el dise\~no y construcci\'on
@@ -74,6 +75,13 @@ J.~M. Fisher and L.~A. Kloiber.
 \newblock Normas t{\'e}cnicas complementarias para el dise\~no y construcci\'on
   de estructuras de acero (ntc-dcea 2023).
 \newblock Gaceta Oficial de la Ciudad de M{\'e}xico, 2023.
+
+\bibitem{Mahmoud_2021}
+K.~S. Mahmoud.
+\newblock Column base plate design guidelines.
+\newblock Scribd,
+  \url{https://es.scribd.com/document/616334346/5-2021-03-15-03-36-45-PM},
+  2021.
 
 \bibitem{AISC_360_2022}
 {American Institute of Steel Construction}.
