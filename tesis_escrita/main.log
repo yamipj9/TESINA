@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.18)  31 MAY 2026 22:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.18)  4 JUN 2026 23:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -215,64 +215,87 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count285
 \@thisrulewidth=\dimen174
 )
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
+\LTleft=\skip54
+\LTright=\skip55
+\LTpre=\skip56
+\LTpost=\skip57
+\LTchunksize=\count286
+\LTcapwidth=\dimen175
+\LT@head=\box54
+\LT@firsthead=\box55
+\LT@foot=\box56
+\LT@lastfoot=\box57
+\LT@gbox=\box58
+\LT@cols=\count287
+\LT@rows=\count288
+\c@LT@tables=\count289
+\c@LT@chunks=\count290
+\LT@p@ftn=\toks28
+)
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen175
-\captionmargin=\dimen176
-\caption@leftmargin=\dimen177
-\caption@rightmargin=\dimen178
-\caption@width=\dimen179
-\caption@indent=\dimen180
-\caption@parindent=\dimen181
-\caption@hangindent=\dimen182
+\caption@tempdima=\dimen176
+\captionmargin=\dimen177
+\caption@leftmargin=\dimen178
+\caption@rightmargin=\dimen179
+\caption@width=\dimen180
+\caption@indent=\dimen181
+\caption@parindent=\dimen182
+\caption@hangindent=\dimen183
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count286
-\c@continuedfloat=\count287
-)
+\c@caption@flags=\count291
+\c@continuedfloat=\count292
+Package caption Info: longtable package is loaded.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+))
 (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count288
+\c@subfigure=\count293
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count289
+\c@subtable=\count294
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count290
-\float@exts=\toks28
-\float@box=\box54
-\@float@everytoks=\toks29
-\@floatcapt=\box55
+\c@float@type=\count295
+\float@exts=\toks29
+\float@box=\box59
+\@float@everytoks=\toks30
+\@floatcapt=\box60
 )
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2023/03/13 v3.1a Micro-typographical refinements (RS)
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count291
+\etb@tempcnta=\count296
 )
-\MT@toks=\toks30
-\MT@tempbox=\box56
-\MT@count=\count292
+\MT@toks=\toks31
+\MT@tempbox=\box61
+\MT@count=\count297
 LaTeX Info: Redefining \noprotrusionifhmode on input line 1059.
 LaTeX Info: Redefining \leftprotrusion on input line 1060.
-\MT@prot@toks=\toks31
+\MT@prot@toks=\toks32
 LaTeX Info: Redefining \rightprotrusion on input line 1078.
 LaTeX Info: Redefining \textls on input line 1368.
-\MT@outer@kern=\dimen183
+\MT@outer@kern=\dimen184
 LaTeX Info: Redefining \textmicrotypecontext on input line 1988.
-\MT@listname@count=\count293
+\MT@listname@count=\count298
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2023/03/13 v3.1a Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 902.
 LaTeX Info: Redefining \lslig on input line 902.
-\MT@outer@space=\skip54
+\MT@outer@space=\skip58
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
@@ -323,11 +346,11 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count294
+\c@section@level=\count299
 )
-\@linkdim=\dimen184
-\Hy@linkcounter=\count295
-\Hy@pagecounter=\count296
+\@linkdim=\dimen185
+\Hy@linkcounter=\count300
+\Hy@pagecounter=\count301
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
@@ -337,7 +360,7 @@ Now handling font encoding PD1 ...
 (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count297
+\Hy@SavedSpaceFactor=\count302
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
@@ -351,14 +374,14 @@ Package hyperref Info: Plain pages OFF on input line 4194.
 Package hyperref Info: Backreferencing OFF on input line 4199.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4446.
-\c@Hy@tempcnt=\count298
+\c@Hy@tempcnt=\count303
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4784.
-\XeTeXLinkMargin=\dimen185
+\XeTeXLinkMargin=\dimen186
 
 (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -367,9 +390,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count299
-\Field@Width=\dimen186
-\Fld@charsize=\dimen187
+\Fld@menulength=\count304
+\Field@Width=\dimen187
+\Fld@charsize=\dimen188
 Package hyperref Info: Hyper figures OFF on input line 6063.
 Package hyperref Info: Link nesting OFF on input line 6068.
 Package hyperref Info: Hyper index ON on input line 6071.
@@ -382,9 +405,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6093.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count300
-\c@Item=\count301
-\c@Hfootnote=\count302
+\Hy@abspage=\count305
+\c@Item=\count306
+\c@Hfootnote=\count307
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -396,8 +419,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count303
-\c@bookmark@seq@number=\count304
+\Fld@listcount=\count308
+\c@bookmark@seq@number=\count309
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
@@ -408,27 +431,27 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 )
-\Hy@SectionHShift=\skip55
+\Hy@SectionHShift=\skip59
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 30.
+Package hyperref Info: Option `colorlinks' set `true' on input line 31.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 
-\f@nch@headwidth=\skip56
-\f@nch@O@elh=\skip57
-\f@nch@O@erh=\skip58
-\f@nch@O@olh=\skip59
-\f@nch@O@orh=\skip60
-\f@nch@O@elf=\skip61
-\f@nch@O@erf=\skip62
-\f@nch@O@olf=\skip63
-\f@nch@O@orf=\skip64
+\f@nch@headwidth=\skip60
+\f@nch@O@elh=\skip61
+\f@nch@O@erh=\skip62
+\f@nch@O@olh=\skip63
+\f@nch@O@orh=\skip64
+\f@nch@O@elf=\skip65
+\f@nch@O@erf=\skip66
+\f@nch@O@olf=\skip67
+\f@nch@O@orf=\skip68
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count305
-\l__pdf_internal_box=\box57
+\l__color_backend_stack_int=\count310
+\l__pdf_internal_box=\box62
 )
 (./main.aux
 LaTeX Info: Redefining \. on input line 11.
@@ -436,41 +459,41 @@ LaTeX Info: Redefining \% on input line 11.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Info: Redefining \. on input line 44.
-LaTeX Info: Redefining \% on input line 44.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Info: Redefining \. on input line 45.
+LaTeX Info: Redefining \% on input line 45.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: a4paper
+* paper: letterpaper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(85.35826pt, 441.01773pt, 71.13188pt)
-* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=441.01773pt
-* \textheight=702.78308pt
+* h-part:(L,W,R)=(85.35826pt, 457.80486pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 652.70622pt, 71.13188pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=457.80486pt
+* \textheight=652.70622pt
 * \oddsidemargin=13.08827pt
 * \evensidemargin=13.08827pt
 * \topmargin=-38.1381pt
@@ -478,7 +501,7 @@ LaTeX Info: Redefining \% on input line 44.
 * \headsep=25.0pt
 * \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=35.0pt
+* \marginparwidth=44.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
@@ -493,17 +516,17 @@ LaTeX Info: Redefining \% on input line 44.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count306
-\scratchdimen=\dimen188
-\scratchbox=\box58
-\nofMPsegments=\count307
-\nofMParguments=\count308
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count309
-\MPscratchDim=\dimen189
-\MPnumerator=\count310
-\makeMPintoPDFobject=\count311
-\everyMPtoPDFconversion=\toks33
+\scratchcounter=\count311
+\scratchdimen=\dimen189
+\scratchbox=\box63
+\nofMPsegments=\count312
+\nofMParguments=\count313
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count314
+\MPscratchDim=\dimen190
+\MPnumerator=\count315
+\makeMPintoPDFobject=\count316
+\everyMPtoPDFconversion=\toks34
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -517,12 +540,12 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 44.
-Package microtype Info: Applying patch `item' on input line 44.
-Package microtype Info: Applying patch `toc' on input line 44.
-Package microtype Info: Applying patch `eqnum' on input line 44.
-Package microtype Info: Applying patch `footnote' on input line 44.
-Package microtype Info: Applying patch `verbatim' on input line 44.
+LaTeX Info: Redefining \microtypecontext on input line 45.
+Package microtype Info: Applying patch `item' on input line 45.
+Package microtype Info: Applying patch `toc' on input line 45.
+Package microtype Info: Applying patch `eqnum' on input line 45.
+Package microtype Info: Applying patch `footnote' on input line 45.
+Package microtype Info: Applying patch `verbatim' on input line 45.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -544,7 +567,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: pdftex.def on input line 149.
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 44.
+Package hyperref Info: Link coloring ON on input line 45.
  (./main.out)
 (./main.out)
 \@outlinefile=\write3
@@ -559,7 +582,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.52 \cleardoublepage
+l.53 \cleardoublepage
                       [1
 
 ] (./secciones/agradecimientos.tex) [2
@@ -568,7 +591,7 @@ l.52 \cleardoublepage
 ] (./main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -576,7 +599,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -618,35 +641,202 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.33 \end{abstract}
-                    [1]) (./capitulos/capitulo1.tex
+                    [1]) (./secciones/nomenclatura.tex
+Overfull \hbox (11.37474pt too wide) in alignment at lines 9--15
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (11.37474pt too wide) in alignment at lines 15--20
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (11.37474pt too wide) in alignment at lines 20--23
+ [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+[]|\T1/cmr/m/n/10.95 ton$\OMS/cmsy/m/n/10.95 ^^A$\T1/cmr/m/n/10.95 m o
+ []
+
+
+Underfull \hbox (badness 1609) in paragraph at lines 29--29
+[]|\T1/cmr/m/n/10.95 Excentricidad cr�-ti-ca que
+ []
+
+
+Underfull \hbox (badness 1231) in paragraph at lines 31--31
+[]|\T1/cmr/m/n/10.95 Dimensi�n trans-ver-sal de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+[]|\T1/cmr/m/n/10.95 kg/cm$[]$ o
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+[]|\T1/cmr/m/n/10.95 kg/cm$[]$ o
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
+[]|\T1/cmr/m/n/10.95 kg/cm$[]$ o
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+[]|\T1/cmr/m/n/10.95 Resistencia no-mi-nal de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+[]|\T1/cmr/m/n/10.95 kg/cm$[]$ o
+ []
+
+
+Underfull \hbox (badness 1783) in paragraph at lines 43--43
+[]|\T1/cmr/m/n/10.95 Profundidad de em-po-tra-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+[]|\T1/cmr/m/n/10.95 Di�metro no-mi-nal del
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
+[]|\T1/cmr/m/n/10.95 Distancia m�-ni-ma del
+ []
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 45--45
+\T1/cmr/m/n/10.95 perno al bor-de li-bre del
+ []
+
+
+Underfull \hbox (badness 1057) in paragraph at lines 46--47
+[]|\T1/cmr/m/n/10.95 Capacidad no-mi-nal o de di-se-�o
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
+[]|\T1/cmr/m/n/10.95 Espaciado del re-fuer-zo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
+[]|\T1/cmr/m/n/10.95 kg/cm$[]$ o
+ []
+
+
+Overfull \hbox (6.82657pt too wide) in paragraph at lines 53--53
+[]|\T1/cmr/m/n/10.95 adimensional| 
+ []
+
+
+Underfull \hbox (badness 1331) in paragraph at lines 53--54
+[]|\T1/cmr/m/n/10.95 Indicador del efec-to de con-fi-na-
+ []
+
+
+Overfull \hbox (6.82657pt too wide) in paragraph at lines 54--54
+[]|\T1/cmr/m/n/10.95 adimensional| 
+ []
+
+
+Underfull \hbox (badness 1331) in paragraph at lines 54--55
+[]|\T1/cmr/m/n/10.95 Indicador del efec-to de con-fi-na-
+ []
+
+
+Underfull \hbox (badness 7814) in paragraph at lines 55--55
+[]|\T1/cmr/m/n/10.95 Eficiencia de apro-ve-cha-
+ []
+
+
+Overfull \hbox (6.82657pt too wide) in paragraph at lines 55--55
+[]|\T1/cmr/m/n/10.95 adimensional| 
+ []
+
+
+Overfull \hbox (6.82657pt too wide) in paragraph at lines 56--56
+[]|\T1/cmr/m/n/10.95 adimensional| 
+ []
+
+
+Overfull \hbox (6.82657pt too wide) in paragraph at lines 57--57
+[]|\T1/cmr/m/n/10.95 adimensional| 
+ []
+
+
+Overfull \hbox (6.82657pt too wide) in paragraph at lines 58--58
+[]|\T1/cmr/m/n/10.95 adimensional| 
+ []
+
+
+Overfull \hbox (11.37474pt too wide) in alignment at lines 23--59
+ [] [] [] [] 
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.59 \end{longtable}
+                     [1
+
+
+]
+pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.59 \end{longtable}
+                     [2])
+pdfTeX warning (ext4): destination with the same identifier (name{page.III}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.68 \cleardoublepage
+                      [3] (./capitulos/capitulo1.tex
 Cap\'{\i }tulo 1.
-<figuras/000_partes_placa_base.png, id=299, 1126.2075pt x 1407.2575pt>
-File: figuras/000_partes_placa_base.png Graphic file (type png)
-<use figuras/000_partes_placa_base.png>
-Package pdftex.def Info: figuras/000_partes_placa_base.png  used on input line 
-44.
-(pdftex.def)             Requested size: 286.65883pt x 358.191pt.
 [1
 
 
 ]
+<figuras/000_partes_placa_base.png, id=329, 1126.2075pt x 1407.2575pt>
+File: figuras/000_partes_placa_base.png Graphic file (type png)
+<use figuras/000_partes_placa_base.png>
+Package pdftex.def Info: figuras/000_partes_placa_base.png  used on input line 
+52.
+(pdftex.def)             Requested size: 297.57036pt x 371.82634pt.
+ [2 <./figuras/000_partes_placa_base.png (PNG copy)>]
 <figuras/002_Mapa de la República Mexicana señalando el epicentro del sismo d
-el 19-S 2017 y la Ciudad de México..png, id=314, 1532.72626pt x 1033.8625pt>
+el 19-S 2017 y la Ciudad de México..png, id=342, 1532.72626pt x 1033.8625pt>
 File: figuras/002_Mapa de la República Mexicana señalando el epicentro del si
 smo del 19-S 2017 y la Ciudad de México..png Graphic file (type png)
 <use figuras/002_Mapa de la República Mexicana señalando el epicentro del sis
 mo del 19-S 2017 y la Ciudad de México..png>
 Package pdftex.def Info: figuras/002_Mapa de la República Mexicana señalando 
 el epicentro del sismo del 19-S 2017 y la Ciudad de México..png  used on input
- line 62.
-(pdftex.def)             Requested size: 273.42883pt x 184.4308pt.
- [2 <./figuras/000_partes_placa_base.png (PNG copy)>] [3 <./figuras/002_Mapa de
- la República Mexicana señalando el epicentro del sismo del 19-S 2017 y la Ci
-udad de México..png (PNG copy)>] [4] [5]) (./capitulos/capitulo2.tex
-[6]
+ line 70.
+(pdftex.def)             Requested size: 283.83676pt x 191.45087pt.
+ [3 <./figuras/002_Mapa de la República Mexicana señalando el epicentro del s
+ismo del 19-S 2017 y la Ciudad de México..png (PNG copy)>] [4]
+Overfull \hbox (3.40222pt too wide) in paragraph at lines 181--184
+\T1/cmr/m/n/12 cen-tri-ci-dad ($\OML/cmm/m/it/12 e > e[]$\T1/cmr/m/n/12 ), apli
+-ca-do al per-fil IR 305$\OMS/cmsy/m/n/12 ^^B$\T1/cmr/m/n/12 74.5 (ace-ro A992,
+ $\OML/cmm/m/it/12 F[] \OT1/cmr/m/n/12 = 3[]515 []$\T1/cmr/m/n/12 )
+ []
+
+[5]) (./capitulos/capitulo2.tex [6]
 Cap\'{\i }tulo 2.
 <figuras/001_Vista en corte de una conexión columna-cimentación columna de ac
-ero, placa base, pernos de anclaje, grout y pedestal de concreto..png, id=348, 
+ero, placa base, pernos de anclaje, grout y pedestal de concreto..png, id=368, 
 1202.4925pt x 1317.92375pt>
 File: figuras/001_Vista en corte de una conexión columna-cimentación columna 
 de acero, placa base, pernos de anclaje, grout y pedestal de concreto..png Grap
@@ -656,19 +846,13 @@ e acero, placa base, pernos de anclaje, grout y pedestal de concreto..png>
 Package pdftex.def Info: figuras/001_Vista en corte de una conexión columna-ci
 mentación columna de acero, placa base, pernos de anclaje, grout y pedestal de
  concreto..png  used on input line 16.
-(pdftex.def)             Requested size: 242.5611pt x 265.83238pt.
+(pdftex.def)             Requested size: 251.79407pt x 275.94765pt.
 [7
 
  <./figuras/001_Vista en corte de una conexión columna-cimentación columna de
  acero, placa base, pernos de anclaje, grout y pedestal de concreto..png (PNG c
-opy)>] [8] [9]
-Overfull \hbox (6.17178pt too wide) in paragraph at lines 211--211
-[]\T1/cmr/bx/n/14.4 Factor de con-fi-na-mien-to en ten-si�n $\OML/cmm/m/it/14.4
- R[]$ \T1/cmr/bx/n/14.4 (NTC-DCEA 2023) 
- []
-
-[10{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [11])
-(./capitulos/capitulo3.tex [12]
+opy)>] [8] [9] [10] [11{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.
+enc}]) (./capitulos/capitulo3.tex [12]
 Cap\'{\i }tulo 3.
 ) (./capitulos/capitulo4.tex [13
 
@@ -676,58 +860,49 @@ Cap\'{\i }tulo 3.
 Cap\'{\i }tulo 4.
 [15
 
-] [16]
-<figuras/006_Planta de placa base con perfil W al centro..png, id=437, 1037.877
+] [16] [17]
+<figuras/006_Planta de placa base con perfil W al centro..png, id=467, 1037.877
 5pt x 1526.70375pt>
 File: figuras/006_Planta de placa base con perfil W al centro..png Graphic file
  (type png)
 <use figuras/006_Planta de placa base con perfil W al centro..png>
 Package pdftex.def Info: figuras/006_Planta de placa base con perfil W al centr
 o..png  used on input line 145.
-(pdftex.def)             Requested size: 202.87111pt x 298.41655pt.
-<figuras/007_Fallo por cono de concreto..png, id=440, 1323.94624pt x 1197.47375
+(pdftex.def)             Requested size: 210.59329pt x 309.7615pt.
+<figuras/007_Fallo por cono de concreto..png, id=470, 1323.94624pt x 1197.47375
 pt>
 File: figuras/007_Fallo por cono de concreto..png Graphic file (type png)
 <use figuras/007_Fallo por cono de concreto..png>
 Package pdftex.def Info: figuras/007_Fallo por cono de concreto..png  used on i
 nput line 153.
-(pdftex.def)             Requested size: 202.87111pt x 183.48697pt.
-
-Underfull \hbox (badness 1360) in paragraph at lines 155--155
-[]\T1/cmr/m/n/12 Figura 4.2: |Me-ca-nis-mo de fa-lla por
- []
-
-
-Underfull \hbox (badness 2772) in paragraph at lines 155--155
-\T1/cmr/m/n/12 arran-ca-mien-to de cono de con-cre-to
- []
-
-[17] [18 <./figuras/006_Planta de placa base con perfil W al centro..png (PNG c
-opy)> <./figuras/007_Fallo por cono de concreto..png (PNG copy)>]
+(pdftex.def)             Requested size: 210.59329pt x 190.46684pt.
+ [18 <./figuras/006_Planta de placa base con perfil W al centro..png (PNG copy)
+> <./figuras/007_Fallo por cono de concreto..png (PNG copy)>]
 <figuras/003_Diagrama de distribución lineal de presiones en placa base..png, 
-id=467, 1378.14874pt x 1149.29375pt>
+id=484, 1378.14874pt x 1149.29375pt>
 File: figuras/003_Diagrama de distribución lineal de presiones en placa base..
 png Graphic file (type png)
 <use figuras/003_Diagrama de distribución lineal de presiones en placa base..p
 ng>
 Package pdftex.def Info: figuras/003_Diagrama de distribución lineal de presio
 nes en placa base..png  used on input line 202.
-(pdftex.def)             Requested size: 207.27887pt x 172.84258pt.
+(pdftex.def)             Requested size: 215.16884pt x 179.43642pt.
 <figuras/004_Diagrama esquemático del efecto prying action; placa deformada..p
-ng, id=470, 1372.12625pt x 1155.31625pt>
+ng, id=487, 1372.12625pt x 1155.31625pt>
 File: figuras/004_Diagrama esquemático del efecto prying action; placa deforma
 da..png Graphic file (type png)
 <use figuras/004_Diagrama esquemático del efecto prying action; placa deformad
 a..png>
 Package pdftex.def Info: figuras/004_Diagrama esquemático del efecto prying ac
 tion; placa deformada..png  used on input line 210.
-(pdftex.def)             Requested size: 207.27887pt x 174.52397pt.
- [19 <./figuras/003_Diagrama de distribución lineal de presiones en placa base
-..png (PNG copy)> <./figuras/004_Diagrama esquemático del efecto prying action
-; placa deformada..png (PNG copy)>]
+(pdftex.def)             Requested size: 215.16884pt x 181.16998pt.
+
+[19 <./figuras/003_Diagrama de distribución lineal de presiones en placa base.
+.png (PNG copy)> <./figuras/004_Diagrama esquemático del efecto prying action;
+ placa deformada..png (PNG copy)>]
 <figuras/008_Despiece isométrico de la conexión; columna W, placa base, perno
 s de anclaje con tuerca y arandela, capa de grout y pedestal de concreto..png, 
-id=485, 1369.115pt x 1157.32375pt>
+id=503, 1369.115pt x 1157.32375pt>
 File: figuras/008_Despiece isométrico de la conexión; columna W, placa base, 
 pernos de anclaje con tuerca y arandela, capa de grout y pedestal de concreto..
 png Graphic file (type png)
@@ -737,24 +912,24 @@ ng>
 Package pdftex.def Info: figuras/008_Despiece isométrico de la conexión; colu
 mna W, placa base, pernos de anclaje con tuerca y arandela, capa de grout y ped
 estal de concreto..png  used on input line 273.
-(pdftex.def)             Requested size: 264.61333pt x 223.67288pt.
- [20 <./figuras/008_Despiece isométrico de la conexión; columna W, placa base
-, pernos de anclaje con tuerca y arandela, capa de grout y pedestal de concreto
-..png (PNG copy)>]) (./capitulos/capitulo5.tex [21]
+(pdftex.def)             Requested size: 274.6857pt x 232.18468pt.
+ [20]) (./capitulos/capitulo5.tex [21 <./figuras/008_Despiece isométrico de la
+ conexión; columna W, placa base, pernos de anclaje con tuerca y arandela, cap
+a de grout y pedestal de concreto..png (PNG copy)>] [22]
 Cap\'{\i }tulo 5.
-) (./secciones/conclusiones.tex [22
+) (./secciones/conclusiones.tex [23
 
-]) (./anexos/anexo1.tex [23
+]) (./anexos/anexo1.tex [24
 
 ]
 Ap\'{e}ndice A.
-) (./anexos/apendiceB.tex [24
+) (./anexos/apendiceB.tex [25
 
 ]
 Ap\'{e}ndice B.
-[25
+[26
 
-]) (./main.bbl [26]
+]) (./main.bbl [27]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
 2.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -765,62 +940,51 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--23
-[]\T1/cmr/m/n/12 INDEX Fix.  Ti-pos de fa-llos de an-cla-jes.
+Underfull \hbox (badness 3199) in paragraph at lines 20--23
+[]\T1/cmr/m/n/12 INDEX Fix.  Ti-pos de fa-llos de an-cla-jes.  [][]$\T1/cmtt/m/
+n/12 https : / / www . indexfix . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--23
-[][]$\T1/cmtt/m/n/12 https : / / www . indexfix . com / preguntas-[]frecuentes 
-/
+Overfull \hbox (362.36104pt too wide) in paragraph at lines 20--23
+\T1/cmtt/m/n/12 preguntas-[]frecuentes / como-[]se-[]sabe-[]si-[]un-[]anclaje-[
+]aguantara-[]la-[]carga-[]a-[]la-[]que-[]se-[]le-[]va-[]a-[]someter-[]mecanicos
+-[]y-[]quimicos-[]en-[]hormigon$[][]\T1/cmr/m/n/12 . 
  []
 
 
-Overfull \hbox (249.00482pt too wide) in paragraph at lines 19--23
-\T1/cmtt/m/n/12 como-[]se-[]sabe-[]si-[]un-[]anclaje-[]aguantara-[]la-[]carga-[
-]a-[]la-[]que-[]se-[]le-[]va-[]a-[]someter-[]mecanicos-[]y-[]quimicos-[]en-[]ho
-rmigon$[][]\T1/cmr/m/n/12 . 
- []
-
-
-Underfull \hbox (badness 4981) in paragraph at lines 25--31
+Underfull \hbox (badness 10000) in paragraph at lines 25--29
 []\T1/cmr/m/n/12 Hilti Es-pa-�a.  �por qu� es im-por-tan-te com-pro-bar la ri-g
 i-dez de la
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--31
+Underfull \hbox (badness 10000) in paragraph at lines 25--29
 \T1/cmr/m/n/12 pla-ca de an-cla-jes?  [][]$\T1/cmtt/m/n/12 https : / / www . hi
 lti . es / engineering / article /
  []
 
 
-Overfull \hbox (1.01979pt too wide) in paragraph at lines 25--31
+Underfull \hbox (badness 10000) in paragraph at lines 25--29
 \T1/cmtt/m/n/12 por-[]que-[]es-[]importante-[]comprobar-[]la-[]rigidez-[]de-[]l
 a-[]placa-[]de-[]anclajes /
  []
 
-[27
+[28
 
 ]
-Underfull \hbox (badness 5637) in paragraph at lines 124--130
+Underfull \hbox (badness 10000) in paragraph at lines 101--104
 []\T1/cmr/m/n/12 Prontubeam.  Di-se-�o y mo-de-li-za-ci�n de ba-ses y pla-cas d
 e an-cla-je
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--130
+Underfull \hbox (badness 10000) in paragraph at lines 101--104
 \T1/cmr/m/n/12 en es-truc-tu-ras me-t�-li-cas.  [][]$\T1/cmtt/m/n/12 https : / 
 / www . prontubeam . com / articulos /
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--130
-\T1/cmtt/m/n/12 2021-[]02-[]20-[]Diseno-[]de-[]placas-[]de-[]anclaje-[]en-[]est
-ructuras-[]metalicas$[][]\T1/cmr/m/n/12 ,
- []
-
-[28]) [29] (./main.aux
+[29]) [30] (./main.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -829,38 +993,40 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2205432C976CC03806820CCDB7892EDB;9074.
+(rerunfilecheck)             Checksum: F70F2759963C142826F25A42746A04F9;9319.
  ) 
 Here is how much of TeX's memory you used:
- 16278 strings out of 476047
- 265518 string characters out of 5792075
- 1937975 words of memory out of 5000000
- 37867 multiletter control sequences out of 15000+600000
- 577965 words of font info for 83 fonts, out of 8000000 for 9000
+ 16462 strings out of 476047
+ 268752 string characters out of 5792075
+ 1966975 words of memory out of 5000000
+ 38037 multiletter control sequences out of 15000+600000
+ 581065 words of font info for 91 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
- 75i,12n,79p,1001b,821s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,1001b,792s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1
-200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/
-texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/pu
-blic/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx20
-74.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/t
-exmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/pub
-lic/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm144
-0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/te
-xmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/publ
-ic/cm-super/sftt1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfxc1200
-.pfb>
-Output written on main.pdf (38 pages, 11907485 bytes).
+mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1200.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm
+-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb>
+</usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fo
+nts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-
+super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb><
+/usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fon
+ts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-s
+uper/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></
+usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texmf/font
+s/type1/public/cm-super/sfxc1200.pfb>
+Output written on main.pdf (42 pages, 11972432 bytes).
 PDF statistics:
- 709 PDF objects out of 1000 (max. 8388607)
- 603 compressed objects within 7 object streams
- 174 named destinations out of 1000 (max. 500000)
- 12649 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 745 PDF objects out of 1000 (max. 8388607)
+ 629 compressed objects within 7 object streams
+ 177 named destinations out of 1000 (max. 500000)
+ 14193 words of extra memory for PDF output out of 14400 (max. 10000000)
 

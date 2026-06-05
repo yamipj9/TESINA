@@ -2,37 +2,34 @@
 
 \bibitem{cisneros2026placabaseia}
 Francisco~Javier Cisneros~Ruiz.
-\newblock Ilustración técnica de conexión columna de acero--placa
-  base--pedestal de concreto.
+\newblock Ilustración técnica de conexión columna de acero--placa base--pedestal de concreto.
 \newblock Ilustración digital generada con IA, 2026.
-\newblock Elaboración propia asistida por inteligencia artificial mediante
-  ChatGPT. Imagen generada a partir de una descripción técnica del autor.
+\newblock Elaboración propia asistida por inteligencia artificial mediante ChatGPT. Imagen generada a partir de una descripción técnica del autor.
 
 \bibitem{SSN_Puebla_2017}
 {Servicio Sismol{\'o}gico Nacional}.
-\newblock Reporte especial: Sismo puebla-morelos m7.1 (19 de septiembre de
-  2017).
-\newblock Technical report, Universidad Nacional Aut{\'o}noma de M{\'e}xico,
-  2017.
+\newblock Reporte especial: Sismo puebla-morelos m7.1 (19 de septiembre de 2017).
+\newblock Technical report, Universidad Nacional Aut{\'o}noma de M{\'e}xico, 2017.
+
+\bibitem{GarciaPalencia_2008}
+Antonio Garc{\'\i}a-Palencia, Ali Saffar, and Luis Godoy.
+\newblock Curvas de fragilidad debidas a viento para edificaciones industriales met\'alicas.
+\newblock {\em Revista Internacional de Desastres Naturales}, 2008.
 
 \bibitem{INDEX_nodate}
 {INDEX Fix}.
 \newblock Tipos de fallos de anclajes.
-\newblock
-  \url{https://www.indexfix.com/preguntas-frecuentes/como-se-sabe-si-un-anclaje-aguantara-la-carga-a-la-que-se-le-va-a-someter-mecanicos-y-quimicos-en-hormigon}.
+\newblock \url{https://www.indexfix.com/preguntas-frecuentes/como-se-sabe-si-un-anclaje-aguantara-la-carga-a-la-que-se-le-va-a-someter-mecanicos-y-quimicos-en-hormigon}.
 
 \bibitem{Hilti_nodate}
 {Hilti Espa\~na}.
-\newblock ¿por qu{\'e} es importante comprobar la rigidez de la placa de
-  anclajes?
-\newblock
-  \url{https://www.hilti.es/engineering/article/por-que-es-importante-comprobar-la-rigidez-de-la-placa-de-anclajes/uyx67y}.
+\newblock ¿por qu{\'e} es importante comprobar la rigidez de la placa de anclajes?
+\newblock \url{https://www.hilti.es/engineering/article/por-que-es-importante-comprobar-la-rigidez-de-la-placa-de-anclajes/uyx67y}.
 \newblock consultado en 2026.
 
 \bibitem{Shi_2025}
 Yuxiao Shi, Ke~Jiang, Mingda Wang, Yating Liang, and Ou~Zhao.
-\newblock Experimental and numerical study of full-scale column-base
-  connections with enlarged bolt holes infilled by high strength grout.
+\newblock Experimental and numerical study of full-scale column-base connections with enlarged bolt holes infilled by high strength grout.
 \newblock {\em Engineering Structures}, 341:120839, 2025.
 
 \bibitem{FisherKloiber_2006}
@@ -42,72 +39,47 @@ J.~M. Fisher and L.~A. Kloiber.
 
 \bibitem{SMIE_2017}
 {Sociedad Mexicana de Ingenier{\'i}a Estructural}.
-\newblock Boletines de inspecci\'on forense estructural y levantamiento de
-  da\~nos post-sismo, 2017.
+\newblock Boletines de inspecci\'on forense estructural y levantamiento de da\~nos post-sismo, 2017.
 \newblock Ciudad de M{\'e}xico, M{\'e}xico.
 
 \bibitem{AISC_341_2022}
 {American Institute of Steel Construction}.
 \newblock Seismic provisions for structural steel buildings (ansi/aisc 341-22).
-\newblock Technical report, American Institute of Steel Construction, Chicago,
-  IL, 2022.
-
-\bibitem{GarciaPalencia_2008}
-Antonio Garc{\'\i}a-Palencia, Ali Saffar, and Luis Godoy.
-\newblock Curvas de fragilidad debidas a viento para edificaciones industriales
-  met\'alicas.
-\newblock {\em Revista Internacional de Desastres Naturales}, 2008.
-
-\bibitem{UNAM_SSN_2017}
-{Instituto de Ingenier{\'i}a, UNAM and Servicio Sismol{\'o}gico Nacional}.
-\newblock Reporte especial: Sismo del 19 de septiembre de 2017.
-\newblock Technical report, Universidad Nacional Aut{\'o}noma de M{\'e}xico,
-  2017.
+\newblock Technical report, American Institute of Steel Construction, Chicago, IL, 2022.
 
 \bibitem{GCDMX_NTC_DCEA_2017}
 {Gobierno de la Ciudad de M{\'e}xico}.
-\newblock Normas t{\'e}cnicas complementarias para el dise\~no y construcci\'on
-  de estructuras de acero (ntc-dcea 2017).
+\newblock Normas t{\'e}cnicas complementarias para el dise\~no y construcci\'on de estructuras de acero (ntc-dcea 2017).
 \newblock Gaceta Oficial de la Ciudad de M{\'e}xico, 2017.
 
 \bibitem{GCDMX_NTC_DCEA_2023}
 {Gobierno de la Ciudad de M{\'e}xico}.
-\newblock Normas t{\'e}cnicas complementarias para el dise\~no y construcci\'on
-  de estructuras de acero (ntc-dcea 2023).
+\newblock Normas t{\'e}cnicas complementarias para el dise\~no y construcci\'on de estructuras de acero (ntc-dcea 2023).
 \newblock Gaceta Oficial de la Ciudad de M{\'e}xico, 2023.
 
-\bibitem{Mahmoud_2021}
-K.~S. Mahmoud.
-\newblock Column base plate design guidelines.
-\newblock Scribd,
-  \url{https://es.scribd.com/document/616334346/5-2021-03-15-03-36-45-PM},
-  2021.
+\bibitem{UNAM_SSN_2017}
+{Instituto de Ingenier{\'i}a, UNAM and Servicio Sismol{\'o}gico Nacional}.
+\newblock Reporte especial: Sismo del 19 de septiembre de 2017.
+\newblock Technical report, Universidad Nacional Aut{\'o}noma de M{\'e}xico, 2017.
 
 \bibitem{AISC_360_2022}
 {American Institute of Steel Construction}.
 \newblock Specification for structural steel buildings (ansi/aisc 360-22).
-\newblock Technical report, American Institute of Steel Construction, Chicago,
-  IL, 2022.
+\newblock Technical report, American Institute of Steel Construction, Chicago, IL, 2022.
 
 \bibitem{TapiaHernandez_2018}
 Edgar Tapia~Hern{\'a}ndez.
-\newblock Estudios de comportamiento s{\'i}smico en estructuras de acero
-  post-sismo 19-s~2017: validaci{\'o}n de factores de sobreresistencia en
-  aceros comerciales mexicanos, 2018.
-\newblock Reporte t{\'e}cnico. Sociedad Mexicana de Ingenier{\'i}a Estructural,
-  Ciudad de M{\'e}xico, M{\'e}xico.
+\newblock Estudios de comportamiento s{\'i}smico en estructuras de acero post-sismo 19-s~2017: validaci{\'o}n de factores de sobreresistencia en aceros comerciales mexicanos, 2018.
+\newblock Reporte t{\'e}cnico. Sociedad Mexicana de Ingenier{\'i}a Estructural, Ciudad de M{\'e}xico, M{\'e}xico.
 
 \bibitem{ACI318_2019}
 {American Concrete Institute}.
-\newblock Building code requirements for structural concrete (aci 318-19) and
-  commentary.
-\newblock Technical report, American Concrete Institute, Farmington Hills, MI,
-  2019.
+\newblock Building code requirements for structural concrete (aci 318-19) and commentary.
+\newblock Technical report, American Concrete Institute, Farmington Hills, MI, 2019.
 
 \bibitem{GCDMX_2023_concrete}
 {Gobierno de la Ciudad de M{\'e}xico}.
-\newblock Normas t{\'e}cnicas complementarias para el dise\~no y construcci\'on
-  de estructuras de concreto.
+\newblock Normas t{\'e}cnicas complementarias para el dise\~no y construcci\'on de estructuras de concreto.
 \newblock Gaceta Oficial de la Ciudad de M{\'e}xico, 2023.
 
 \bibitem{robertson2020}
@@ -120,18 +92,19 @@ A.~Smith and B.~Jones.
 \newblock Análisis estructural avanzado.
 \newblock {\em Revista de Ingeniería}, 12(3):45--60, 2018.
 
+\bibitem{Mahmoud_2021}
+K.~S. Mahmoud.
+\newblock Column base plate design guidelines.
+\newblock Scribd, \url{https://es.scribd.com/document/616334346/5-2021-03-15-03-36-45-PM}, 2021.
+
 \bibitem{Prontubeam_2021}
 {Prontubeam}.
-\newblock Dise\~no y modelizaci\'on de bases y placas de anclaje en estructuras
-  met\'alicas.
-\newblock
-  \url{https://www.prontubeam.com/articulos/2021-02-20-Diseno-de-placas-de-anclaje-en-estructuras-metalicas},
-  2021.
+\newblock Dise\~no y modelizaci\'on de bases y placas de anclaje en estructuras met\'alicas.
+\newblock \url{https://www.prontubeam.com/articulos/2021-02-20-Diseno-de-placas-de-anclaje-en-estructuras-metalicas}, 2021.
 
 \bibitem{ACI_349_2014}
 {American Concrete Institute}.
-\newblock Guide to the concrete capacity design (ccd) method---embedment design
-  examples (aci 349.2r-14).
+\newblock Guide to the concrete capacity design (ccd) method---embedment design examples (aci 349.2r-14).
 \newblock Technical report, American Concrete Institute, 2014.
 
 \bibitem{ACI_MNL_2021}
@@ -141,8 +114,7 @@ A.~Smith and B.~Jones.
 
 \bibitem{ACI318_2025}
 {American Concrete Institute}.
-\newblock {\em Building code requirements for structural concrete (ACI 318-25)
-  and commentary}.
+\newblock {\em Building code requirements for structural concrete (ACI 318-25) and commentary}.
 \newblock American Concrete Institute, 2025.
 
 \bibitem{AISC_manual_2017}
@@ -152,15 +124,12 @@ A.~Smith and B.~Jones.
 
 \bibitem{GCDMX_2019}
 {Gobierno de la Ciudad de M{\'e}xico}.
-\newblock Actualizaci\'on de las normas t{\'e}cnicas complementarias para
-  dise\~no y construcci\'on de estructuras de acero del reglamento de
-  construcciones del distrito federal: Dise\~no de placas base.
+\newblock Actualizaci\'on de las normas t{\'e}cnicas complementarias para dise\~no y construcci\'on de estructuras de acero del reglamento de construcciones del distrito federal: Dise\~no de placas base.
 \newblock Gaceta Oficial, 2019.
 
 \bibitem{GCDMX_2020}
 {Gobierno de la Ciudad de M{\'e}xico}.
-\newblock Normas t{\'e}cnicas complementarias para el dise\~no y construcci\'on
-  de estructuras de acero.
+\newblock Normas t{\'e}cnicas complementarias para el dise\~no y construcci\'on de estructuras de acero.
 \newblock Gaceta Oficial de la Ciudad de M{\'e}xico, 2020.
 
 \bibitem{IMCA_2014}
@@ -180,8 +149,7 @@ O.~W. Blodgett.
 
 \bibitem{Boracchini_2018}
 A.~Boracchini.
-\newblock {\em Design and analysis of connections in steel structures:
-  Fundamentals and examples}.
+\newblock {\em Design and analysis of connections in steel structures: Fundamentals and examples}.
 \newblock Ernst \& Sohn, 2018.
 
 \bibitem{DeBuen_1993_v1}
@@ -206,8 +174,7 @@ J.~C. McCormac and S.~F. Csernak.
 
 \bibitem{SMIE_2026}
 {Sociedad Mexicana de Ingenier{\'i}a Estructural}.
-\newblock Bolet{\'i}n t{\'e}cnico: Avances en el dise\~no s{\'i}smico de
-  conexiones de acero conforme a las ntc-dcea 2023, abril 2026.
+\newblock Bolet{\'i}n t{\'e}cnico: Avances en el dise\~no s{\'i}smico de conexiones de acero conforme a las ntc-dcea 2023, abril 2026.
 \newblock Ciudad de M{\'e}xico, M{\'e}xico.
 
 \end{thebibliography}

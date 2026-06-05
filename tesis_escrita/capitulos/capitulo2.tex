@@ -99,6 +99,11 @@ del bloque de compresión.
 % ============================================================
 \section{Modelo de diseño analítico}
 
+\textbf{En esta sección se presenta el esquema normativo que sustenta el análisis de placas
+base.} \textbf{Las expresiones que siguen se exponen como parte del marco teórico y de
+referencia; su aplicación numérica y su exploración paramétrica se desarrollan en el capítulo de
+metodología.}
+
 \subsection{Bloque equivalente de compresión de Whitney}
 
 El modelo de distribución de presiones que adoptan las NTC-DCEA en ambas versiones se basa en el
@@ -131,8 +136,8 @@ excentricidad crítica $e_{crit}$ separa los dos casos de diseño:
 Cuando $e \leq e_{crit}$ (pequeña excentricidad), la placa permanece completamente apoyada y los
 pernos no entran en tensión. Cuando $e > e_{crit}$ (gran excentricidad), la placa se levanta
 parcialmente del lado en tracción y los pernos del grupo de anclaje son solicitados. El bloque de
-compresión $Y$ y la tensión total $T_{ua}$ se calculan del equilibrio de fuerzas y momentos sobre
-la placa:
+compresión $Y$ y la tensión total $T_{ua}$ se obtienen del equilibrio de fuerzas y momentos sobre
+la placa, como parte del modelo analítico empleado en la investigación:
 
 \begin{equation}
   Y = a - \sqrt{a^2 - \frac{2\,P_u\,(e + f_{anc})}{B\,f_{pd}}}
@@ -157,10 +162,10 @@ crítica del voladizo $M_{u,placa}$ a la capacidad de fluencia:
   \label{eq:treq}
 \end{equation}
 
-El momento actuante se toma como el mayor entre el generado por el bloque de compresión del lado
-comprimido y el inducido por la tracción de las anclas del lado en tensión. La NTC-DCEA 2023
-formaliza esta regla de forma explícita, aunque los resultados numéricos son equivalentes a los de
-la versión 2017 para la mayoría del dominio de carga.
+El momento actuante se interpreta, en términos normativos, como el mayor entre el generado por el
+bloque de compresión del lado comprimido y el inducido por la tracción de las anclas del lado en
+tensión. \textbf{La comparación numérica entre ambas ediciones normativas se reserva para el
+capítulo metodológico y para el análisis de resultados.}
 
 \subsection{Factores de resistencia}
 
@@ -175,18 +180,18 @@ Los factores de reducción de resistencia son idénticos en ambas normas
   F_R^{flex} = 0.90 \qquad \text{(fluencia de la placa de acero)}
 \end{equation}
 
-La invariabilidad de estos factores confirma que la calibración de confiabilidad estructural para
-estos estados límite no fue modificada en la revisión normativa de 2023.
+\textbf{Estos factores constituyen el marco de confiabilidad con el que se verifican los estados
+límite de aplastamiento y flexión de la placa base.}
 
 % ============================================================
 % SECCIÓN 2.5 — RESISTENCIA DEL CONO DE CONCRETO
 % ============================================================
 \section{Resistencia del cono de concreto}
 
-\subsection{Método CCD en tensión}
+\subsection{Método Capacidad del Concreto (CCD) en tensión}
 
 La resistencia al arrancamiento del cono de concreto en tensión se calcula mediante el método de
-la Capacidad del Concreto (CCD), que relaciona la resistencia con el área proyectada de la
+la CCD, que relaciona la resistencia con el área proyectada de la
 superficie de falla cónica \cite{FisherKloiber_2006}. La resistencia básica de una ancla aislada
 colada en sitio es:
 
@@ -206,7 +211,8 @@ resistencia de diseño del grupo de anclas se corrige por el área proyectada:
 \noindent donde $A_{N0} = 9\,h_{ef}^2$ es el área de referencia de una ancla aislada sin efecto
 de borde, $A_N$ es el área proyectada real del grupo considerando los bordes del pedestal, y
 $\psi$ agrupa los factores de modificación por excentricidad del grupo y por condición del
-concreto.
+concreto. \textbf{Esta formulación resume el modelo teórico que sirve de base para comparar las
+ediciones normativas; la cuantificación caso por caso se desarrolla más adelante.}
 
 \subsection{Factor de confinamiento en tensión \texorpdfstring{$R_{et}$}{R\_et} (NTC-DCEA 2023)}
 
@@ -231,8 +237,9 @@ concreto según las NTC. La resistencia total en tensión de la NTC-2023 resulta
 
 Los estribos actúan como refuerzo secundario que confina el núcleo del cono de falla: al ser
 cortados por el plano de ruptura, su capacidad a tensión retarda la apertura de la grieta e
-incrementa la resistencia y ductilidad de la conexión, favoreciendo el orden de plasticidad
-deseable en el diseño sismorresistente.
+incrementa la resistencia y ductilidad de la conexión. \textbf{En esta tesis, el efecto de este
+refuerzo se analizará de manera comparativa y paramétrica en el capítulo metodológico y en el
+análisis de resultados.}
 
 \subsection{Resistencia en cortante y factor \texorpdfstring{$R_{ev}$}{R\_ev} (NTC-DCEA 2023)}
 
@@ -258,7 +265,8 @@ mediante el factor aditivo $R_{ev}$:
 \end{equation}
 
 \noindent donde $N_{ev}$ es el número de estribos en el plano de falla lateral y $F_y$ es la
-fluencia del acero del refuerzo transversal.
+fluencia del acero del refuerzo transversal. \textbf{La relevancia cuantitativa de este aporte se
+discute en la parte metodológica del trabajo, no en este capítulo teórico.}
 
 % ============================================================
 % SECCIÓN 2.6 — DISTANCIA MÍNIMA AL BORDE LIBRE
@@ -291,4 +299,5 @@ La NTC-DCEA 2023 diferencia el requisito según la resistencia del perno:
 El incremento de $6d_o$ a $7d_o$ para anclas de alta resistencia representa un aumento del
 16.7\,\% en el requisito de separación. En pedestales de dimensiones reducidas (50--60~cm de
 lado), esta modificación puede ser determinante para la viabilidad geométrica del arreglo de
-anclajes y las dimensiones del dado de concreto.
+anclajes y las dimensiones del dado de concreto. \textbf{La evaluación numérica de ese impacto
+geométrico se presentará posteriormente en el desarrollo metodológico de la tesis.}

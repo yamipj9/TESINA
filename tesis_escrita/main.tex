@@ -1,5 +1,5 @@
 % main.tex - Plantilla de tesina (Universidad Veracruzana)
-\documentclass[12pt,a4paper,oneside]{report}
+\documentclass[12pt,letterpaper,oneside]{report}
 
 % Codificación y español
 \usepackage[utf8]{inputenc}
@@ -7,7 +7,7 @@
 \usepackage[spanish]{babel}
 
 % Márgenes según instrucción
-\usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=3cm,right=2.5cm]{geometry}
+\usepackage[letterpaper,top=2.5cm,bottom=2.5cm,left=3cm,right=2.5cm]{geometry}
 
 % Paquetes comunes
 \usepackage{graphicx}
@@ -16,6 +16,7 @@
 \usepackage{amsmath,amssymb}
 \usepackage{enumitem}
 \usepackage{booktabs}
+\usepackage{longtable}
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{float}
@@ -61,6 +62,9 @@
 \cleardoublepage
 
 \input{secciones/resumen}
+\cleardoublepage
+
+\input{secciones/nomenclatura}
 \cleardoublepage
 
 % --- Contenido principal ---

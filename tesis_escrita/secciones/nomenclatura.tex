@@ -1,0 +1,60 @@
+% nomenclatura.tex
+\chapter*{Nomenclatura}
+\addcontentsline{toc}{chapter}{Nomenclatura}
+
+\noindent La siguiente tabla resume los símbolos principales utilizados en la tesis y su
+interpretación dentro del problema de investigación sobre el diseño comparativo de placas base.
+
+\small
+\begin{longtable}{p{0.16\textwidth} p{0.28\textwidth} p{0.12\textwidth} p{0.36\textwidth}}
+\caption{Tabla de símbolos y variables empleadas en la investigación.}
+\label{tab:nomenclatura}\\
+\toprule
+\textbf{Símbolo} & \textbf{Definición} & \textbf{Unidad} & \textbf{Contexto en la tesis} \\
+\midrule
+\endfirsthead
+
+\toprule
+\textbf{Símbolo} & \textbf{Definición} & \textbf{Unidad} & \textbf{Contexto en la tesis} \\
+\midrule
+\endhead
+
+\bottomrule
+\endfoot
+
+$P_u$ & Fuerza axial de diseño aplicada a la columna. & ton o kN & Acción vertical que se transmite desde la superestructura hacia la conexión placa base-anclaje-dado. \\
+$V_u$ & Cortante basal de diseño. & ton o kN & Solicitación horizontal que actúa sobre la conexión bajo demanda sísmica. \\
+$M_u$ & Momento flector de diseño. & ton$\cdot$m o kN$\cdot$m & Momento que genera excentricidad y provoca levantamiento parcial de la placa base. \\
+$e$ & Excentricidad de la carga, definida como $e=M_u/P_u$. & cm o m & Parámetro que determina si el sistema trabaja en pequeña o gran excentricidad. \\
+$e_{crit}$ & Excentricidad crítica que separa ambos regímenes de trabajo. & cm o m & Límite entre placa completamente apoyada y placa parcialmente levantada. \\
+$N$ & Dimensión longitudinal de la placa base. & cm & Se usa para definir el bloque equivalente de compresión y el espesor requerido. \\
+$B$ & Dimensión transversal de la placa base. & cm & Se usa junto con $N$ para calcular áreas y equilibrio de fuerzas. \\
+$t_p$ & Espesor de la placa base. & mm & Variable geométrica de la placa que debe verificarse por flexión. \\
+$t_{req}$ & Espesor mínimo requerido de la placa. & mm & Resultado de la verificación a flexión de la placa base. \\
+$f'_c$ & Resistencia especificada a compresión del concreto. & kg/cm$^2$ o MPa & Propiedad del dado o pedestal de concreto que controla la resistencia al aplastamiento y al cono de falla. \\
+$F_y$ & Fluencia del acero. & kg/cm$^2$ o MPa & Se emplea para la placa base y para el acero del refuerzo transversal. \\
+$f_{pd}$ & Presión de diseño por aplastamiento del concreto bajo la placa. & kg/cm$^2$ o MPa & Intensidad de contacto usada en el modelo de bloque equivalente de compresión. \\
+$f_{pu}$ & Resistencia nominal de aplastamiento del concreto usada para obtener $f_{pd}$. & kg/cm$^2$ o MPa & Valor base del que se deriva la presión efectiva de contacto entre placa y pedestal. \\
+$A_1$ & Área cargada efectiva de la placa base. & cm$^2$ & Área de referencia en la verificación de aplastamiento del concreto. \\
+$A_2$ & Área tributaria de concreto que confina a la placa. & cm$^2$ & Área de confinamiento circundante considerada en la presión de contacto. \\
+$Y$ & Longitud del bloque comprimido bajo la placa. & cm & Variable de equilibrio para el caso de flexocompresión con gran excentricidad. \\
+$T_{ua}$ & Tensión total de diseño en los pernos de anclaje. & ton o kN & Fuerza resultante en los anclas del lado en tracción. \\
+$f_{anc}$ & Distancia del eje del grupo de anclaje al centro de la placa. & cm & Parámetro geométrico usado en el equilibrio del bloque de compresión. \\
+$h_{ef}$ & Profundidad de empotramiento efectiva del ancla. & cm & Controla la resistencia al cono de concreto en tensión y en cortante. \\
+$d_o$ & Diámetro nominal del perno de anclaje. & mm o pulg & Se utiliza en el criterio de distancia mínima al borde libre. \\
+$c_{min}$ & Distancia mínima del perno al borde libre del pedestal. & mm & Condición geométrica que afecta el área proyectada del cono de falla. \\
+$R_t$ & Resistencia al cono de concreto en tensión. & ton o kN & Capacidad nominal o de diseño frente a arrancamiento del cono. \\
+$R_v$ & Resistencia al cono de concreto por cortante. & ton o kN & Capacidad frente a desgarramiento lateral por cortante. \\
+$R_{et}$ & Factor o aporte adicional por confinamiento en tensión debido a estribos. & ton o kN & Incremento de resistencia asociado al refuerzo transversal interceptado por el cono de falla. \\
+$R_{ev}$ & Factor o aporte adicional por confinamiento en cortante debido a estribos. & ton o kN & Incremento de resistencia frente al desgarramiento lateral del concreto. \\
+$A_e$ & Área efectiva total del estribo interceptado por el plano de falla. & cm$^2$ & Se usa para cuantificar la contribución resistente del refuerzo transversal. \\
+$s_{est}$ & Espaciado del refuerzo transversal. & cm & Distancia entre estribos que gobierna cuántos elementos intercepta el plano de falla. \\
+$E_c$ & Módulo de elasticidad del concreto. & kg/cm$^2$ o MPa & Propiedad mecánica usada en la estimación del aporte del refuerzo de confinamiento. \\
+$N_{est}$ & Número de estribos interceptados por el plano de falla del cono en tensión. & adimensional & Indicador del efecto de confinamiento en el estado límite de tensión. \\
+$N_{ev}$ & Número de estribos interceptados por el plano de falla lateral por cortante. & adimensional & Indicador del efecto de confinamiento en el estado límite de cortante. \\
+$\eta$ & Eficiencia de aprovechamiento, definida como $\eta = T_{ua}/R_t$. & adimensional & Se usa para comparar el nivel de demanda respecto a la resistencia disponible. \\
+$F_R$ & Factor de reducción de resistencia. & adimensional & Coeficiente normativo aplicado a los estados límite de la conexión. \\
+$F_R^{apl}$ & Factor de reducción para aplastamiento del concreto. & adimensional & Coeficiente usado en la verificación del pedestal bajo la placa base. \\
+$F_R^{flex}$ & Factor de reducción para fluencia de la placa de acero. & adimensional & Coeficiente aplicado al estado límite de flexión de la placa base. \\
+\end{longtable}
+\normalsize

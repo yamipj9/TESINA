@@ -6,9 +6,11 @@ de placas base de acero: análisis comparativo y paramétrico''}, aborda el impa
 de los cambios normativos introducidos por las Normas Técnicas Complementarias para el Diseño y
 Construcción de Estructuras de Acero 2023 (NTC-DCEA 2023) sobre el diseño de sistemas
 placa~base-anclaje-dado de concreto en estructuras metálicas sismorresistentes. El instrumento
-metodológico central es el \textbf{análisis paramétrico numérico}: se realizan \textbf{tres
-barridos paramétricos} que mapean el espacio de diseño y generan superficies comparativas
-cuantificables:
+metodológico central es el \textbf{análisis paramétrico numérico}. \textbf{La tesis se enfoca en
+cuantificar, con un caso representativo, cómo cambian los resultados de diseño al pasar de la
+norma de 2017 a la de 2023 en condiciones de flexocompresión con gran excentricidad.} Para ello
+se realizan \textbf{tres barridos paramétricos} que mapean el espacio de diseño y permiten
+construir superficies comparativas cuantificables:
 
 \begin{enumerate}[label=(\arabic*)]
   \item \textbf{Impacto de la profundidad de empotramiento $h_{ef}$ y el espaciado de estribos}
@@ -20,9 +22,16 @@ cuantificables:
     incremento de $R_t$ (NTC-2023 vs.\ NTC-2017) y curvas de resistencia al cono por cortante $R_v$.
 \end{enumerate}
 
-Los resultados se condensan en cuatro figuras de análisis que constituyen la
-aportación numérica central del trabajo para el perfil IR~305$\times$74.5 bajo condiciones de
-flexocompresión severa.
+\textbf{En conjunto, estos barridos permiten comparar de manera ordenada tres variables de mayor
+sensibilidad normativa: la profundidad de empotramiento, el diámetro de ancla y la combinación
+entre resistencia del concreto y espaciado del refuerzo transversal.}
+
+\textbf{Planteamiento del problema.} \textbf{Aunque ambas versiones normativas persiguen el mismo
+objetivo de seguridad estructural, la transición de NTC-DCEA 2017 a NTC-DCEA 2023 modifica
+criterios de resistencia y requisitos geométricos que pueden cambiar de forma importante el
+dimensionamiento de la placa base, los pernos de anclaje y el dado de concreto.} \textbf{El
+problema de investigación consiste en determinar, con base numérica y de forma trazable, qué tan
+relevantes son esas diferencias y en qué variables del diseño se concentran.}
 
 % ============================================================
 % SECCIÓN 1.1 — JUSTIFICACIÓN DEL ESTUDIO
@@ -32,12 +41,11 @@ flexocompresión severa.
 La República Mexicana se asienta sobre la convergencia de cinco placas tectónicas mayores
 ---Norteamérica, Caribe, Cocos, Rivera y Pacífico---, lo que la convierte en uno de los países con
 mayor amenaza sísmica del planeta. En este escenario, las \textit{placas base} y sus sistemas de
-anclaje representan los componentes fundamentales encargados de transferir las fuerzas axiales $P_u$,
-los esfuerzos cortantes basales $V_u$ y los momentos flexionantes $M_u$ generados en las columnas
-metálicas hacia los pedestales y zapatas de concreto \cite{FisherKloiber_2006}, constituyendo
-el eslabón más vulnerable de la cadena resistente de un edificio de acero bajo solicitación
-sísmica severa. La Figura~\ref{fig:partes_placa_base} ilustra los componentes principales de
-esta conexión crítica.
+anclaje \textbf{pueden considerarse uno de los componentes más sensibles} de la transferencia de
+fuerzas, ya que conducen las acciones axiales $P_u$, los esfuerzos cortantes basales $V_u$ y los
+momentos flexionantes $M_u$ generados en las columnas metálicas hacia los pedestales y zapatas de
+concreto \cite{FisherKloiber_2006}. La Figura~\ref{fig:partes_placa_base} ilustra los componentes
+principales de esta conexión.
 
 \begin{figure}[H]
   \centering
@@ -47,12 +55,12 @@ esta conexión crítica.
   \label{fig:partes_placa_base}
 \end{figure}
 
-El sismo del 19~de septiembre de 2017 ($M_w~7.1$) evidenció la insuficiencia de los criterios
-normativos entonces vigentes: las inspecciones forenses documentaron reiteradamente fallas
-frágiles por arrancamiento de cono de concreto en anclas diseñadas conforme a las NTC-DCEA 2017
-\cite{SMIE_2017}. La revisión normativa derivada de dicho evento culminó con la publicación de
-las NTC-DCEA 2023, que introdujo cambios sustanciales en la metodología de diseño de placas base
-y constituye el marco comparativo del presente trabajo.
+El sismo del 19~de septiembre de 2017 ($M_w~7.1$) puso de relieve \textbf{limitaciones
+importantes} de los criterios normativos entonces vigentes: las inspecciones forenses
+documentaron reiteradamente fallas frágiles por arrancamiento de cono de concreto en anclas
+diseñadas conforme a las NTC-DCEA 2017 \cite{SMIE_2017}. La revisión normativa derivada de dicho
+evento culminó con la publicación de las NTC-DCEA 2023, que introdujo cambios sustanciales en la
+metodología de diseño de placas base y constituye el marco comparativo del presente trabajo.
 
 La Figura~\ref{fig:mapa_sismo2017} ilustra la proximidad del epicentro con la capital y las
 principales zonas urbanas afectadas.
@@ -68,32 +76,31 @@ principales zonas urbanas afectadas.
 
 La actualización del marco normativo de diseño estructural no es un evento académico abstracto:
 tiene consecuencias directas sobre la seguridad de las edificaciones, el costo de los proyectos y
-la responsabilidad profesional de los ingenieros calculistas. En México existe un vasto parque
-construido de estructuras de acero diseñadas bajo las NTC-DCEA 2017 o ediciones anteriores, que
-no incorporan los criterios de confinamiento por estribos ni los requerimientos de distancia al
-borde actualizados por la norma de 2023.
+la responsabilidad profesional de los ingenieros calculistas. En México existe un parque
+construido considerable de estructuras de acero diseñadas bajo las NTC-DCEA 2017 o ediciones
+anteriores, que no incorporan los criterios de confinamiento por estribos ni los requerimientos de
+distancia al borde actualizados por la norma de 2023.
 
 Desde la perspectiva de la \textbf{seguridad estructural}, las NTC-DCEA 2017 no exigían la
 consideración analítica del refuerzo transversal del dado como un factor que mejora la resistencia
-al cono, conduciendo a diseños donde la conexión cedía antes que la columna e invirtiendo el
-orden de plasticidad deseable del Diseño por Capacidad \cite{AISC_341_2022}. La NTC-2023
-corrige esta omisión, pero su incorporación práctica en el medio profesional mexicano requiere
-documentación técnica accesible que cuantifique el impacto real de los cambios.
+al cono, lo que \textbf{podía conducir a diseños más conservadores o menos representativos de la
+capacidad real del sistema} \cite{AISC_341_2022}. La NTC-2023 corrige esta omisión, pero su
+incorporación práctica en el medio profesional mexicano requiere documentación técnica accesible
+que cuantifique el impacto real de los cambios.
 
 Desde la perspectiva de la \textbf{eficiencia en el uso de materiales}, los factores $R_{et}$ y
 $R_{ev}$ introducidos por la NTC-2023 permiten reconocer analíticamente la contribución del
 refuerzo transversal del dado a la resistencia del sistema. Esto implica que diseños que
-anteriormente resultaban en dimensionamientos de dado excesivamente conservadores pueden
-optimizarse, reduciendo el consumo de concreto y acero de refuerzo sin comprometer los márgenes
-de seguridad reglamentarios. Cuantificar esta optimización potencial es una aportación directa
-al ejercicio profesional de la ingeniería estructural.
+anteriormente resultaban en dimensionamientos de dado conservadores pueden optimizarse, reduciendo
+el consumo de concreto y acero de refuerzo sin comprometer los márgenes de seguridad
+reglamentarios. Cuantificar esta optimización potencial es una aportación directa al ejercicio
+profesional de la ingeniería estructural.
 
-Desde la perspectiva \textbf{académica y docente}, la publicación de las NTC-DCEA 2023 dejó un
-vacío de documentación técnica: no existe, a la fecha de elaboración del presente trabajo, un
-análisis paramétrico publicado que cuantifique de forma sistemática el impacto de los principales
-cambios normativos sobre los resultados de diseño para el caso de flexocompresión con gran
-excentricidad ---el escenario más crítico en estructuras sismorresistentes---. Esta tesis
-contribuye a llenar dicho vacío, ofreciendo un recurso de referencia cuantitativo para
+Desde la perspectiva \textbf{académica y docente}, la publicación de las NTC-DCEA 2023 abrió la
+necesidad de contar con documentación técnica que sintetice sus implicaciones: \textbf{hasta donde
+se identificó en esta revisión, no se localizó un análisis paramétrico sistemático que cuantifique
+los principales cambios normativos para el caso de flexocompresión con gran excentricidad}. Esta
+tesis contribuye a atender esa necesidad, ofreciendo un recurso de referencia cuantitativo para
 ingenieros, proyectistas y docentes en el contexto de la normativa mexicana vigente.
 
 Finalmente, desde la perspectiva del \textbf{cumplimiento normativo}, los profesionales que
@@ -102,38 +109,34 @@ verificaciones cambian y en qué magnitud, para justificar técnicamente sus dec
 revisores y autoridades. Esta tesis provee dicha documentación de manera rigurosa y trazable,
 basada en algoritmos de cálculo verificables y en el análisis de casos representativos.
 
-La mera comprensión conceptual de los cambios normativos resulta insuficiente para la
-instrumentación práctica en gabinetes de ingeniería estructural.
-Determinar en qué medida técnica y económica la nueva norma modifica los resultados de diseño
-requiere la extracción de datos cuantitativos sistematizados. En este sentido, el
-\textbf{análisis paramétrico numérico} surge como el vehículo metodológico idóneo por tres
-razones fundamentales: (1)~el \textit{mapeo exhaustivo del espacio de diseño} permite graficar
-las fronteras de falla en varias dimensiones e identificar con precisión los umbrales a partir de
-los cuales la resistencia al cono del concreto ---y no la placa metálica--- gobierna el
-dimensionamiento; (2)~la \textit{detección de bifurcaciones y comportamientos no lineales}
-evidencia la sensibilidad extrema del sistema ante pequeñas variaciones de $h_{ef}$, espaciado de
-estribos o distancia al borde libre, y cuantifica el umbral real del fenómeno de \textit{prying
-action} en los anclajes; (3)~la \textit{identificación de óptimos constructivos} permite derivar
-criterios de diseño que armonizan el costo del material ---acero de placa versus concreto del
-dado--- con los márgenes de seguridad normativos, aportando directrices prácticas para
-ingenieros proyectistas. Los tres barridos implementados cubren precisamente las tres variables
-de mayor divergencia entre ambas normas: la profundidad de empotramiento $h_{ef}$, el diámetro
-de ancla $d_o$ y la resistencia del concreto $f'_c$ en combinación con el espaciado del refuerzo
-transversal del dado.
+\textbf{La comprensión conceptual de los cambios normativos no basta por sí sola para orientar la
+práctica profesional.} Determinar en qué medida técnica y económica la nueva norma modifica los
+resultados de diseño requiere extraer datos cuantitativos sistematizados. En este sentido, el
+\textbf{análisis paramétrico numérico} resulta una herramienta adecuada por tres razones
+fundamentales: (1)~el \textit{mapeo del espacio de diseño} permite identificar con precisión los
+umbrales a partir de los cuales la resistencia al cono del concreto ---y no la placa metálica---
+gobierna el dimensionamiento; (2)~la \textit{detección de variaciones no lineales} evidencia la
+sensibilidad del sistema ante cambios de $h_{ef}$, espaciado de estribos o distancia al borde
+libre; y (3)~la \textit{identificación de configuraciones más eficientes} permite comparar el
+costo del material con los márgenes de seguridad normativos. \textbf{Los tres barridos
+implementados se concentran, por tanto, en las variables donde ambas normas muestran mayor
+divergencia: la profundidad de empotramiento $h_{ef}$, el diámetro de ancla $d_o$ y la
+resistencia del concreto $f'_c$ en combinación con el espaciado del refuerzo transversal del
+dado.}
 
 % ============================================================
 % SECCIÓN 1.2 — OBJETIVO GENERAL
 % ============================================================
 \section{Objetivo General}
 
-Cuantificar el impacto técnico de los cambios normativos introducidos por las NTC-DCEA 2023
-sobre el diseño de sistemas placa~base-anclaje-dado de concreto en estructuras metálicas
-sismorresistentes, mediante un análisis paramétrico numérico que compare de forma sistemática
-los estados límite de resistencia al cono en tensión ($R_t$, $R_{et}$), resistencia al cono por
+\textbf{Cuantificar el impacto técnico de los cambios normativos introducidos por las NTC-DCEA
+2023 sobre el diseño de sistemas placa~base-anclaje-dado de concreto en estructuras metálicas
+sismorresistentes, mediante un análisis paramétrico numérico que compare de forma sistemática los
+estados límite de resistencia al cono en tensión ($R_t$, $R_{et}$), resistencia al cono por
 cortante ($R_v$, $R_{ev}$) y requisitos de distancia mínima al borde libre, aplicados al perfil
-IR~305$\times$74.5 bajo condiciones de flexocompresión con gran excentricidad, para establecer
-qué condiciones de diseño resultan más restrictivas o más permisivas bajo el nuevo marco
-normativo.
+IR~305$\times$74.5 bajo condiciones de flexocompresión con gran excentricidad.} \textbf{Con ello
+se busca identificar qué condiciones de diseño resultan más restrictivas o más permisivas bajo el
+nuevo marco normativo.}
 
 % ============================================================
 % SECCIÓN 1.3 — OBJETIVOS ESPECÍFICOS
@@ -172,12 +175,11 @@ El alcance del presente estudio se circunscribe a los siguientes elementos:
 
 \textbf{Alcances:}
 \begin{itemize}
-  \item Análisis comparativo cuantitativo de las metodologías de diseño de placas base establecidas
-    en las NTC-DCEA 2017 y las NTC-DCEA 2023, con énfasis en los cambios sustanciales introducidos
-    por los factores de confinamiento $R_{et}$ y $R_{ev}$, y el criterio de distancia mínima al
-    borde libre.
-  \item Implementación de un estudio numérico cuantitativo para el caso de flexocompresión con
-    gran excentricidad ($e > e_{crit}$), aplicado al perfil IR~305$\times$74.5 (acero A992,
+  \item Análisis comparativo de las metodologías de diseño de placas base establecidas en las
+    NTC-DCEA 2017 y las NTC-DCEA 2023, con énfasis en los cambios introducidos por los factores de
+    confinamiento $R_{et}$ y $R_{ev}$, y por el criterio de distancia mínima al borde libre.
+  \item Implementación de un estudio numérico para el caso de flexocompresión con gran
+    excentricidad ($e > e_{crit}$), aplicado al perfil IR~305$\times$74.5 (acero A992,
     $F_y = 3{,}515\ \mathrm{kg/cm^2}$) con placa base de 50$\times$50~cm.
   \item Ejecución de tres barridos paramétricos: (1)~impacto del factor de confinamiento por
     estribos en tensión $R_{et}$ sobre la resistencia al cono de concreto, (2)~efecto del cambio
@@ -186,9 +188,9 @@ El alcance del presente estudio se circunscribe a los siguientes elementos:
     $R_{ev}$) mediante un barrido bidimensional en función de $f'_c$ y el espaciado de
     estribos.
   \item Análisis de resultados bajo condiciones de carga representativas del diseño
-    sismorresistente en la Ciudad de México: concreto con $f'_c = 250$--$280\ \mathrm{kg/cm^2}$,
-    refuerzo transversal grado 42, y cargas axiales de 10--15~toneladas con momentos de hasta
-    14~ton$\cdot$m.
+    sismorresistente en la Ciudad de México, con concreto de $f'_c = 250$--$280\
+    \mathrm{kg/cm^2}$, refuerzo transversal grado 42, y cargas axiales de 10--15~toneladas con
+    momentos de hasta 14~ton$\cdot$m.
 \end{itemize}
 
 \textbf{Delimitaciones:}
@@ -213,14 +215,12 @@ El alcance del presente estudio se circunscribe a los siguientes elementos:
 % ============================================================
 \section{Organización del Documento}
 
-El presente trabajo se organiza en cinco capítulos y una sección de conclusiones. El Capítulo~2 presenta el marco teórico de la investigación: los componentes del sistema
-placa~base-anclaje-dado de concreto, los mecanismos de transferencia de fuerzas, los modos de
-falla y las formulaciones normativas que distinguen las NTC-DCEA 2017 de las NTC-DCEA 2023. El Capítulo~3 presenta las hipótesis que orientan el análisis paramétrico
-comparativo. El Capítulo~4 desarrolla el marco teórico y referencial, integrando los antecedentes
-histórico-normativos, los mecanismos de transferencia de fuerzas en el sistema
-placa~base-anclaje-dado de concreto, los modos de falla relevantes y las modificaciones técnicas
-sustanciales de las NTC-DCEA 2023. El Capítulo~5 describe la metodología de cálculo implementada
-y los algoritmos del análisis paramétrico numérico. La sección de Conclusiones y
-Recomendaciones sintetiza los hallazgos principales del análisis comparativo y propone líneas de
-trabajo futuro.
-
+\textbf{El presente trabajo se organiza en cinco capítulos y una sección de conclusiones.} El
+Capítulo~2 desarrolla el marco teórico de la investigación, con los componentes del sistema
+placa~base-anclaje-dado de concreto, los mecanismos de transferencia de fuerzas y los modos de
+falla que fundamentan el análisis. El Capítulo~3 presenta las hipótesis que orientan el análisis
+comparativo. El Capítulo~4 amplía el marco teórico y referencial, incorporando los antecedentes
+histórico-normativos y las modificaciones técnicas sustanciales de las NTC-DCEA 2023. El
+Capítulo~5 describe la metodología de cálculo implementada y los algoritmos del análisis
+paramétrico numérico. La sección de Conclusiones y Recomendaciones sintetiza los hallazgos
+principales del análisis comparativo y propone líneas de trabajo futuro.
