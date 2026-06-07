@@ -10,33 +10,33 @@
 \contentsline {section}{\numberline {1.5}Organización del Documento}{6}{section.1.5}%
 \contentsline {chapter}{\numberline {2}Marco Teórico}{7}{chapter.2}%
 \contentsline {section}{\numberline {2.1}El sistema placa base-anclaje-dado de concreto}{7}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Mecanismos de transferencia de fuerzas}{8}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Modos de falla}{8}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Modelo de diseño analítico}{9}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Bloque equivalente de compresión de Whitney}{9}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Excentricidad y régimen de trabajo}{9}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Espesor mínimo requerido de la placa}{10}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Factores de resistencia}{10}{subsection.2.4.4}%
-\contentsline {section}{\numberline {2.5}Resistencia del cono de concreto}{10}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Método Capacidad del Concreto (CCD) en tensión}{10}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Factor de confinamiento en tensión $R_{et}$ (NTC-DCEA 2023)}{11}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Resistencia en cortante y factor $R_{ev}$ (NTC-DCEA 2023)}{11}{subsection.2.5.3}%
-\contentsline {section}{\numberline {2.6}Distancia mínima al borde libre}{12}{section.2.6}%
-\contentsline {chapter}{\numberline {3}Hipótesis}{13}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Formulación de las Hipótesis de Investigación}{13}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Hipótesis 1: Espesor de la Placa Base}{13}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Hipótesis 2: Resistencia al Cono de Concreto}{13}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Hipótesis 3: Distancia Mínima al Borde}{14}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Marco Teórico y Referencial}{15}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Contexto Geotectónico y Marco Normativo en México}{15}{section.4.1}%
-\contentsline {section}{\numberline {4.2}El Sismo del 19 de Septiembre de 2017 y la Evidencia Forense Estructural}{16}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Mecanismos de Transferencia de Fuerzas y Modos de Falla Típicos}{17}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Deficiencias del Apéndice B de las NTC-DCEA 2017}{18}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Las NTC-DCEA 2023 como Respuesta Técnica}{20}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Brecha de Investigación}{21}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Metodología}{23}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Descripción del Enfoque Metodológico}{23}{section.5.1}%
-\contentsline {chapter}{Conclusiones y Recomendaciones}{24}{chapter*.16}%
-\contentsline {chapter}{\numberline {A}Anexo A: Instrumentos y Datos}{25}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Formularios y datos brutos}{25}{section.Alph1.1}%
-\contentsline {chapter}{\numberline {B}Apéndice B: Diseño de placas base}{26}{appendix.Alph2}%
+\contentsline {section}{\numberline {2.2}Mecanismos de transferencia de fuerzas}{9}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Modos de falla}{10}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Modelo de diseño analítico}{11}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Bloque equivalente de compresión de Whitney}{11}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Excentricidad y régimen de trabajo}{11}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Espesor mínimo requerido de la placa}{12}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Factores de resistencia}{12}{subsection.2.4.4}%
+\contentsline {section}{\numberline {2.5}Resistencia del cono de concreto}{12}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Método Capacidad del Concreto (CCD) en tensión}{12}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Factor de confinamiento en tensión $R_{et}$ (NTC-DCEA 2023)}{13}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Resistencia en cortante y factor $R_{ev}$ (NTC-DCEA 2023)}{14}{subsection.2.5.3}%
+\contentsline {section}{\numberline {2.6}Distancia mínima al borde libre}{14}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Hipótesis}{16}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Formulación de las Hipótesis de Investigación}{16}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Hipótesis 1: Espesor de la Placa Base}{16}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Hipótesis 2: Resistencia al Cono de Concreto}{16}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Hipótesis 3: Distancia Mínima al Borde}{17}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Marco Teórico y Referencial}{18}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Contexto Geotectónico y Marco Normativo en México}{18}{section.4.1}%
+\contentsline {section}{\numberline {4.2}El Sismo del 19 de Septiembre de 2017 y la Evidencia Forense Estructural}{19}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Mecanismos de Transferencia de Fuerzas y Modos de Falla Típicos}{20}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Deficiencias del Apéndice B de las NTC-DCEA 2017}{21}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Las NTC-DCEA 2023 como Respuesta Técnica}{23}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Brecha de Investigación}{24}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Metodología}{26}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Descripción del Enfoque Metodológico}{26}{section.5.1}%
+\contentsline {chapter}{Conclusiones y Recomendaciones}{27}{chapter*.16}%
+\contentsline {chapter}{\numberline {A}Anexo A: Instrumentos y Datos}{28}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Formularios y datos brutos}{28}{section.Alph1.1}%
+\contentsline {chapter}{\numberline {B}Apéndice B: Diseño de placas base}{29}{appendix.Alph2}%
