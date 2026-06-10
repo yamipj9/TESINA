@@ -22,21 +22,32 @@
 \contentsline {subsection}{\numberline {2.5.2}Factor de confinamiento en tensión $R_{et}$ (NTC-DCEA 2023)}{13}{subsection.2.5.2}%
 \contentsline {subsection}{\numberline {2.5.3}Resistencia en cortante y factor $R_{ev}$ (NTC-DCEA 2023)}{14}{subsection.2.5.3}%
 \contentsline {section}{\numberline {2.6}Distancia mínima al borde libre}{14}{section.2.6}%
-\contentsline {chapter}{\numberline {3}Hipótesis}{16}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Formulación de las Hipótesis de Investigación}{16}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Hipótesis 1: Espesor de la Placa Base}{16}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Hipótesis 2: Resistencia al Cono de Concreto}{16}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Hipótesis 3: Distancia Mínima al Borde}{17}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Marco Teórico y Referencial}{18}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Contexto Geotectónico y Marco Normativo en México}{18}{section.4.1}%
-\contentsline {section}{\numberline {4.2}El Sismo del 19 de Septiembre de 2017 y la Evidencia Forense Estructural}{19}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Mecanismos de Transferencia de Fuerzas y Modos de Falla Típicos}{20}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Deficiencias del Apéndice B de las NTC-DCEA 2017}{21}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Las NTC-DCEA 2023 como Respuesta Técnica}{23}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Brecha de Investigación}{24}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Metodología}{26}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Descripción del Enfoque Metodológico}{26}{section.5.1}%
-\contentsline {chapter}{Conclusiones y Recomendaciones}{27}{chapter*.16}%
-\contentsline {chapter}{\numberline {A}Anexo A: Instrumentos y Datos}{28}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Formularios y datos brutos}{28}{section.Alph1.1}%
-\contentsline {chapter}{\numberline {B}Apéndice B: Diseño de placas base}{29}{appendix.Alph2}%
+\contentsline {chapter}{\numberline {3}Metodología}{16}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Enfoque y alcance de la investigación}{16}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Criterios normativos considerados}{17}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Modelo de análisis para placas base}{18}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Procedimiento de comparación normativa}{19}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Diseño del análisis paramétrico}{19}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Barrido 1: influencia de $R_{et}$ en la resistencia a tensión}{20}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Barrido 2: distancia mínima al borde}{20}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Barrido 3: influencia de $R_{ev}$ en la resistencia a cortante}{20}{subsection.3.5.3}%
+\contentsline {section}{\numberline {3.6}Procesamiento y presentacion de resultados}{21}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Resultados y discusión del análisis comparativo y paramétrico}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Presentación general de los casos analizados}{23}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Comparación normativa del diseño de placa base}{24}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Influencia del factor $R_{et}$ en la resistencia a tensión}{25}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Influencia de la distancia mínima al borde en el cumplimiento geométrico y resistente}{27}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Influencia del factor $R_{ev}$ en la resistencia a cortante}{28}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Síntesis comparativa de los efectos normativos observados}{29}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Implicaciones para el diseño estructural de placas base}{30}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Conclusiones y recomendaciones}{31}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusiones generales}{31}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Conclusiones sobre la comparación normativa}{32}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Conclusiones sobre el análisis paramétrico}{32}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Aportaciones de la investigación}{33}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Recomendaciones para el diseño estructural}{33}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Recomendaciones para trabajos futuros}{34}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Cierre}{34}{section.5.7}%
+\contentsline {chapter}{\numberline {A}Anexo A: Instrumentos y Datos}{35}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Formularios y datos brutos}{35}{section.Alph1.1}%
+\contentsline {chapter}{\numberline {B}Apéndice B: Diseño de placas base}{36}{appendix.Alph2}%

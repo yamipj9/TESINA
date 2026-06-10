@@ -6,11 +6,11 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Vista en corte transversal de los componentes de la conexión columna-cimentación: columna de acero, placa base, pernos de anclaje, mortero de nivelación (grout) y pedestal de concreto \cite {GarciaPalencia_2008}.}}{8}{figure.caption.9}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Mecanismo de falla por extracción directa (\textit {pull-out}): pérdida de adherencia sin formación de cono de concreto \cite {INDEX_nodate}.}}{21}{figure.caption.13}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Mecanismo de falla por arrancamiento de cono de concreto (\textit {breakout}): modo frágil predominante en sismos severos \cite {INDEX_nodate}.}}{21}{figure.caption.13}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Distribución de presiones de contacto bajo la hipótesis de placa rígida, paradigma del diseño bajo NTC-DCEA 2017 \cite {Hilti_nodate}.}}{22}{figure.caption.14}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Efecto de palanca (\textit {prying action}) en placa base flexible: la flexibilidad real incrementa la demanda en los pernos por encima de la solución estática directa \cite {Hilti_nodate}.}}{22}{figure.caption.14}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Despiece isométrico de la conexión columna-placa base: columna IR, placa de acero, pernos de anclaje con tuerca y arandela de alta resistencia, capa de grout y pedestal de concreto reforzado con estribos \cite {Shi_2025}.}}{24}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Esquemas generales de los casos de estudio considerados para interpretar la respuesta de la conexión columna--placa base ante compresión axial, flexocompresión y cortante dominante.}}{24}{figure.caption.13}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Impacto del confinamiento por estribos en la resistencia al cono de concreto en tensión para distintas profundidades efectivas y configuraciones de refuerzo transversal.}}{26}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Mapa de calor del incremento de resistencia al cono de concreto en tensión al incorporar el término $R_{et}$ de la NTC-DCEA 2023.}}{26}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Comparación de los requisitos de distancia mínima al borde libre para distintos grados y diámetros de ancla, con énfasis en el cambio normativo aplicable a anclas A325 y A449.}}{27}{figure.caption.17}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Comparación de la resistencia al cono de concreto por cortante entre NTC-DCEA 2017 y NTC-DCEA 2023, incluyendo el aporte del término $R_{ev}$ para diferentes niveles de $f'_c$ y espaciamiento del refuerzo transversal.}}{28}{figure.caption.18}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

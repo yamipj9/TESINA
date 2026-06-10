@@ -1,313 +1,282 @@
 % capitulo4.tex
-\chapter{Marco Teórico y Referencial}
+\chapter{Resultados y discusión del análisis comparativo y paramétrico}
 
-El presente capítulo establece el sustento teórico y referencial del trabajo. Se parte de los
-antecedentes histórico-normativos que condicionaron la evolución del diseño de placas base en
-México, se describen los mecanismos de transferencia de fuerzas y los modos de falla relevantes,
-y se documentan con precisión las deficiencias de las NTC-DCEA 2017 y los cambios sustanciales
-introducidos por las NTC-DCEA 2023. Las secciones de análisis comparativo cuantitativo y
-discusión de resultados se incorporarán en las entregas subsecuentes del trabajo.
-
-% ============================================================
-% SECCIÓN 4.1 — CONTEXTO GEOTECTÓNICO Y MARCO NORMATIVO
-% ============================================================
-\section{Contexto Geotectónico y Marco Normativo en México}
-
-La República Mexicana ocupa una posición geotectónica de singular complejidad: su territorio es
-escenario de la convergencia de la placa de Norteamérica con las placas de Cocos y Rivera en la
-franja costera del Pacífico, así como de la interacción con la placa del Caribe en la región
-sureste del país. Esta confluencia de placas genera una actividad sísmica continua e intensa,
-con registros históricos que incluyen algunos de los eventos más destructivos del siglo XX en el
-continente americano \cite{UNAM_SSN_2017}.
-
-La Ciudad de México suma a esta condición sísmica de base un factor de amplificación dinámica
-excepcional: gran parte de su área metropolitana está asentada sobre los sedimentos lacustres
-del antiguo lago de Texcoco, compuestos por arcillas de alta plasticidad con velocidades de onda
-cortante de apenas 40 a 80~m/s en sus estratos más blandos. Este perfil estratigráfico genera
-amplificaciones del movimiento del suelo de hasta un orden de magnitud respecto a la roca firme,
-con periodos predominantes del sitio que pueden alcanzar de 2 a 4~s en las zonas lacustres más
-profundas \cite{UNAM_SSN_2017}.
-
-La evolución del marco normativo sismorresistente en México ha estado históricamente condicionada
-por los grandes sismos:
-
-\begin{itemize}
-  \item El sismo de 1985 ($M_s~8.1$, epicentro en Michoacán) causó la destrucción de más de 800
-    edificaciones en la Ciudad de México y aceleró la publicación de las Normas Técnicas
-    Complementarias de 1987, que introdujeron criterios de microzonificación sísmica, espectros de
-    diseño diferenciados por tipo de suelo y requerimientos de compacidad para elementos de acero.
-
-  \item Las revisiones de 1993 y 2004 incorporaron refinamientos en el cálculo de derivas de
-    entrepiso y en los estados límite de servicio, alineando parcialmente la práctica mexicana con
-    los desarrollos del American Institute of Steel Construction \cite{AISC_360_2022}.
-
-  \item Las NTC-DCEA 2017 representaron un avance conceptual al incluir en su Apéndice~B las
-    primeras disposiciones específicas para el diseño de placas base. No obstante, su contenido
-    técnico fue redactado y cerrado por los comités técnicos con anterioridad al sismo del
-    19~de septiembre de 2017, por lo que no pudo incorporar las lecciones mecánicas de dicho
-    evento \cite{GCDMX_NTC_DCEA_2017}.
-
-  \item Las NTC-DCEA 2023 constituyen la primera edición que incorpora explícitamente las lecciones
-    del 19-S~2017, elevando el diseño de placas base a la categoría de capítulo principal mandatorio
-    (Capítulo~13) e integrando los principios del Diseño por Capacidad para las conexiones
-    columna-cimentación \cite{GCDMX_NTC_DCEA_2023}.
-\end{itemize}
+El presente capítulo expone los resultados obtenidos al aplicar la metodología descrita en el
+Capítulo 3 para comparar las NTC-DCEA 2017 y las NTC-DCEA 2023 en el diseño de placas base de
+acero. La discusión se organiza en torno a tres modificaciones normativas con efecto directo sobre
+el diseño: la incorporación del factor de confinamiento $R_{et}$ en tensión, la incorporación del
+factor $R_{ev}$ en cortante y el cambio en la distancia mínima al borde para anclas de alta
+resistencia. Antes de examinar cada barrido, se presenta una comparación general del comportamiento
+de la placa base como elemento de transferencia axial y flexional.
 
 % ============================================================
-% SECCIÓN 4.2 — EL SISMO DEL 19-S 2017 Y LA EVIDENCIA FORENSE
+% SECCION 4.1
 % ============================================================
-\section{El Sismo del 19 de Septiembre de 2017 y la Evidencia Forense Estructural}
+\section{Presentación general de los casos analizados}
 
-El 19 de septiembre de 2017 a las 13:14~h (hora local), un sismo de magnitud momento $M_w~7.1$
-sacudió la región centro-sur de México, con epicentro en los límites entre los estados de Puebla
-y Morelos, a escasos 120~km de la Ciudad de México \cite{SSN_Puebla_2017}. A diferencia del
-sismo de 1985, este evento fue de origen intraplaca (no de subducción), lo que le confirió un
-contenido frecuencial caracterizado por periodos predominantes cortos e intermedios (0.1--1.5~s),
-particularmente agresivos para estructuras de 4 a 10 niveles. El balance de daños fue grave:
-múltiples colapsos parciales o totales en edificios de uso habitacional y comercial, con víctimas
-fatales y pérdidas materiales cuantiosas.
+El análisis desarrollado en esta tesis siguió una secuencia de trabajo compuesta por tres etapas:
+primero se definieron los casos de estudio representativos de la respuesta de una placa base;
+después, a partir de ellos, se seleccionó un caso semilla de flexocompresión con gran excentricidad;
+finalmente, dicho caso se utilizó como punto de partida para los tres barridos paramétricos
+orientados a identificar la sensibilidad del diseño frente a los cambios normativos de 2023. Esta
+secuencia permite distinguir entre los escenarios conceptuales usados para interpretar el problema y
+las variaciones numéricas empleadas para cuantificar las diferencias entre normas.
 
-La \textsc{SMIE} organizó brigadas de inspección forense que documentaron patrones de falla
-recurrentes en conexiones columna-cimentación de estructuras de acero \cite{SMIE_2017}:
+El caso semilla no se adoptó de manera arbitraria. Se eligió a partir del caso de estudio en el que
+la placa trabaja bajo flexocompresión severa, debido a que esta condición genera levantamiento
+parcial, activa la participación de las anclas en tensión y hace visibles los estados límite que
+distinguen a la NTC-DCEA 2017 de la NTC-DCEA 2023. Aunque el objetivo central del trabajo no es
+reproducir un catálogo amplio de conexiones, sí fue necesario partir de una configuración base
+suficientemente exigente para que la comparación normativa tuviera relevancia estructural.
 
-\begin{itemize}
-  \item \textbf{Arrancamiento de cono de concreto}: identificado como el modo de falla más
-    frecuente y más frágil. Los pernos de anclaje extrajeron el concreto del pedestal sin que
-    la columna metálica hubiera experimentado deformaciones plásticas significativas, lo que
-    evidenció una violación del principio de jerarquía de resistencias del Diseño por Capacidad.
-  \item \textbf{Fluencia prematura de la placa base}: en casos donde los anclas sobrevivieron, la
-    placa base sufrió deformaciones permanentes que comprometieron la transmisión uniforme de
-    cargas verticales al pedestal, generando aplastamientos locales del grout y del concreto.
-  \item \textbf{Aplastamiento del mortero de nivelación}: consecuencia de la concentración de
-    presiones de contacto bajo el patín de compresión de la columna, especialmente en placas
-    subdimensionadas respecto a la demanda real.
-\end{itemize}
-
-Las investigaciones de Tapia~Hernández \cite{TapiaHernandez_2018} aportaron una explicación
-complementaria a estos fallos: los factores de sobreresistencia reales del acero estructural
-mexicano ($\Omega_o$) superaban consistentemente los valores nominales empleados en el diseño
-elástico. En consecuencia, las fuerzas que efectivamente llegaban a las conexiones durante el
-sismo superaban las previstas por el análisis espectral, desbordando la capacidad de los sistemas
-de anclaje diseñados con la metodología de 2017.
-
-% ============================================================
-% SECCIÓN 4.3 — MECANISMOS DE TRANSFERENCIA Y MODOS DE FALLA
-% ============================================================
-\section{Mecanismos de Transferencia de Fuerzas y Modos de Falla Típicos}
-
-La comprensión de los mecanismos de transferencia de fuerzas en el sistema placa base-anclaje-dado
-es prerequisito para el análisis normativo comparativo.
-
-\subsection*{Transferencia bajo compresión pura y pequeña excentricidad}
-
-Cuando la excentricidad de la carga resultante $e = M_u/P_u$ es menor que la excentricidad crítica
-$e_{crit}$, toda la placa permanece en contacto con el concreto y el mecanismo de transferencia
-predominante es la compresión directa. El estado límite relevante es el aplastamiento del concreto,
-verificado a través del esfuerzo de contacto máximo $f_{p,\max}$ comparado con la resistencia
-de diseño a compresión amplificada por el factor de confinamiento de área adyacente
-\cite{ACI318_2019}.
-
-\subsection*{Transferencia bajo flexocompresión con gran excentricidad}
-
-Cuando $e > e_{crit}$, la placa experimenta levantamiento parcial: parte de ella pierde contacto
-con el concreto y los pernos de anclaje del lado en tensión son traccionados. El equilibrio del
-sistema se establece entre el bloque equivalente de compresión del concreto ---de profundidad $Y$,
-modelado mediante la hipótesis de bloque rectangular de Whitney--- y la fuerza de tensión $T_{ua}$
-en los pernos de anclaje \cite{FisherKloiber_2006}. Este es el caso más crítico desde la
-perspectiva sísmica, ya que la falla frágil de los anclajes en este régimen puede ser catastrófica.
-
-\subsection*{Modos de falla en el sistema de anclaje}
-
-La clasificación de los estados límite de falla adoptada por las NTC-DCEA 2023 en concordancia
-con el Método de Diseño de Capacidad de Concreto (CCD, por sus siglas en inglés) del ACI~318
-\cite{ACI318_2019} comprende los siguientes modos principales, ilustrados en las
-Figuras~\ref{fig:falla_pullout} y~\ref{fig:falla_cono}:
-
-\begin{enumerate}
-  \item \textbf{Fluencia y fractura del acero del perno}: modo dúctil preferente; la fuerza de
-    tensión $T_{ua}$ excede la resistencia de fluencia nominal del acero del ancla.
-  \item \textbf{Arrancamiento de cono de concreto (\textit{breakout})}: modo frágil; el anclaje
-    extrae un volumen de concreto en forma de cono truncado cuya área proyectada $A_{Nc}$
-    determina la resistencia nominal $N_{cb}$.
-  \item \textbf{Extracción directa (\textit{pull-out})}: falla de adherencia entre el perno y el
-    concreto sin formación de cono completo; asociada a anclas sin elemento de cabeza o con
-    empotramiento insuficiente.
-  \item \textbf{Estallido lateral (\textit{side-face blowout})}: falla del recubrimiento lateral
-    del concreto en anclas de cabeza con distancia al borde muy reducida.
-  \item \textbf{Falla por pryout (\textit{pryout failure})}: deslizamiento lateral del anclaje
-    bajo carga cortante, predominante en anclas cortas.
-\end{enumerate}
+La Figura~\ref{fig:casos_estudio_cap4} resume el contexto mecánico general de los escenarios
+utilizados como referencia conceptual. Entre ellos, el caso de mayor interés para la comparación
+normativa es el de flexocompresión severa, ya que moviliza la fuerza $T_{ua}$ en los pernos de
+anclaje y traslada el control del diseño desde la placa de acero hacia los mecanismos de falla del
+concreto de pedestal.
 
 \begin{figure}[H]
   \centering
-  \begin{minipage}[b]{0.46\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{\detokenize{figuras/006_Planta de placa base con perfil W al centro..png}}
-    \caption{Mecanismo de falla por extracción directa (\textit{pull-out}): pérdida de
-      adherencia sin formación de cono de concreto \cite{INDEX_nodate}.}
-    \label{fig:falla_pullout}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.46\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{\detokenize{figuras/007_Fallo por cono de concreto..png}}
-    \caption{Mecanismo de falla por arrancamiento de cono de concreto (\textit{breakout}):
-      modo frágil predominante en sismos severos \cite{INDEX_nodate}.}
-    \label{fig:falla_cono}
-  \end{minipage}
+  \includegraphics[width=0.82\textwidth]{\detokenize{figuras/009_Casos de estudio..png}}
+  \caption{Esquemas generales de los casos de estudio considerados para interpretar la respuesta de
+    la conexión columna--placa base ante compresión axial, flexocompresión y cortante dominante.}
+  \label{fig:casos_estudio_cap4}
 \end{figure}
 
+Desde esta perspectiva, los resultados deben leerse en dos niveles. El primero corresponde al
+comportamiento de la placa base como elemento de distribución de esfuerzos, donde la actualización
+normativa introduce cambios menores. El segundo corresponde al comportamiento del sistema de
+anclaje y del dado de concreto, donde la edición 2023 sí modifica de manera apreciable la
+resistencia disponible y las restricciones geométricas de diseño.
+
 % ============================================================
-% SECCIÓN 4.4 — DEFICIENCIAS NTC-DCEA 2017
+% SECCION 4.2
 % ============================================================
-\section{Deficiencias del Apéndice B de las NTC-DCEA 2017}
+\section{Comparación normativa del diseño de placa base}
 
-El diseño de placas base en las NTC-DCEA 2017 estaba regulado por el Apéndice~B de dicha norma,
-cuya ubicación como apéndice generaba ambigüedad interpretativa respecto a su carácter mandatorio
-o complementario \cite{GCDMX_NTC_DCEA_2017}. Esta condición periférica se acompañaba de
-limitaciones técnicas sustanciales:
+La comparación general mostró que las ecuaciones básicas de equilibrio para la placa base no
+experimentan una modificación sustancial entre la NTC-DCEA 2017 y la NTC-DCEA 2023. En ambos casos
+se conserva la misma lógica mecánica para calcular la excentricidad $e$, la excentricidad crítica
+$e_{crit}$, la longitud del bloque comprimido $Y$, la fuerza total en anclas $T_{ua}$ y el espesor
+mínimo requerido $t_{req}$. En consecuencia, el dimensionamiento de la placa como elemento de acero
+no constituye la fuente principal de divergencia normativa observada en esta investigación.
 
-\begin{enumerate}
-  \item \textbf{Ausencia de los factores de confinamiento $R_{et}$ y $R_{ev}$}: la metodología de
-    2017 no reconocía analíticamente la contribución del refuerzo transversal del dado a la
-    resistencia del cono de concreto. Esta omisión conducía a diseños sistemáticamente conservadores
-    en dados con refuerzo transversal adecuado y, paradójicamente, no incentivaba la provisión de
-    dicho refuerzo como estrategia de mejora de la ductilidad de la conexión. La distribución de
-    presiones resultante del paradigma de placa rígida de la NTC-2017 se ilustra en la
-    Figura~\ref{fig:presiones_lineales}.
+La base de datos comparativa empleada para revisar el espesor requerido mostró que, para un amplio
+conjunto de combinaciones de carga y propiedades mecánicas, las diferencias entre $t_{req,2017}$ y
+$t_{req,2023}$ son nulas o despreciables en términos prácticos. Este resultado es consistente con el
+hecho de que ambas normas mantienen los factores de resistencia para aplastamiento del concreto y
+fluencia de la placa, así como el esquema general de distribución de esfuerzos bajo la placa.
 
-  \item \textbf{Distancia mínima al borde de $6\,d_o \geq 100\ \mathrm{mm}$}: el requisito de la
-    NTC-2017 era menos restrictivo que el establecido posteriormente para anclas de alta resistencia,
-    lo que podía incrementar la probabilidad del modo de falla por estallido lateral en pedestales
-    de dimensiones compactas.
+Sin embargo, esta coincidencia no implica que la actualización normativa sea irrelevante. Lo que
+evidencia es que la edición 2023 no busca redefinir la teoría de la placa base, sino reforzar la
+seguridad del sistema completo mediante una mejor caracterización del anclaje y del concreto de
+pedestal. Dicho de otro modo, la diferencia decisiva no está en el cálculo del momento resistente
+de la placa, sino en la forma en que se reconoce la capacidad del dado confinado y en las
+restricciones geométricas que garantizan que esa capacidad pueda desarrollarse sin mecanismos
+frágiles prematuros.
 
-  \item \textbf{Ambigüedad en el Diseño por Capacidad}: la norma de 2017 no incluía lenguaje
-    normativo suficientemente explícito que obligara al ingeniero a diseñar las conexiones de base
-    para el momento plástico máximo esperado de la columna. Esta ambigüedad permitía legalmente
-    diseñar con las reacciones espectrales reducidas por el factor de comportamiento sísmico $Q$,
-    lo que resultaba en anclas insuficientes bajo demanda sísmica real \cite{AISC_341_2022}. El
-    efecto de palanca (\textit{prying action}), que agrava esta insuficiencia, se ilustra en la
-    Figura~\ref{fig:prying_action}.
+\begin{table}[H]
+  \centering
+  \caption{Síntesis cualitativa de la comparación normativa en el sistema placa base--anclaje.}
+  \label{tab:sintesis_general_cap4}
+  \begin{tabular}{p{0.34\textwidth}p{0.22\textwidth}p{0.28\textwidth}}
+    \toprule
+    Aspecto comparado & Diferencia 2017--2023 & Implicación observada \\
+    \midrule
+    Cálculo de $Y$, $T_{ua}$ y $t_{req}$ & Nula o muy pequeña & La placa base mantiene prácticamente el mismo dimensionamiento. \\
+    Resistencia al cono en tensión & Aumenta en 2023 con $R_{et}$ & Mejora la reserva resistente en dados confinados. \\
+    Resistencia al cono en cortante & Aumenta en 2023 con $R_{ev}$ & Reduce el conservadurismo en pedestales con estribos efectivos. \\
+    Distancia mínima al borde & Más restrictiva en 2023 para A325/A449 & Puede exigir mayor dimensión en planta del dado. \\
+    \bottomrule
+  \end{tabular}
+\end{table}
 
-  \item \textbf{Ausencia de criterios para secciones tubulares y cajón}: las disposiciones del
-    Apéndice~B estaban calibradas exclusivamente para perfiles tipo~$I$ (patines anchos), sin
-    contemplar las particularidades geométricas de las columnas tubulares y de sección cajón,
-    ampliamente utilizadas en la práctica constructiva mexicana.
-\end{enumerate}
+Así, el análisis comparativo de la placa base funciona como punto de control: confirma que la mayor
+parte del impacto normativo de la edición 2023 se desplaza del acero de la placa hacia la
+interacción ancla--concreto, que es justamente donde se concentran los barridos paramétricos
+presentados en las secciones siguientes.
+
+% ============================================================
+% SECCION 4.3
+% ============================================================
+\section{Influencia del factor \texorpdfstring{$R_{et}$}{Ret} en la resistencia a tensión}
+
+El primer resultado de mayor relevancia corresponde al efecto del confinamiento transversal sobre la
+resistencia al cono de concreto en tensión. La Figura~\ref{fig:ret_barrido_cap4} muestra que, al
+pasar de la formulación 2017 a la formulación 2023, la resistencia disponible deja de depender
+exclusivamente del concreto y del área proyectada del cono, e incorpora de manera explícita la
+contribución de los estribos interceptados por la superficie potencial de falla.
 
 \begin{figure}[H]
   \centering
-  \begin{minipage}[b]{0.47\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{\detokenize{figuras/003_Diagrama de distribución lineal de presiones en placa base..png}}
-    \caption{Distribución de presiones de contacto bajo la hipótesis de placa rígida, paradigma
-      del diseño bajo NTC-DCEA 2017 \cite{Hilti_nodate}.}
-    \label{fig:presiones_lineales}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.47\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{\detokenize{figuras/004_Diagrama esquemático del efecto prying action; placa deformada..png}}
-    \caption{Efecto de palanca (\textit{prying action}) en placa base flexible: la flexibilidad
-      real incrementa la demanda en los pernos por encima de la solución estática directa
-      \cite{Hilti_nodate}.}
-    \label{fig:prying_action}
-  \end{minipage}
+  \includegraphics[width=0.92\textwidth]{\detokenize{figuras/010_Impacto del confinamiento por estribos en la resistencia al cono de concreto en tension..png}}
+  \caption{Impacto del confinamiento por estribos en la resistencia al cono de concreto en tensión
+    para distintas profundidades efectivas y configuraciones de refuerzo transversal.}
+  \label{fig:ret_barrido_cap4}
 \end{figure}
 
-% ============================================================
-% SECCIÓN 4.5 — NTC-DCEA 2023 COMO RESPUESTA TÉCNICA
-% ============================================================
-\section{Las NTC-DCEA 2023 como Respuesta Técnica}
+La tendencia general observada es clara: a medida que aumenta la profundidad efectiva de
+empotramiento $h_{ef}$ y se densifica el refuerzo transversal, la diferencia entre ambas normas se
+hace más pronunciada a favor de la NTC-DCEA 2023. El incremento no es estrictamente lineal, porque
+depende del número discreto de estribos que el cono hipotético intercepta; por ello, las curvas de
+resistencia muestran escalonamientos coherentes con el aumento de $N_{est}$ en la formulación de
+$R_{et}$.
 
-Las NTC-DCEA 2023 representan un salto cualitativo en la regulación de conexiones
-columna-cimentación en México \cite{GCDMX_NTC_DCEA_2023}. Sus cambios principales se describen
-a continuación:
+Desde el punto de vista del diseño, el hallazgo más importante es que el confinamiento efectivo
+reduce la probabilidad de que el anclaje falle por desprendimiento frágil del concreto antes de que
+el acero del sistema de anclaje movilice una porción significativa de su capacidad. En términos de
+diseño por capacidad, este cambio es favorable, porque desplaza el comportamiento de la conexión
+hacia mecanismos menos frágiles y más consistentes con la jerarquía resistente buscada en zonas
+sísmicas.
 
-\begin{enumerate}
-  \item \textbf{Jerarquización normativa}: el diseño de placas base fue elevado del Apéndice~B al
-    Capítulo~13 principal, con carácter mandatorio. Se crea adicionalmente el Capítulo~14 para
-    conexiones de columnas de sección tubular y cajón, subsanando el vacío de la norma anterior.
-
-  \item \textbf{Diseño por Capacidad (\textit{Capacity Design})}: la NTC-2023 establece que la
-    placa base, los pernos de anclaje y el dado de concreto constituyen una ``conexión infalible''
-    cuya capacidad de resistencia debe ser superior al momento máximo probable, al cortante
-    inelástico máximo y a las tracciones derivadas de la formación de una rótula plástica en la
-    base de la columna, evaluados bajo los factores de sobreresistencia $\Omega_o$ del acero
-    \cite{AISC_341_2022}.
-
-  \item \textbf{Factor de confinamiento en tensión $R_{et}$}: cuantifica la contribución de los
-    estribos del dado a la resistencia al cono de concreto bajo demanda de tensión. Su formulación
-    reconoce que los estribos interceptan geométricamente la superficie del cono hipotético de
-    falla, restringiendo la propagación frágil de la grieta:
-    \begin{equation}
-      R_{et} = N_{est} \cdot F_R \cdot \left(0.5 \cdot A_e \cdot \sqrt{f'_c \cdot E_c}\right)
-    \end{equation}
-    donde $N_{est} = \lfloor h_{ef}/s_{est} \rfloor$ es el número de estribos que interceptan el
-    plano del cono hipotético, $F_R$ es el factor de resistencia del material, $A_e$ es el área
-    efectiva del estribo en la zona de intersección, $f'_c$ es la resistencia a la compresión del
-    concreto y $E_c$ es su módulo de elasticidad.
-
-  \item \textbf{Factor de confinamiento en cortante $R_{ev}$}: cuantifica la contribución de los
-    estribos a la resistencia al deslizamiento lateral (cono por cortante):
-    \begin{equation}
-      R_{ev} = N_{est} \cdot F_R \cdot A_e \cdot F_y
-    \end{equation}
-    donde $F_y$ es el esfuerzo de fluencia del acero del estribo.
-
-  \item \textbf{Distancia mínima al borde}: modificada a $7\,d_o \geq 100\ \mathrm{mm}$ para
-    anclas fabricadas con aceros de alta resistencia A325/A449, lo que representa un incremento del
-    16.7\,\% respecto al requisito de la norma de 2017 para este tipo de material.
-
-  \item \textbf{Sinergia con NTC-Concreto 2023}: la metodología de cálculo de resistencia al cono
-    de concreto queda integrada con el Capítulo~14 de las Normas Técnicas Complementarias para el
-    Diseño y Construcción de Estructuras de Concreto 2023, adoptando formalmente el Método CCD
-    \cite{GCDMX_2023_concrete}.
-\end{enumerate}
-
-La Figura~\ref{fig:despiece_isometrico} ilustra el despiece tridimensional de la conexión en el
-contexto del enfoque integral de diseño propuesto por la NTC-2023.
+La Figura~\ref{fig:ret_mapa_cap4} complementa esta observación mediante un mapa de calor del
+incremento de resistencia en tensión. En él se aprecia que la ganancia relativa más importante se
+concentra en concretos de mayor resistencia y en arreglos con estribos cerrados a espaciamientos
+reducidos.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.60\textwidth]{\detokenize{figuras/008_Despiece isométrico de la conexión; columna W, placa base, pernos de anclaje con tuerca y arandela, capa de grout y pedestal de concreto..png}}
-  \caption{Despiece isométrico de la conexión columna-placa base: columna IR, placa de acero,
-    pernos de anclaje con tuerca y arandela de alta resistencia, capa de grout y pedestal de
-    concreto reforzado con estribos \cite{Shi_2025}.}
-  \label{fig:despiece_isometrico}
+  \includegraphics[width=0.88\textwidth]{\detokenize{figuras/012_Mapa de calor_Incremento de resistencia al cono de tension-NTC-2023 vs NTC-2017..png}}
+  \caption{Mapa de calor del incremento de resistencia al cono de concreto en tensión al incorporar
+    el término $R_{et}$ de la NTC-DCEA 2023.}
+  \label{fig:ret_mapa_cap4}
 \end{figure}
 
+Esta distribución confirma que la ventaja de la NTC-DCEA 2023 no es uniforme, sino dependiente de
+la calidad del detallado del dado. Cuando el refuerzo transversal es escaso o el espaciamiento es
+grande, la diferencia entre normas se reduce; en cambio, cuando el núcleo de concreto se encuentra
+efectivamente confinado, la formulación 2023 reconoce una reserva resistente que la metodología de
+2017 simplemente no contabilizaba. En consecuencia, la actualización normativa no debe entenderse
+como una flexibilización indiscriminada, sino como una calibración más refinada de configuraciones
+constructivamente bien detalladas.
+
 % ============================================================
-% SECCIÓN 4.6 — BRECHA DE INVESTIGACIÓN
+% SECCION 4.4
 % ============================================================
-\section{Brecha de Investigación}
+\section{Influencia de la distancia mínima al borde en el cumplimiento geométrico y resistente}
 
-La revisión del estado del arte en el contexto de la normativa mexicana vigente evidencia la
-existencia de tres brechas de conocimiento específicas que motivan la presente investigación:
+El segundo resultado relevante no está ligado a un aumento de resistencia, sino a una exigencia
+geométrica más estricta. La Figura~\ref{fig:borde_cap4} resume el efecto del cambio de
+$6d_o$ a $7d_o$ para anclas A325 y A449 introducido por la NTC-DCEA 2023. Aunque la modificación
+parece pequeña en términos relativos, su impacto en pedestales compactos es directo, ya que puede
+volver inviable una disposición de anclas que con la norma de 2017 todavía cumplía.
 
-\begin{enumerate}
-  \item No existe, a la fecha de elaboración de este trabajo, un análisis paramétrico publicado
-    que cuantifique el impacto numérico de los factores $R_{et}$ y $R_{ev}$ de la NTC-DCEA 2023
-    sobre la resistencia al cono de concreto, en función de variables prácticas de diseño como la
-    profundidad de empotramiento $h_{ef}$, el diámetro del ancla $d_o$ y el espaciado de los
-    estribos $s_{est}$.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.88\textwidth]{\detokenize{figuras/011_Requisitos de distancia minima al borde libre impacto normativo del cambio para anclas..png}}
+  \caption{Comparación de los requisitos de distancia mínima al borde libre para distintos grados y
+    diámetros de ancla, con énfasis en el cambio normativo aplicable a anclas A325 y A449.}
+  \label{fig:borde_cap4}
+\end{figure}
 
-  \item No se ha documentado sistemáticamente si el cambio en el criterio de distancia mínima al
-    borde ($6\,d_o \to 7\,d_o$) tiene un impacto material sobre las dimensiones en planta del
-    dado de concreto en el rango de diámetros de ancla más utilizados en la práctica estructural
-    mexicana.
+La discusión de este resultado debe hacerse en términos de viabilidad geométrica del detalle. En
+dados de gran dimensión, el aumento de una vez el diámetro puede ser absorbido sin alterar el
+proyecto. Pero en pedestales de 50 a 60~cm de lado, o en zapatas cercanas a linderos, la penalización
+puede obligar a aumentar el dado, reducir el diámetro del ancla o replantear la distribución del
+grupo de anclaje. Por ello, el cambio normativo opera como una restricción de proyecto, no solo
+como una verificación secundaria.
 
-  \item No existe una evaluación cuantitativa de la evolución del espesor requerido $t_{req}$ de
-    la placa base como función del momento último $M_u$ que compare explícitamente ambas normas
-    bajo las mismas condiciones de carga, determinando si los cambios normativos de la NTC-2023
-    son o no sensibles a este parámetro de diseño.
-\end{enumerate}
+Desde una perspectiva mecánica, el incremento del borde libre mínimo es consistente con el propósito
+de evitar estallidos laterales y reducir la vulnerabilidad del concreto cercano a caras libres. Un
+ancla de alta resistencia puede movilizar demandas mayores antes de fluir; si la geometría del dado
+no acompaña esa capacidad, la falla deja de estar controlada por el acero y vuelve a concentrarse en
+el recubrimiento lateral del concreto. Así, la NTC-DCEA 2023 adopta un criterio más severo no para
+reducir la eficiencia del sistema, sino para asegurar que la mayor capacidad del ancla no genere un
+mecanismo frágil en el pedestal.
 
-La presente tesina aborda estas tres brechas mediante la implementación de algoritmos de diseño
-parametrizados en \textsc{Python}, la ejecución de cuatro barridos paramétricos y el análisis
-comparativo de los resultados obtenidos bajo ambos marcos normativos. El caso semilla utilizado
-corresponde al perfil IR~305$\times$74.5 con placa base de 50$\times$50~cm, concreto con
-$f'_c = 250\ \mathrm{kg/cm^2}$ y un régimen de flexocompresión con gran excentricidad
-($P_u = 10{,}000\ \mathrm{kg}$, $M_u = 1{,}400{,}000\ \mathrm{kg{\cdot}cm}$, correspondiente a
-$e = 140\ \mathrm{cm} \gg e_{crit}$), garantizando la activación de los pernos de anclaje en
-tensión y el levantamiento parcial de la placa.
+% ============================================================
+% SECCION 4.5
+% ============================================================
+\section{Influencia del factor \texorpdfstring{$R_{ev}$}{Rev} en la resistencia a cortante}
+
+El tercer resultado principal corresponde a la resistencia del cono de concreto por cortante. La
+Figura~\ref{fig:rev_barrido_cap4} muestra que la incorporación del término $R_{ev}$ en la edición
+2023 incrementa la resistencia lateral disponible en todos los escenarios evaluados, con un efecto
+más notable cuando el espaciamiento de estribos es pequeño.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.90\textwidth]{\detokenize{figuras/013_Resistencia al cono por cortante Rv - NTC-2017 vs NTC-2023..png}}
+  \caption{Comparación de la resistencia al cono de concreto por cortante entre NTC-DCEA 2017 y
+    NTC-DCEA 2023, incluyendo el aporte del término $R_{ev}$ para diferentes niveles de $f'_c$ y
+    espaciamiento del refuerzo transversal.}
+  \label{fig:rev_barrido_cap4}
+\end{figure}
+
+En la formulación 2017, la resistencia en cortante permanece esencialmente vinculada a la
+resistencia base del concreto y a la geometría del mecanismo de falla. La versión 2023 modifica esa
+lectura al admitir que los estribos interceptados por el plano lateral de fractura aportan una
+componente resistente adicional cuantificable. El resultado práctico es una disminución del
+conservadurismo en dados adecuadamente armados, particularmente en configuraciones donde el cortante
+basal puede controlar el diseño.
+
+Un aspecto importante de este barrido es que el aporte de $R_{ev}$ no sustituye la necesidad de una
+geometría adecuada, sino que la complementa. La capacidad adicional otorgada por el refuerzo
+transversal es más efectiva cuando el dado posee una configuración suficientemente robusta para
+desarrollar el mecanismo resistente. Por ello, el beneficio de la norma de 2023 debe interpretarse
+como una valorización del confinamiento real del pedestal, y no como una autorización para reducir
+arbitrariamente dimensiones geométricas o descuidar el detallado del acero transversal.
+
+% ============================================================
+% SECCION 4.6
+% ============================================================
+\section{Síntesis comparativa de los efectos normativos observados}
+
+La integración de los resultados permite distinguir con claridad tres patrones. En primer lugar, el
+diseño de la placa base como elemento de acero permanece prácticamente inalterado: la transición de
+2017 a 2023 no redefine la mecánica básica del bloque comprimido ni modifica de forma significativa
+el espesor requerido. En segundo lugar, el comportamiento del sistema de anclaje mejora cuando el
+dado cuenta con refuerzo transversal eficaz, ya que los términos $R_{et}$ y $R_{ev}$ incrementan la
+resistencia disponible en tensión y cortante. En tercer lugar, el nuevo requisito de borde libre
+introduce una restricción geométrica adicional para anclas de alta resistencia, con impacto
+especialmente visible en pedestales compactos.
+
+\begin{table}[H]
+  \centering
+  \caption{Síntesis de los efectos normativos observados en el análisis comparativo.}
+  \label{tab:sintesis_efectos_cap4}
+  \begin{tabular}{p{0.30\textwidth}p{0.28\textwidth}p{0.28\textwidth}}
+    \toprule
+    Cambio normativo & Efecto dominante & Lectura técnica \\
+    \midrule
+    Conservación de ecuaciones de placa base & Diferencia mínima en $t_{req}$ & La actualización se concentra en el anclaje, no en la placa. \\
+    Incorporación de $R_{et}$ & Aumento de $R_t$ & Reconoce el confinamiento real del dado en tensión. \\
+    Incorporación de $R_{ev}$ & Aumento de $R_v$ & Reconoce la participación del refuerzo transversal en cortante. \\
+    Cambio de $6d_o$ a $7d_o$ & Mayor exigencia geométrica & Penaliza configuraciones compactas con anclas A325/A449. \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+La consecuencia metodológica de esta síntesis es relevante: una comparación centrada solo en la
+placa base habría concluido erróneamente que la actualización de 2023 casi no modifica el diseño.
+En cambio, al incorporar el comportamiento del anclaje y del concreto de pedestal, se observa que la
+norma sí altera de manera importante el balance entre seguridad, detalle constructivo y economía del
+sistema.
+
+% ============================================================
+% SECCION 4.7
+% ============================================================
+\section{Implicaciones para el diseño estructural de placas base}
+
+Los resultados obtenidos sugieren que la NTC-DCEA 2023 promueve una práctica de diseño más cercana
+al comportamiento real del sistema columna--placa base--dado de concreto. En lugar de introducir un
+cambio drástico en el dimensionamiento del acero de la placa, la norma concentra su refinamiento en
+los mecanismos donde históricamente se han observado fallas frágiles: el desprendimiento del cono de
+concreto en tensión, el desgarramiento lateral por cortante y la insuficiencia geométrica del borde
+libre.
+
+Para el ejercicio profesional, esto implica que el detallado del pedestal deja de ser un aspecto
+secundario y se vuelve parte integral del diseño resistente. Un dado con mejor confinamiento puede
+traducirse en una conexión más segura y, en ciertos casos, más eficiente; pero una conexión con
+anclas de alta resistencia y geometría compacta puede verse penalizada por el nuevo requisito de
+borde. La lectura correcta de la norma, por tanto, no consiste en identificar si 2023 es “más
+conservadora” o “más permisiva” en términos absolutos, sino en reconocer que distribuye de manera
+distinta la responsabilidad resistente entre placa, anclaje, refuerzo transversal y geometría del
+pedestal.
+
+En síntesis, el aporte más importante de la actualización normativa es que aproxima el diseño al
+desempeño estructural esperado en servicio sísmico: conserva la estabilidad de los criterios de
+placa base, reconoce la contribución del confinamiento cuando este existe y endurece las condiciones
+geométricas cuando el riesgo de falla frágil así lo exige. Esta combinación explica por qué la
+NTC-DCEA 2023 representa una evolución normativa significativa aun cuando algunas ecuaciones
+principales del diseño de la placa permanezcan esencialmente sin cambios.

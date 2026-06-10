@@ -1,11 +1,180 @@
 % capitulo5.tex
-\chapter{Metodología}
+\chapter{Conclusiones y recomendaciones}
 
-\section{Descripción del Enfoque Metodológico}
+El presente capítulo sintetiza los hallazgos principales de la comparación entre las NTC-DCEA 2017
+y las NTC-DCEA 2023 para el diseño de placas base de acero. Las conclusiones se organizan de
+acuerdo con los objetivos de la investigación: identificar los cambios normativos relevantes,
+evaluar su efecto en el diseño de placas base y cuantificar su impacto mediante barridos
+paramétricos sobre los factores $R_{et}$, $R_{ev}$ y la distancia mínima al borde libre.
 
-El presente capítulo describirá la metodología de cálculo implementada para el análisis
-comparativo paramétrico del diseño de placas base bajo las NTC-DCEA 2017 y las NTC-DCEA 2023.
-Se detallará la arquitectura de los algoritmos desarrollados en \textsc{Python}, los cuatro
-barridos paramétricos ejecutados y los criterios de evaluación empleados.
+% ============================================================
+% SECCION 5.1
+% ============================================================
+\section{Conclusiones generales}
 
-\textit{(Sección en desarrollo --- contenido completo en entrega subsecuente.)}
+La transición de la NTC-DCEA 2017 a la NTC-DCEA 2023 representa una evolución normativa
+significativa para el diseño de conexiones columna--cimentación en estructuras de acero. Sin
+embargo, el impacto de esta actualización no se distribuye de manera uniforme en todos los
+componentes de la conexión. El análisis desarrollado muestra que las ecuaciones básicas de la placa
+base, asociadas al bloque de compresión, la tensión en anclas y el espesor requerido, se mantienen
+esencialmente estables entre ambas ediciones. Por ello, el cambio normativo no debe interpretarse
+como una modificación profunda del modelo clásico de placa base, sino como una ampliación del
+tratamiento del sistema de anclaje y del dado de concreto.
+
+El aporte técnico más importante de la NTC-DCEA 2023 se concentra en el reconocimiento explícito del
+refuerzo transversal del pedestal. La incorporación de los términos $R_{et}$ y $R_{ev}$ permite
+cuantificar una resistencia que en la edición 2017 no era considerada de manera directa, aun cuando
+constructivamente el dado contara con estribos capaces de interceptar el cono o el plano lateral de
+falla. Esta diferencia modifica la lectura del diseño: el refuerzo del pedestal deja de ser un
+detalle constructivo secundario y pasa a formar parte de la capacidad resistente verificable del
+sistema.
+
+La investigación también confirma que la NTC-DCEA 2023 no es simplemente más permisiva que la
+edición 2017. Aunque aumenta la resistencia disponible en tensión y cortante cuando existe
+confinamiento efectivo, también introduce un requisito geométrico más estricto para anclas de alta
+resistencia A325 y A449, al pasar de $6d_o$ a $7d_o$ como distancia mínima proporcional al borde. En
+consecuencia, la actualización normativa combina dos efectos simultáneos: reconoce capacidad
+adicional en dados bien armados, pero penaliza configuraciones geométricamente compactas que pueden
+favorecer fallas frágiles hacia el borde libre.
+
+% ============================================================
+% SECCION 5.2
+% ============================================================
+\section{Conclusiones sobre la comparación normativa}
+
+La comparación normativa permitió identificar que los factores de resistencia para aplastamiento del
+concreto y flexión de la placa no presentan cambios sustanciales entre 2017 y 2023. Esto explica
+por qué el espesor requerido de placa $t_{req}$ permanece prácticamente igual al aplicar ambas
+normas bajo las mismas condiciones de carga, geometría y propiedades mecánicas.
+
+El cambio de mayor alcance conceptual es la reubicación del diseño de placas base desde un apéndice
+hacia un capítulo principal dentro de la NTC-DCEA 2023. Esta modificación no solo mejora la
+claridad documental, sino que refuerza la importancia del diseño de conexiones de base dentro del
+comportamiento global de estructuras de acero. La conexión columna--placa--dado se reconoce como un
+sistema crítico de transferencia de fuerzas, especialmente en condiciones sísmicas donde las fallas
+frágiles del anclaje pueden comprometer la jerarquía resistente.
+
+También se concluye que la NTC-DCEA 2023 hace más explícita la interacción entre las normas de acero
+y concreto. El diseño de la placa base ya no puede evaluarse únicamente desde la resistencia de la
+placa de acero; debe verificarse junto con la resistencia del concreto, el anclaje, el refuerzo
+transversal y los requisitos geométricos del pedestal.
+
+% ============================================================
+% SECCION 5.3
+% ============================================================
+\section{Conclusiones sobre el análisis paramétrico}
+
+El barrido asociado al factor $R_{et}$ mostró que la resistencia al cono de concreto en tensión
+aumenta cuando el plano hipotético de falla intercepta estribos del dado. El incremento depende de
+la profundidad efectiva de empotramiento $h_{ef}$ y de la densidad del refuerzo transversal. Por
+ello, los mayores beneficios se presentan en dados con estribos cerrados a menor espaciamiento y
+con anclas suficientemente embebidas para movilizar un volumen de concreto confinado.
+
+El barrido de distancia mínima al borde evidenció que el cambio de $6d_o$ a $7d_o$ para anclas A325
+y A449 puede controlar la geometría del dado. Esta conclusión es especialmente importante para
+pedestales compactos, zapatas de lindero o configuraciones donde el espacio disponible para colocar
+anclas es limitado. En estos casos, una conexión que cumplía con la NTC-DCEA 2017 puede requerir
+redimensionamiento bajo la NTC-DCEA 2023.
+
+El barrido asociado al factor $R_{ev}$ confirmó que la NTC-DCEA 2023 incrementa la resistencia al
+cono de concreto por cortante al considerar el aporte del refuerzo transversal interceptado por el
+plano lateral de falla. Este efecto es más significativo cuando el espaciamiento de estribos es
+reducido, pues aumenta el número de barras capaces de participar en el mecanismo resistente. La
+densificación del refuerzo transversal se confirma, por tanto, como una estrategia eficaz para
+mejorar el desempeño del dado ante cortante basal.
+
+En conjunto, los tres barridos muestran que los cambios normativos relevantes no actúan de forma
+aislada. La profundidad de empotramiento, el diámetro del ancla, el grado del acero, el espaciamiento
+de estribos y las dimensiones del dado forman un sistema de variables acopladas. El diseño eficiente
+de una placa base no consiste únicamente en aumentar el espesor de la placa o el diámetro de las
+anclas, sino en equilibrar la resistencia del acero con la capacidad del concreto y el confinamiento
+del pedestal.
+
+% ============================================================
+% SECCION 5.4
+% ============================================================
+\section{Aportaciones de la investigación}
+
+La primera aportación de esta tesis es la sistematización de las diferencias normativas entre la
+NTC-DCEA 2017 y la NTC-DCEA 2023 aplicadas al diseño de placas base. Esta comparación permite
+separar los cambios meramente editoriales de aquellos que producen efectos cuantificables en el
+diseño.
+
+La segunda aportación es la implementación de un análisis paramétrico reproducible, capaz de mostrar
+en qué condiciones la actualización normativa modifica la resistencia disponible o la geometría
+requerida. Este enfoque evita una interpretación únicamente descriptiva de las normas y permite
+medir la sensibilidad del diseño ante variables de uso común en la práctica estructural.
+
+La tercera aportación es la identificación de una lectura técnica balanceada de la NTC-DCEA 2023. La
+norma no puede clasificarse de manera absoluta como más conservadora o más permisiva: resulta más
+favorable cuando existe confinamiento efectivo por estribos, pero más estricta cuando la distancia al
+borde es reducida y se emplean anclas de alta resistencia.
+
+% ============================================================
+% SECCION 5.5
+% ============================================================
+\section{Recomendaciones para el diseño estructural}
+
+Se recomienda que el diseño de placas base bajo la NTC-DCEA 2023 no se limite a verificar el espesor
+de la placa. El proyectista debe revisar de manera conjunta el grupo de anclas, el dado de concreto,
+el refuerzo transversal y las distancias mínimas al borde. Esta revisión integral es indispensable
+para evitar que el sistema falle por mecanismos frágiles antes de que la placa o las anclas alcancen
+un comportamiento dúctil.
+
+Para conexiones con anclas de alta resistencia A325 o A449, se recomienda verificar desde etapas
+tempranas la distancia mínima al borde libre. Esta comprobación debe realizarse antes de cerrar las
+dimensiones del pedestal o de la zapata, ya que el cambio de $6d_o$ a $7d_o$ puede obligar a
+modificar la geometría en planta del dado.
+
+En dados sometidos a demandas importantes de tensión o cortante, se recomienda considerar el
+refuerzo transversal como una variable de diseño y no solo como un requisito constructivo. La
+colocación de estribos cerrados con espaciamiento adecuado puede incrementar la resistencia
+disponible mediante $R_{et}$ y $R_{ev}$, además de mejorar la capacidad del pedestal para controlar
+la propagación de grietas.
+
+También se recomienda documentar explícitamente en las memorias de cálculo qué versión normativa se
+emplea y qué criterios fueron determinantes. En especial, debe indicarse si el diseño quedó
+controlado por la resistencia del cono en tensión, la resistencia por cortante o la distancia mínima
+al borde, pues cada estado límite conduce a decisiones de diseño distintas.
+
+% ============================================================
+% SECCION 5.6
+% ============================================================
+\section{Recomendaciones para trabajos futuros}
+
+Como línea futura de investigación, se recomienda ampliar el análisis paramétrico a otros tipos de
+columna, en particular secciones tubulares y cajón, ya que la NTC-DCEA 2023 incorpora disposiciones
+específicas para estas configuraciones. Esto permitiría evaluar si los patrones observados para
+perfiles tipo IR se mantienen en geometrías de placa y anclaje diferentes.
+
+También se recomienda complementar el enfoque analítico con modelos numéricos de elementos finitos
+que permitan estudiar la interacción placa--grout--concreto--anclas. Un modelo tridimensional
+calibrado podría ayudar a evaluar la distribución real de presiones, la flexibilidad de la placa, el
+efecto de palanca y la formación progresiva de grietas en el pedestal.
+
+Otra línea útil sería contrastar las expresiones normativas con ensayes experimentales de anclas en
+pedestales reforzados. En particular, sería valioso estudiar la compatibilidad entre la deformación
+necesaria para movilizar el acero transversal y la apertura de grietas del concreto, especialmente
+en el caso del aporte $R_{et}$.
+
+Finalmente, se recomienda desarrollar herramientas de cálculo automatizadas que integren las
+verificaciones de placa base, anclaje, refuerzo transversal y distancia al borde. Este tipo de
+herramientas facilitaría la aplicación correcta de la NTC-DCEA 2023 y reduciría errores de
+interpretación en memorias de diseño.
+
+% ============================================================
+% SECCION 5.7
+% ============================================================
+\section{Cierre}
+
+La comparación realizada permite concluir que la NTC-DCEA 2023 representa una actualización
+relevante para el diseño de placas base de acero en México. Su principal contribución no consiste en
+cambiar radicalmente el cálculo de la placa, sino en reconocer con mayor precisión la participación
+del concreto confinado y del refuerzo transversal en el comportamiento del sistema de anclaje.
+
+El diseño resultante es más coherente con una filosofía de desempeño estructural: favorece el uso
+de dados adecuadamente confinados, exige mayor cuidado en la geometría de borde para anclas de alta
+resistencia y obliga a entender la placa base como parte de una conexión compuesta. Bajo esta
+lectura, la actualización de 2023 no solo modifica ecuaciones aisladas, sino que promueve una forma
+más integral y responsable de diseñar la transferencia de fuerzas entre la estructura de acero y la
+cimentación.

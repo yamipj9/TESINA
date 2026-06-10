@@ -21,26 +21,6 @@ Antonio Garc{\'\i}a-Palencia, Ali Saffar, and Luis Godoy.
   met\'alicas.
 \newblock {\em Revista Internacional de Desastres Naturales}, 2008.
 
-\bibitem{INDEX_nodate}
-{INDEX Fix}.
-\newblock Tipos de fallos de anclajes.
-\newblock
-  \url{https://www.indexfix.com/preguntas-frecuentes/como-se-sabe-si-un-anclaje-aguantara-la-carga-a-la-que-se-le-va-a-someter-mecanicos-y-quimicos-en-hormigon}.
-
-\bibitem{Hilti_nodate}
-{Hilti Espa\~na}.
-\newblock ¿por qu{\'e} es importante comprobar la rigidez de la placa de
-  anclajes?
-\newblock
-  \url{https://www.hilti.es/engineering/article/por-que-es-importante-comprobar-la-rigidez-de-la-placa-de-anclajes/uyx67y}.
-\newblock consultado en 2026.
-
-\bibitem{Shi_2025}
-Yuxiao Shi, Ke~Jiang, Mingda Wang, Yating Liang, and Ou~Zhao.
-\newblock Experimental and numerical study of full-scale column-base
-  connections with enlarged bolt holes infilled by high strength grout.
-\newblock {\em Engineering Structures}, 341:120839, 2025.
-
 \bibitem{FisherKloiber_2006}
 J.~M. Fisher and L.~A. Kloiber.
 \newblock {\em Design guide I: Base plate and anchor rod design}.
@@ -99,6 +79,14 @@ Edgar Tapia~Hern{\'a}ndez.
   2025.
 \newblock Fecha de acceso: 5 de junio de 2026.
 
+\bibitem{Hilti_nodate}
+{Hilti Espa\~na}.
+\newblock ¿por qu{\'e} es importante comprobar la rigidez de la placa de
+  anclajes?
+\newblock
+  \url{https://www.hilti.es/engineering/article/por-que-es-importante-comprobar-la-rigidez-de-la-placa-de-anclajes/uyx67y}.
+\newblock consultado en 2026.
+
 \bibitem{FuchsEligehausenBreen_1995}
 Werner Fuchs, Rolf Eligehausen, and John~E. Breen.
 \newblock Concrete capacity design (ccd) approach for fastening to concrete.
@@ -117,24 +105,18 @@ David~A. Grilli and Amit~M. Kanvinde.
 \newblock Technical report, Charles Pankow Foundation, 2017.
 \newblock Project 4-11 final report.
 
+\bibitem{Shi_2025}
+Yuxiao Shi, Ke~Jiang, Mingda Wang, Yating Liang, and Ou~Zhao.
+\newblock Experimental and numerical study of full-scale column-base
+  connections with enlarged bolt holes infilled by high strength grout.
+\newblock {\em Engineering Structures}, 341:120839, 2025.
+
 \bibitem{FurcheEligehausen_1991}
 Johannes Furche and Rolf Eligehausen.
 \newblock Lateral blow-out failure of headed studs near a free edge.
 \newblock {\em ACI Structural Journal}, 1991.
 \newblock Referencia citada en la discusión bibliográfica sobre estallido
   lateral.
-
-\bibitem{UNAM_SSN_2017}
-{Instituto de Ingenier{\'i}a, UNAM and Servicio Sismol{\'o}gico Nacional}.
-\newblock Reporte especial: Sismo del 19 de septiembre de 2017.
-\newblock Technical report, Universidad Nacional Aut{\'o}noma de M{\'e}xico,
-  2017.
-
-\bibitem{AISC_360_2022}
-{American Institute of Steel Construction}.
-\newblock Specification for structural steel buildings (ansi/aisc 360-22).
-\newblock Technical report, American Institute of Steel Construction, Chicago,
-  IL, 2022.
 
 \bibitem{GCDMX_2023_concrete}
 {Gobierno de la Ciudad de M{\'e}xico}.
@@ -152,6 +134,18 @@ A.~Smith and B.~Jones.
 \newblock Análisis estructural avanzado.
 \newblock {\em Revista de Ingeniería}, 12(3):45--60, 2018.
 
+\bibitem{AISC_360_2022}
+{American Institute of Steel Construction}.
+\newblock Specification for structural steel buildings (ansi/aisc 360-22).
+\newblock Technical report, American Institute of Steel Construction, Chicago,
+  IL, 2022.
+
+\bibitem{UNAM_SSN_2017}
+{Instituto de Ingenier{\'i}a, UNAM and Servicio Sismol{\'o}gico Nacional}.
+\newblock Reporte especial: Sismo del 19 de septiembre de 2017.
+\newblock Technical report, Universidad Nacional Aut{\'o}noma de M{\'e}xico,
+  2017.
+
 \bibitem{Mahmoud_2021}
 K.~S. Mahmoud.
 \newblock Column base plate design guidelines.
@@ -166,6 +160,12 @@ K.~S. Mahmoud.
 \newblock
   \url{https://www.prontubeam.com/articulos/2021-02-20-Diseno-de-placas-de-anclaje-en-estructuras-metalicas},
   2021.
+
+\bibitem{INDEX_nodate}
+{INDEX Fix}.
+\newblock Tipos de fallos de anclajes.
+\newblock
+  \url{https://www.indexfix.com/preguntas-frecuentes/como-se-sabe-si-un-anclaje-aguantara-la-carga-a-la-que-se-le-va-a-someter-mecanicos-y-quimicos-en-hormigon}.
 
 \bibitem{ACI_MNL_2021}
 {American Concrete Institute}.
