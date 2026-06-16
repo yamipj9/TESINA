@@ -79,6 +79,21 @@ Edgar Tapia~Hern{\'a}ndez.
   2025.
 \newblock Fecha de acceso: 5 de junio de 2026.
 
+\bibitem{RISA_BasePlateConnections}
+{RISA Technologies}.
+\newblock Base plate connections.
+\newblock RISA Help,
+  \url{https://help.risa.com/risahelp/risaconnection/Content/Design%20Checks/Base%20Plate%20Connections.htm}.
+\newblock s. f.
+
+\bibitem{GomezKanvindeSmithDeierlein_2009}
+Ivan Gomez, Amit Kanvinde, Charles Smith, and Gregory Deierlein.
+\newblock Shear transfer in exposed column base plates.
+\newblock Technical report, University of California, Davis; Stanford
+  University, 2009.
+\newblock Report presented to the American Institute of Steel Construction.
+  \url{https://www.aisc.org/media/0tqndeap/shear-transfer-in-exposed-column-base-plates.pdf}.
+
 \bibitem{Hilti_nodate}
 {Hilti Espa\~na}.
 \newblock ¿por qu{\'e} es importante comprobar la rigidez de la placa de
@@ -97,6 +112,20 @@ Werner Fuchs, Rolf Eligehausen, and John~E. Breen.
 \newblock Guide to the concrete capacity design (ccd) method---embedment design
   examples (aci 349.2r-14).
 \newblock Technical report, American Concrete Institute, 2014.
+
+\bibitem{SpyridisOlalusi_2021}
+Philomenos Spyridis and Oluseun Olalusi.
+\newblock Predictive modelling for concrete failure at anchorages using machine
+  learning techniques.
+\newblock {\em Materials}, 14(1):62, 2021.
+\newblock \url{https://www.mdpi.com/1996-1944/14/1/62}.
+
+\bibitem{Kim_2023_anchor_design}
+J.~Kim.
+\newblock Basic concepts of anchor design.
+\newblock Midas IT,
+  \url{https://resource.midasuser.com/en/blog/bridge/basic-concepts-of-anchor-design},
+  2023.
 
 \bibitem{Pankow_2017_anchor_groups}
 David~A. Grilli and Amit~M. Kanvinde.

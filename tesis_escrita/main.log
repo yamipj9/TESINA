@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.24)  10 JUN 2026 01:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.24)  15 JUN 2026 21:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -656,13 +656,13 @@ LaTeX Info: Redefining \% on input line 1.
 ] (main.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
+ [6
+
+])
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [6
-
-] (secciones/resumen.tex [7
+ [7] (secciones/resumen.tex [8
 
 
 ]
@@ -839,7 +839,7 @@ Cap\'{\i }tulo 1.
 
 
 ]
-<figuras/000_partes_placa_base.png, id=390, 1126.2075pt x 1407.2575pt>
+<figuras/000_partes_placa_base.png, id=439, 1126.2075pt x 1407.2575pt>
 File: figuras/000_partes_placa_base.png Graphic file (type png)
 <use figuras/000_partes_placa_base.png>
 Package pdftex.def Info: figuras/000_partes_placa_base.png  used on input line 
@@ -847,7 +847,7 @@ Package pdftex.def Info: figuras/000_partes_placa_base.png  used on input line
 (pdftex.def)             Requested size: 297.57036pt x 371.82634pt.
  [2 <./figuras/000_partes_placa_base.png (PNG copy)>]
 <figuras/002_Mapa de la República Mexicana señalando el epicentro del sismo d
-el 19-S 2017 y la Ciudad de México..png, id=402, 1532.72626pt x 1033.8625pt>
+el 19-S 2017 y la Ciudad de México..png, id=451, 1532.72626pt x 1033.8625pt>
 File: figuras/002_Mapa de la República Mexicana señalando el epicentro del si
 smo del 19-S 2017 y la Ciudad de México..png Graphic file (type png)
 <use figuras/002_Mapa de la República Mexicana señalando el epicentro del sis
@@ -867,7 +867,7 @@ Overfull \hbox (3.40222pt too wide) in paragraph at lines 182--185
 [5]) (capitulos/capitulo2.tex [6]
 Cap\'{\i }tulo 2.
 <figuras/001_Vista en corte de una conexión columna-cimentación columna de ac
-ero, placa base, pernos de anclaje, grout y pedestal de concreto..png, id=430, 
+ero, placa base, pernos de anclaje, grout y pedestal de concreto..png, id=480, 
 1202.4925pt x 1317.92375pt>
 File: figuras/001_Vista en corte de una conexión columna-cimentación columna 
 de acero, placa base, pernos de anclaje, grout y pedestal de concreto..png Grap
@@ -882,9 +882,86 @@ mentación columna de acero, placa base, pernos de anclaje, grout y pedestal de
 
 ] [8 <./figuras/001_Vista en corte de una conexión columna-cimentación column
 a de acero, placa base, pernos de anclaje, grout y pedestal de concreto..png (P
-NG copy)>] [9] [10] [11] [12] [13] [14]) (capitulos/capitulo3.tex [15]
+NG copy)>]
+<figuras/014_Diagrama de cuerpo libre de una placa base con Pu, Mu, tensión en
+ anclas y bloque de compresión Y.png, id=508, 357.335pt x 266.49562pt>
+File: figuras/014_Diagrama de cuerpo libre de una placa base con Pu, Mu, tensi�
+�n en anclas y bloque de compresión Y.png Graphic file (type png)
+<use figuras/014_Diagrama de cuerpo libre de una placa base con Pu, Mu, tensió
+n en anclas y bloque de compresión Y.png>
+Package pdftex.def Info: figuras/014_Diagrama de cuerpo libre de una placa base
+ con Pu, Mu, tensión en anclas y bloque de compresión Y.png  used on input li
+ne 41.
+(pdftex.def)             Requested size: 375.40332pt x 279.98724pt.
+ [9]
+<figuras/015_Esquema de transferencia de cortante en placas base expuestas.png,
+ id=519, 1125.20375pt x 1408.26125pt>
+File: figuras/015_Esquema de transferencia de cortante en placas base expuestas
+.png Graphic file (type png)
+<use figuras/015_Esquema de transferencia de cortante en placas base expuestas.
+png>
+Package pdftex.def Info: figuras/015_Esquema de transferencia de cortante en pl
+acas base expuestas.png  used on input line 49.
+(pdftex.def)             Requested size: 329.62004pt x 412.53255pt.
+ [10 <./figuras/014_Diagrama de cuerpo libre de una placa base con Pu, Mu, tens
+ión en anclas y bloque de compresión Y.png>] [11 <./figuras/015_Esquema de tr
+ansferencia de cortante en placas base expuestas.png (PNG copy)>]
+<figuras/016_Falla por breakout en cortante hacia borde libre.png, id=541, 2066
+.72125pt x 766.865pt>
+File: figuras/016_Falla por breakout en cortante hacia borde libre.png Graphic 
+file (type png)
+<use figuras/016_Falla por breakout en cortante hacia borde libre.png>
+Package pdftex.def Info: figuras/016_Falla por breakout en cortante hacia borde
+ libre.png  used on input line 72.
+(pdftex.def)             Requested size: 375.40332pt x 139.29349pt.
+ [12 <./figuras/016_Falla por breakout en cortante hacia borde libre.png (PNG c
+opy)>]
+<figuras/017_Bloque equivalente de compresión de Whitney.png, id=556, 1453.43p
+t x 1090.0725pt>
+File: figuras/017_Bloque equivalente de compresión de Whitney.png Graphic file
+ (type png)
+<use figuras/017_Bloque equivalente de compresión de Whitney.png>
+Package pdftex.def Info: figuras/017_Bloque equivalente de compresión de Whitn
+ey.png  used on input line 93.
+(pdftex.def)             Requested size: 412.02156pt x 309.01057pt.
+ [13 <./figuras/017_Bloque equivalente de compresión de Whitney.png (PNG copy)
+>] [14]
+<figuras/018_Cono idealizado de falla en tensión con hef y área proyectada.pn
+g, id=624, 1492.57625pt x 1061.9675pt>
+File: figuras/018_Cono idealizado de falla en tensión con hef y área proyecta
+da.png Graphic file (type png)
+<use figuras/018_Cono idealizado de falla en tensión con hef y área proyectad
+a.png>
+Package pdftex.def Info: figuras/018_Cono idealizado de falla en tensión con h
+ef y área proyectada.png  used on input line 172.
+(pdftex.def)             Requested size: 357.08722pt x 254.06718pt.
+ [15] [16 <./figuras/018_Cono idealizado de falla en tensión con hef y área p
+royectada.png (PNG copy)>]
+<figuras/019_Anclaje con refuerzo transversal, hairpin o jaula de refuerzo inte
+rceptando el cono de falla.png, id=658, 1453.43pt x 1090.0725pt>
+File: figuras/019_Anclaje con refuerzo transversal, hairpin o jaula de refuerzo
+ interceptando el cono de falla.png Graphic file (type png)
+<use figuras/019_Anclaje con refuerzo transversal, hairpin o jaula de refuerzo 
+interceptando el cono de falla.png>
+Package pdftex.def Info: figuras/019_Anclaje con refuerzo transversal, hairpin 
+o jaula de refuerzo interceptando el cono de falla.png  used on input line 200.
+
+(pdftex.def)             Requested size: 412.02156pt x 309.01057pt.
+ [17 <./figuras/019_Anclaje con refuerzo transversal, hairpin o jaula de refuer
+zo interceptando el cono de falla.png (PNG copy)>]
+<figuras/020_Planta de anclas mostrando cmin, borde libre y cono reducido por c
+ercanía al borde.png, id=696, 1453.43pt x 1090.0725pt>
+File: figuras/020_Planta de anclas mostrando cmin, borde libre y cono reducido 
+por cercanía al borde.png Graphic file (type png)
+<use figuras/020_Planta de anclas mostrando cmin, borde libre y cono reducido p
+or cercanía al borde.png>
+Package pdftex.def Info: figuras/020_Planta de anclas mostrando cmin, borde lib
+re y cono reducido por cercanía al borde.png  used on input line 258.
+(pdftex.def)             Requested size: 412.02156pt x 309.01057pt.
+ [18]) (capitulos/capitulo3.tex [19 <./figuras/020_Planta de anclas mostrando c
+min, borde libre y cono reducido por cercanía al borde.png (PNG copy)>]
 Cap\'{\i }tulo 3.
-[16
+[20
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 74--75
@@ -896,35 +973,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--76
 []\T1/cmr/m/n/12 Resistencia ba-se m�s
  []
 
-[17] [18] [19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
+[21] [22] [23] [24]
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
 []\T1/cmr/bx/n/12 Respuesta eva-
  []
 
 
-Underfull \hbox (badness 7869) in paragraph at lines 281--281
+Underfull \hbox (badness 7869) in paragraph at lines 288--288
 []$\OT1/cmr/m/n/12 15$\T1/cmr/m/n/12 --$\OT1/cmr/m/n/12 50 []$\T1/cmr/m/n/12 ; 
 #3@20,
  []
 
 
-Underfull \hbox (badness 4739) in paragraph at lines 282--282
+Underfull \hbox (badness 4739) in paragraph at lines 289--289
 []$\OT1/cmr/m/n/12 3\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 8[]$\T1/cmr/m/n/12 --$\OT
 1/cmr/m/n/12 2[]$\T1/cmr/m/n/12 ; da-dos 50--
  []
 
-) (capitulos/capitulo4.tex [21] [22]
+) (capitulos/capitulo4.tex [25] [26]
 Cap\'{\i }tulo 4.
-[23
+[27
 
 ]
-<figuras/009_Casos de estudio..png, id=692, 2028.57875pt x 780.9175pt>
+<figuras/009_Casos de estudio..png, id=833, 2028.57875pt x 780.9175pt>
 File: figuras/009_Casos de estudio..png Graphic file (type png)
 <use figuras/009_Casos de estudio..png>
 Package pdftex.def Info: figuras/009_Casos de estudio..png  used on input line 
 40.
 (pdftex.def)             Requested size: 375.40332pt x 144.51514pt.
- [24 <./figuras/009_Casos de estudio..png (PNG copy)>]
+ [28 <./figuras/009_Casos de estudio..png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 84--84
 []\T1/cmr/m/n/12 Diferencia 2017--
  []
@@ -955,7 +1032,7 @@ Underfull \hbox (badness 1122) in paragraph at lines 89--90
  []
 
 <figuras/010_Impacto del confinamiento por estribos en la resistencia al cono d
-e concreto en tension..png, id=698, 1075.8594pt x 374.3586pt>
+e concreto en tension..png, id=839, 1075.8594pt x 374.3586pt>
 File: figuras/010_Impacto del confinamiento por estribos en la resistencia al c
 ono de concreto en tension..png Graphic file (type png)
 <use figuras/010_Impacto del confinamiento por estribos en la resistencia al co
@@ -963,9 +1040,9 @@ no de concreto en tension..png>
 Package pdftex.def Info: figuras/010_Impacto del confinamiento por estribos en 
 la resistencia al cono de concreto en tension..png  used on input line 112.
 (pdftex.def)             Requested size: 421.17963pt x 146.55334pt.
-[25]
+[29]
 <figuras/012_Mapa de calor_Incremento de resistencia al cono de tension-NTC-202
-3 vs NTC-2017..png, id=706, 926.9832pt x 340.6326pt>
+3 vs NTC-2017..png, id=845, 926.9832pt x 340.6326pt>
 File: figuras/012_Mapa de calor_Incremento de resistencia al cono de tension-NT
 C-2023 vs NTC-2017..png Graphic file (type png)
 <use figuras/012_Mapa de calor_Incremento de resistencia al cono de tension-NTC
@@ -973,11 +1050,11 @@ C-2023 vs NTC-2017..png Graphic file (type png)
 Package pdftex.def Info: figuras/012_Mapa de calor_Incremento de resistencia al
  cono de tension-NTC-2023 vs NTC-2017..png  used on input line 139.
 (pdftex.def)             Requested size: 402.8705pt x 148.03883pt.
- [26 <./figuras/010_Impacto del confinamiento por estribos en la resistencia al
+ [30 <./figuras/010_Impacto del confinamiento por estribos en la resistencia al
  cono de concreto en tension..png> <./figuras/012_Mapa de calor_Incremento de r
 esistencia al cono de tension-NTC-2023 vs NTC-2017..png>]
 <figuras/011_Requisitos de distancia minima al borde libre impacto normativo de
-l cambio para anclas..png, id=714, 642.7212pt x 373.8768pt>
+l cambio para anclas..png, id=854, 642.7212pt x 373.8768pt>
 File: figuras/011_Requisitos de distancia minima al borde libre impacto normati
 vo del cambio para anclas..png Graphic file (type png)
 <use figuras/011_Requisitos de distancia minima al borde libre impacto normativ
@@ -985,10 +1062,10 @@ o del cambio para anclas..png>
 Package pdftex.def Info: figuras/011_Requisitos de distancia minima al borde li
 bre impacto normativo del cambio para anclas..png  used on input line 166.
 (pdftex.def)             Requested size: 402.8705pt x 234.3513pt.
- [27 <./figuras/011_Requisitos de distancia minima al borde libre impacto norma
+ [31 <./figuras/011_Requisitos de distancia minima al borde libre impacto norma
 tivo del cambio para anclas..png>]
 <figuras/013_Resistencia al cono por cortante Rv - NTC-2017 vs NTC-2023..png, i
-d=721, 931.8012pt x 374.3586pt>
+d=861, 931.8012pt x 374.3586pt>
 File: figuras/013_Resistencia al cono por cortante Rv - NTC-2017 vs NTC-2023..p
 ng Graphic file (type png)
 <use figuras/013_Resistencia al cono por cortante Rv - NTC-2017 vs NTC-2023..pn
@@ -996,7 +1073,7 @@ g>
 Package pdftex.def Info: figuras/013_Resistencia al cono por cortante Rv - NTC-
 2017 vs NTC-2023..png  used on input line 199.
 (pdftex.def)             Requested size: 412.02156pt x 165.53514pt.
- [28 <./figuras/013_Resistencia al cono por cortante Rv - NTC-2017 vs NTC-2023.
+ [32 <./figuras/013_Resistencia al cono por cortante Rv - NTC-2017 vs NTC-2023.
 .png>]
 Underfull \hbox (badness 2213) in paragraph at lines 242--242
 []\T1/cmr/m/n/12 Conservaci�n de ecua-cio-
@@ -1012,19 +1089,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 245--246
 \T1/cmr/m/n/12 com-pac-tas con an-clas
  []
 
-[29]) (capitulos/capitulo5.tex [30]
+[33]) (capitulos/capitulo5.tex [34]
 Cap\'{\i }tulo 5.
-[31
+[35
 
-] [32] [33]) (anexos/anexo1.tex [34]
+] [36] [37]) (anexos/anexo1.tex [38]
 Ap\'{e}ndice A.
-) (anexos/apendiceB.tex [35
+) (anexos/apendiceB.tex [39
 
 ]
 Ap\'{e}ndice B.
-[36
+[40
 
-]) (main.bbl [37] [38
+]) (main.bbl [41] [42
 
 ]
 Package microtype Info: Loading generic protrusion settings for font family
@@ -1032,49 +1109,67 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--89
+Underfull \hbox (badness 10000) in paragraph at lines 83--88
+\T1/cmtt/m/n/12 com / risahelp / risaconnection / Content / Design % 20Checks /
+ Base % 20Plate %
+ []
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 90--96
+[]\T1/cmr/m/n/12 Ivan Go-mez, Amit Kan-vin-de, Char-les Smith, and Gre-gory Dei
+er-lein.  Shear
+ []
+
+
+Underfull \hbox (badness 2521) in paragraph at lines 90--96
+\T1/cmr/m/n/12 li-for-nia, Da-vis; Stan-ford Uni-ver-sity, 2009.  Re-port pre-s
+en-ted to the Ame-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--104
 []\T1/cmr/m/n/12 Hilti Es-pa-�a.  �por qu� es im-por-tan-te com-pro-bar la ri-g
 i-dez de la
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--89
+Underfull \hbox (badness 10000) in paragraph at lines 98--104
 \T1/cmr/m/n/12 pla-ca de an-cla-jes?  [][]$\T1/cmtt/m/n/12 https : / / www . hi
 lti . es / engineering / article /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--89
+Underfull \hbox (badness 10000) in paragraph at lines 98--104
 \T1/cmtt/m/n/12 por-[]que-[]es-[]importante-[]comprobar-[]la-[]rigidez-[]de-[]l
 a-[]placa-[]de-[]anclajes /
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--163
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 186--192
 []\T1/cmr/m/n/12 Prontubeam.  Di-se-�o y mo-de-li-za-ci�n de ba-ses y pla-cas d
 e an-cla-je
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--163
+Underfull \hbox (badness 10000) in paragraph at lines 186--192
 \T1/cmr/m/n/12 en es-truc-tu-ras me-t�-li-cas.  [][]$\T1/cmtt/m/n/12 https : / 
 / www . prontubeam . com / articulos /
  []
 
-[39]
-Underfull \hbox (badness 3199) in paragraph at lines 165--169
+
+Underfull \hbox (badness 3199) in paragraph at lines 194--198
 []\T1/cmr/m/n/12 INDEX Fix.  Ti-pos de fa-llos de an-cla-jes.  [][]$\T1/cmtt/m/
 n/12 https : / / www . indexfix . com /
  []
 
 
-Overfull \hbox (362.36104pt too wide) in paragraph at lines 165--169
+Overfull \hbox (362.36104pt too wide) in paragraph at lines 194--198
 \T1/cmtt/m/n/12 preguntas-[]frecuentes / como-[]se-[]sabe-[]si-[]un-[]anclaje-[
 ]aguantara-[]la-[]carga-[]a-[]la-[]que-[]se-[]le-[]va-[]a-[]someter-[]mecanicos
 -[]y-[]quimicos-[]en-[]hormigon$[][]\T1/cmr/m/n/12 . 
  []
 
-) [40] (main.aux
+[44]) [45] (main.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -1083,16 +1178,16 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 30AE2EA0F650222CC361208970036479;12702.
+(rerunfilecheck)             Checksum: C6444E811C305243320019703D208D0F;12917.
  ) 
 Here is how much of TeX's memory you used:
- 16533 strings out of 467871
- 273890 string characters out of 5418376
- 754117 words of memory out of 5000000
- 44950 multiletter control sequences out of 15000+600000
+ 16613 strings out of 467871
+ 279045 string characters out of 5418376
+ 756826 words of memory out of 5000000
+ 45012 multiletter control sequences out of 15000+600000
  652267 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,14n,79p,1106b,809s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,14n,79p,1106b,811s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\yamip\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
 1200.pk> <C:\Users\yamip\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\ecbi1200.pk> <C:\Users\yamip\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
@@ -1121,9 +1216,9 @@ ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users
 :/Users/yamip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
 10.pfb><C:/Users/yamip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb>
-Output written on main.pdf (52 pages, 7463053 bytes).
+Output written on main.pdf (58 pages, 15836196 bytes).
 PDF statistics:
- 1523 PDF objects out of 1728 (max. 8388607)
- 205 named destinations out of 1000 (max. 500000)
- 14793 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 1687 PDF objects out of 1728 (max. 8388607)
+ 223 named destinations out of 1000 (max. 500000)
+ 14836 words of extra memory for PDF output out of 17280 (max. 10000000)
 

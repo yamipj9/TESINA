@@ -36,6 +36,22 @@
   \item \textbf{Cortante ($V_u$):} \textbf{puede transferirse por fricción y apoyo local, pero en pedestales reducidos también puede inducir grietas inclinadas hacia el borde libre. Esta es la razón por la cual el cortante deja de ser una verificación tangencial aislada y se vuelve parte del debate sobre desgarramiento lateral y refuerzo transversal \cite{ACI318_2025, GCDMX_NTC_DCEA_2023}.}
 \end{itemize}
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.82\textwidth]{\detokenize{figuras/014_Diagrama de cuerpo libre de una placa base con Pu, Mu, tensión en anclas y bloque de compresión Y.png}}
+  \caption{Diagrama de cuerpo libre de una placa base sometida a carga axial y momento
+    flexionante. Fuente: RISA Technologies \cite{RISA_BasePlateConnections}.}
+  \label{fig:dcl_placa_base}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.72\textwidth]{\detokenize{figuras/015_Esquema de transferencia de cortante en placas base expuestas.png}}
+  \caption{Transferencia del cortante basal en una placa base expuesta. Fuente: Gomez,
+    Kanvinde, Smith y Deierlein \cite{GomezKanvindeSmithDeierlein_2009}.}
+  \label{fig:transferencia_cortante_exp}
+\end{figure}
+
 % ============================================================
 % SECCIÓN 2.3 — MODOS DE FALLA
 % ============================================================
@@ -51,6 +67,14 @@
 
 \textbf{(4) Desgarramiento lateral por cortante} (\textit{concrete breakout in shear}). \textbf{Cuando el perno se ubica cerca de una cara libre, el cortante puede inducir una grieta que reduce abruptamente el volumen efectivo de concreto. La NTC-DCEA 2023 reconoce esta vulnerabilidad mediante $R_{ev}$, en contraste con la formulación más limitada de 2017, donde el refuerzo transversal no aparecía como reserva explícita de resistencia \cite{GCDMX_NTC_DCEA_2017, GCDMX_NTC_DCEA_2023}.}
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.82\textwidth]{\detokenize{figuras/016_Falla por breakout en cortante hacia borde libre.png}}
+  \caption{Falla por desprendimiento del concreto en cortante hacia un borde libre. Fuente:
+    Spyridis y Olalusi \cite{SpyridisOlalusi_2021}.}
+  \label{fig:breakout_cortante_borde}
+\end{figure}
+
 \textbf{(5) Efecto de palanca} (\textit{prying action}). \textbf{La flexibilidad real de la placa genera puntos de apoyo que pueden aumentar la tracción de los pernos por encima de la tensión de equilibrio estático. Aunque las NTC capturan esta interacción de forma indirecta mediante el balance de momentos, la literatura de diseño advierte que la rigidez de la placa, la posición de anclas y la deformabilidad del apoyo no deben tratarse como variables independientes \cite{FisherKloiber_2006, Hilti_nodate}.}
 
 % ============================================================
@@ -63,6 +87,15 @@
 \subsection{Bloque equivalente de compresión de Whitney}
 
 \textbf{El bloque rectangular equivalente de Whitney funciona como puente entre el diseño de concreto reforzado y el análisis de placas base. En lugar de resolver la distribución real de presiones bajo la placa, las NTC-DCEA adoptan una presión uniforme $f_{pd}$ actuando sobre una longitud $Y$ \cite{FisherKloiber_2006, GCDMX_NTC_DCEA_2017}. Esta idealización es operativa, pero limitada: representa el aplastamiento promedio del pedestal, no la interacción tridimensional entre el bloque comprimido, los pernos traccionados y la fisuración del concreto.}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.90\textwidth]{\detokenize{figuras/017_Bloque equivalente de compresión de Whitney.png}}
+  \caption{Distribución de presiones bajo una placa base considerando comportamiento rígido y
+    flexible. Fuente: elaboración propia con base en los criterios de distancia mínima al borde
+    libre de las NTC-DCEA 2017 y 2023 \cite{GCDMX_NTC_DCEA_2017, GCDMX_NTC_DCEA_2023}.}
+  \label{fig:bloque_whitney_presiones}
+\end{figure}
 
 \begin{equation}
   f_{pd} = F_R \cdot f_{pu} \qquad \text{donde} \quad
@@ -134,6 +167,14 @@
 
 \textbf{El método de Capacidad del Concreto (CCD) es el resultado de una transición conceptual. Antes de su consolidación, los modelos de cono idealizado asumían superficies de falla simples y resistencia proporcional al área geométrica; esa lectura era intuitiva, pero podía sobreestimar la capacidad de anclajes profundos porque ignoraba el efecto de tamaño propio de la fractura del concreto \cite{ACI_349_2014}. Fuchs, Eligehausen y Breen introdujeron el enfoque CCD a partir de una base experimental amplia, reemplazando la lógica del cono de $45^\circ$ por una formulación calibrada en la que la resistencia básica escala con $h_{ef}^{1.5}$ \cite{FuchsEligehausenBreen_1995}.}
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{\detokenize{figuras/018_Cono idealizado de falla en tensión con hef y área proyectada.png}}
+  \caption{Cono idealizado de falla en tensión de un anclaje embebido en concreto. Fuente:
+    Kim \cite{Kim_2023_anchor_design}.}
+  \label{fig:cono_tension_ccd}
+\end{figure}
+
 \begin{equation}
   R_b = k\,\sqrt{f'_c}\cdot h_{ef}^{1.5}
   \qquad \text{\cite{GCDMX_NTC_DCEA_2017, GCDMX_NTC_DCEA_2023}}
@@ -153,6 +194,15 @@
 \subsection{Factor de confinamiento en tensión \texorpdfstring{$R_{et}$}{R\_et} (NTC-DCEA 2023)}
 
 \textbf{La incorporación de $R_{et}$ en la NTC-DCEA 2023 es más que una corrección aritmética: introduce en la norma mexicana la idea de que el refuerzo transversal puede participar en el régimen posagrietamiento. La edición 2017 no cuantificaba explícitamente la contribución de los estribos interceptados por el cono; la 2023, en cambio, reconoce que esas barras pueden funcionar como una costura mecánica que restringe la apertura de grieta y retrasa el desprendimiento frágil \cite{GCDMX_NTC_DCEA_2017, GCDMX_NTC_DCEA_2023, Shi_2025}. El número de estribos interceptados es $N_{est}=\lfloor h_{ef}/s_{est}\rfloor$, y la resistencia adicional se expresa como:}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.90\textwidth]{\detokenize{figuras/019_Anclaje con refuerzo transversal, hairpin o jaula de refuerzo interceptando el cono de falla.png}}
+  \caption{Efecto del confinamiento por estribos en la resistencia al cono de concreto en tensión.
+    Fuente: elaboración propia con base en los criterios de distancia mínima al borde libre de las
+    NTC-DCEA 2017 y 2023 \cite{GCDMX_NTC_DCEA_2017, GCDMX_NTC_DCEA_2023}.}
+  \label{fig:confinamiento_ret}
+\end{figure}
 
 \begin{equation}
   R_{et} = N_{est}\cdot F_R\cdot\left(0.5\,A_e\,\sqrt{f'_c\cdot E_c}\right)
@@ -202,6 +252,15 @@
 \section{Distancia mínima al borde libre}
 
 \textbf{La distancia mínima al borde libre $c_{min}$ suele parecer un requisito geométrico, pero en realidad gobierna el volumen disponible para desarrollar la fractura. Cuando el perno se ubica cerca de una cara libre, el cono ideal no puede desarrollarse simétricamente y las presiones bajo la cabeza o tuerca inducen tensiones radiales que pueden expulsar el recubrimiento lateral. Este mecanismo, conocido internacionalmente como \textit{side-face blowout}, fue caracterizado en la literatura de anclajes cerca de bordes libres y permanece como un límite relevante para pernos de alta resistencia \cite{FurcheEligehausen_1991, ACI318_2019, Williams_2025_ACIAnchoring}.}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.90\textwidth]{\detokenize{figuras/020_Planta de anclas mostrando cmin, borde libre y cono reducido por cercanía al borde.png}}
+  \caption{Distancia mínima al borde libre y reducción del área proyectada en anclajes cercanos
+    al borde. Fuente: elaboración propia con base en los criterios de distancia mínima al borde
+    libre de las NTC-DCEA 2017 y 2023 \cite{GCDMX_NTC_DCEA_2017, GCDMX_NTC_DCEA_2023}.}
+  \label{fig:cmin_borde_cono}
+\end{figure}
 
 \textbf{En la NTC-DCEA 2017, el criterio era uniforme para todos los grados de acero del perno:}
 
