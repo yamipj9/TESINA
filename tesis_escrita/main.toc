@@ -11,43 +11,50 @@
 \contentsline {chapter}{\numberline {2}Marco Teórico}{7}{chapter.2}%
 \contentsline {section}{\numberline {2.1}El sistema placa base-anclaje-dado de concreto}{7}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Mecanismos de transferencia de fuerzas}{9}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Modos de falla}{10}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Modelo de diseño analítico}{11}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Bloque equivalente de compresión de Whitney}{11}{subsection.2.4.1}%
+\contentsline {section}{\numberline {2.3}Modos de falla}{9}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Modelo de diseño analítico}{10}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Bloque equivalente de compresión de Whitney}{10}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Excentricidad y régimen de trabajo}{11}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Espesor mínimo requerido de la placa}{12}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.3}Espesor mínimo requerido de la placa}{11}{subsection.2.4.3}%
 \contentsline {subsection}{\numberline {2.4.4}Factores de resistencia}{12}{subsection.2.4.4}%
 \contentsline {section}{\numberline {2.5}Resistencia del cono de concreto}{12}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}Método Capacidad del Concreto (CCD) en tensión}{12}{subsection.2.5.1}%
 \contentsline {subsection}{\numberline {2.5.2}Factor de confinamiento en tensión $R_{et}$ (NTC-DCEA 2023)}{13}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Resistencia en cortante y factor $R_{ev}$ (NTC-DCEA 2023)}{14}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.3}Resistencia en cortante y factor $R_{ev}$ (NTC-DCEA 2023)}{13}{subsection.2.5.3}%
 \contentsline {section}{\numberline {2.6}Distancia mínima al borde libre}{14}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Síntesis comparativa: NTC-DCEA 2017 vs.\ NTC-DCEA 2023}{15}{section.2.7}%
 \contentsline {chapter}{\numberline {3}Metodología}{16}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Enfoque y alcance de la investigación}{16}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Criterios normativos considerados}{17}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Modelo de análisis para placas base}{18}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Modelo de análisis para placas base}{17}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Procedimiento de comparación normativa}{19}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Diseño del análisis paramétrico}{19}{section.3.5}%
+\contentsline {section}{\numberline {3.5}Diseño del análisis paramétrico}{20}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}Barrido 1: influencia de $R_{et}$ en la resistencia a tensión}{20}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Barrido 2: distancia mínima al borde}{20}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Barrido 3: influencia de $R_{ev}$ en la resistencia a cortante}{20}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.2}Barrido 2: distancia mínima al borde}{21}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Barrido 3: influencia de $R_{ev}$ en la resistencia a cortante}{21}{subsection.3.5.3}%
 \contentsline {section}{\numberline {3.6}Procesamiento y presentacion de resultados}{21}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Resultados y discusión del análisis comparativo y paramétrico}{23}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Presentación general de los casos analizados}{23}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Comparación normativa del diseño de placa base}{24}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Influencia del factor $R_{et}$ en la resistencia a tensión}{25}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Influencia de la distancia mínima al borde en el cumplimiento geométrico y resistente}{27}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Influencia del factor $R_{ev}$ en la resistencia a cortante}{28}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Síntesis comparativa de los efectos normativos observados}{29}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Implicaciones para el diseño estructural de placas base}{30}{section.4.7}%
-\contentsline {chapter}{\numberline {5}Conclusiones y recomendaciones}{31}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusiones generales}{31}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Conclusiones sobre la comparación normativa}{32}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Conclusiones sobre el análisis paramétrico}{32}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Aportaciones de la investigación}{33}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Recomendaciones para el diseño estructural}{33}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Recomendaciones para trabajos futuros}{34}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Cierre}{34}{section.5.7}%
-\contentsline {chapter}{\numberline {A}Anexo A: Instrumentos y Datos}{35}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Formularios y datos brutos}{35}{section.Alph1.1}%
-\contentsline {chapter}{\numberline {B}Apéndice B: Diseño de placas base}{36}{appendix.Alph2}%
+\contentsline {section}{\numberline {3.7}Ejemplo numérico: cálculo paso a paso del caso semilla}{22}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Datos de entrada}{22}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Pasos 1 a 5: diseño de la placa base}{23}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Pasos 6 y 7: resistencias al cono de concreto}{24}{subsection.3.7.3}%
+\contentsline {subsection}{\numberline {3.7.4}Pasos 8 y 9: verificación geométrica y síntesis}{25}{subsection.3.7.4}%
+\contentsline {chapter}{\numberline {4}Resultados y discusión del análisis comparativo y paramétrico}{26}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Presentación general de los casos analizados}{26}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Comparación normativa del diseño de placa base}{27}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Influencia del factor $R_{et}$ en la resistencia a tensión}{28}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Influencia de la distancia mínima al borde en el cumplimiento geométrico y resistente}{30}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Influencia del factor $R_{ev}$ en la resistencia a cortante}{32}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Síntesis comparativa de los efectos normativos observados}{33}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Implicaciones para el diseño estructural de placas base}{34}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Conclusiones y recomendaciones}{35}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusiones generales}{35}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Conclusiones sobre la comparación normativa}{36}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Conclusiones sobre el análisis paramétrico}{36}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Aportaciones de la investigación}{37}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Recomendaciones para el diseño estructural}{37}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Recomendaciones para trabajos futuros}{38}{section.5.6}%
+\contentsline {chapter}{\numberline {A}Apéndice C: Algoritmos de cálculo en pseudocódigo}{39}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Algoritmo 1: Diseño de placa base bajo flexocompresión}{40}{section.Alph1.1}%
+\contentsline {section}{\numberline {A.2}Algoritmo 2: Resistencia al cono de concreto en tensión}{41}{section.Alph1.2}%
+\contentsline {section}{\numberline {A.3}Algoritmo 3: Resistencia al cono de concreto por cortante}{42}{section.Alph1.3}%
+\contentsline {section}{\numberline {A.4}Algoritmo 4: Distancia mínima al borde libre}{42}{section.Alph1.4}%

@@ -1,12 +1,10 @@
 \begin{thebibliography}{10}
 
-\bibitem{cisneros2026placabaseia}
-Francisco~Javier Cisneros~Ruiz.
-\newblock Ilustración técnica de conexión columna de acero--placa
-  base--pedestal de concreto.
-\newblock Ilustración digital generada con IA, 2026.
-\newblock Elaboración propia asistida por inteligencia artificial mediante
-  ChatGPT. Imagen generada a partir de una descripción técnica del autor.
+\bibitem{SkyCiv_Baseplate_2024}
+{SkyCiv Engineering}.
+\newblock Aisc base plate design code documentation.
+\newblock SkyCiv Cloud Structural Analysis Software, 2024.
+\newblock Online documentation.
 
 \bibitem{SSN_Puebla_2017}
 {Servicio Sismol{\'o}gico Nacional}.
