@@ -1,0 +1,305 @@
+COMMITS DE REVISIÓN DE TESIS — 2026-06-17
+Alumna: Yamileth
+Tema: Análisis comparativo NTC-DCEA 2017 vs NTC-DCEA 2023 para diseño de placas base de acero
+Revisado por: Prof. fcisnerosr (asistido por Claude Code)
+========================================================================
+
+Los cambios están ordenados del más antiguo al más reciente.
+Clasificación: GRAVE (error técnico mayor), MEDIO (omisión significativa),
+               BAJO (mejora de forma o estilo).
+
+------------------------------------------------------------------------
+COMMIT 1 — GRAVE 1
+Hash:    1e851dff
+Fecha:   2026-06-17 20:40
+Archivo: tesis_escrita/secciones/resumen.tex
+
+PROBLEMA:
+  El Resumen afirmaba que "la NTC-DCEA 2023 es consistentemente más permisiva
+  que la NTC-DCEA 2017". Esto contradecía directamente la conclusión de §5.3
+  (Cap. 5), que establece que la norma no puede clasificarse de manera absoluta
+  como más permisiva ni más conservadora.
+
+CORRECCIÓN:
+  Se reemplazó la frase inexacta por una descripción del efecto dual:
+  (a) Incrementa la resistencia al cono cuando el dado tiene confinamiento
+      efectivo (factores R_et y R_ev).
+  (b) Introduce requisitos geométricos más estrictos para anclas A325 y A449
+      (distancia mínima al borde pasa de 6·do a 7·do).
+  El Resumen ahora es consistente con las conclusiones del Cap. 5.
+
+------------------------------------------------------------------------
+COMMIT 2 — GRAVE 2
+Hash:    8508aae7
+Fecha:   2026-06-17 21:11
+Archivos: tesis_escrita/capitulos/capitulo4.tex (§4.2, §4.3, §4.4, §4.5)
+
+PROBLEMA:
+  El Cap. 4 no contenía ningún valor numérico en el texto. Todas las
+  afirmaciones sobre resultados eran puramente cualitativas ("la diferencia
+  se hace más pronunciada", "el incremento no es estrictamente lineal").
+  Un evaluador que cerrara las figuras no podía extraer ningún dato verificable.
+
+CORRECCIÓN:
+  Se agregaron valores numéricos del caso semilla en cuatro secciones,
+  obtenidos del notebook notebooks/analisis_parametrico.ipynb:
+
+  §4.2 — Comparación de espesor de placa:
+    t_req = 47.7 mm en ambas normas. Verificado en 500 puntos del barrido.
+
+  §4.3 — Influencia de R_et (resistencia al cono en tensión):
+    Sin estribos:      R_t,2017 = R_t,2023 = 22.84 ton (idénticas)
+    #4@15 cm, 2 ramas: R_t,2023 = 36.18 ton (+58%)
+    #5@10 cm, 2 ramas: R_t,2023 = 54.1  ton (+137%)
+
+  §4.4 — Distancia mínima al borde (Escenario B crítico):
+    Ancla A325 7/8'', dado 70 cm → c_disp = 15.0 cm
+    Cumple NTC-2017 (c_min = 13.3 cm) ✓
+    No cumple NTC-2023 (c_min = 15.6 cm) ✗ — deficiencia: 0.55 cm
+    Se agregó tabla (tab:borde_escenarios_cap4) con 4 escenarios.
+
+  §4.5 — Influencia de R_ev (resistencia al cono por cortante):
+    R_v,2017 = 29.69 ton (igual para todos los espaciamientos)
+    s=20 cm → R_v,2023 = 45.28 ton (+53%)
+    s=15 cm → R_v,2023 = 60.86 ton (+105%)
+    s=10 cm → R_v,2023 = 76.45 ton (+158%)
+
+------------------------------------------------------------------------
+COMMIT 3 — GRAVE 3
+Hash:    a6579962
+Fecha:   2026-06-17 21:30
+Archivo: tesis_escrita/capitulos/capitulo3.tex (nueva §3.7)
+
+PROBLEMA:
+  El Cap. 3 describía el procedimiento de 9 pasos (§3.4) pero nunca lo aplicaba
+  a un caso real con números. No había manera de verificar los resultados ni
+  de trazar el cálculo de principio a fin.
+
+CORRECCIÓN:
+  Se agregó la Sección §3.7 "Ejemplo numérico: cálculo paso a paso del caso
+  semilla", con 4 subsecciones:
+
+  §3.7.1 — Datos de entrada:
+    Tabla con los 18 parámetros del caso semilla:
+    Perfil IR 305×74.5 · Placa 50×50 cm · Dado 70×70 cm
+    Pu=10 ton · Mu=7 ton·m · f'c=280 kg/cm²
+    hef=30 cm · Ancla A325 7/8'' · Estribo #4@15 cm, 2 ramas
+
+  §3.7.2 — Pasos 1–5: diseño de placa base
+    Resultado final: t_req = 47.7 mm (igual en ambas normas)
+
+  §3.7.3 — Pasos 6–7: resistencias al cono
+    R_t,2017 = 22.84 ton → R_t,2023 = 36.18 ton (+58%)
+    R_v,2017 = 29.69 ton → R_v,2023 = 60.86 ton (+105%)
+
+  §3.7.4 — Pasos 8–9: verificación geométrica y tabla de índices η
+    c_disp = 15.0 cm · Cumple 2017 · No cumple 2023 (Δ = -0.55 cm)
+    Tabla con 4 estados límite e índices η para ambas normas
+
+------------------------------------------------------------------------
+COMMIT 4 — GRAVE 5
+Hash:    0a61d72f
+Fecha:   2026-06-17 21:54
+Archivos: tesis_escrita/anexos/apendiceC.tex (NUEVO)
+          tesis_escrita/main.tex
+          tesis_escrita/capitulos/capitulo3.tex (§3.6)
+
+PROBLEMA:
+  El código Python del análisis paramétrico no estaba documentado en la tesis,
+  haciendo el trabajo no reproducible sin acceder al notebook directamente.
+
+CORRECCIÓN:
+  Se creó el Apéndice C con 4 algoritmos en pseudocódigo:
+    Algoritmo 1: diseñar_placa_base (pasos 1–5)
+    Algoritmo 2: resistencia_tensión_cono (paso 6)
+    Algoritmo 3: resistencia_cortante_cono (paso 7)
+    Algoritmo 4: distancia_mínima_borde (paso 8)
+
+  Se activó el Apéndice C en main.tex (paquetes algorithm + algpseudocode).
+  Se agregó referencia cruzada al Apéndice C desde §3.6 (Metodología).
+
+------------------------------------------------------------------------
+COMMIT 5 — MEDIO 4
+Hash:    1557ddb8
+Fecha:   2026-06-17 22:06
+Archivo: tesis_escrita/capitulos/capitulo3.tex (§3.4)
+
+PROBLEMA:
+  Los indicadores ΔX% y η estaban definidos con ecuaciones pero el texto nunca
+  establecía qué valor se considera despreciable, moderado o significativo.
+  Los porcentajes del Cap. 4 carecían de un marco de referencia para juzgar
+  su relevancia.
+
+CORRECCIÓN:
+  Se agregaron 6 umbrales de interpretación justo después de la definición de η:
+
+  Para ΔX%:
+    < 5%           → despreciable
+    5% a 20%       → moderada (relevante en diseños ajustados)
+    ≥ 20%          → significativa (puede alterar dimensiones del dado)
+
+  Para η (índice de utilización = demanda / resistencia):
+    η < 0.5        → reserva amplia; diseño eficiente
+    0.5 ≤ η < 0.8  → rango de diseño normal; reserva adecuada
+    η ≥ 0.8        → reserva reducida; requiere revisión cuidadosa
+
+------------------------------------------------------------------------
+COMMIT 6 — MEDIO 3 + MEDIO 2
+Hash:    de314f69 (o similar — ver git log para hash exacto)
+Fecha:   2026-06-17 22:10
+Archivo: tesis_escrita/capitulos/capitulo3.tex (§3.1)
+
+PROBLEMA (MEDIO 2):
+  §3.1 del Cap. 3 repetía casi literalmente el contenido de §1.4 del Cap. 1
+  (Alcances y Delimitaciones), con los mismos 4 alcances y las mismas
+  exclusiones reescritas con palabras distintas.
+
+PROBLEMA (MEDIO 3):
+  §3.1 no explicaba la estructura de dos niveles del análisis metodológico
+  (revisión normativa + análisis paramétrico), que es el aporte propio del
+  capítulo de Metodología.
+
+CORRECCIÓN:
+  Se eliminaron de §3.1:
+  - Lista de 4 alcances técnicos (idénticos a §1.4)
+  - Párrafo de exclusiones (ya en §1.4)
+
+  Se agregaron a §3.1:
+  - Referencia explícita a §1.4 para evitar la repetición
+  - Descripción de los dos niveles metodológicos:
+    · Nivel 1: revisión normativa sistemática → tabla comparativa §2.7
+    · Nivel 2: análisis numérico paramétrico → curvas y mapas del Cap. 4
+  - Explicación de por qué la separación es deliberada (atribuibilidad
+    de las diferencias a los cambios normativos)
+
+------------------------------------------------------------------------
+COMMIT 7 — MEDIO 1
+Hash:    9b1be0cf
+Fecha:   2026-06-17 22:17
+Archivo: tesis_escrita/capitulos/capitulo5.tex (§5.2 y §5.3)
+
+PROBLEMA:
+  Las conclusiones de §5.2 y §5.3 eran puramente cualitativas. No citaban
+  ningún valor numérico del trabajo propio. Un evaluador que leyera solo el
+  Cap. 5 no podía extraer ningún resultado cuantificable.
+
+CORRECCIÓN:
+  Se agregaron valores numéricos en tres párrafos del Cap. 5:
+
+  §5.2: "t_req = 47.7 mm con NTC-2017 y NTC-2023, verificado en 500 puntos."
+
+  §5.3, párrafo R_et:
+    "R_t,2017 = 22.84 ton → R_t,2023 = 36.18 ton (+58%)
+     Con #5@10 cm el incremento alcanza el 137%."
+
+  §5.3, párrafo distancia al borde:
+    "c_disp = 15.0 cm: cumple NTC-2017 (c_min=13.3 cm)
+     pero no NTC-2023 (c_min=15.6 cm) — deficiencia 0.55 cm."
+
+  §5.3, párrafo R_ev:
+    "R_v,2023 = 60.86 ton (+105%) con s=15 cm;
+     R_v,2023 = 76.45 ton (+158%) con s=10 cm."
+
+------------------------------------------------------------------------
+COMMIT 8 — BAJO 4
+Hash:    37952025
+Fecha:   2026-06-17 22:26
+Archivos: tesis_escrita/bibliografia/references.bib
+          tesis_escrita/capitulos/capitulo1.tex (caption Figura 1)
+
+PROBLEMA:
+  La imagen de las partes de la placa base (Fig. 1, Cap. 1) estaba citada
+  como "elaboración propia asistida por IA mediante ChatGPT". Esta atribución
+  no distinguía entre creación con IA y adaptación de una fuente real, lo que
+  podía cuestionar la originalidad ante un evaluador.
+
+CORRECCIÓN:
+  - Se eliminó la entrada @misc{cisneros2026placabaseia} del .bib.
+  - Se creó la entrada @misc{SkyCiv_Baseplate_2024} apuntando a la
+    documentación oficial de SkyCiv Engineering.
+  - Se actualizó el caption de la figura:
+    "Adaptado de SkyCiv (2024); mejorado en resolución y anotado para
+     indicar las partes componentes analizadas en esta investigación."
+
+------------------------------------------------------------------------
+COMMIT 9 — BAJO 3
+Hash:    eb37678b
+Fecha:   2026-06-17 22:38
+Archivo: tesis_escrita/capitulos/capitulo2.tex (§2.6)
+
+PROBLEMA:
+  El mecanismo "side-face blowout" se usaba en inglés sin traducción al español,
+  a diferencia del resto del capítulo donde todos los modos de falla presentan
+  primero el término en español y después el inglés entre paréntesis.
+
+CORRECCIÓN:
+  Se agregó la traducción entre paréntesis:
+  "side-face blowout (estallido de cara lateral)"
+
+------------------------------------------------------------------------
+COMMIT 10 — BAJO 1
+Hash:    bf021668
+Fecha:   2026-06-17 22:47
+Archivo: tesis_escrita/capitulos/capitulo4.tex (§4.6)
+
+PROBLEMA:
+  El párrafo de cierre de §4.6 usaba la muletilla "se observa que la norma
+  sí altera...", que introduce un rodeo pasivo innecesario antes de una
+  conclusión que tiene respaldo numérico y debería enunciarse de forma directa.
+
+CORRECCIÓN:
+  Se reemplazó:
+    "se observa que la norma sí altera de manera importante el balance..."
+  por:
+    "la norma sí altera de manera importante el balance..."
+
+------------------------------------------------------------------------
+COMMIT 11 — BAJO 2
+Hash:    1eee1037
+Fecha:   2026-06-17 22:49
+Archivo: tesis_escrita/capitulos/capitulo5.tex (§5.7 eliminada)
+
+PROBLEMA:
+  La sección §5.7 "Cierre" repetía en dos párrafos el mismo mensaje que
+  ya desarrollaba §5.1 "Conclusiones generales": que la NTC-2023 reconoce
+  el concreto confinado, no cambia radicalmente la placa y promueve una
+  filosofía de desempeño. Era una redundancia sin valor añadido.
+
+CORRECCIÓN:
+  Se eliminó por completo la sección §5.7. El capítulo ahora cierra
+  naturalmente en §5.6 "Recomendaciones para trabajos futuros".
+  Nota: §4.6 del Cap. 4 se conservó porque aporta la tabla de síntesis
+  (tab:sintesis_efectos_cap4) y no es pura repetición.
+
+========================================================================
+PUNTO PENDIENTE — GRAVE 4 (NO resuelto en esta sesión)
+========================================================================
+  Ubicación: Cap. 1 (pp. 1–6) y Cap. 2 (pp. 7–15)
+
+  PROBLEMA:
+    La tesis no contiene ninguna sección de revisión de literatura ni estado
+    del arte. No se muestra qué trabajos previos existen sobre comparativas
+    normativas de placas base o análisis paramétricos similares, ni se
+    justifica formalmente que el análisis NTC-2017 vs. NTC-2023 no había
+    sido realizado antes.
+
+  QUÉ DEBE HACER YAMILETH:
+    Agregar una sección §1.6 "Antecedentes y estado del arte" en Cap. 1
+    (o §2.1 en Cap. 2), de 1 a 2 páginas, que:
+    1. Cite 5–8 trabajos previos sobre diseño de placas base, método CCD
+       o comparativas normativas en México/Latinoamérica, con comentario
+       crítico de cada uno (no solo listarlos).
+    2. Cierre con una frase explícita que identifique el gap que esta
+       tesis llena: qué no se había hecho antes con los parámetros y
+       normativa aquí analizados.
+
+  POR QUÉ ES IMPORTANTE:
+    Sin revisión de literatura, el comité evaluador puede objetar que
+    no queda demostrada la originalidad del trabajo. También fortalece
+    las decisiones metodológicas (elección del método CCD, rangos del
+    barrido, perfil IR 305×74.5) al mostrar que tienen respaldo en
+    literatura previa.
+
+========================================================================
+FIN DEL REPORTE
+========================================================================
