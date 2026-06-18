@@ -63,9 +63,14 @@ no constituye la fuente principal de divergencia normativa observada en esta inv
 
 La base de datos comparativa empleada para revisar el espesor requerido mostró que, para un amplio
 conjunto de combinaciones de carga y propiedades mecánicas, las diferencias entre $t_{req,2017}$ y
-$t_{req,2023}$ son nulas o despreciables en términos prácticos. Este resultado es consistente con el
-hecho de que ambas normas mantienen los factores de resistencia para aplastamiento del concreto y
-fluencia de la placa, así como el esquema general de distribución de esfuerzos bajo la placa.
+$t_{req,2023}$ son nulas o despreciables en términos prácticos. Este resultado se verificó sobre
+500 puntos del barrido paramétrico de flexocompresión: en el 100\,\% de los casos evaluados, ambas
+normas producen exactamente el mismo espesor requerido. Para el caso semilla
+($P_u = 10$ ton, $M_u = 7$ ton$\cdot$m, $f'_c = 280$ kg/cm$^2$, perfil IR~305$\times$74.5,
+placa $50\times50$ cm), el espesor requerido calculado con la NTC-DCEA 2017 y con la NTC-DCEA 2023
+es idéntico: $t_{req} = 47.7$ mm. Este resultado es consistente con el hecho de que ambas normas
+mantienen los factores de resistencia para aplastamiento del concreto y fluencia de la placa, así
+como el esquema general de distribución de esfuerzos bajo la placa.
 
 Sin embargo, esta coincidencia no implica que la actualización normativa sea irrelevante. Lo que
 evidencia es que la edición 2023 no busca redefinir la teoría de la placa base, sino reforzar la
@@ -121,6 +126,16 @@ hace más pronunciada a favor de la NTC-DCEA 2023. El incremento no es estrictam
 depende del número discreto de estribos que el cono hipotético intercepta; por ello, las curvas de
 resistencia muestran escalonamientos coherentes con el aumento de $N_{est}$ en la formulación de
 $R_{et}$.
+
+Para el caso semilla ($h_{ef} = 30$ cm, estribos \#4@15~cm, 2~ramas, $f'_c = 280$ kg/cm$^2$),
+la resistencia al cono calculada con la NTC-DCEA 2017 es $R_{t,2017} = 22.84$ ton. La NTC-DCEA
+2023 agrega el término $R_{et} = 13.34$ ton por confinamiento, resultando
+$R_{t,2023} = 36.18$ ton, un incremento del 58\,\%. Con estribos más densos (\#5@10~cm),
+el aporte sube a $R_{et} = 31.3$ ton y el incremento total alcanza el 137\,\%. En el extremo
+opuesto, cuando el dado no cuenta con refuerzo transversal, $R_{et} = 0$ y ambas normas producen
+un resultado idéntico: $R_{t} = 22.84$ ton. La magnitud del beneficio depende exclusivamente del
+número de estribos que el cono hipotético intercepta, lo que explica los escalonamientos discretos
+observados en las curvas paramétricas.
 
 Desde el punto de vista del diseño, el hallazgo más importante es que el confinamiento efectivo
 reduce la probabilidad de que el anclaje falle por desprendimiento frágil del concreto antes de que
@@ -184,6 +199,36 @@ el recubrimiento lateral del concreto. Así, la NTC-DCEA 2023 adopta un criterio
 reducir la eficiencia del sistema, sino para asegurar que la mayor capacidad del ancla no genere un
 mecanismo frágil en el pedestal.
 
+La Tabla~\ref{tab:borde_escenarios_cap4} muestra los resultados numéricos de cuatro escenarios
+evaluados con el caso semilla ($P_u=10$ ton, $M_u=7$ ton$\cdot$m, $f'_c=280$ kg/cm$^2$).
+El Escenario~B ilustra de forma concisa la dualidad de la norma: con un dado de 70~cm y anclas
+A325 de 7/8'', la distancia disponible al borde es $c_{disp}=15.0$ cm, la cual cumple con
+la NTC-DCEA 2017 ($c_{min,2017}=13.3$ cm) pero queda 0.55~cm por debajo del requisito de
+la NTC-DCEA 2023 ($c_{min,2023}=15.6$ cm), obligando a redimensionar el dado o reducir el
+diámetro del ancla.
+
+\begin{table}[H]
+  \centering
+  \small
+  \caption{Distancia mínima al borde y resistencia al cono para cuatro escenarios del caso semilla
+    ($P_u=10$ ton, $M_u=7$ ton$\cdot$m, $f'_c=280$ kg/cm$^2$).}
+  \label{tab:borde_escenarios_cap4}
+  \begin{tabular}{lccccccl}
+    \toprule
+    Escenario & Dado & Ancla & $c_{disp}$ & $c_{min}^{17}$ & $c_{min}^{23}$ &
+    $R_{t,2023}$ & Cumple borde \\
+    & [cm] & & [cm] & [cm] & [cm] & [ton] & \\
+    \midrule
+    A — compacto, A307 & 55 & A307 3/4'' & 7.5  & 11.4 & 11.4 & 29.51 & Ninguna norma \\
+    B — mediano, A325  & 70 & A325 7/8'' & 15.0 & 13.3 & 15.6 & 36.18 & Sólo NTC-2017 \\
+    C — grande, A325   & 90 & A325 1''   & 25.0 & 15.2 & 17.8 & 42.85 & Ambas normas  \\
+    D — grande, A449   & 90 & A449 1¼''  & 25.0 & 19.1 & 22.2 & 42.85 & Ambas normas  \\
+    \bottomrule
+  \end{tabular}
+  \par\smallskip
+  \footnotesize Nota: $R_{t,2017}=22.84$ ton en todos los escenarios. $c_{disp}=\text{lado}/2 - f_{anc}$.
+\end{table}
+
 % ============================================================
 % SECCION 4.5
 % ============================================================
@@ -209,6 +254,15 @@ lectura al admitir que los estribos interceptados por el plano lateral de fractu
 componente resistente adicional cuantificable. El resultado práctico es una disminución del
 conservadurismo en dados adecuadamente armados, particularmente en configuraciones donde el cortante
 basal puede controlar el diseño.
+
+Para el caso semilla ($h_{ef}=30$ cm, $f'_c=280$ kg/cm$^2$, estribos \#4 de 2~ramas), la
+resistencia base en cortante con la NTC-DCEA 2017 es $R_{v,2017}=29.69$ ton en todos los
+espaciamientos evaluados, ya que esta norma no reconoce el aporte del refuerzo transversal. Con la
+NTC-DCEA 2023, el resultado depende directamente de la densidad de estribos: con
+$s_{est}=20$~cm ($N_{ev}=1$), $R_{v,2023}=45.28$ ton (+53~\%); con $s_{est}=15$~cm
+($N_{ev}=2$), $R_{v,2023}=60.86$ ton (+105~\%); y con $s_{est}=10$~cm ($N_{ev}=3$),
+$R_{v,2023}=76.45$ ton (+158~\%). La componente exclusiva de la NTC-DCEA 2023 en cada caso
+es, respectivamente, $R_{ev}=6.92$, $13.84$ y $20.75$ ton.
 
 Un aspecto importante de este barrido es que el aporte de $R_{ev}$ no sustituye la necesidad de una
 geometría adecuada, sino que la complementa. La capacidad adicional otorgada por el refuerzo
