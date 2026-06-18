@@ -1,0 +1,204 @@
+% apendiceC.tex
+\chapter{Apéndice C: Algoritmos de cálculo en pseudocódigo}
+\label{ch:apendiceC}
+
+Este apéndice contiene la descripción en pseudocódigo de las cuatro funciones principales del
+análisis paramétrico. Estos algoritmos implementan los procedimientos descritos en el Capítulo~3
+(Metodología) y constituyen el núcleo computacional del trabajo. El código Python completo
+se encuentra en el notebook \texttt{notebooks/analisis\_parametrico.ipynb}.
+
+% ============================================================
+% ALGORITMO 1
+% ============================================================
+\section{Algoritmo 1: Diseño de placa base bajo flexocompresión}
+
+\begin{algorithm}[H]
+  \caption{\textbf{diseñar\_placa\_base}$(P_u, M_u, N, B, f_c, F_y, d_{col}, b_{col},
+           \text{lado\_dado}, f_{anc}, n_{anc})$}
+  \label{alg:placa_base}
+  \begin{algorithmic}[1]
+    \Require Cargas: $P_u$ (kg), $M_u$ (kg$\cdot$cm);
+             Placa: $N, B$ (cm);
+             Concreto: $f'_c$ (kg/cm$^2$), dado de lado $\ell$ (cm);
+             Acero: $F_y$ (kg/cm$^2$), perfil con $d_{col}, b_{col}$ (cm);
+             Anclaje: $f_{anc}$ (cm), $n_{anc}$ anclas
+    \Ensure Dimensiones de placa, espesor $t_{req}$, tensión en anclas $T_{ua}$
+
+    \State $A_1 \gets N \times B$ \quad $A_2 \gets \ell \times \ell$
+    \State $f_{pu} \gets 0.85\,f'_c\sqrt{A_2/A_1}$ \quad $f_{pu} \gets \min(f_{pu}, 1.7f'_c)$
+    \State $f_{pd} \gets 0.65 \times f_{pu}$ \quad \quad\quad\quad\quad\quad\quad
+      \Comment{Factor $F_R = 0.65$}
+
+    \State $m \gets (N - b_{col})/2$ \quad $n \gets (B - d_{col})/2$ \quad $l \gets \max(m, n)$
+
+    \State $e \gets M_u / P_u$
+    \State $e_{crit} \gets N/2 - P_u/(2B\,f_{pd})$
+
+    \If{$e > e_{crit}$}
+      \State \textbf{Gran excentricidad:}
+      \State $a \gets f_{anc} + N/2$
+      \State $Y \gets a - \sqrt{a^2 - 2P_u(e + f_{anc})/(B\,f_{pd})}$
+      \State $T_{ua} \gets B \cdot f_{pd} \cdot Y - P_u$
+    \Else
+      \State \textbf{Pequeña excentricidad:} $T_{ua} \gets 0$
+    \EndIf
+
+    \State $Y_{eff} \gets \min(Y, l)$
+    \State $M_{comp} \gets f_{pd} \cdot Y_{eff} \cdot (a - Y_{eff}/2)$
+    \State $M_{tens} \gets (T_{ua}/B) \cdot l$
+    \State $M_{u,placa} \gets \max(M_{comp}, M_{tens})$
+
+    \State $t_{req} \gets \sqrt{4 \cdot M_{u,placa}/(0.90 \times F_y)}$
+
+    \Return $\{e, e_{crit}, Y, T_{ua}, t_{req}, M_{u,placa}, f_{pd}\}$
+  \end{algorithmic}
+\end{algorithm}
+
+\textbf{Salidas:} Excentricidad $e$ y crítica $e_{crit}$ (cm); bloque de compresión $Y$ (cm);
+tensión total en anclas $T_{ua}$ (kg); espesor requerido $t_{req}$ (cm); momento de diseño
+en placa $M_{u,placa}$ (kg$\cdot$cm/cm); esfuerzo de aplastamiento de diseño $f_{pd}$
+(kg/cm$^2$).
+
+% ============================================================
+% ALGORITMO 2
+% ============================================================
+\section{Algoritmo 2: Resistencia al cono de concreto en tensión}
+
+\begin{algorithm}[H]
+  \caption{\textbf{resistencia\_tensión\_cono}$(h_{ef}, c_{a1}, c_{a2}, s_{anc},
+           n_{anc}, f'_c, N_{est}, A_{e,est})$}
+  \label{alg:tension_cono}
+  \begin{algorithmic}[1]
+    \Require Profundidad de empotramiento $h_{ef}$ (cm);
+             Distancias al borde: $c_{a1}, c_{a2}$ (cm);
+             Separación entre anclas $s_{anc}$ (cm); número de anclas $n_{anc}$;
+             Resistencia del concreto $f'_c$ (kg/cm$^2$);
+             Número de estribos $N_{est}$; área de estribos $A_{e,est}$ (cm$^2$)
+    \Ensure Resistencia al cono 2017: $R_{t,2017}$; aporte 2023: $R_{et}$;
+            resistencia al cono 2023: $R_{t,2023}$
+
+    \State \textbf{Cálculo del área proyectada del cono (CCD — Concrete Cone Design):}
+    \State $A_{0} \gets c_{a1} \times c_{a2}$ \quad \Comment{Área de proyección base}
+    \State $A_{N,proj} \gets A_0 + 2 \times h_{ef} \times (c_{a1} + c_{a2} + 2h_{ef})$
+      \quad \Comment{Extensión por profundidad}
+
+    \State \textbf{Factores modificadores (cap. 2, norma NTC-DCEA 2017):}
+    \State $\psi_{ec} \gets 1 - \frac{2e_c}{3h_{ef}}$ \quad \Comment{Excentricidad en tensión}
+    \State $\psi_{ed} \gets 1 - \frac{c_a}{1.5h_{ef}}$ \quad \Comment{Distancia al borde}
+    \State $\psi_{c} \gets 0.25 + 0.05(c_a/h_{ef})$ \quad \Comment{Borde libre}
+    \State $\psi_{\infty} \gets 1.0$ \quad \Comment{Efecto de borde (si aplica)}
+
+    \State \textbf{Resistencia base (NTC-2017):}
+    \State $k_1 \gets 17 \times \sqrt{f'_c}$ \quad \Comment{Constante empírica [en unidades SI: 17; en kg/cm$^2$: ~1.7]}
+    \State $R_{t,2017} \gets k_1 \times A_{N,proj}^{0.5} \times \psi_{ec} \times \psi_{ed}
+      \times \psi_{c} \times \psi_{\infty}$
+    \State $R_{t,2017} \gets 0.65 \times R_{t,2017}$ \quad \Comment{Factor $F_R = 0.65$}
+
+    \State \textbf{Aporte de confinamiento por estribos (NTC-2023):}
+    \State $R_{et} \gets 0.65 \times N_{est} \times A_{e,est} \times F_{y,est}$
+      \quad \Comment{$F_{y,est} = 4200$ kg/cm$^2$ para acero G42}
+
+    \State \textbf{Resistencia total 2023:}
+    \State $R_{t,2023} \gets R_{t,2017} + R_{et}$
+
+    \Return $\{R_b, R_{t,2017}, R_{et}, R_{t,2023}\}$
+  \end{algorithmic}
+\end{algorithm}
+
+\textbf{Salidas:} Resistencia por ancla individual $R_b$ (kg); resistencia al cono 2017
+$R_{t,2017}$ (kg); aporte de estribos $R_{et}$ (kg); resistencia total 2023 $R_{t,2023}$ (kg).
+
+% ============================================================
+% ALGORITMO 3
+% ============================================================
+\section{Algoritmo 3: Resistencia al cono de concreto por cortante}
+
+\begin{algorithm}[H]
+  \caption{\textbf{resistencia\_cortante\_cono}$(R_{t,2017}, R_{t,2023}, k_{cp},
+           N_{ev}, A_{e,ev}, F_{y,est})$}
+  \label{alg:cortante_cono}
+  \begin{algorithmic}[1]
+    \Require Resistencias en tensión: $R_{t,2017}, R_{t,2023}$ (kg);
+             Factor de palanca $k_{cp}$ (usualmente 2.0 para A325);
+             Número de estribos en cortante $N_{ev}$;
+             Área de estribos en cortante $A_{e,ev}$ (cm$^2$);
+             Fluencia del refuerzo $F_{y,est}$ (kg/cm$^2$)
+    \Ensure Resistencia en cortante 2017: $R_{v,2017}$; aporte 2023: $R_{ev}$;
+            resistencia en cortante 2023: $R_{v,2023}$
+
+    \State \textbf{Resistencia base por cortante (ambas normas usan mismo mecanismo base):}
+    \State $R_{v,2017} \gets F_R \times k_{cp} \times R_{t,2017}$
+      \quad \Comment{$F_R = 0.65$; $k_{cp}$ depende del grado del ancla}
+
+    \State \textbf{Aporte de confinamiento por estribos en cortante (NTC-2023):}
+    \State $R_{ev} \gets F_R \times N_{ev} \times A_{e,ev} \times F_{y,est}$
+      \quad \Comment{Análogo a $R_{et}$ pero para plano lateral}
+
+    \State \textbf{Resistencia total en cortante con 2023:}
+    \State $R_{v,2023} \gets F_R \times k_{cp} \times R_{t,2023} + R_{ev}$
+
+    \Return $\{R_{v,2017}, R_{ev}, R_{v,2023}\}$
+  \end{algorithmic}
+\end{algorithm}
+
+\textbf{Salidas:} Resistencia en cortante 2017 $R_{v,2017}$ (kg); aporte de estribos
+$R_{ev}$ (kg); resistencia total 2023 $R_{v,2023}$ (kg).
+
+% ============================================================
+% ALGORITMO 4
+% ============================================================
+\section{Algoritmo 4: Distancia mínima al borde libre}
+
+\begin{algorithm}[H]
+  \caption{\textbf{distancia\_mínima\_borde}$(d_o, \text{grado\_ancla})$}
+  \label{alg:borde}
+  \begin{algorithmic}[1]
+    \Require Diámetro nominal del ancla $d_o$ (cm);
+             Grado del ancla: \{A307, A36, A325, A449\}
+    \Ensure Distancia mínima 2017: $c_{min,2017}$;
+            distancia mínima 2023: $c_{min,2023}$
+
+    \State \textbf{Criterios por grado de ancla:}
+    \If{grado\_ancla $\in$ \{A307, A36\}}
+      \State $c_{min,2017} \gets \max(6 \times d_o, 100~\text{mm})$
+      \State $c_{min,2023} \gets \max(6 \times d_o, 100~\text{mm})$ \quad \Comment{Sin cambio}
+    \ElsIf{grado\_ancla $\in$ \{A325, A449\}}
+      \State $c_{min,2017} \gets \max(6 \times d_o, 100~\text{mm})$
+      \State $c_{min,2023} \gets \max(7 \times d_o, 100~\text{mm})$ \quad \Comment{Cambio: 7$d_o$ en 2023}
+    \EndIf
+
+    \Return $\{c_{min,2017}, c_{min,2023}\}$
+  \end{algorithmic}
+\end{algorithm}
+
+\textbf{Salidas:} Distancia mínima al borde según NTC-DCEA 2017: $c_{min,2017}$ (cm);
+según NTC-DCEA 2023: $c_{min,2023}$ (cm).
+
+% ============================================================
+% NOTAS FINALES
+% ============================================================
+\section*{Notas sobre la implementación}
+
+\begin{enumerate}
+  \item \textbf{Constantes y factores:} Los factores de resistencia $F_R = 0.65$ (aplastamiento)
+    y $F_R = 0.90$ (flexión) son idénticos en ambas normas y se incorporan dentro de cada
+    función. El parámetro $k_1$ en el Algoritmo~2 depende de las unidades; para kg/cm$^2$
+    vale aproximadamente 1.7 en el cálculo del CCD.
+
+  \item \textbf{Sistema de unidades:} Todo el código utiliza el sistema métrico técnico
+    mexicano: fuerzas en kg, distancias en cm, esfuerzos en kg/cm$^2$, momentos en kg$\cdot$cm.
+
+  \item \textbf{Convergencia:} El cálculo de $Y$ en el Algoritmo~1 resuelve una ecuación
+    cuadrática implícita mediante iteración (o bien cerrada, si se despeja $Y$ directamente).
+    La solución está siempre comprendida en el rango $[0, a]$.
+
+  \item \textbf{Código fuente completo:} Estos algoritmos se han implementado en Python
+    dentro del notebook \texttt{notebooks/analisis\_parametrico.ipynb}. El código completo
+    incluye validaciones adicionales, manejo de casos límite y generación de gráficas de
+    resultados.
+
+  \item \textbf{Reproducibilidad:} Para reproducir los barridos paramétricos de la tesis
+    (Cap. 4), ejecute las celdas 5--15 del notebook en orden secuencial. Los valores
+    de entrada del caso semilla están dados en la Tabla~\ref{tab:caso_base_metodologia}
+    (Cap. 3, Sección~3.5).
+\end{enumerate}
