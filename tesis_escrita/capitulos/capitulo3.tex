@@ -192,6 +192,28 @@ resistencia de diseño. La relación $\eta$ se interpreta como índice de utiliz
 o iguales a la unidad indican cumplimiento, mientras que valores superiores a la unidad indican que
 la demanda excede la resistencia disponible.
 
+Para establecer cuándo una diferencia entre normas es relevante en la práctica del diseño
+estructural, se adoptan los siguientes criterios de lectura de resultados:
+
+\begin{itemize}
+  \item $\Delta X_{\%} < 5$~\%: diferencia despreciable; el cambio normativo no modifica
+    las decisiones de proyecto.
+  \item $5$~\% $\leq \Delta X_{\%} < 20$~\%: diferencia moderada; relevante en diseños
+    ajustados o conexiones con poca reserva de resistencia.
+  \item $\Delta X_{\%} \geq 20$~\%: diferencia significativa; puede alterar dimensiones,
+    diámetros de ancla o geometría del dado de forma perceptible.
+  \item $\eta \leq 0.70$: reserva de resistencia holgada; la transición normativa no condiciona
+    el diseño aunque modifique el valor de $R_d$.
+  \item $0.70 < \eta \leq 1.00$: zona de diseño ajustado; el cambio normativo puede ser
+    determinante para decidir si se redimensiona o se optimiza el detalle.
+  \item $\eta > 1.00$: incumplimiento del estado límite; el rediseño es obligatorio
+    independientemente de la norma que se aplique.
+\end{itemize}
+
+Estos criterios no forman parte de ninguna de las dos normas comparadas; se adoptan como
+herramienta de lectura de resultados para distinguir diferencias con impacto práctico de
+aquellas que son numéricamente existentes pero ingenieramente irrelevantes.
+
 % ============================================================
 % SECCION 3.5 -- ANALISIS PARAMETRICO
 % ============================================================
