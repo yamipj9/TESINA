@@ -223,3 +223,60 @@ La NTC-DCEA 2023 diferencia el requisito según la resistencia del perno:
 \end{equation}
 
 El incremento de $6d_o$ a $7d_o$ para anclas A325 y A449 representa un aumento de 16.7\,\% en la separación mínima. La lógica del cambio es consistente con la discusión mecánica: un perno de mayor resistencia puede transferir demandas más altas sin que el área de apoyo de su cabeza o tuerca aumente en la misma proporción, elevando las tensiones de separación en el concreto cercano al borde. En pedestales de 50--60~cm de lado, esta modificación puede controlar la viabilidad geométrica del arreglo de anclajes y las dimensiones del dado. Por ello, en esta tesis $c_{min}$ se analiza como una restricción normativa con consecuencias estructurales, no como un simple detalle constructivo.
+
+% ============================================================
+% SECCIÓN 2.7 — TABLA COMPARATIVA UNIFICADA
+% ============================================================
+\section{Síntesis comparativa: NTC-DCEA 2017 vs.\ NTC-DCEA 2023}
+
+La Tabla~\ref{tab:comparativa_normas} reúne en una vista unificada todos los criterios de diseño
+analizados en este capítulo, identificando explícitamente qué cambió entre ediciones y el efecto
+práctico del cambio. Esta síntesis permite distinguir los cambios con impacto cuantitativo directo
+sobre el diseño de aquellos que son puramente editoriales o de reorganización normativa.
+
+\begin{table}[H]
+  \centering
+  \small
+  \caption{Comparativa unificada de criterios de diseño: NTC-DCEA 2017 vs.\ NTC-DCEA 2023.}
+  \label{tab:comparativa_normas}
+  \begin{tabular}{p{0.22\textwidth} p{0.22\textwidth} p{0.22\textwidth} p{0.22\textwidth}}
+    \toprule
+    \textbf{Criterio} & \textbf{NTC-DCEA 2017} & \textbf{NTC-DCEA 2023} & \textbf{Efecto del cambio} \\
+    \midrule
+    Ubicación en la norma
+      & Apéndice~B
+      & Capítulo~13 (cuerpo principal)
+      & Solo editorial; sin impacto en cálculo \\
+    \addlinespace
+    Factores de resistencia $F_R$
+      & $F_R=0.65$ (aplastamiento), $F_R=0.90$ (flexión)
+      & Idénticos
+      & Sin cambio \\
+    \addlinespace
+    Resistencia al cono en tensión $R_t$
+      & Método CCD por área proyectada y factores $\psi$
+      & $R_{t,2017} + R_{et}$; agrega confinamiento por estribos
+      & Aumenta cuando hay estribos efectivos; igual si dado sin armar \\
+    \addlinespace
+    Resistencia al cono en cortante $R_v$
+      & $F_R\,k_{cp}\,R_{t,2017}$
+      & $F_R\,k_{cp}\,R_{t,2023} + R_{ev}$; agrega confinamiento lateral
+      & Aumenta con densidad de estribos; igual si dado sin armar \\
+    \addlinespace
+    Distancia mínima al borde (A307, A36)
+      & $\max(6\,d_o,\,100~\text{mm})$
+      & $\max(6\,d_o,\,100~\text{mm})$
+      & Sin cambio \\
+    \addlinespace
+    Distancia mínima al borde (A325, A449)
+      & $\max(6\,d_o,\,100~\text{mm})$
+      & $\max(7\,d_o,\,100~\text{mm})$
+      & +16.7\,\% más restrictivo; puede controlar geometría del dado \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+La tabla muestra que la NTC-DCEA 2023 introduce dos efectos de signo opuesto: aumenta la
+resistencia disponible cuando el dado cuenta con refuerzo transversal efectivo, y endurece la
+restricción geométrica para anclas de alta resistencia. Esta dualidad es el hallazgo central del
+marco teórico y orienta directamente el diseño del análisis paramétrico del Capítulo~3.
