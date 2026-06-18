@@ -24,26 +24,23 @@ La investigación se delimita al estudio de placas base de columnas de acero apo
 de concreto reforzado, con anclas coladas en sitio y sometidas a combinaciones de carga axial,
 momento flector y cortante. El problema se aborda desde el nivel de componente estructural: no se
 modela la estructura completa, sino la conexión local mediante la cual la columna transmite sus
-acciones últimas a la cimentación.
+acciones últimas a la cimentación. Los alcances y delimitaciones generales del estudio se
+establecen en la Sección~1.4; esta sección precisa el enfoque metodológico con el que se
+desarrollan esos alcances.
 
-El alcance técnico incluye los siguientes aspectos:
+La metodología se estructura en dos niveles de análisis complementarios. El primer nivel es una
+revisión normativa sistemática: se identifican y contrastan las ecuaciones, estados límite y
+requisitos geométricos de la NTC-DCEA 2017 y la NTC-DCEA 2023 que afectan directamente el diseño
+de la placa base y del sistema de anclaje. Este nivel produce la tabla comparativa unificada
+presentada en el Capítulo~2 (Sección~2.7) y define qué diferencias serán llevadas a cálculo.
 
-\begin{itemize}
-  \item comparación de los criterios de diseño de placas base contenidos en el Apéndice B de la
-    NTC-DCEA 2017 y en el Capítulo 13 de la NTC-DCEA 2023;
-  \item evaluación del aplastamiento del concreto bajo la placa, la flexión de la placa base, la
-    tensión en anclas, el cortante en anclas y los requisitos de distancia mínima al borde;
-  \item cuantificación del efecto de los factores de confinamiento $R_{et}$ y $R_{ev}$
-    incorporados en la NTC-DCEA 2023;
-  \item desarrollo de barridos numéricos para identificar rangos donde la transición normativa
-    produce cambios significativos en la seguridad o en la geometría requerida.
-\end{itemize}
-
-Quedan fuera del alcance los ensayes experimentales, la modelación no lineal por elementos finitos,
-el comportamiento global de marcos de acero, la interacción suelo--estructura, el diseño completo
-de zapatas y la optimización de conexiones con cartabones. Estas exclusiones permiten concentrar
-la investigación en el objetivo central: aislar el efecto de los cambios normativos sobre los
-estados límite que controlan el diseño de la placa base y del sistema de anclaje.
+El segundo nivel es un análisis numérico paramétrico: las diferencias identificadas en el primer
+nivel se cuantifican aplicando ambas normas al mismo caso base, con variación sistemática de los
+parámetros más influyentes. Este nivel genera las curvas de sensibilidad, mapas de calor e
+indicadores de utilización $\eta$ que se presentan en el Capítulo~4. La separación entre ambos
+niveles es deliberada: garantiza que las diferencias observadas en los resultados sean atribuibles
+exclusivamente a los cambios normativos y no a variaciones en el modelo mecánico o en los datos de
+entrada.
 
 % ============================================================
 % SECCION 3.2 -- CRITERIOS NORMATIVOS
