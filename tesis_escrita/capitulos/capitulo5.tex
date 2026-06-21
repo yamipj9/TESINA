@@ -45,7 +45,10 @@ favorecer fallas frágiles hacia el borde libre.
 La comparación normativa permitió identificar que los factores de resistencia para aplastamiento del
 concreto y flexión de la placa no presentan cambios sustanciales entre 2017 y 2023. Esto explica
 por qué el espesor requerido de placa $t_{req}$ permanece prácticamente igual al aplicar ambas
-normas bajo las mismas condiciones de carga, geometría y propiedades mecánicas.
+normas bajo las mismas condiciones de carga, geometría y propiedades mecánicas. Para el caso semilla
+evaluado ($P_u=10$ ton, $M_u=7$ ton$\cdot$m, $f'_c=280$ kg/cm$^2$, perfil IR~305$\times$74.5,
+placa $50\times50$ cm), $t_{req}=47.7$ mm con NTC-DCEA 2017 y con NTC-DCEA 2023, resultado
+verificado sobre 500 puntos del barrido paramétrico de flexocompresión.
 
 El cambio de mayor alcance conceptual es la reubicación del diseño de placas base desde un apéndice
 hacia un capítulo principal dentro de la NTC-DCEA 2023. Esta modificación no solo mejora la
@@ -68,20 +71,28 @@ El barrido asociado al factor $R_{et}$ mostró que la resistencia al cono de con
 aumenta cuando el plano hipotético de falla intercepta estribos del dado. El incremento depende de
 la profundidad efectiva de empotramiento $h_{ef}$ y de la densidad del refuerzo transversal. Por
 ello, los mayores beneficios se presentan en dados con estribos cerrados a menor espaciamiento y
-con anclas suficientemente embebidas para movilizar un volumen de concreto confinado.
+con anclas suficientemente embebidas para movilizar un volumen de concreto confinado. Para el caso
+semilla con $h_{ef}=30$ cm y estribos \#4@15~cm (2~ramas), $R_{t,2017}=22.84$ ton y
+$R_{t,2023}=36.18$ ton (+58~\%); con estribos \#5@10~cm el incremento alcanza el 137~\%. Cuando
+el dado no cuenta con refuerzo transversal, $R_{et}=0$ y ambas normas producen resultado idéntico.
 
 El barrido de distancia mínima al borde evidenció que el cambio de $6d_o$ a $7d_o$ para anclas A325
 y A449 puede controlar la geometría del dado. Esta conclusión es especialmente importante para
 pedestales compactos, zapatas de lindero o configuraciones donde el espacio disponible para colocar
 anclas es limitado. En estos casos, una conexión que cumplía con la NTC-DCEA 2017 puede requerir
-redimensionamiento bajo la NTC-DCEA 2023.
+redimensionamiento bajo la NTC-DCEA 2023. En el caso evaluado con ancla A325 de 7/8'' y dado de
+70~cm, la distancia disponible es $c_{disp}=15.0$~cm, que cumple NTC-DCEA 2017
+($c_{min,2017}=13.3$~cm) pero no cumple NTC-DCEA 2023 ($c_{min,2023}=15.6$~cm), con una
+deficiencia de 0.55~cm que obliga a redimensionar el dado.
 
 El barrido asociado al factor $R_{ev}$ confirmó que la NTC-DCEA 2023 incrementa la resistencia al
 cono de concreto por cortante al considerar el aporte del refuerzo transversal interceptado por el
 plano lateral de falla. Este efecto es más significativo cuando el espaciamiento de estribos es
 reducido, pues aumenta el número de barras capaces de participar en el mecanismo resistente. La
 densificación del refuerzo transversal se confirma, por tanto, como una estrategia eficaz para
-mejorar el desempeño del dado ante cortante basal.
+mejorar el desempeño del dado ante cortante basal. Con $s_{est}=15$~cm, $R_{v,2017}=29.69$ ton
+frente a $R_{v,2023}=60.86$ ton (+105~\%); al densificar a $s_{est}=10$~cm el incremento sube a
++158~\% ($R_{v,2023}=76.45$ ton).
 
 En conjunto, los tres barridos muestran que los cambios normativos relevantes no actúan de forma
 aislada. La profundidad de empotramiento, el diámetro del ancla, el grado del acero, el espaciamiento
@@ -162,19 +173,3 @@ verificaciones de placa base, anclaje, refuerzo transversal y distancia al borde
 herramientas facilitaría la aplicación correcta de la NTC-DCEA 2023 y reduciría errores de
 interpretación en memorias de diseño.
 
-% ============================================================
-% SECCION 5.7
-% ============================================================
-\section{Cierre}
-
-La comparación realizada permite concluir que la NTC-DCEA 2023 representa una actualización
-relevante para el diseño de placas base de acero en México. Su principal contribución no consiste en
-cambiar radicalmente el cálculo de la placa, sino en reconocer con mayor precisión la participación
-del concreto confinado y del refuerzo transversal en el comportamiento del sistema de anclaje.
-
-El diseño resultante es más coherente con una filosofía de desempeño estructural: favorece el uso
-de dados adecuadamente confinados, exige mayor cuidado en la geometría de borde para anclas de alta
-resistencia y obliga a entender la placa base como parte de una conexión compuesta. Bajo esta
-lectura, la actualización de 2023 no solo modifica ecuaciones aisladas, sino que promueve una forma
-más integral y responsable de diseñar la transferencia de fuerzas entre la estructura de acero y la
-cimentación.

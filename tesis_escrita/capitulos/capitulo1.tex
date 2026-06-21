@@ -6,9 +6,9 @@ de placas base de acero: análisis comparativo y paramétrico''}, aborda el impa
 de los cambios normativos introducidos por las Normas Técnicas Complementarias para el Diseño y
 Construcción de Estructuras de Acero 2023 (NTC-DCEA 2023) sobre el diseño de sistemas
 placa~base-anclaje-dado de concreto en estructuras metálicas sismorresistentes. El instrumento
-metodológico central es el \textbf{análisis paramétrico numérico}. \textbf{La tesis se enfoca en
+metodológico central es el \textbf{análisis paramétrico numérico}. La tesis se enfoca en
 cuantificar, con un caso representativo, cómo cambian los resultados de diseño al pasar de la
-norma de 2017 a la de 2023 en condiciones de flexocompresión con gran excentricidad.} Para ello
+norma de 2017 a la de 2023 en condiciones de flexocompresión con gran excentricidad. Para ello
 se realizan \textbf{tres barridos paramétricos} que mapean el espacio de diseño y permiten
 construir superficies comparativas cuantificables:
 
@@ -23,16 +23,16 @@ construir superficies comparativas cuantificables:
     incremento de $R_t$ (NTC-2023 vs.\ NTC-2017) y curvas de resistencia al cono por cortante $R_v$.
 \end{enumerate}}
 
-\textbf{En conjunto, estos barridos permiten comparar de manera ordenada tres variables de mayor
+En conjunto, estos barridos permiten comparar de manera ordenada tres variables de mayor
 sensibilidad normativa: la profundidad de empotramiento, el diámetro de ancla y la combinación
-entre resistencia del concreto y espaciado del refuerzo transversal.}
+entre resistencia del concreto y espaciado del refuerzo transversal.
 
-\textbf{Planteamiento del problema.} \textbf{Aunque ambas versiones normativas persiguen el mismo
+\textbf{Planteamiento del problema.} Aunque ambas versiones normativas persiguen el mismo
 objetivo de seguridad estructural, la transición de NTC-DCEA 2017 a NTC-DCEA 2023 modifica
 criterios de resistencia y requisitos geométricos que pueden cambiar de forma importante el
-dimensionamiento de la placa base, los pernos de anclaje y el dado de concreto.} \textbf{El
+dimensionamiento de la placa base, los pernos de anclaje y el dado de concreto. El
 problema de investigación consiste en determinar, con base numérica y de forma trazable, qué tan
-relevantes son esas diferencias y en qué variables del diseño se concentran.}
+relevantes son esas diferencias y en qué variables del diseño se concentran.
 
 % ============================================================
 % SECCIÓN 1.1 — JUSTIFICACIÓN DEL ESTUDIO
@@ -51,8 +51,9 @@ principales de esta conexión.
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.65\textwidth]{\detokenize{figuras/000_partes_placa_base.png}}
-  \caption{Conexión columna de acero--placa base--pedestal de concreto. Fuente: elaboración
-    propia asistida por IA \cite{cisneros2026placabaseia}.}
+  \caption{Esquema generalizado de los componentes del sistema placa base--anclaje--pedestal de
+    concreto bajo flexocompresión. Adaptado de \cite{SkyCiv_Baseplate_2024}; mejorado en
+    resolución y anotado para indicar las partes componentes analizadas en esta investigación.}
   \label{fig:partes_placa_base}
 \end{figure}
 
@@ -110,8 +111,8 @@ verificaciones cambian y en qué magnitud, para justificar técnicamente sus dec
 revisores y autoridades. Esta tesis provee dicha documentación de manera rigurosa y trazable,
 basada en algoritmos de cálculo verificables y en el análisis de casos representativos.
 
-\textbf{La comprensión conceptual de los cambios normativos no basta por sí sola para orientar la
-práctica profesional.} Determinar en qué medida técnica y económica la nueva norma modifica los
+La comprensión conceptual de los cambios normativos no basta por sí sola para orientar la
+práctica profesional. Determinar en qué medida técnica y económica la nueva norma modifica los
 resultados de diseño requiere extraer datos cuantitativos sistematizados. En este sentido, el
 \textbf{análisis paramétrico numérico} resulta una herramienta adecuada por tres razones
 fundamentales: (1)~el \textit{mapeo del espacio de diseño} permite identificar con precisión los
@@ -119,11 +120,11 @@ umbrales a partir de los cuales la resistencia al cono del concreto ---y no la p
 gobierna el dimensionamiento; (2)~la \textit{detección de variaciones no lineales} evidencia la
 sensibilidad del sistema ante cambios de $h_{ef}$, espaciado de estribos o distancia al borde
 libre; y (3)~la \textit{identificación de configuraciones más eficientes} permite comparar el
-costo del material con los márgenes de seguridad normativos. \textbf{Los tres barridos
+costo del material con los márgenes de seguridad normativos. Los tres barridos
 implementados se concentran, por tanto, en las variables donde ambas normas muestran mayor
 divergencia: la profundidad de empotramiento $h_{ef}$, el diámetro de ancla $d_o$ y la
 resistencia del concreto $f'_c$ en combinación con el espaciado del refuerzo transversal del
-dado.}
+dado.
 
 % ============================================================
 % SECCIÓN 1.2 — OBJETIVO GENERAL
@@ -230,17 +231,155 @@ aumentar el diámetro nominal del ancla $d_o$, debido al incremento directo de l
 mínimas requeridas del dado de concreto.
 
 % ============================================================
-% SECCIÓN 1.6 — ORGANIZACIÓN DEL DOCUMENTO
+% SECCIÓN 1.6 — ANTECEDENTES Y ESTADO DEL ARTE
+% ============================================================
+\section{Antecedentes y estado del arte}
+
+El diseño de placas base de acero se desarrolló, en su formulación práctica moderna, a partir de
+un problema de equilibrio entre la carga axial de la columna, el momento transmitido a la
+cimentación, la presión de contacto sobre el concreto y la tensión movilizada en los pernos de
+anclaje. La guía de Fisher y Kloiber para el AISC consolidó este enfoque al proponer procedimientos
+de diseño verificables para bases sometidas a compresión, tensión y flexocompresión
+\cite{FisherKloiber_2006}. Su aportación principal fue convertir un fenómeno de contacto complejo
+en una secuencia de cálculo útil para oficina de diseño: se define una presión admisible o de
+diseño en el concreto, se obtiene la longitud del bloque comprimido bajo la placa y se equilibra el
+momento mediante un par interno entre el concreto comprimido y las anclas en tensión. Esta
+formulación sigue siendo indispensable porque permite cerrar el diseño de la placa y estimar el
+espesor requerido mediante secciones críticas de flexión. Sin embargo, su alcance es limitado para
+el objetivo de esta tesis: el procedimiento clásico se concentra en la distribución de presiones y
+en la resistencia de la placa, mientras que el desempeño último de la conexión puede quedar
+gobernado por mecanismos frágiles del concreto, especialmente cuando la excentricidad es grande y
+la tensión de las anclas se vuelve el componente dominante del equilibrio.
+
+En flexocompresión con gran excentricidad, el modelo tradicional deja de representar una placa
+completamente apoyada y pasa a describir una conexión parcialmente levantada. El bloque equivalente
+de compresión, asociado en la práctica al bloque rectangular de Whitney, reemplaza la distribución
+real de presiones por una resultante uniforme sobre una longitud efectiva $Y$. Esta simplificación
+es razonable para obtener el par interno de diseño, pero no debe interpretarse como una descripción
+literal del contacto placa-grout-concreto. En una placa flexible, la presión puede concentrarse
+bajo patines y alma; en una placa rígida, la demanda se transfiere con mayor eficacia al grupo de
+anclas, lo que incrementa la tracción que debe resistir el concreto circundante. La literatura
+clásica, por tanto, aporta el marco de equilibrio axial-momento-tensión, pero no resuelve por sí
+sola la pregunta central de esta investigación: cómo cambia la seguridad del sistema cuando una
+norma reconoce explícitamente el confinamiento del dado y otra lo omite o lo trata de forma menos
+desarrollada.
+
+La evolución del diseño de anclajes en concreto corrigió esa limitación mediante el método
+Concrete Capacity Design (CCD), formulado por Fuchs, Eligehausen y Breen a partir de evidencia
+experimental amplia \cite{FuchsEligehausenBreen_1995}. El cambio conceptual fue significativo: la
+resistencia al arrancamiento del cono de concreto dejó de estimarse como un simple producto de
+área geométrica y pasó a expresarse mediante una ley de fractura en la que la profundidad efectiva
+de empotramiento $h_{ef}$ interviene con una potencia no lineal. Con ello, el método CCD reconoció
+que el concreto es un material cuasifrágil y que la capacidad no crece proporcionalmente al volumen
+idealizado del cono. Además, el método incorporó reducciones por cercanía a bordes libres,
+traslape de conos en grupos de anclas, excentricidad de carga y condición de agrietamiento. Esta
+estructura lo volvió compatible con el diseño normativo contemporáneo, porque permite separar una
+resistencia básica de factores de modificación físicamente identificables.
+
+La recepción del CCD en reglamentos como ACI 318 hizo que el diseño de anclajes dejara de ser un
+apéndice empírico y pasara a formar parte explícita del diseño estructural de concreto
+\cite{ACI318_2019}. Su aporte a esta tesis no consiste únicamente en proporcionar ecuaciones de
+resistencia, sino en establecer una jerarquía de modos de falla que debe verificarse antes de
+aceptar una conexión como segura. Un perno puede cumplir por acero y aun así producir una falla de
+cono, pryout, estallido lateral o desgarramiento hacia el borde libre. Esta distinción es crucial
+en placas base, donde la selección de anclas de alta resistencia puede aumentar la demanda
+transferida al concreto sin aumentar en la misma proporción el volumen resistente del pedestal. La
+limitación del enfoque ACI para el caso mexicano es que no responde, por sí mismo, a la pregunta
+normativa local: cómo se modifica el diseño cuando las NTC-DCEA 2023 incorporan términos propios
+para cuantificar el aporte de estribos en tensión y cortante, mientras la edición 2017 no ofrece
+la misma lectura explícita dentro del procedimiento comparado.
+
+Los estudios sobre grupos de anclas profundizaron esa discusión al mostrar que la superposición de
+áreas proyectadas no siempre captura toda la redistribución tridimensional de esfuerzos en dados
+pequeños o con bordes cercanos. El trabajo de Grilli y Kanvinde sobre resistencia a tensión de
+grupos de anclas embebidas enfatiza que el comportamiento colectivo depende de la separación entre
+pernos, la profundidad de empotramiento, el tamaño efectivo del bloque de concreto y la trayectoria
+real de fisuración \cite{Pankow_2017_anchor_groups}. Su contribución es relevante porque desplaza
+la atención desde el ancla aislada hacia el sistema de anclaje, que es precisamente el caso de una
+placa base. No obstante, estos estudios se desarrollan bajo marcos de calibración y práctica
+internacional; no cuantifican el efecto de una transición normativa mexicana específica ni evalúan
+la combinación particular de $R_{et}$, $R_{ev}$ y distancia mínima al borde libre que distingue a
+las NTC-DCEA 2023.
+
+La literatura experimental y analítica también ha estudiado la transferencia de cortante en placas
+base expuestas. Gomez, Kanvinde, Smith y Deierlein analizaron mecanismos como fricción,
+aplastamiento local, interacción con el grout y demanda directa en anclas, mostrando que el
+cortante no puede tratarse como una acción secundaria independiente del estado de compresión y de
+la rigidez de la conexión \cite{GomezKanvindeSmithDeierlein_2009}. Este aporte es importante para
+el presente trabajo porque el cortante puede activar fallas hacia el borde libre cuando las anclas
+se ubican cerca de una cara del pedestal. Su limitación, frente a la pregunta mexicana actual, es
+que su interés principal está en describir mecanismos de transferencia y modelos de resistencia
+para placas expuestas, no en contrastar disposiciones normativas mexicanas ni en medir el efecto
+aditivo de un término de confinamiento por estribos como $R_{ev}$.
+
+En cuanto a análisis paramétricos previos, la literatura ha variado de manera sistemática
+parámetros como resistencia del concreto $f'_c$, espesor de placa, diámetro de ancla,
+profundidad de empotramiento $h_{ef}$, separación entre anclas, distancia al borde, carga axial y
+relación tensión-cortante. Estos estudios han permitido identificar tendencias robustas: la
+capacidad del cono en tensión es altamente sensible a $h_{ef}$; la falla por cortante hacia borde
+libre depende de manera dominante de la distancia disponible para desarrollar la superficie de
+fractura; el refuerzo transversal puede cambiar no solo la resistencia máxima, sino también la
+ductilidad posagrietamiento; y la interacción tensión-cortante reduce la reserva disponible cuando
+ambos efectos se movilizan simultáneamente. Sin embargo, estos antecedentes no resuelven el
+problema planteado en esta tesis porque estudian variables mecánicas generales, usualmente bajo
+ACI, AISC o modelos de investigación, sin traducirlas a la comparación directa entre
+NTC-DCEA 2017 y NTC-DCEA 2023. En consecuencia, existe información técnica sobre qué variables son
+sensibles, pero no sobre cuánto cambia el diseño mexicano vigente al pasar de una edición
+normativa a otra.
+
+La dimensión sísmica incrementa la relevancia del problema. Las disposiciones sísmicas de AISC
+subrayan que las conexiones en estructuras de acero deben ser compatibles con una estrategia de
+diseño por capacidad, en la cual los elementos de conexión no deben fallar frágilmente antes de que
+se desarrollen los mecanismos dúctiles previstos \cite{AISC_341_2022}. En una base de columna, esa
+exigencia significa que la conexión columna-cimentación debe transferir demandas amplificadas por
+sobrerresistencia, inversión cíclica de momentos y posible degradación local del contacto. Si la
+placa base y las anclas se dimensionan solo con fuerzas reducidas del análisis global, se corre el
+riesgo de que el pedestal de concreto se convierta en el mecanismo crítico. Por ello, la conexión
+no puede entenderse como un detalle constructivo al final de la ruta de cargas, sino como un
+componente que condiciona la continuidad resistente entre la superestructura metálica y la
+cimentación.
+
+La brecha normativa aparece con claridad al comparar las NTC-DCEA 2017 y 2023. La edición de 2017
+establece criterios de diseño que permiten resolver el equilibrio de la placa y verificar estados
+límite, pero no incorpora con el mismo nivel de explicitud el aporte resistente del refuerzo
+transversal del dado sobre los mecanismos de cono en tensión y falla lateral por cortante
+\cite{GCDMX_NTC_DCEA_2017}. La edición de 2023 reorganiza y actualiza el tratamiento de anclajes,
+reconociendo factores de confinamiento $R_{et}$ y $R_{ev}$ y modificando requisitos geométricos
+como la distancia mínima al borde libre para anclas de alta resistencia A325/A449
+\cite{GCDMX_NTC_DCEA_2023}. Este cambio tiene dos efectos simultáneos: por un lado, puede aumentar
+la resistencia calculada cuando los estribos interceptan de manera efectiva la superficie de
+falla; por otro, puede exigir pedestales más grandes o arreglos de anclaje más separados debido al
+paso de $6\,d_o$ a $7\,d_o$ en el criterio de borde libre para ciertos aceros.
+
+El punto crítico es que ambos efectos no actúan con el mismo signo ni con la misma sensibilidad.
+El incremento de resistencia asociado a $R_{et}$ y $R_{ev}$ depende de la densidad y posición del
+refuerzo transversal, de la profundidad de empotramiento y de la trayectoria de fractura; en
+cambio, el aumento de distancia mínima al borde libre es una restricción geométrica inmediata que
+puede controlar el tamaño del dado antes de que la resistencia sea la variable gobernante. Por esa
+razón, una comparación puramente cualitativa entre normas resulta insuficiente. Lo que requiere la
+práctica profesional mexicana es una cuantificación paramétrica que muestre en qué intervalos la
+NTC-DCEA 2023 permite reconocer capacidad adicional por confinamiento y en qué casos endurece el
+diseño por requisitos de borde.
+
+A diferencia de los trabajos revisados, la presente tesis aporta una comparación paramétrica
+específica entre las NTC-DCEA 2017 y 2023 para el diseño de placas base de acero, cuantificando el
+efecto de los factores de confinamiento ($R_{et}$) y ($R_{ev}$), así como el cambio en los
+requisitos de distancia mínima al borde libre. Esta aportación resulta pertinente porque traslada
+la discusión general sobre anclajes, método CCD y diseño por capacidad al contexto normativo
+mexicano vigente, bajo condiciones representativas de flexocompresión con gran excentricidad.
+
+% ============================================================
+% SECCIÓN 1.7 — ORGANIZACIÓN DEL DOCUMENTO
 % ============================================================
 \section{Organización del Documento}
 
-\textbf{El presente trabajo se organiza en cinco capítulos y una sección de conclusiones.} El
-Capítulo~2 desarrolla el marco teórico de la investigación, con los componentes del sistema
-placa~base-anclaje-dado de concreto, los mecanismos de transferencia de fuerzas y los modos de
-falla que fundamentan el análisis. El Capítulo 3 detalla la metodología, los criterios normativos
-y las premisas de cálculo que orientan el análisis comparativo. El Capítulo~4 amplía el marco
-teórico y referencial, incorporando los antecedentes
-histórico-normativos y las modificaciones técnicas sustanciales de las NTC-DCEA 2023. El
-Capítulo~5 describe la metodología de cálculo implementada y los algoritmos del análisis
-paramétrico numérico. La sección de Conclusiones y Recomendaciones sintetiza los hallazgos
-principales del análisis comparativo y propone líneas de trabajo futuro.
+El presente trabajo se organiza en cinco capítulos. El Capítulo~1 presenta el planteamiento del
+problema, los objetivos, alcances, hipótesis y la revisión de literatura que delimita el vacío de
+conocimiento. El Capítulo~2 desarrolla el marco teórico de la investigación, con los componentes
+del sistema placa~base-anclaje-dado de concreto, los mecanismos de transferencia de fuerzas, los
+modos de falla y las ecuaciones que fundamentan el análisis. El Capítulo~3 presenta la metodología
+de cálculo implementada y los algoritmos del análisis paramétrico numérico. El Capítulo~4 expone
+los resultados del análisis comparativo y paramétrico, organizados en torno a los factores de
+confinamiento $R_{et}$, $R_{ev}$ y el cambio en la distancia mínima al borde libre para anclas de
+alta resistencia. El Capítulo~5 sintetiza las conclusiones principales de la investigación y
+formula recomendaciones para el diseño estructural y para trabajos futuros.

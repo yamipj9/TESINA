@@ -19,6 +19,9 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{float}
+% Pseudocódigo para algoritmos
+\usepackage{algorithm}
+\usepackage{algpseudocode}
 % Microtypografía: desactivar expansión si la distribución no tiene fuentes escalables
 \usepackage[protrusion=true,expansion=false]{microtype}
 \usepackage{hyperref}
@@ -79,12 +82,11 @@
 
 % --- Anexos ---
 \appendix
-\input{anexos/anexo1}
-\input{anexos/apendiceB}
+%\input{anexos/anexo1}   % Pendiente: tabla de datos brutos e instrumentos
+%\input{anexos/apendiceB} % Pendiente: procedimiento de diseño detallado
+\input{anexos/apendiceC} % Algoritmos de cálculo en pseudocódigo
 
 % --- Bibliografía (BibTeX) ---
-% Incluir todas las entradas del archivo .bib aunque no estén citadas
-\nocite{*}
 \bibliographystyle{unsrt}
 \bibliography{bibliografia/references}
 

@@ -24,26 +24,23 @@ La investigación se delimita al estudio de placas base de columnas de acero apo
 de concreto reforzado, con anclas coladas en sitio y sometidas a combinaciones de carga axial,
 momento flector y cortante. El problema se aborda desde el nivel de componente estructural: no se
 modela la estructura completa, sino la conexión local mediante la cual la columna transmite sus
-acciones últimas a la cimentación.
+acciones últimas a la cimentación. Los alcances y delimitaciones generales del estudio se
+establecen en la Sección~1.4; esta sección precisa el enfoque metodológico con el que se
+desarrollan esos alcances.
 
-El alcance técnico incluye los siguientes aspectos:
+La metodología se estructura en dos niveles de análisis complementarios. El primer nivel es una
+revisión normativa sistemática: se identifican y contrastan las ecuaciones, estados límite y
+requisitos geométricos de la NTC-DCEA 2017 y la NTC-DCEA 2023 que afectan directamente el diseño
+de la placa base y del sistema de anclaje. Este nivel produce la tabla comparativa unificada
+presentada en el Capítulo~2 (Sección~2.7) y define qué diferencias serán llevadas a cálculo.
 
-\begin{itemize}
-  \item comparación de los criterios de diseño de placas base contenidos en el Apéndice B de la
-    NTC-DCEA 2017 y en el Capítulo 13 de la NTC-DCEA 2023;
-  \item evaluación del aplastamiento del concreto bajo la placa, la flexión de la placa base, la
-    tensión en anclas, el cortante en anclas y los requisitos de distancia mínima al borde;
-  \item cuantificación del efecto de los factores de confinamiento $R_{et}$ y $R_{ev}$
-    incorporados en la NTC-DCEA 2023;
-  \item desarrollo de barridos numéricos para identificar rangos donde la transición normativa
-    produce cambios significativos en la seguridad o en la geometría requerida.
-\end{itemize}
-
-Quedan fuera del alcance los ensayes experimentales, la modelación no lineal por elementos finitos,
-el comportamiento global de marcos de acero, la interacción suelo--estructura, el diseño completo
-de zapatas y la optimización de conexiones con cartabones. Estas exclusiones permiten concentrar
-la investigación en el objetivo central: aislar el efecto de los cambios normativos sobre los
-estados límite que controlan el diseño de la placa base y del sistema de anclaje.
+El segundo nivel es un análisis numérico paramétrico: las diferencias identificadas en el primer
+nivel se cuantifican aplicando ambas normas al mismo caso base, con variación sistemática de los
+parámetros más influyentes. Este nivel genera las curvas de sensibilidad, mapas de calor e
+indicadores de utilización $\eta$ que se presentan en el Capítulo~4. La separación entre ambos
+niveles es deliberada: garantiza que las diferencias observadas en los resultados sean atribuibles
+exclusivamente a los cambios normativos y no a variaciones en el modelo mecánico o en los datos de
+entrada.
 
 % ============================================================
 % SECCION 3.2 -- CRITERIOS NORMATIVOS
@@ -197,6 +194,28 @@ resistencia de diseño. La relación $\eta$ se interpreta como índice de utiliz
 o iguales a la unidad indican cumplimiento, mientras que valores superiores a la unidad indican que
 la demanda excede la resistencia disponible.
 
+Para establecer cuándo una diferencia entre normas es relevante en la práctica del diseño
+estructural, se adoptan los siguientes criterios de lectura de resultados:
+
+\begin{itemize}
+  \item $\Delta X_{\%} < 5$~\%: diferencia despreciable; el cambio normativo no modifica
+    las decisiones de proyecto.
+  \item $5$~\% $\leq \Delta X_{\%} < 20$~\%: diferencia moderada; relevante en diseños
+    ajustados o conexiones con poca reserva de resistencia.
+  \item $\Delta X_{\%} \geq 20$~\%: diferencia significativa; puede alterar dimensiones,
+    diámetros de ancla o geometría del dado de forma perceptible.
+  \item $\eta \leq 0.70$: reserva de resistencia holgada; la transición normativa no condiciona
+    el diseño aunque modifique el valor de $R_d$.
+  \item $0.70 < \eta \leq 1.00$: zona de diseño ajustado; el cambio normativo puede ser
+    determinante para decidir si se redimensiona o se optimiza el detalle.
+  \item $\eta > 1.00$: incumplimiento del estado límite; el rediseño es obligatorio
+    independientemente de la norma que se aplique.
+\end{itemize}
+
+Estos criterios no forman parte de ninguna de las dos normas comparadas; se adoptan como
+herramienta de lectura de resultados para distinguir diferencias con impacto práctico de
+aquellas que son numéricamente existentes pero ingenieramente irrelevantes.
+
 % ============================================================
 % SECCION 3.5 -- ANALISIS PARAMETRICO
 % ============================================================
@@ -299,30 +318,238 @@ La Tabla~\ref{tab:barridos_metodologia} sintetiza los barridos numéricos adopta
 
 Los cálculos se implementaron en \textsc{Python} mediante funciones parametrizadas para el diseño
 de placa base, resistencia al cono en tensión, resistencia al cono por cortante y distancia mínima
-al borde. El sistema de unidades adoptado es el sistema métrico técnico usado de manera habitual en
-la práctica estructural mexicana: kilogramos-fuerza y centimetros. Por consistencia dimensional,
-los momentos se expresan en $\mathrm{kg{\cdot}cm}$ y las resistencias de esfuerzo en
-$\mathrm{kg/cm^2}$.
+al borde. Una descripción en pseudocódigo de estas cuatro funciones se encuentra en el
+Apéndice~\ref{ch:apendiceC}. El sistema de unidades adoptado es el sistema métrico técnico usado
+de manera habitual en la práctica estructural mexicana: kilogramos-fuerza y centimetros. Por
+consistencia dimensional, los momentos se expresan en $\mathrm{kg{\cdot}cm}$ y las resistencias de
+esfuerzo en $\mathrm{kg/cm^2}$.
 
-El control de calidad del procesamiento numérico se realizo mediante tres acciones:
+El control de calidad del procesamiento numérico se realizó mediante tres acciones:
 
 \begin{itemize}
-  \item verificacion de unidades en cada ecuacion implementada;
+  \item verificación de unidades en cada ecuación implementada;
   \item comparación entre cálculos manuales de caso base y resultados generados por los scripts;
   \item revisión de continuidad de las curvas paramétricas para detectar saltos no explicados por
-    cambios discretos en el numero de estribos interceptados.
+    cambios discretos en el número de estribos interceptados.
 \end{itemize}
 
 Los resultados se presentan mediante tablas comparativas, curvas de sensibilidad y mapas de calor.
 Las tablas permiten identificar diferencias puntuales entre normas; las curvas muestran tendencias
 ante variación de una variable principal; y los mapas de calor ayudan a localizar regiones donde la
 NTC-DCEA 2023 produce incrementos relevantes de resistencia o restricciones geométricas más
-severas. Esta forma de presentacion permite conectar el cálculo normativo con decisiones practicas
+severas. Esta forma de presentación permite conectar el cálculo normativo con decisiones prácticas
 de diseño, tales como aumentar la profundidad de empotramiento, modificar el diámetro del ancla,
 densificar los estribos o incrementar las dimensiones del dado.
 
-En síntesis, La metodología propuesta busca que la comparación normativa sea reproducible: las dos
+En síntesis, la metodología propuesta busca que la comparación normativa sea reproducible: las dos
 normas se aplican a los mismos casos, las variables se modifican de forma controlada y los
 resultados se interpretan mediante indicadores comunes. De esta manera, el análisis posterior puede
 atribuir las diferencias observadas a cambios específicos de la NTC-DCEA 2023 y no a variaciones en
 el modelo, en las unidades o en los datos de entrada.
+
+% ============================================================
+% SECCION 3.7 -- EJEMPLO NUMERICO PASO A PASO
+% ============================================================
+\section{Ejemplo numérico: cálculo paso a paso del caso semilla}
+
+La siguiente sección aplica el procedimiento de nueve pasos descrito en la Sección~3.4 al
+caso semilla definido en la Sección~3.5. El objetivo es demostrar la trazabilidad completa
+del cálculo: cualquier lector puede verificar cada resultado a partir de los datos de entrada
+y las ecuaciones del modelo.
+
+% ------------------------------------------------------------
+\subsection{Datos de entrada}
+% ------------------------------------------------------------
+
+La Tabla~\ref{tab:ejemplo_entrada} reúne todos los parámetros de entrada del caso semilla.
+
+\begin{table}[H]
+  \centering
+  \caption{Datos de entrada del ejemplo numérico (caso semilla).}
+  \label{tab:ejemplo_entrada}
+  \begin{tabular}{p{0.38\textwidth} p{0.20\textwidth} p{0.22\textwidth}}
+    \toprule
+    \textbf{Parámetro} & \textbf{Símbolo} & \textbf{Valor} \\
+    \midrule
+    Perfil de columna           & --          & IR 305$\times$74.5 (A992) \\
+    Peralte del perfil          & $d_{col}$   & 30.5~cm \\
+    Ancho del ala               & $b_{col}$   & 16.5~cm \\
+    Esfuerzo de fluencia (placa)& $F_y$       & 3\,515~kg/cm$^2$ \\
+    Dimensiones de placa        & $N\times B$ & $50\times50$~cm \\
+    Resistencia del concreto    & $f'_c$      & 280~kg/cm$^2$ \\
+    Dimensiones del dado        & --          & $70\times70$~cm \\
+    Carga axial última          & $P_u$       & 10\,000~kg (10~ton) \\
+    Momento último              & $M_u$       & 700\,000~kg$\cdot$cm (7~ton$\cdot$m) \\
+    Brazo de anclas al eje      & $f_{anc}$   & 20~cm \\
+    Número de anclas en tensión & $n_{anc}$   & 2 \\
+    Profundidad de empotramiento& $h_{ef}$    & 30~cm \\
+    Separación entre anclas     & $s_{anc}$   & 25~cm \\
+    Borde libre (dir. momento)  & $c_{a1}$    & 15~cm \\
+    Borde libre (dir. transv.)  & $c_{a2}$    & 12.5~cm \\
+    Estribo del dado            & --          & \#4 @ 15~cm, 2~ramas \\
+    Fluencia del refuerzo       & $F_{y,est}$ & 4\,200~kg/cm$^2$ \\
+    Grado del ancla             & --          & A325, 7/8'' \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+% ------------------------------------------------------------
+\subsection{Pasos 1 a 5: diseño de la placa base}
+% ------------------------------------------------------------
+
+\textbf{Paso 1 — Esfuerzo de aplastamiento del concreto.}
+Las áreas de placa y dado son $A_1 = 50\times50 = 2\,500$~cm$^2$ y
+$A_2 = 70\times70 = 4\,900$~cm$^2$. El esfuerzo límite de aplastamiento y su valor de
+diseño resultan:
+\begin{equation*}
+  f_{pu} = 0.85\,f'_c\sqrt{\frac{A_2}{A_1}}
+         = 0.85 \times 280\sqrt{\frac{4\,900}{2\,500}}
+         = 333.2~\text{kg/cm}^2
+         \quad \leq 1.7\,f'_c = 476~\text{kg/cm}^2 \quad \checkmark
+\end{equation*}
+\begin{equation*}
+  f_{pd} = F_R\,f_{pu} = 0.65 \times 333.2 = 216.6~\text{kg/cm}^2
+\end{equation*}
+
+\textbf{Paso 2 — Voladizos críticos de la placa.}
+Los voladizos en cada dirección y el voladizo de diseño son:
+\begin{equation*}
+  m = \frac{N - b_{col}}{2} = \frac{50 - 16.5}{2} = 16.75~\text{cm}; \qquad
+  n = \frac{B - d_{col}}{2} = \frac{50 - 30.5}{2} = 9.75~\text{cm}; \qquad
+  l = \max(m,n) = 16.75~\text{cm}
+\end{equation*}
+
+\textbf{Paso 3 — Excentricidad y régimen de trabajo.}
+\begin{equation*}
+  e = \frac{M_u}{P_u} = \frac{700\,000}{10\,000} = 70.0~\text{cm}; \qquad
+  a = f_{anc} + \frac{N}{2} = 20 + 25 = 45.0~\text{cm}
+\end{equation*}
+\begin{equation*}
+  e_{crit} = \frac{N}{2} - \frac{P_u}{2B\,f_{pd}}
+           = 25 - \frac{10\,000}{2\times50\times216.6}
+           = 24.5~\text{cm}
+\end{equation*}
+Como $e = 70.0~\text{cm} > e_{crit} = 24.5~\text{cm}$, la placa trabaja en
+\textbf{gran excentricidad}: el bloque de compresión no ocupa toda la placa y las anclas
+del lado opuesto entran en tensión.
+
+\textbf{Paso 4 — Bloque de compresión $Y$ y tensión en anclas $T_{ua}$.}
+\begin{equation*}
+  Y = a - \sqrt{a^2 - \frac{2P_u(e + f_{anc})}{B\,f_{pd}}}
+    = 45 - \sqrt{45^2 - \frac{2\times10\,000\times(70+20)}{50\times216.6}}
+    = 45 - \sqrt{2\,025 - 166.2}
+    = 1.89~\text{cm}
+\end{equation*}
+\begin{equation*}
+  T_{ua} = B\,f_{pd}\,Y - P_u = 50\times216.6\times1.89 - 10\,000
+         = 20\,428 - 10\,000 = 10\,428~\text{kg} = 10.43~\text{ton}
+\end{equation*}
+
+\textbf{Paso 5 — Momento de diseño en la placa y espesor requerido.}
+Se calculan los momentos por unidad de ancho por el lado de compresión y por el lado de tensión,
+y se toma el mayor:
+\begin{align*}
+  M_{comp} &= f_{pd}\,Y\Bigl(a - \tfrac{Y}{2}\Bigr)
+             = 216.6\times1.89\times\bigl(45.0 - 0.94\bigr)
+             = 18\,000~\text{kg·cm/cm} \\
+  M_{tens} &= \frac{T_{ua}}{B}\,l
+             = \frac{10\,428}{50}\times16.75
+             = 3\,493~\text{kg·cm/cm}
+\end{align*}
+\begin{equation*}
+  M_{u,placa} = \max(M_{comp},\,M_{tens}) = 18\,000~\text{kg·cm/cm}
+\end{equation*}
+\begin{equation*}
+  t_{req} = \sqrt{\frac{4\,M_{u,placa}}{F_R^{flex}\,F_y}}
+          = \sqrt{\frac{4\times18\,000}{0.90\times3\,515}}
+          = 4.77~\text{cm} = \mathbf{47.7~mm}
+\end{equation*}
+Este valor es idéntico con la NTC-DCEA 2017 y con la NTC-DCEA 2023, dado que ambas
+normas conservan los mismos factores $F_R$ y la misma mecánica de distribución de
+esfuerzos bajo la placa.
+
+% ------------------------------------------------------------
+\subsection{Pasos 6 y 7: resistencias al cono de concreto}
+% ------------------------------------------------------------
+
+\textbf{Paso 6 — Resistencia al cono en tensión.}
+Con $h_{ef}=30$~cm, el número de estribos que intercepta la superficie hipotética de falla es
+$N_{est} = \lfloor h_{ef}/s_{est}\rfloor = \lfloor 30/15\rfloor = 2$.
+Aplicando el método del cono proyectado (desarrollado en el Capítulo~2), la resistencia del
+grupo de anclaje con la NTC-DCEA 2017 resulta $R_{t,2017} = 22.84$~ton. Con la NTC-DCEA 2023
+se agrega el término de confinamiento:
+\begin{equation*}
+  R_{et} = F_R\,N_{est}\,A_{e,est}\,F_{y,est}
+         = 0.65\times2\times2.534\times4\,200
+         = 13\,340~\text{kg} = 13.34~\text{ton}
+\end{equation*}
+\begin{equation*}
+  R_{t,2023} = R_{t,2017} + R_{et} = 22.84 + 13.34 = \mathbf{36.18~\text{ton}}
+  \quad (+58\text{ \%})
+\end{equation*}
+
+\textbf{Paso 7 — Resistencia al cono por cortante.}
+Usando el factor de palanca $k_{cp}=2.0$ para anclas dúctiles A325:
+\begin{equation*}
+  R_{v,2017} = F_R\,k_{cp}\,R_{t,2017} = 0.65\times2.0\times22\,837
+             = 29\,687~\text{kg} = \mathbf{29.69~\text{ton}}
+\end{equation*}
+\begin{equation*}
+  R_{ev} = F_R\,N_{ev}\,A_{e,est}\,F_{y,est}
+         = 0.65\times2\times2.534\times4\,200
+         = 13\,836~\text{kg} = 13.84~\text{ton}
+\end{equation*}
+\begin{equation*}
+  R_{v,2023} = F_R\,k_{cp}\,R_{t,2023} + R_{ev}
+             = 0.65\times2.0\times36\,176 + 13\,836
+             = 47\,029 + 13\,836
+             = 60\,865~\text{kg} = \mathbf{60.86~\text{ton}} \quad (+105\text{ \%})
+\end{equation*}
+
+% ------------------------------------------------------------
+\subsection{Pasos 8 y 9: verificación geométrica y síntesis}
+% ------------------------------------------------------------
+
+\textbf{Paso 8 — Distancia mínima al borde libre.}
+Para ancla A325 de 7/8'' ($d_o = 2.222$~cm), la distancia disponible y los umbrales normativos
+son:
+\begin{equation*}
+  c_{disp} = \frac{\text{lado dado}}{2} - f_{anc}
+           = \frac{70}{2} - 20 = 15.0~\text{cm}
+\end{equation*}
+\begin{equation*}
+  c_{min,2017} = 6\,d_o = 6\times2.222 = 13.33~\text{cm} \quad\Rightarrow\quad
+  15.0 \geq 13.33 \quad \checkmark
+\end{equation*}
+\begin{equation*}
+  c_{min,2023} = 7\,d_o = 7\times2.222 = 15.55~\text{cm} \quad\Rightarrow\quad
+  15.0 < 15.55 \quad \times\quad (\Delta = {-0.55}~\text{cm})
+\end{equation*}
+Este resultado ilustra el efecto práctico de la NTC-DCEA 2023: el mismo detalle que cumple
+con la versión 2017 requiere redimensionamiento bajo la versión 2023. Aumentar el dado de
+70~cm a 71.1~cm ($c_{disp} \geq 15.55$~cm) resolvería la deficiencia con un cambio
+geométrico mínimo.
+
+\textbf{Paso 9 — Indicadores de utilización $\eta$.}
+La Tabla~\ref{tab:ejemplo_eta} sintetiza las eficiencias del caso semilla bajo ambas normas.
+
+\begin{table}[H]
+  \centering
+  \caption{Indicadores de utilización $\eta = D_u / R_d$ del caso semilla.}
+  \label{tab:ejemplo_eta}
+  \begin{tabular}{lcccc}
+    \toprule
+    Estado límite & Demanda $D_u$ & $R_d$ (2017) & $R_d$ (2023) & $\eta_{2017}$ / $\eta_{2023}$ \\
+    \midrule
+    Tensión en anclas     & 10.43~ton & 22.84~ton & 36.18~ton & 0.457 / 0.288 \\
+    Cortante en anclaje   & 4.00~ton  & 29.69~ton & 60.86~ton & 0.135 / 0.066 \\
+    Borde libre (A325 7/8'') & 15.0~cm & 13.33~cm  & 15.55~cm  & \checkmark~/ $\times$ \\
+    Espesor de placa      & --        & 47.7~mm   & 47.7~mm   & igual en ambas normas \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Los valores de $\eta < 1$ en tensión y cortante confirman que la conexión cumple todos los
+estados límite de resistencia con ambas normas. La única deficiencia identificada corresponde
+al requisito geométrico de borde libre bajo la NTC-DCEA 2023, el cual requiere un ajuste
+dimensional del dado para este caso.
