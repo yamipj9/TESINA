@@ -55,7 +55,7 @@
 \contentsline {section}{\numberline {5.4}Aportaciones de la investigación}{43}{section.5.4}%
 \contentsline {section}{\numberline {5.5}Recomendaciones para el diseño estructural}{43}{section.5.5}%
 \contentsline {section}{\numberline {5.6}Recomendaciones para trabajos futuros}{44}{section.5.6}%
-\contentsline {chapter}{\numberline {A}Apéndice C: Algoritmos de cálculo en pseudocódigo}{45}{appendix.Alph1}%
+\contentsline {chapter}{\numberline {A}Algoritmos de cálculo en pseudocódigo}{45}{appendix.Alph1}%
 \contentsline {section}{\numberline {A.1}Algoritmo 1: Diseño de placa base bajo flexocompresión}{46}{section.Alph1.1}%
 \contentsline {section}{\numberline {A.2}Algoritmo 2: Resistencia al cono de concreto en tensión}{47}{section.Alph1.2}%
 \contentsline {section}{\numberline {A.3}Algoritmo 3: Resistencia al cono de concreto por cortante}{48}{section.Alph1.3}%
