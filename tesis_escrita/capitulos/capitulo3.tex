@@ -367,6 +367,10 @@ La Tabla~\ref{tab:ejemplo_entrada} reúne todos los parámetros de entrada del c
   \centering
   \caption{Datos de entrada del ejemplo numérico (caso semilla).}
   \label{tab:ejemplo_entrada}
+  \begingroup
+  \fontsize{10pt}{12pt}\selectfont
+  \setlength{\tabcolsep}{4pt}
+  \renewcommand{\arraystretch}{1.05}
   \begin{tabular}{p{0.38\textwidth} p{0.20\textwidth} p{0.22\textwidth}}
     \toprule
     \textbf{Parámetro} & \textbf{Símbolo} & \textbf{Valor} \\
@@ -391,6 +395,7 @@ La Tabla~\ref{tab:ejemplo_entrada} reúne todos los parámetros de entrada del c
     Grado del ancla             & --          & A325, 7/8'' \\
     \bottomrule
   \end{tabular}
+  \endgroup
 \end{table}
 
 % ------------------------------------------------------------
@@ -405,19 +410,25 @@ diseño resultan:
   f_{pu} = 0.85\,f'_c\sqrt{\frac{A_2}{A_1}}
          = 0.85 \times 280\sqrt{\frac{4\,900}{2\,500}}
          = 333.2~\text{kg/cm}^2
-         \quad \leq 1.7\,f'_c = 476~\text{kg/cm}^2 \quad \checkmark
+         \quad \leq 1.7\,f'_c = 476~\text{kg/cm}^2
 \end{equation*}
+El valor calculado cumple con el límite superior de aplastamiento.
 \begin{equation*}
   f_{pd} = F_R\,f_{pu} = 0.65 \times 333.2 = 216.6~\text{kg/cm}^2
 \end{equation*}
 
 \textbf{Paso 2 — Voladizos críticos de la placa.}
 Los voladizos en cada dirección y el voladizo de diseño son:
-\begin{equation*}
-  m = \frac{N - b_{col}}{2} = \frac{50 - 16.5}{2} = 16.75~\text{cm}; \qquad
-  n = \frac{B - d_{col}}{2} = \frac{50 - 30.5}{2} = 9.75~\text{cm}; \qquad
-  l = \max(m,n) = 16.75~\text{cm}
-\end{equation*}
+\begin{align*}
+  m &= \frac{N - b_{col}}{2}
+     = \frac{50 - 16.5}{2}
+     = 16.75~\text{cm},\\
+  n &= \frac{B - d_{col}}{2}
+     = \frac{50 - 30.5}{2}
+     = 9.75~\text{cm},\\
+  l &= \max(m,n)
+     = 16.75~\text{cm}.
+\end{align*}
 
 \textbf{Paso 3 — Excentricidad y régimen de trabajo.}
 \begin{equation*}
@@ -434,12 +445,13 @@ Como $e = 70.0~\text{cm} > e_{crit} = 24.5~\text{cm}$, la placa trabaja en
 del lado opuesto entran en tensión.
 
 \textbf{Paso 4 — Bloque de compresión $Y$ y tensión en anclas $T_{ua}$.}
-\begin{equation*}
-  Y = a - \sqrt{a^2 - \frac{2P_u(e + f_{anc})}{B\,f_{pd}}}
-    = 45 - \sqrt{45^2 - \frac{2\times10\,000\times(70+20)}{50\times216.6}}
-    = 45 - \sqrt{2\,025 - 166.2}
-    = 1.89~\text{cm}
-\end{equation*}
+\begin{align*}
+  Y
+    &= a - \sqrt{a^2 - \frac{2P_u(e + f_{anc})}{B\,f_{pd}}}\\
+    &= 45 - \sqrt{45^2 - \frac{2\times10\,000\times(70+20)}{50\times216.6}}\\
+    &= 45 - \sqrt{2\,025 - 166.2}\\
+    &= 1.89~\text{cm}.
+\end{align*}
 \begin{equation*}
   T_{ua} = B\,f_{pd}\,Y - P_u = 50\times216.6\times1.89 - 10\,000
          = 20\,428 - 10\,000 = 10\,428~\text{kg} = 10.43~\text{ton}
@@ -499,12 +511,16 @@ Usando el factor de palanca $k_{cp}=2.0$ para anclas dúctiles A325:
          = 0.65\times2\times2.534\times4\,200
          = 13\,836~\text{kg} = 13.84~\text{ton}
 \end{equation*}
-\begin{equation*}
-  R_{v,2023} = F_R\,k_{cp}\,R_{t,2023} + R_{ev}
-             = 0.65\times2.0\times36\,176 + 13\,836
-             = 47\,029 + 13\,836
-             = 60\,865~\text{kg} = \mathbf{60.86~\text{ton}} \quad (+105\text{ \%})
-\end{equation*}
+\begin{align*}
+  R_{v,2023}
+    &= F_R\,k_{cp}\,R_{t,2023} + R_{ev}\\
+    &= 0.65\times2.0\times36\,176 + 13\,836\\
+    &= 47\,029 + 13\,836\\
+    &= 60\,865~\text{kg}
+     = \mathbf{60.86~\text{ton}}.
+\end{align*}
+Este valor representa un incremento de 105~\% respecto a la resistencia obtenida con la
+NTC-DCEA 2017.
 
 % ------------------------------------------------------------
 \subsection{Pasos 8 y 9: verificación geométrica y síntesis}
@@ -519,7 +535,7 @@ son:
 \end{equation*}
 \begin{equation*}
   c_{min,2017} = 6\,d_o = 6\times2.222 = 13.33~\text{cm} \quad\Rightarrow\quad
-  15.0 \geq 13.33 \quad \checkmark
+  15.0 \geq 13.33 \quad \text{(cumple)}
 \end{equation*}
 \begin{equation*}
   c_{min,2023} = 7\,d_o = 7\times2.222 = 15.55~\text{cm} \quad\Rightarrow\quad
@@ -543,7 +559,7 @@ La Tabla~\ref{tab:ejemplo_eta} sintetiza las eficiencias del caso semilla bajo a
     \midrule
     Tensión en anclas     & 10.43~ton & 22.84~ton & 36.18~ton & 0.457 / 0.288 \\
     Cortante en anclaje   & 4.00~ton  & 29.69~ton & 60.86~ton & 0.135 / 0.066 \\
-    Borde libre (A325 7/8'') & 15.0~cm & 13.33~cm  & 15.55~cm  & \checkmark~/ $\times$ \\
+    Borde libre (A325 7/8'') & 15.0~cm & 13.33~cm  & 15.55~cm  & cumple / no cumple \\
     Espesor de placa      & --        & 47.7~mm   & 47.7~mm   & igual en ambas normas \\
     \bottomrule
   \end{tabular}
