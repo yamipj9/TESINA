@@ -1,1 +1,18 @@
 .venv/
+presentacion_Yamileth/
+
+# LaTeX compiled files
+*.log
+*.aux
+*.blg
+*.bbl
+*.out
+*.toc
+*.lof
+*.lot
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
