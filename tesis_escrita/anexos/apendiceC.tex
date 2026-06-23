@@ -80,7 +80,7 @@ en placa $M_{u,placa}$ (kg$\cdot$cm/cm); esfuerzo de aplastamiento de diseño $f
     \State $A_{N,proj} \gets A_0 + 2 \times h_{ef} \times (c_{a1} + c_{a2} + 2h_{ef})$
       \quad \Comment{Extensión por profundidad}
 
-    \State \textbf{Factores modificadores (cap. 2, norma NTC-DCEA 2017):}
+    \State \textbf{Factores modificadores (cap. 2, norma NTC-acero 2017):}
     \State $\psi_{ec} \gets 1 - \frac{2e_c}{3h_{ef}}$ \quad \Comment{Excentricidad en tensión}
     \State $\psi_{ed} \gets 1 - \frac{c_a}{1.5h_{ef}}$ \quad \Comment{Distancia al borde}
     \State $\psi_{c} \gets 0.25 + 0.05(c_a/h_{ef})$ \quad \Comment{Borde libre}
@@ -169,8 +169,8 @@ $R_{ev}$ (kg); resistencia total 2023 $R_{v,2023}$ (kg).
   \end{algorithmic}
 \end{algorithm}
 
-\textbf{Salidas:} Distancia mínima al borde según NTC-DCEA 2017: $c_{min,2017}$ (cm);
-según NTC-DCEA 2023: $c_{min,2023}$ (cm).
+\textbf{Salidas:} Distancia mínima al borde según NTC-acero 2017: $c_{min,2017}$ (cm);
+según NTC-acero 2023: $c_{min,2023}$ (cm).
 
 % ============================================================
 % NOTAS FINALES

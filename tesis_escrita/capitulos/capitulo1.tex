@@ -4,7 +4,7 @@
 El presente trabajo de titulación, titulado \textit{``Comparativa NTC-2017-2023 para el diseño
 de placas base de acero: análisis comparativo y paramétrico''}, aborda el impacto cuantitativo
 de los cambios normativos introducidos por las Normas Técnicas Complementarias para el Diseño y
-Construcción de Estructuras de Acero 2023 (NTC-DCEA 2023) sobre el diseño de sistemas
+Construcción de Estructuras de Acero 2023 (NTC-acero 2023) sobre el diseño de sistemas
 placa~base-anclaje-dado de concreto en estructuras metálicas sismorresistentes. El instrumento
 metodológico central es el \textbf{análisis paramétrico numérico}. La tesis se enfoca en
 cuantificar, con un caso representativo, cómo cambian los resultados de diseño al pasar de la
@@ -28,7 +28,7 @@ sensibilidad normativa: la profundidad de empotramiento, el diámetro de ancla y
 entre resistencia del concreto y espaciado del refuerzo transversal.
 
 \textbf{Planteamiento del problema.} Aunque ambas versiones normativas persiguen el mismo
-objetivo de seguridad estructural, la transición de NTC-DCEA 2017 a NTC-DCEA 2023 modifica
+objetivo de seguridad estructural, la transición de NTC-acero 2017 a NTC-acero 2023 modifica
 criterios de resistencia y requisitos geométricos que pueden cambiar de forma importante el
 dimensionamiento de la placa base, los pernos de anclaje y el dado de concreto. El
 problema de investigación consiste en determinar, con base numérica y de forma trazable, qué tan
@@ -61,8 +61,8 @@ principales de esta conexión.
 El sismo del 19~de septiembre de 2017 ($M_w~7.1$) evidenció \textbf{limitaciones
 importantes} de los criterios normativos entonces vigentes: las inspecciones forenses
 documentaron reiteradamente fallas frágiles por arrancamiento de cono de concreto en anclas
-diseñadas conforme a las NTC-DCEA 2017 \cite{SMIE_2017}. La revisión normativa derivada de dicho
-evento culminó con la publicación de las NTC-DCEA 2023, que introdujo cambios sustanciales en la
+diseñadas conforme a las NTC-acero 2017 \cite{SMIE_2017}. La revisión normativa derivada de dicho
+evento culminó con la publicación de las NTC-acero 2023, que introdujo cambios sustanciales en la
 metodología de diseño de placas base y constituye el marco comparativo del presente trabajo.
 
 La Figura~\ref{fig:mapa_sismo2017} ilustra la proximidad del epicentro con la capital y las
@@ -80,11 +80,11 @@ principales zonas urbanas afectadas.
 La actualización del marco normativo de diseño estructural no es un evento académico abstracto:
 tiene consecuencias directas sobre la seguridad de las edificaciones, el costo de los proyectos y
 la responsabilidad profesional de los ingenieros calculistas. En México existe un parque
-construido considerable de estructuras de acero diseñadas bajo las NTC-DCEA 2017 o ediciones
+construido considerable de estructuras de acero diseñadas bajo las NTC-acero 2017 o ediciones
 anteriores, que no incorporan los criterios de confinamiento por estribos ni los requerimientos de
 distancia al borde actualizados por la norma de 2023.
 
-Desde la perspectiva de la \textbf{seguridad estructural}, las NTC-DCEA 2017 no exigían la
+Desde la perspectiva de la \textbf{seguridad estructural}, las NTC-acero 2017 no exigían la
 consideración analítica del refuerzo transversal del dado como un factor que mejora la resistencia
 al cono, lo que \textbf{podía conducir a diseños más conservadores o menos representativos de la
 capacidad real del sistema} \cite{AISC_341_2022}. La NTC-2023 corrige esta omisión, pero su
@@ -99,7 +99,7 @@ el consumo de concreto y acero de refuerzo sin comprometer los márgenes de segu
 reglamentarios. Cuantificar esta optimización potencial es una aportación directa al ejercicio
 profesional de la ingeniería estructural.
 
-Desde la perspectiva \textbf{académica y docente}, la publicación de las NTC-DCEA 2023 abrió la
+Desde la perspectiva \textbf{académica y docente}, la publicación de las NTC-acero 2023 abrió la
 necesidad de contar con documentación técnica que sintetice sus implicaciones: \textbf{Con base en
 la revisión bibliográfica realizada, no se identificó un análisis paramétrico sistemático que
 cuantifique los principales cambios normativos para el caso de flexocompresión con gran
@@ -108,7 +108,7 @@ tesis contribuye a atender esa necesidad, ofreciendo un recurso de referencia cu
 ingenieros, proyectistas y docentes en el contexto de la normativa mexicana vigente.
 
 Finalmente, desde la perspectiva del \textbf{cumplimiento normativo}, los profesionales que
-emiten memorias de cálculo bajo las NTC-DCEA 2023 requieren comprender con precisión cuáles
+emiten memorias de cálculo bajo las NTC-acero 2023 requieren comprender con precisión cuáles
 verificaciones cambian y en qué magnitud, para justificar técnicamente sus decisiones ante
 revisores y autoridades. Esta tesis provee dicha documentación de manera rigurosa y trazable,
 basada en algoritmos de cálculo verificables y en el análisis de casos representativos.
@@ -133,7 +133,7 @@ dado.
 % ============================================================
 \section{Objetivo General}
 
-\textbf{Cuantificar el impacto técnico de los cambios normativos introducidos por las NTC-DCEA
+\textbf{Cuantificar el impacto técnico de los cambios normativos introducidos por las NTC-acero
 2023 sobre el diseño de sistemas placa~base-anclaje-dado de concreto en estructuras metálicas
 sismorresistentes, mediante un análisis paramétrico numérico que compare de forma sistemática los
 estados límite de resistencia al cono en tensión ($R_t$, $R_{et}$), resistencia al cono por
@@ -149,7 +149,7 @@ nuevo marco normativo.}
 
 \begin{enumerate}
   \item Implementar numéricamente los algoritmos de diseño de placas base conforme a las
-    NTC-DCEA 2017 y NTC-DCEA 2023 para el caso de flexocompresión con gran excentricidad
+    NTC-acero 2017 y NTC-acero 2023 para el caso de flexocompresión con gran excentricidad
     ($e > e_{crit}$), verificando los estados límite de la placa base, los pernos de anclaje y
     el sistema de anclaje al cono de concreto, para el perfil IR~305$\times$74.5 (A992,
     $F_y = 3{,}515\ \mathrm{kg/cm^2}$) con placa base de 50$\times$50~cm.
@@ -160,8 +160,8 @@ nuevo marco normativo.}
     dado, determinando la eficiencia de aprovechamiento $\eta = T_{ua}/R_t$ para ambas normas.
 
   \item Cuantificar el impacto geométrico del cambio en el requisito de distancia mínima al borde
-    libre del pedestal ---de $6\,d_o \geq 100\ \mathrm{mm}$ (NTC-DCEA 2017) a
-    $7\,d_o \geq 100\ \mathrm{mm}$ para aceros A325/A449 (NTC-DCEA 2023)--- sobre las dimensiones
+    libre del pedestal ---de $6\,d_o \geq 100\ \mathrm{mm}$ (NTC-acero 2017) a
+    $7\,d_o \geq 100\ \mathrm{mm}$ para aceros A325/A449 (NTC-acero 2023)--- sobre las dimensiones
     mínimas del dado de concreto en función del diámetro nominal del perno $d_o$.
 
   \item Evaluar el incremento de resistencia al cono en tensión y por cortante mediante un
@@ -180,7 +180,7 @@ El alcance del presente estudio se circunscribe a los siguientes elementos:
 \textbf{Alcances:}
 \begin{itemize}
   \item Análisis comparativo de las metodologías de diseño de placas base establecidas en las
-    NTC-DCEA 2017 y las NTC-DCEA 2023, con énfasis en los cambios introducidos por los factores de
+    NTC-acero 2017 y las NTC-acero 2023, con énfasis en los cambios introducidos por los factores de
     confinamiento $R_{et}$ y $R_{ev}$, y por el criterio de distancia mínima al borde libre.
   \item Implementación de un estudio numérico para el caso de flexocompresión con gran
     excentricidad ($e > e_{crit}$), aplicado al perfil IR~305$\times$74.5 (acero A992,
@@ -210,7 +210,7 @@ El alcance del presente estudio se circunscribe a los siguientes elementos:
   \item No se realiza optimización de la configuración geométrica de la placa base ni análisis de
     elementos finitos no lineal del contacto placa-concreto. El modelo mecánico empleado es el del
     bloque equivalente de compresión de Whitney, de acuerdo con ambas normas.
-  \item El trabajo se enfoca en el contexto normativo mexicano (NTC-DCEA) y no incluye comparaciones
+  \item El trabajo se enfoca en el contexto normativo mexicano (NTC-acero) y no incluye comparaciones
     con normativas internacionales como Eurocódigo 3, AISC 360/341 o códigos sudamericanos.
 \end{itemize}
 
@@ -220,15 +220,15 @@ El alcance del presente estudio se circunscribe a los siguientes elementos:
 \section{Hipótesis de la Investigación}
 
 El presente trabajo plantea que la incorporación de los factores de confinamiento $R_{et}$ y
-$R_{ev}$ establecidos en las NTC-DCEA 2023 generará un incremento cuantificable en la resistencia
+$R_{ev}$ establecidos en las NTC-acero 2023 generará un incremento cuantificable en la resistencia
 teórica al cono de concreto en tensión y al cono de concreto por cortante, respecto a los criterios
-aplicables en las NTC-DCEA 2017. Se hipotetiza que dicho incremento dependerá principalmente de la
+aplicables en las NTC-acero 2017. Se hipotetiza que dicho incremento dependerá principalmente de la
 profundidad de empotramiento efectivo $h_{ef}$, la resistencia a compresión del concreto $f'_c$ y
 el espaciado del refuerzo transversal del dado.
 
 Asimismo, se plantea que la modificación del requisito de distancia mínima al borde libre a
 $7\,d_o$ para anclas de alta resistencia A325/A449 exigirá geometrías de pedestal más restrictivas
-que las obtenidas con las NTC-DCEA 2017. Esta condición se espera que sea más significativa al
+que las obtenidas con las NTC-acero 2017. Esta condición se espera que sea más significativa al
 aumentar el diámetro nominal del ancla $d_o$, debido al incremento directo de las dimensiones
 mínimas requeridas del dado de concreto.
 
@@ -287,7 +287,7 @@ cono, pryout, estallido lateral o desgarramiento hacia el borde libre. Esta dist
 en placas base, donde la selección de anclas de alta resistencia puede aumentar la demanda
 transferida al concreto sin aumentar en la misma proporción el volumen resistente del pedestal. La
 limitación del enfoque ACI para el caso mexicano es que no responde, por sí mismo, a la pregunta
-normativa local: cómo se modifica el diseño cuando las NTC-DCEA 2023 incorporan términos propios
+normativa local: cómo se modifica el diseño cuando las NTC-acero 2023 incorporan términos propios
 para cuantificar el aporte de estribos en tensión y cortante, mientras la edición 2017 no ofrece
 el mismo nivel de claridad dentro del procedimiento comparado.
 
@@ -301,7 +301,7 @@ la atención desde el ancla aislada hacia el sistema de anclaje, que es precisam
 placa base. No obstante, estos estudios se desarrollan bajo marcos de calibración y práctica
 internacional; no cuantifican el efecto de una transición normativa mexicana específica ni evalúan
 la combinación particular de $R_{et}$, $R_{ev}$ y distancia mínima al borde libre que distingue a
-las NTC-DCEA 2023.
+las NTC-acero 2023.
 
 Los estudios experimentales y analíticos también han estudiado la transferencia de cortante en placas
 base expuestas. Gomez, Kanvinde, Smith y Deierlein analizaron mecanismos como fricción,
@@ -325,7 +325,7 @@ ductilidad posagrietamiento; y la interacción tensión-cortante reduce la reser
 ambos efectos se movilizan simultáneamente. Sin embargo, estos antecedentes no resuelven el
 problema planteado en esta tesis porque estudian variables mecánicas generales, usualmente bajo
 ACI, AISC o modelos de investigación, sin traducirlas a la comparación directa entre
-NTC-DCEA 2017 y NTC-DCEA 2023. En consecuencia, existe información técnica sobre qué variables son
+NTC-acero 2017 y NTC-acero 2023. En consecuencia, existe información técnica sobre qué variables son
 sensibles, pero no sobre cuánto cambia el diseño mexicano vigente al pasar de una edición
 normativa a otra.
 
@@ -341,7 +341,7 @@ no puede entenderse como un detalle constructivo al final de la ruta de cargas, 
 componente que condiciona la continuidad resistente entre la superestructura metálica y la
 cimentación.
 
-La brecha normativa aparece con claridad al comparar las NTC-DCEA 2017 y 2023. La edición de 2017
+La brecha normativa aparece con claridad al comparar las NTC-acero 2017 y 2023. La edición de 2017
 establece criterios de diseño que permiten resolver el equilibrio de la placa y verificar estados
 límite, pero no incorpora con el mismo nivel de explicitud el aporte resistente del refuerzo
 transversal del dado sobre los mecanismos de cono en tensión y falla lateral por cortante
@@ -360,11 +360,11 @@ cambio, el aumento de distancia mínima al borde libre es una restricción geom�
 puede controlar el tamaño del dado antes de que la resistencia sea la variable gobernante. Por esa
 razón, una comparación puramente cualitativa entre normas resulta insuficiente. Lo que requiere la
 práctica profesional mexicana es una cuantificación paramétrica que muestre en qué intervalos la
-NTC-DCEA 2023 permite reconocer capacidad adicional por confinamiento y en qué casos endurece el
+NTC-acero 2023 permite reconocer capacidad adicional por confinamiento y en qué casos endurece el
 diseño por requisitos de borde.
 
 A diferencia de los trabajos revisados, la presente tesis aporta una comparación paramétrica
-específica entre las NTC-DCEA 2017 y 2023 para el diseño de placas base de acero, cuantificando el
+específica entre las NTC-acero 2017 y 2023 para el diseño de placas base de acero, cuantificando el
 efecto de los factores de confinamiento ($R_{et}$) y ($R_{ev}$), así como el cambio en los
 requisitos de distancia mínima al borde libre. Esta aportación resulta pertinente porque traslada
 la discusión general sobre anclajes, método CCD y diseño por capacidad al contexto normativo

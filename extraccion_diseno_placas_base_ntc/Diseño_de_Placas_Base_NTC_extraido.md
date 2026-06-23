@@ -54,7 +54,7 @@ Para contrarrestar estos efectos, se ha investigado el uso de "anclajes dúctile
 
 ### 1.5 Comparaciones normativas y actualizaciones de códigos
 
-La evolución de los reglamentos de diseño estructural refleja la incorporación progresiva de los hallazgos de la mecánica de fractura y el diseño sísmico por desempeño2. En México, el diseño de conexiones de acero a cimentaciones de concreto se rige por la interacción obligatoria de las Normas Técnicas Complementarias para el Diseño y Construcción de Estructuras de Acero (NTC-DCEA) y de Concreto (NTC-DCEC) del Reglamento de Construcciones de la Ciudad de México6.
+La evolución de los reglamentos de diseño estructural refleja la incorporación progresiva de los hallazgos de la mecánica de fractura y el diseño sísmico por desempeño2. En México, el diseño de conexiones de acero a cimentaciones de concreto se rige por la interacción obligatoria de las Normas Técnicas Complementarias para el Diseño y Construcción de Estructuras de Acero (NTC-acero) y de Concreto (NTC-DCEC) del Reglamento de Construcciones de la Ciudad de México6.
 
 La publicación de la actualización normativa de 2023 (NTC-2023) introdujo modificaciones de gran calado respecto a la versión previa de 2017 (NTC-2017)9. Mientras que las disposiciones de la NTC-2017 presentaban lagunas metodológicas en la evaluación analítica del arrancamiento del concreto, forzando a los diseñadores locales a adoptar de forma indirecta las ecuaciones del ACI 318 o guías de la AISC12, las NTC-2023 incorporan de forma explícita y sistemática el método CCD dentro de su cuerpo regulatorio6.
 
@@ -88,7 +88,7 @@ La mayoría de las investigaciones previas han evaluado de forma aislada el comp
 
 ### 1.9 Aportación específica de esta tesis
 
-A diferencia de los trabajos experimentales de gran escala o las aproximaciones normativas prescriptivas analizadas en la literatura10, la presente tesis aporta un marco analítico-paramétrico integrado y cuantitativo que resuelve las incertidumbres de diseño generadas por la transición entre las NTC-DCEA 2017 y las NTC-DCEA 2023 en México33. La aportación original de esta investigación se estructura a través de las siguientes contribuciones específicas:
+A diferencia de los trabajos experimentales de gran escala o las aproximaciones normativas prescriptivas analizadas en la literatura10, la presente tesis aporta un marco analítico-paramétrico integrado y cuantitativo que resuelve las incertidumbres de diseño generadas por la transición entre las NTC-acero 2017 y las NTC-acero 2023 en México33. La aportación original de esta investigación se estructura a través de las siguientes contribuciones específicas:
 
 Evaluación y comparación normativa rigurosa NTC-2017 vs NTC-2023: Se establece una cuantificación precisa del impacto de los cambios de formulación de la resistencia al cono de concreto en tensión () y cortante (), demostrando numéricamente en qué rangos geométricos la norma vigente impone criterios más conservadores y dónde permite optimizaciones estructurales5.
 
@@ -130,7 +130,7 @@ AISC Design Guide 1 - Column Base Plates - 2nd Edition | PDF - Scribd, https://w
 
 7.2. Base Plates - AISC, https://www.aisc.org/aisc/solutions-center/engineering-faqs/72-base-plates/
 
-Diseño de Placas Base en Estructuras de Acero | PDF | Doblar | Hormigón - Scribd, https://es.scribd.com/document/458297221/DISENO-PLACAS-BASE-NTC-DCEA-2017
+Diseño de Placas Base en Estructuras de Acero | PDF | Doblar | Hormigón - Scribd, https://es.scribd.com/document/458297221/DISENO-PLACAS-BASE-NTC-acero-2017
 
 Diseño de placa base seccion W para momentos pequeños - AISC 360-22 - YouTube, https://www.youtube.com/watch?v=K2DtR2ho4DI
 

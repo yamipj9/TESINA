@@ -2,7 +2,7 @@
 \chapter{Metodología}
 
 El presente capítulo describe el procedimiento utilizado para comparar las disposiciones de las
-NTC-DCEA 2017 y las NTC-DCEA 2023 aplicables al diseño de placas base de acero. La metodología
+NTC-acero 2017 y las NTC-acero 2023 aplicables al diseño de placas base de acero. La metodología
 se estructuró con dos niveles de análisis: primero, una revisión normativa sistemática de las
 ecuaciones, estados límite y requisitos geométricos que intervienen en la conexión
 columna--cimentación; segundo, un análisis numérico paramétrico orientado a cuantificar la
@@ -30,7 +30,7 @@ desarrollan esos alcances.
 
 La metodología se estructura en dos niveles de análisis complementarios. El primer nivel es una
 revisión normativa sistemática: se identifican y contrastan las ecuaciones, estados límite y
-requisitos geométricos de la NTC-DCEA 2017 y la NTC-DCEA 2023 que afectan directamente el diseño
+requisitos geométricos de la NTC-acero 2017 y la NTC-acero 2023 que afectan directamente el diseño
 de la placa base y del sistema de anclaje. Este nivel produce la tabla comparativa unificada
 presentada en el Capítulo~2 (Sección~2.7) y define qué diferencias serán llevadas a cálculo.
 
@@ -59,11 +59,11 @@ aspectos utilizados como guía metodológica.
 
 \begin{table}[H]
   \centering
-  \caption{Criterios normativos considerados en la comparación NTC-DCEA 2017--2023.}
+  \caption{Criterios normativos considerados en la comparación NTC-acero 2017--2023.}
   \label{tab:criterios_normativos_cap3}
   \begin{tabular}{p{0.25\textwidth} p{0.28\textwidth} p{0.28\textwidth}}
     \toprule
-    \textbf{Criterio} & \textbf{NTC-DCEA 2017} & \textbf{NTC-DCEA 2023} \\
+    \textbf{Criterio} & \textbf{NTC-acero 2017} & \textbf{NTC-acero 2023} \\
     \midrule
     Jerarquía normativa & Apéndice B & Capítulo 13 del cuerpo principal \\
     Aplastamiento del concreto & $F_R=0.65$ y límite de $f_{pu}$ & Mismo criterio resistente \\
@@ -95,7 +95,7 @@ La variable que define el régimen de trabajo es la excentricidad:
 
 \begin{equation}
   e = \frac{M_u}{P_u}
-  \qquad \text{\cite{ACI318_2019,ACI318_2025}}
+  \qquad \text{\cite{GCDMX_NTC_DCEA_2017,GCDMX_NTC_DCEA_2023}}
   \label{eq:met_e}
 \end{equation}
 
@@ -105,7 +105,7 @@ levantamiento parcial se evalúa mediante:
 
 \begin{equation}
   e_{crit} = \frac{N}{2} - \frac{P_u}{2Bf_{pd}}
-  \qquad \text{\cite{ACI318_2019,ACI318_2025}}
+  \qquad \text{\cite{GCDMX_NTC_DCEA_2017,GCDMX_NTC_DCEA_2023}}
   \label{eq:met_ecrit}
 \end{equation}
 
@@ -116,13 +116,13 @@ anclas $T_{ua}$:
 
 \begin{equation}
   Y = a - \sqrt{a^2 - \frac{2P_u(e+f_{anc})}{Bf_{pd}}}
-  \qquad \text{\cite{ACI318_2019,ACI318_2025}}
+  \qquad \text{\cite{GCDMX_NTC_DCEA_2017,GCDMX_NTC_DCEA_2023}}
   \label{eq:met_Y}
 \end{equation}
 
 \begin{equation}
   T_{ua} = Bf_{pd}Y - P_u
-  \qquad \text{\cite{ACI318_2019,ACI318_2025}}
+  \qquad \text{\cite{GCDMX_NTC_DCEA_2017,GCDMX_NTC_DCEA_2023}}
   \label{eq:met_Tua}
 \end{equation}
 
@@ -132,7 +132,7 @@ de diseño por unidad de ancho y la resistencia a flexión del acero:
 
 \begin{equation}
   t_{req} = \sqrt{\frac{4M_{u,placa}}{F_R^{flex}F_y}}
-  \qquad \text{\cite{ACI318_2019,ACI318_2025}}
+  \qquad \text{\cite{GCDMX_NTC_DCEA_2017,GCDMX_NTC_DCEA_2023}}
   \label{eq:met_treq}
 \end{equation}
 
@@ -254,13 +254,13 @@ variables base se muestran en la Tabla~\ref{tab:caso_base_metodologia}.
 \subsection{Barrido 1: influencia de \texorpdfstring{$R_{et}$}{Ret} en la resistencia a tensión}
 
 El primer barrido evalúa el efecto del confinamiento transversal sobre la resistencia al
-arrancamiento del cono de concreto en tensión. La NTC-DCEA 2017 calcula esta resistencia a partir
-del área proyectada del cono y los factores modificadores correspondientes; la NTC-DCEA 2023 agrega
+arrancamiento del cono de concreto en tensión. La NTC-acero 2017 calcula esta resistencia a partir
+del área proyectada del cono y los factores modificadores correspondientes; la NTC-acero 2023 agrega
 un término adicional:
 
 \begin{equation}
   R_{t,2023}=R_{t,2017}+R_{et}
-  \qquad \text{\cite{ACI318_2025}}
+  \qquad \text{\cite{GCDMX_NTC_DCEA_2023}}
   \label{eq:met_Rt2023}
 \end{equation}
 
@@ -271,7 +271,7 @@ cuando el plano hipotético de falla intercepta refuerzo transversal.
 \subsection{Barrido 2: distancia mínima al borde}
 
 El segundo barrido analiza el cambio geométrico asociado al requisito de distancia mínima al borde.
-Para anclas A307 y A36, la NTC-DCEA 2023 mantiene el mismo criterio que la versión 2017; sin
+Para anclas A307 y A36, la NTC-acero 2023 mantiene el mismo criterio que la versión 2017; sin
 embargo, para anclas de alta resistencia A325 y A449 incrementa el requisito de $6d_o$ a $7d_o$.
 
 El parámetro variable principal es el diámetro del ancla $d_o$, considerado entre $3/8''$ y $2''$.
@@ -280,13 +280,13 @@ arreglo de anclas cumple con la versión 2017 pero requiere redimensionamiento b
 
 \subsection{Barrido 3: influencia de \texorpdfstring{$R_{ev}$}{Rev} en la resistencia a cortante}
 
-El tercer barrido evalúa la resistencia al cono de concreto por cortante. En la NTC-DCEA 2017 esta
+El tercer barrido evalúa la resistencia al cono de concreto por cortante. En la NTC-acero 2017 esta
 resistencia se relaciona con la resistencia en tensión y con el factor $k_{cp}$; la versión 2023
 agrega el aporte del refuerzo transversal que intercepta el plano lateral de falla:
 
 \begin{equation}
   R_{v,2023}=F_R k_{cp}R_{t,2023}+R_{ev}
-  \qquad \text{\cite{ACI318_2025}}
+  \qquad \text{\cite{GCDMX_NTC_DCEA_2023}}
   \label{eq:met_Rv2023}
 \end{equation}
 
@@ -336,7 +336,7 @@ El control de calidad del procesamiento numérico se realizó mediante tres acci
 Los resultados se presentan mediante tablas comparativas, curvas de sensibilidad y mapas de calor.
 Las tablas permiten identificar diferencias puntuales entre normas; las curvas muestran tendencias
 ante variación de una variable principal; y los mapas de calor ayudan a localizar regiones donde la
-NTC-DCEA 2023 produce incrementos relevantes de resistencia o restricciones geométricas más
+NTC-acero 2023 produce incrementos relevantes de resistencia o restricciones geométricas más
 severas. Esta forma de presentación permite conectar el cálculo normativo con decisiones prácticas
 de diseño, tales como aumentar la profundidad de empotramiento, modificar el diámetro del ancla,
 densificar los estribos o incrementar las dimensiones del dado.
@@ -344,7 +344,7 @@ densificar los estribos o incrementar las dimensiones del dado.
 En síntesis, la metodología propuesta busca que la comparación normativa sea reproducible: las dos
 normas se aplican a los mismos casos, las variables se modifican de forma controlada y los
 resultados se interpretan mediante indicadores comunes. De esta manera, el análisis posterior puede
-atribuir las diferencias observadas a cambios específicos de la NTC-DCEA 2023 y no a variaciones en
+atribuir las diferencias observadas a cambios específicos de la NTC-acero 2023 y no a variaciones en
 el modelo, en las unidades o en los datos de entrada.
 
 % ============================================================
@@ -476,7 +476,7 @@ y se toma el mayor:
           = \sqrt{\frac{4\times18\,000}{0.90\times3\,515}}
           = 4.77~\text{cm} = \mathbf{47.7~mm}
 \end{equation*}
-Este valor es idéntico con la NTC-DCEA 2017 y con la NTC-DCEA 2023, dado que ambas
+Este valor es idéntico con la NTC-acero 2017 y con la NTC-acero 2023, dado que ambas
 normas conservan los mismos factores $F_R$ y la misma mecánica de distribución de
 esfuerzos bajo la placa.
 
@@ -488,7 +488,7 @@ esfuerzos bajo la placa.
 Con $h_{ef}=30$~cm, el número de estribos que intercepta la superficie hipotética de falla es
 $N_{est} = \lfloor h_{ef}/s_{est}\rfloor = \lfloor 30/15\rfloor = 2$.
 Aplicando el método del cono proyectado (desarrollado en el Capítulo~2), la resistencia del
-grupo de anclaje con la NTC-DCEA 2017 resulta $R_{t,2017} = 22.84$~ton. Con la NTC-DCEA 2023
+grupo de anclaje con la NTC-acero 2017 resulta $R_{t,2017} = 22.84$~ton. Con la NTC-acero 2023
 se agrega el término de confinamiento:
 \begin{equation*}
   R_{et} = F_R\,N_{est}\,A_{e,est}\,F_{y,est}
@@ -520,7 +520,7 @@ Usando el factor de palanca $k_{cp}=2.0$ para anclas dúctiles A325:
      = \mathbf{60.86~\text{ton}}.
 \end{align*}
 Este valor representa un incremento de 105~\% respecto a la resistencia obtenida con la
-NTC-DCEA 2017.
+NTC-acero 2017.
 
 % ------------------------------------------------------------
 \subsection{Pasos 8 y 9: verificación geométrica y síntesis}
@@ -541,7 +541,7 @@ son:
   c_{min,2023} = 7\,d_o = 7\times2.222 = 15.55~\text{cm} \quad\Rightarrow\quad
   15.0 < 15.55 \quad \times\quad (\Delta = {-0.55}~\text{cm})
 \end{equation*}
-Este resultado ilustra el efecto práctico de la NTC-DCEA 2023: el mismo detalle que cumple
+Este resultado ilustra el efecto práctico de la NTC-acero 2023: el mismo detalle que cumple
 con la versión 2017 requiere redimensionamiento bajo la versión 2023. Aumentar el dado de
 70~cm a 71.1~cm ($c_{disp} \geq 15.55$~cm) resolvería la deficiencia con un cambio
 geométrico mínimo.
@@ -567,5 +567,5 @@ La Tabla~\ref{tab:ejemplo_eta} sintetiza las eficiencias del caso semilla bajo a
 
 Los valores de $\eta < 1$ en tensión y cortante confirman que la conexión cumple todos los
 estados límite de resistencia con ambas normas. La única deficiencia identificada corresponde
-al requisito geométrico de borde libre bajo la NTC-DCEA 2023, el cual requiere un ajuste
+al requisito geométrico de borde libre bajo la NTC-acero 2023, el cual requiere un ajuste
 dimensional del dado para este caso.

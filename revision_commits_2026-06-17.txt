@@ -1,6 +1,6 @@
 COMMITS DE REVISIÓN DE TESIS — 2026-06-17
 Alumna: Yamileth
-Tema: Análisis comparativo NTC-DCEA 2017 vs NTC-DCEA 2023 para diseño de placas base de acero
+Tema: Análisis comparativo NTC-acero 2017 vs NTC-acero 2023 para diseño de placas base de acero
 Revisado por: Prof. fcisnerosr (asistido por Claude Code)
 ========================================================================
 
@@ -15,8 +15,8 @@ Fecha:   2026-06-17 20:40
 Archivo: tesis_escrita/secciones/resumen.tex
 
 PROBLEMA:
-  El Resumen afirmaba que "la NTC-DCEA 2023 es consistentemente más permisiva
-  que la NTC-DCEA 2017". Esto contradecía directamente la conclusión de §5.3
+  El Resumen afirmaba que "la NTC-acero 2023 es consistentemente más permisiva
+  que la NTC-acero 2017". Esto contradecía directamente la conclusión de §5.3
   (Cap. 5), que establece que la norma no puede clasificarse de manera absoluta
   como más permisiva ni más conservadora.
 

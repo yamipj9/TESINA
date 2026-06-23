@@ -1,4 +1,4 @@
-# Tesina — Diseño Comparativo de Placas Base: NTC-DCEA 2017 vs. NTC-DCEA 2023
+# Tesina — Diseño Comparativo de Placas Base: NTC-acero 2017 vs. NTC-acero 2023
 
 **Autora:** Yamileth Pérez Jaramillo  
 **Institución:** Universidad Veracruzana — Facultad de Ingeniería Civil  
@@ -8,7 +8,7 @@
 
 ## Descripción del proyecto
 
-Esta tesina realiza un **estudio comparativo del diseño estructural de placas base de columnas de acero** sometidas a flexocompresión, cuantificando el impacto normativo de la transición de las **NTC-DCEA 2017** a las **NTC-DCEA 2023** del Reglamento de Construcciones para la Ciudad de México.
+Esta tesina realiza un **estudio comparativo del diseño estructural de placas base de columnas de acero** sometidas a flexocompresión, cuantificando el impacto normativo de la transición de las **NTC-acero 2017** a las **NTC-acero 2023** del Reglamento de Construcciones para la Ciudad de México.
 
 El trabajo integra tres componentes:
 
@@ -37,7 +37,7 @@ Los cambios específicos introducidos en la NTC-2023 — en particular los facto
 
 ---
 
-## Diferencias normativas clave (NTC-DCEA 2017 vs. 2023)
+## Diferencias normativas clave (NTC-acero 2017 vs. 2023)
 
 | # | Aspecto | NTC-2017 (Apéndice B) | NTC-2023 (Capítulo 13) | Impacto |
 |---|---------|----------------------|----------------------|---------|

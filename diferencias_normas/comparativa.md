@@ -1,6 +1,6 @@
-[cite_start]Como colega especialista en ingeniería estructural, es un excelente ejercicio técnico analizar la evolución normativa[cite: 1]. [cite_start]El paso de la NTC-DCEA 2017 a la NTC-DCEA 2023 representa una maduración significativa en el diseño de conexiones de acero, elevando el tema de un apéndice complementario a un capítulo principal y robusto (Capítulo 13)[cite: 2]. [cite_start]A continuación, te presento la tabla comparativa exhaustiva con el análisis técnico de los cambios y su impacto directo en nuestros procesos prácticos de diseño[cite: 3].
+[cite_start]Como colega especialista en ingeniería estructural, es un excelente ejercicio técnico analizar la evolución normativa[cite: 1]. [cite_start]El paso de la NTC-acero 2017 a la NTC-acero 2023 representa una maduración significativa en el diseño de conexiones de acero, elevando el tema de un apéndice complementario a un capítulo principal y robusto (Capítulo 13)[cite: 2]. [cite_start]A continuación, te presento la tabla comparativa exhaustiva con el análisis técnico de los cambios y su impacto directo en nuestros procesos prácticos de diseño[cite: 3].
 
-### [cite_start]Análisis Comparativo: NTC-DCEA 2017 vs. NTC-DCEA 2023 (Diseño de Placas Base) [cite: 4]
+### [cite_start]Análisis Comparativo: NTC-acero 2017 vs. NTC-acero 2023 (Diseño de Placas Base) [cite: 4]
 
 | Aspecto Técnico / Sección | NTC 2017 (Apéndice B) | NTC 2023 (Capítulo 13) | Análisis del Cambio (Impacto en el diseño) |
 | :--- | :--- | :--- | :--- |
